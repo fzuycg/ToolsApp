@@ -1,24 +1,24 @@
 //
-//  YCGBaseTableViewController.m
+//  BaseTableViewController.m
 //  ToolsApp
 //
 //  Created by 杨春贵 on 2018/3/16.
 //  Copyright © 2018年 com.yangcg.learn. All rights reserved.
 //
 
-#import "YCGBaseTableViewController.h"
+#import "BaseTableViewController.h"
 #import "YCGHomeDataModel.h"
 
 const int cellHeight = 60;
 
 static NSString *homeCellIdentifier = @"homeCellIdentifier";
 
-@interface YCGBaseTableViewController ()
+@interface BaseTableViewController ()
 @property (nonatomic, strong) NSArray<YCGHomeDataModel *> *modelArray;
 
 @end
 
-@implementation YCGBaseTableViewController
+@implementation BaseTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

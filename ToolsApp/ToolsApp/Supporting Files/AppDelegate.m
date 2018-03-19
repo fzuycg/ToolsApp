@@ -7,11 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "YCGTabBarController.h"
+#import "TabBarController.h"
 #import "YCGGuidePageView.h"
 
 @interface AppDelegate ()
-@property (nonatomic, strong) YCGTabBarController *tabBarController;
+@property (nonatomic, strong) TabBarController *tabBarController;
 @end
 
 @implementation AppDelegate
@@ -22,7 +22,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.tabBarController = [[YCGTabBarController alloc] init];
+    self.tabBarController = [[TabBarController alloc] init];
     self.window.rootViewController = self.tabBarController;
     // 设置这个窗口有主窗口并显示
     [self.window makeKeyAndVisible];

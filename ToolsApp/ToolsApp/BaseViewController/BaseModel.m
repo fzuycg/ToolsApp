@@ -1,13 +1,13 @@
 //
-//  YCGBaseModel.h
+//  BaseModel.m
 //  ToolsApp
 //
 //  Created by 杨春贵 on 2018/3/16.
 //  Copyright © 2018年 com.yangcg.learn. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "MJExtension.h"
-@interface YCGBaseModel : NSObject
+#import "BaseModel.h"
+
+@implementation BaseModel
 
 @end

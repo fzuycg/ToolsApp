@@ -1,5 +1,5 @@
 //
-//  YCGBaseTableViewController.h
+//  BaseTableViewController.h
 //  ToolsApp
 //
 //  Created by 杨春贵 on 2018/3/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YCGBaseTableViewController : UITableViewController
+@interface BaseTableViewController : UITableViewController
 
 
 /** 数据源数组 */

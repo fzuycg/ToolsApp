@@ -1,5 +1,5 @@
 //
-//  YCGBaseViewController.h
+//  NavigationController.h
 //  ToolsApp
 //
 //  Created by 杨春贵 on 2018/3/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YCGBaseViewController : UIViewController
+@interface NavigationController : UINavigationController
 
 @end

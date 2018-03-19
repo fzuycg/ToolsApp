@@ -1,23 +1,23 @@
 //
-//  YCGTabBarController.m
+//  TabBarController.m
 //  ToolsApp
 //
 //  Created by 杨春贵 on 2018/3/15.
 //  Copyright © 2018年 com.yangcg.learn. All rights reserved.
 //
 
-#import "YCGTabBarController.h"
-#import "YCGNavigationController.h"
+#import "TabBarController.h"
+#import "NavigationController.h"
 #import "YCGHomeViewController.h"
 #import "YCGFindViewController.h"
 #import "YCGActivityViewController.h"
 #import "YCGMeViewController.h"
 
-@interface YCGTabBarController ()
+@interface TabBarController ()
 
 @end
 
-@implementation YCGTabBarController
+@implementation TabBarController
 
 - (void)viewDidLoad {
     
@@ -50,7 +50,7 @@
 // 添加某个 childViewController
 - (void)addChildViewController:(UIViewController *)vc title:(NSString *)title imageNamed:(NSString *)imageNamed
 {
-    YCGNavigationController *nav = [[YCGNavigationController alloc] initWithRootViewController:vc];
+    NavigationController *nav = [[NavigationController alloc] initWithRootViewController:vc];
     // 如果同时有navigationbar 和 tabbar的时候最好分别设置它们的title
     vc.navigationItem.title = title;
     nav.tabBarItem.title = title;

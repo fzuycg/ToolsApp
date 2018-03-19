@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "YCGBaseModel.h"
+#import "BaseModel.h"
 
-@interface YCGHomeDataModel : YCGBaseModel
+@interface YCGHomeDataModel : BaseModel
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *className;

@@ -19,7 +19,7 @@
     
     self.dataSoureArray =@[
                            //用于测试的页面
-                           @{@"title":@"临时页面",@"className":@"JDWifiViewController"},
+                           @{@"title":@"引导页面",@"className":@"GuidePageViewController"},
                            @{@"title":@"视图效果",@"className":@"JDViewListViewController"},
                            
                            ];

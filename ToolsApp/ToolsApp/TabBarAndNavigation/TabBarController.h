@@ -1,5 +1,5 @@
 //
-//  YCGTabBarController.h
+//  TabBarController.h
 //  ToolsApp
 //
 //  Created by 杨春贵 on 2018/3/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YCGTabBarController : UITabBarController
+@interface TabBarController : UITabBarController
 
 @end
