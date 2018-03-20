@@ -1,0 +1,19 @@
+{
+    "code": 200,
+    "msg": "success",
+    "data": [{
+                 "fileType": "0",
+                 "fileUrl": "http://p1.bqimg.com/567571/23a4bc7a285c1179.gif",
+                 "openUrl": "http://www.baidu.com",
+                 "contentSize": "1242*1786",
+                 "showTime": 5
+             },
+             {
+                 "fileType": "1",
+                 "fileUrl": "http://120.25.226.186:32812/resources/videos/minion_01.mp4",
+                 "openUrl": "http://www.baidu.com",
+                 "contentSize": "750*1336",
+                 "showTime": 10
+             }
+             ]
+}

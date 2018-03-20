@@ -4,4 +4,5 @@ platform :ios, '8.0'
 target 'ToolsApp' do
   pod 'SDWebImage'
   pod 'MJExtension'
+  pod 'XHLaunchAd' #开屏广告三方库，地址：https://github.com/CoderZhuXH/XHLaunchAd
 end

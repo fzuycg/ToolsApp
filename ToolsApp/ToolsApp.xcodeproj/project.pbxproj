@@ -15,6 +15,10 @@
 		C85ACAB7205F9DA1008ED51A /* GuidePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85ACAB6205F9DA1008ED51A /* GuidePageViewController.m */; };
 		C85ACAB9205FA5DE008ED51A /* home_bgImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85ACAB8205FA5DE008ED51A /* home_bgImage.jpg */; };
 		C85ACABD205FA69A008ED51A /* LaunchAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85ACABC205FA69A008ED51A /* LaunchAdViewController.m */; };
+		C876A4212060AE310048728C /* LaunchAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A4202060AE310048728C /* LaunchAdModel.m */; };
+		C876A4252060B3800048728C /* LaunchAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A4242060B3800048728C /* LaunchAdManager.m */; };
+		C876A4282060B78C0048728C /* LaunchAdData.json in Resources */ = {isa = PBXBuildFile; fileRef = C876A4272060B78C0048728C /* LaunchAdData.json */; };
+		C876A42B2060BC760048728C /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A42A2060BC760048728C /* Network.m */; };
 		C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EB75A205A8FCB008092BB /* AppDelegate.m */; };
 		C88EB763205A8FCB008092BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88EB762205A8FCB008092BB /* Assets.xcassets */; };
 		C88EB766205A8FCB008092BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88EB764205A8FCB008092BB /* LaunchScreen.storyboard */; };
@@ -66,6 +70,13 @@
 		C85ACAB8205FA5DE008ED51A /* home_bgImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home_bgImage.jpg; sourceTree = "<group>"; };
 		C85ACABB205FA69A008ED51A /* LaunchAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchAdViewController.h; sourceTree = "<group>"; };
 		C85ACABC205FA69A008ED51A /* LaunchAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchAdViewController.m; sourceTree = "<group>"; };
+		C876A41F2060AE310048728C /* LaunchAdModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchAdModel.h; sourceTree = "<group>"; };
+		C876A4202060AE310048728C /* LaunchAdModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchAdModel.m; sourceTree = "<group>"; };
+		C876A4232060B3800048728C /* LaunchAdManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchAdManager.h; sourceTree = "<group>"; };
+		C876A4242060B3800048728C /* LaunchAdManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchAdManager.m; sourceTree = "<group>"; };
+		C876A4272060B78C0048728C /* LaunchAdData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchAdData.json; sourceTree = "<group>"; };
+		C876A4292060BC760048728C /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		C876A42A2060BC760048728C /* Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
 		C88EB756205A8FCB008092BB /* ToolsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88EB759205A8FCB008092BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C88EB75A205A8FCB008092BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -149,6 +160,7 @@
 		C85ACAA1205E5A2D008ED51A /* 功能合集 */ = {
 			isa = PBXGroup;
 			children = (
+				C85ACABE205FB596008ED51A /* 自定义控件 */,
 				C85ACAA7205E64A5008ED51A /* 轮播图 */,
 				C85ACAA6205E6493008ED51A /* 启动通知 */,
 				C85ACAA5205E6481008ED51A /* 引导页面 */,
@@ -224,8 +236,61 @@
 		C85ACABA205FA65F008ED51A /* LaunchAd */ = {
 			isa = PBXGroup;
 			children = (
+				C876A4262060B7480048728C /* Source */,
+				C876A41E2060ADF80048728C /* Model */,
+				C876A4232060B3800048728C /* LaunchAdManager.h */,
+				C876A4242060B3800048728C /* LaunchAdManager.m */,
 			);
 			path = LaunchAd;
+			sourceTree = "<group>";
+		};
+		C85ACABE205FB596008ED51A /* 自定义控件 */ = {
+			isa = PBXGroup;
+			children = (
+				C85ACAC0205FB5C9008ED51A /* CustomButton */,
+				C85ACABF205FB5BF008ED51A /* CustomLabel */,
+			);
+			path = "自定义控件";
+			sourceTree = "<group>";
+		};
+		C85ACABF205FB5BF008ED51A /* CustomLabel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomLabel;
+			sourceTree = "<group>";
+		};
+		C85ACAC0205FB5C9008ED51A /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomButton;
+			sourceTree = "<group>";
+		};
+		C876A41E2060ADF80048728C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C876A41F2060AE310048728C /* LaunchAdModel.h */,
+				C876A4202060AE310048728C /* LaunchAdModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C876A4222060AE420048728C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C876A4292060BC760048728C /* Network.h */,
+				C876A42A2060BC760048728C /* Network.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C876A4262060B7480048728C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C876A4272060B78C0048728C /* LaunchAdData.json */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		C88EB74D205A8FCB008092BB = {
@@ -363,6 +428,7 @@
 		C88EB7B2205B92A3008092BB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C876A4222060AE420048728C /* Networking */,
 				C88EB7B3205B9301008092BB /* Define.h */,
 			);
 			path = Utils;
@@ -480,6 +546,7 @@
 				C88EB766205A8FCB008092BB /* LaunchScreen.storyboard in Resources */,
 				C85ACAB3205F657A008ED51A /* guide_03.jpg in Resources */,
 				C85ACAB1205F657A008ED51A /* guide_01.jpg in Resources */,
+				C876A4282060B78C0048728C /* LaunchAdData.json in Resources */,
 				C85ACAB9205FA5DE008ED51A /* home_bgImage.jpg in Resources */,
 				C85ACAB0205F657A008ED51A /* guide_02.jpg in Resources */,
 				C85ACAB2205F657A008ED51A /* guide_04.jpg in Resources */,
@@ -559,6 +626,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C876A4252060B3800048728C /* LaunchAdManager.m in Sources */,
 				C88EB793205A9645008092BB /* NavigationController.m in Sources */,
 				C88EB769205A8FCB008092BB /* main.m in Sources */,
 				C88EB7A6205A9D62008092BB /* YCGActivityViewController.m in Sources */,
@@ -570,9 +638,11 @@
 				C88EB7A0205A9D3E008092BB /* YCGFindViewController.m in Sources */,
 				C85ACAB7205F9DA1008ED51A /* GuidePageViewController.m in Sources */,
 				C85ACAAA205F5087008ED51A /* YCGGuidePageView.m in Sources */,
+				C876A4212060AE310048728C /* LaunchAdModel.m in Sources */,
 				C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */,
 				C88EB79A205A9CC2008092BB /* BaseViewController.m in Sources */,
 				C88EB7A9205B6391008092BB /* BaseTableViewController.m in Sources */,
+				C876A42B2060BC760048728C /* Network.m in Sources */,
 				C88EB7A3205A9D4D008092BB /* YCGMeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "TabBarController.h"
 #import "YCGGuidePageView.h"
+#import "LaunchAdManager.h"
 
 @interface AppDelegate ()
 @property (nonatomic, strong) TabBarController *tabBarController;
@@ -35,7 +36,7 @@
         guidePageView.currentColor = [UIColor redColor];
         [_window addSubview:guidePageView];
     }else{
-        
+        [[LaunchAdManager shareManager] loadData];
     }
     
     //给 launch 添加动画
