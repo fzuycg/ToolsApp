@@ -7,7 +7,6 @@
 //
 
 #import "BaseModel.h"
-#import <UIKit/UIKit.h>
 
 @interface LaunchAdModel : BaseModel
 

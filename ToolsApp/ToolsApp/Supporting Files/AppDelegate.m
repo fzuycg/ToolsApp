@@ -36,7 +36,7 @@
         guidePageView.currentColor = [UIColor redColor];
         [_window addSubview:guidePageView];
     }else{
-        [[LaunchAdManager shareManager] loadData];
+//        [[LaunchAdManager shareManager] loadData];
     }
     
     //给 launch 添加动画

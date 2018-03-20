@@ -19,6 +19,23 @@
 		C876A4252060B3800048728C /* LaunchAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A4242060B3800048728C /* LaunchAdManager.m */; };
 		C876A4282060B78C0048728C /* LaunchAdData.json in Resources */ = {isa = PBXBuildFile; fileRef = C876A4272060B78C0048728C /* LaunchAdData.json */; };
 		C876A42B2060BC760048728C /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A42A2060BC760048728C /* Network.m */; };
+		C876A42E2060FDFA0048728C /* LayoutListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A42D2060FDFA0048728C /* LayoutListViewController.m */; };
+		C876A4382060FFF40048728C /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C876A42F2060FFF30048728C /* image2.jpg */; };
+		C876A4392060FFF40048728C /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C876A4302060FFF30048728C /* image4.jpg */; };
+		C876A43A2060FFF40048728C /* video0.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C876A4312060FFF30048728C /* video0.mp4 */; };
+		C876A43B2060FFF40048728C /* image11.gif in Resources */ = {isa = PBXBuildFile; fileRef = C876A4322060FFF40048728C /* image11.gif */; };
+		C876A43C2060FFF40048728C /* image0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C876A4332060FFF40048728C /* image0.jpg */; };
+		C876A43D2060FFF40048728C /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C876A4342060FFF40048728C /* video1.mp4 */; };
+		C876A43E2060FFF40048728C /* image12.gif in Resources */ = {isa = PBXBuildFile; fileRef = C876A4352060FFF40048728C /* image12.gif */; };
+		C876A43F2060FFF40048728C /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C876A4362060FFF40048728C /* image1.jpg */; };
+		C876A4402060FFF40048728C /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C876A4372060FFF40048728C /* image3.jpg */; };
+		C876A446206102250048728C /* WaterFallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A445206102250048728C /* WaterFallViewController.m */; };
+		C876A44C2061034D0048728C /* WaterFallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A44B2061034D0048728C /* WaterFallCell.m */; };
+		C876A44F206105A70048728C /* WaterFallDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A44E206105A70048728C /* WaterFallDataModel.m */; };
+		C876A45320610B220048728C /* 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = C876A45020610B220048728C /* 2.plist */; };
+		C876A45420610B220048728C /* 3.plist in Resources */ = {isa = PBXBuildFile; fileRef = C876A45120610B220048728C /* 3.plist */; };
+		C876A45520610B220048728C /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = C876A45220610B220048728C /* 1.plist */; };
+		C876A45820610BDC0048728C /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A45720610BDC0048728C /* WaterFlowLayout.m */; };
 		C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EB75A205A8FCB008092BB /* AppDelegate.m */; };
 		C88EB763205A8FCB008092BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88EB762205A8FCB008092BB /* Assets.xcassets */; };
 		C88EB766205A8FCB008092BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88EB764205A8FCB008092BB /* LaunchScreen.storyboard */; };
@@ -77,6 +94,28 @@
 		C876A4272060B78C0048728C /* LaunchAdData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchAdData.json; sourceTree = "<group>"; };
 		C876A4292060BC760048728C /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 		C876A42A2060BC760048728C /* Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		C876A42C2060FDFA0048728C /* LayoutListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutListViewController.h; sourceTree = "<group>"; };
+		C876A42D2060FDFA0048728C /* LayoutListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutListViewController.m; sourceTree = "<group>"; };
+		C876A42F2060FFF30048728C /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		C876A4302060FFF30048728C /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		C876A4312060FFF30048728C /* video0.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video0.mp4; sourceTree = "<group>"; };
+		C876A4322060FFF40048728C /* image11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image11.gif; sourceTree = "<group>"; };
+		C876A4332060FFF40048728C /* image0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0.jpg; sourceTree = "<group>"; };
+		C876A4342060FFF40048728C /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		C876A4352060FFF40048728C /* image12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image12.gif; sourceTree = "<group>"; };
+		C876A4362060FFF40048728C /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		C876A4372060FFF40048728C /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		C876A444206102250048728C /* WaterFallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFallViewController.h; sourceTree = "<group>"; };
+		C876A445206102250048728C /* WaterFallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFallViewController.m; sourceTree = "<group>"; };
+		C876A44A2061034D0048728C /* WaterFallCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFallCell.h; sourceTree = "<group>"; };
+		C876A44B2061034D0048728C /* WaterFallCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFallCell.m; sourceTree = "<group>"; };
+		C876A44D206105A70048728C /* WaterFallDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFallDataModel.h; sourceTree = "<group>"; };
+		C876A44E206105A70048728C /* WaterFallDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFallDataModel.m; sourceTree = "<group>"; };
+		C876A45020610B220048728C /* 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 2.plist; sourceTree = "<group>"; };
+		C876A45120610B220048728C /* 3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3.plist; sourceTree = "<group>"; };
+		C876A45220610B220048728C /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		C876A45620610BDC0048728C /* WaterFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFlowLayout.h; sourceTree = "<group>"; };
+		C876A45720610BDC0048728C /* WaterFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFlowLayout.m; sourceTree = "<group>"; };
 		C88EB756205A8FCB008092BB /* ToolsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88EB759205A8FCB008092BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C88EB75A205A8FCB008092BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -180,7 +219,9 @@
 		C85ACAA4205E646B008ED51A /* 开屏广告 */ = {
 			isa = PBXGroup;
 			children = (
-				C85ACABA205FA65F008ED51A /* LaunchAd */,
+				C876A4262060B7480048728C /* Source */,
+				C876A41E2060ADF80048728C /* Model */,
+				C85ACABA205FA65F008ED51A /* Manager */,
 				C85ACABB205FA69A008ED51A /* LaunchAdViewController.h */,
 				C85ACABC205FA69A008ED51A /* LaunchAdViewController.m */,
 			);
@@ -207,6 +248,11 @@
 		C85ACAA7205E64A5008ED51A /* 轮播图 */ = {
 			isa = PBXGroup;
 			children = (
+				C876A443206101B30048728C /* 轮播 */,
+				C876A4422061019B0048728C /* 卡片切换 */,
+				C876A4412061018F0048728C /* 瀑布流 */,
+				C876A42C2060FDFA0048728C /* LayoutListViewController.h */,
+				C876A42D2060FDFA0048728C /* LayoutListViewController.m */,
 			);
 			path = "轮播图";
 			sourceTree = "<group>";
@@ -233,15 +279,13 @@
 			path = GuidePageView;
 			sourceTree = "<group>";
 		};
-		C85ACABA205FA65F008ED51A /* LaunchAd */ = {
+		C85ACABA205FA65F008ED51A /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				C876A4262060B7480048728C /* Source */,
-				C876A41E2060ADF80048728C /* Model */,
 				C876A4232060B3800048728C /* LaunchAdManager.h */,
 				C876A4242060B3800048728C /* LaunchAdManager.m */,
 			);
-			path = LaunchAd;
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		C85ACABE205FB596008ED51A /* 自定义控件 */ = {
@@ -288,9 +332,74 @@
 		C876A4262060B7480048728C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C876A4332060FFF40048728C /* image0.jpg */,
+				C876A4362060FFF40048728C /* image1.jpg */,
+				C876A42F2060FFF30048728C /* image2.jpg */,
+				C876A4372060FFF40048728C /* image3.jpg */,
+				C876A4302060FFF30048728C /* image4.jpg */,
+				C876A4322060FFF40048728C /* image11.gif */,
+				C876A4352060FFF40048728C /* image12.gif */,
+				C876A4312060FFF30048728C /* video0.mp4 */,
+				C876A4342060FFF40048728C /* video1.mp4 */,
 				C876A4272060B78C0048728C /* LaunchAdData.json */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		C876A4412061018F0048728C /* 瀑布流 */ = {
+			isa = PBXGroup;
+			children = (
+				C876A449206102730048728C /* Model */,
+				C876A448206102380048728C /* Source */,
+				C876A4472061022A0048728C /* View */,
+				C876A444206102250048728C /* WaterFallViewController.h */,
+				C876A445206102250048728C /* WaterFallViewController.m */,
+			);
+			path = "瀑布流";
+			sourceTree = "<group>";
+		};
+		C876A4422061019B0048728C /* 卡片切换 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "卡片切换";
+			sourceTree = "<group>";
+		};
+		C876A443206101B30048728C /* 轮播 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "轮播";
+			sourceTree = "<group>";
+		};
+		C876A4472061022A0048728C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C876A44A2061034D0048728C /* WaterFallCell.h */,
+				C876A44B2061034D0048728C /* WaterFallCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C876A448206102380048728C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C876A45220610B220048728C /* 1.plist */,
+				C876A45020610B220048728C /* 2.plist */,
+				C876A45120610B220048728C /* 3.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C876A449206102730048728C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C876A44D206105A70048728C /* WaterFallDataModel.h */,
+				C876A44E206105A70048728C /* WaterFallDataModel.m */,
+				C876A45620610BDC0048728C /* WaterFlowLayout.h */,
+				C876A45720610BDC0048728C /* WaterFlowLayout.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C88EB74D205A8FCB008092BB = {
@@ -544,11 +653,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				C88EB766205A8FCB008092BB /* LaunchScreen.storyboard in Resources */,
+				C876A43D2060FFF40048728C /* video1.mp4 in Resources */,
 				C85ACAB3205F657A008ED51A /* guide_03.jpg in Resources */,
 				C85ACAB1205F657A008ED51A /* guide_01.jpg in Resources */,
 				C876A4282060B78C0048728C /* LaunchAdData.json in Resources */,
+				C876A43A2060FFF40048728C /* video0.mp4 in Resources */,
+				C876A43C2060FFF40048728C /* image0.jpg in Resources */,
+				C876A4382060FFF40048728C /* image2.jpg in Resources */,
+				C876A4402060FFF40048728C /* image3.jpg in Resources */,
+				C876A45420610B220048728C /* 3.plist in Resources */,
+				C876A45520610B220048728C /* 1.plist in Resources */,
+				C876A45320610B220048728C /* 2.plist in Resources */,
+				C876A43E2060FFF40048728C /* image12.gif in Resources */,
 				C85ACAB9205FA5DE008ED51A /* home_bgImage.jpg in Resources */,
+				C876A4392060FFF40048728C /* image4.jpg in Resources */,
+				C876A43B2060FFF40048728C /* image11.gif in Resources */,
 				C85ACAB0205F657A008ED51A /* guide_02.jpg in Resources */,
+				C876A43F2060FFF40048728C /* image1.jpg in Resources */,
 				C85ACAB2205F657A008ED51A /* guide_04.jpg in Resources */,
 				C88EB763205A8FCB008092BB /* Assets.xcassets in Resources */,
 			);
@@ -632,6 +753,7 @@
 				C88EB7A6205A9D62008092BB /* YCGActivityViewController.m in Sources */,
 				C88EB790205A960F008092BB /* TabBarController.m in Sources */,
 				C88EB7B0205B6769008092BB /* BaseModel.m in Sources */,
+				C876A44C2061034D0048728C /* WaterFallCell.m in Sources */,
 				C85ACABD205FA69A008ED51A /* LaunchAdViewController.m in Sources */,
 				C88EB79D205A9D1E008092BB /* YCGHomeViewController.m in Sources */,
 				C88EB7AD205B6731008092BB /* YCGHomeDataModel.m in Sources */,
@@ -639,9 +761,13 @@
 				C85ACAB7205F9DA1008ED51A /* GuidePageViewController.m in Sources */,
 				C85ACAAA205F5087008ED51A /* YCGGuidePageView.m in Sources */,
 				C876A4212060AE310048728C /* LaunchAdModel.m in Sources */,
+				C876A44F206105A70048728C /* WaterFallDataModel.m in Sources */,
 				C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */,
 				C88EB79A205A9CC2008092BB /* BaseViewController.m in Sources */,
 				C88EB7A9205B6391008092BB /* BaseTableViewController.m in Sources */,
+				C876A45820610BDC0048728C /* WaterFlowLayout.m in Sources */,
+				C876A42E2060FDFA0048728C /* LayoutListViewController.m in Sources */,
+				C876A446206102250048728C /* WaterFallViewController.m in Sources */,
 				C876A42B2060BC760048728C /* Network.m in Sources */,
 				C88EB7A3205A9D4D008092BB /* YCGMeViewController.m in Sources */,
 			);

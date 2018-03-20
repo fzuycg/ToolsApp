@@ -11,7 +11,7 @@
 @implementation LaunchAdModel
 
 -(void)setContentSize:(NSString *)contentSize {
-    self.contentSize = contentSize;
+    _contentSize = contentSize;
     self.width = [[[contentSize componentsSeparatedByString:@"*"] firstObject] floatValue];
     self.height = [[[contentSize componentsSeparatedByString:@"*"] lastObject] floatValue];
 }
