@@ -10,8 +10,8 @@
 #import <UIImageView+WebCache.h>
 
 @interface WaterFallCell()
-@property (nonatomic, retain)UIImageView *imageView;
-
+@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic, retain) UILabel *priceLabel;
 @end
 
 @implementation WaterFallCell
@@ -26,8 +26,13 @@
 
 - (void)createUI {
     _imageView = [[UIImageView alloc] initWithFrame:self.contentView.bounds];
-    
     [self.contentView addSubview:_imageView];
+    
+    _priceLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    _priceLabel.textAlignment = NSTextAlignmentRight;
+    [_priceLabel setTextColor:[UIColor redColor]];
+    [_priceLabel setFont:[UIFont systemFontOfSize:14]];
+    [_imageView addSubview:_priceLabel];
 }
 
 -(void)setModel:(WaterFallDataModel *)model {
@@ -37,6 +42,9 @@
     
     //⚠️注意：这里写成self.contentView.bounds会出错，用 nib约束 则不用写
     _imageView.frame = self.bounds;
+    
+    _priceLabel.text = model.price;
+    _priceLabel.frame = CGRectMake(10, _imageView.frame.size.height-30, _imageView.frame.size.width-20, 30);
 }
 
 
