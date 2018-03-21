@@ -22,7 +22,7 @@
                            @{@"title":@"引导页面",@"className":@"GuidePageViewController"},
                            @{@"title":@"开屏广告",@"className":@"LaunchAdViewController"},
                            @{@"title":@"基本动画",@"className":@"LaunchAdViewController"},
-                           @{@"title":@"轮播图",@"className":@"LayoutListViewController"},
+                           @{@"title":@"视图布局",@"className":@"LayoutListViewController"},
                            @{@"title":@"启动通知",@"className":@"LaunchAdViewController"},
                            @{@"title":@"自定义控件",@"className":@"LaunchAdViewController"},
                            ];

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>imageUrl</key>
+		<string>http://s13.mogujie.cn/b7/bao/131012/vud8_kqywordekfbgo2dwgfjeg5sckzsew_310x426.jpg_200x999.jpg</string>
+		<key>imageTip</key>
+		<string>123</string>
+	</dict>
+	<dict>
+		<key>imageUrl</key>
+		<string>http://s8.mogujie.cn/b7/bao/131008/9mzmv_kqyumx3ekfbhgzcugfjeg5sckzsew_500x700.jpg_200x999.jpg</string>
+		<key>imageTip</key>
+		<string>321</string>
+	</dict>
+	<dict>
+		<key>imageUrl</key>
+		<string>http://s6.mogujie.cn/b7/bao/131011/q84oz_kqyw6tcwkfbguq2ugfjeg5sckzsew_400x542.jpg_200x999.jpg</string>
+		<key>imageTip</key>
+		<string>213</string>
+	</dict>
+    <dict>
+        <key>imageUrl</key>
+        <string>http://s8.mogujie.cn/b7/bao/131008/9mzmv_kqyumx3ekfbhgzcugfjeg5sckzsew_500x700.jpg_200x999.jpg</string>
+        <key>imageTip</key>
+        <string>321</string>
+    </dict>
+</array>
+</plist>

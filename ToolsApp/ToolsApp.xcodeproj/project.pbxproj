@@ -36,6 +36,13 @@
 		C876A45D2062029C0048728C /* 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = C876A45A2062029C0048728C /* 2.plist */; };
 		C876A45E2062029C0048728C /* 3.plist in Resources */ = {isa = PBXBuildFile; fileRef = C876A45B2062029C0048728C /* 3.plist */; };
 		C876A45F2062029C0048728C /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = C876A45C2062029C0048728C /* 1.plist */; };
+		C876A462206227CC0048728C /* CyclePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A461206227CC0048728C /* CyclePageViewController.m */; };
+		C876A46620622AF50048728C /* CycleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A46520622AF50048728C /* CycleImageView.m */; };
+		C876A46920622B2B0048728C /* CycleImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A46820622B2B0048728C /* CycleImageViewCell.m */; };
+		C876A46C20622B850048728C /* CycleImageViewPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A46B20622B840048728C /* CycleImageViewPageControl.m */; };
+		C876A47020622CD80048728C /* CycleImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A46F20622CD80048728C /* CycleImageModel.m */; };
+		C876A473206230830048728C /* NSString+RegexCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A472206230830048728C /* NSString+RegexCategory.m */; };
+		C876A47620623D810048728C /* cycleImage.plist in Resources */ = {isa = PBXBuildFile; fileRef = C876A47520623D810048728C /* cycleImage.plist */; };
 		C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EB75A205A8FCB008092BB /* AppDelegate.m */; };
 		C88EB763205A8FCB008092BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88EB762205A8FCB008092BB /* Assets.xcassets */; };
 		C88EB766205A8FCB008092BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88EB764205A8FCB008092BB /* LaunchScreen.storyboard */; };
@@ -116,6 +123,19 @@
 		C876A45A2062029C0048728C /* 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 2.plist; sourceTree = "<group>"; };
 		C876A45B2062029C0048728C /* 3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3.plist; sourceTree = "<group>"; };
 		C876A45C2062029C0048728C /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		C876A460206227CB0048728C /* CyclePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CyclePageViewController.h; sourceTree = "<group>"; };
+		C876A461206227CC0048728C /* CyclePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CyclePageViewController.m; sourceTree = "<group>"; };
+		C876A46420622AF50048728C /* CycleImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleImageView.h; sourceTree = "<group>"; };
+		C876A46520622AF50048728C /* CycleImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleImageView.m; sourceTree = "<group>"; };
+		C876A46720622B2B0048728C /* CycleImageViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleImageViewCell.h; sourceTree = "<group>"; };
+		C876A46820622B2B0048728C /* CycleImageViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleImageViewCell.m; sourceTree = "<group>"; };
+		C876A46A20622B840048728C /* CycleImageViewPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleImageViewPageControl.h; sourceTree = "<group>"; };
+		C876A46B20622B840048728C /* CycleImageViewPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleImageViewPageControl.m; sourceTree = "<group>"; };
+		C876A46E20622CD80048728C /* CycleImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleImageModel.h; sourceTree = "<group>"; };
+		C876A46F20622CD80048728C /* CycleImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleImageModel.m; sourceTree = "<group>"; };
+		C876A471206230830048728C /* NSString+RegexCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+RegexCategory.h"; sourceTree = "<group>"; };
+		C876A472206230830048728C /* NSString+RegexCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegexCategory.m"; sourceTree = "<group>"; };
+		C876A47520623D810048728C /* cycleImage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cycleImage.plist; sourceTree = "<group>"; };
 		C88EB756205A8FCB008092BB /* ToolsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88EB759205A8FCB008092BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C88EB75A205A8FCB008092BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -200,7 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				C85ACABE205FB596008ED51A /* 自定义控件 */,
-				C85ACAA7205E64A5008ED51A /* 轮播图 */,
+				C85ACAA7205E64A5008ED51A /* 视图布局 */,
 				C85ACAA6205E6493008ED51A /* 启动通知 */,
 				C85ACAA5205E6481008ED51A /* 引导页面 */,
 				C85ACAA4205E646B008ED51A /* 开屏广告 */,
@@ -245,16 +265,16 @@
 			path = "启动通知";
 			sourceTree = "<group>";
 		};
-		C85ACAA7205E64A5008ED51A /* 轮播图 */ = {
+		C85ACAA7205E64A5008ED51A /* 视图布局 */ = {
 			isa = PBXGroup;
 			children = (
-				C876A443206101B30048728C /* 轮播 */,
+				C876A443206101B30048728C /* 轮播图 */,
 				C876A4422061019B0048728C /* 卡片切换 */,
 				C876A4412061018F0048728C /* 瀑布流 */,
 				C876A42C2060FDFA0048728C /* LayoutListViewController.h */,
 				C876A42D2060FDFA0048728C /* LayoutListViewController.m */,
 			);
-			path = "轮播图";
+			path = "视图布局";
 			sourceTree = "<group>";
 		};
 		C85ACAAB205F64F6008ED51A /* image */ = {
@@ -365,11 +385,16 @@
 			path = "卡片切换";
 			sourceTree = "<group>";
 		};
-		C876A443206101B30048728C /* 轮播 */ = {
+		C876A443206101B30048728C /* 轮播图 */ = {
 			isa = PBXGroup;
 			children = (
+				C876A47420623C690048728C /* Source */,
+				C876A46D20622CBE0048728C /* Model */,
+				C876A463206227EF0048728C /* View */,
+				C876A460206227CB0048728C /* CyclePageViewController.h */,
+				C876A461206227CC0048728C /* CyclePageViewController.m */,
 			);
-			path = "轮播";
+			path = "轮播图";
 			sourceTree = "<group>";
 		};
 		C876A4472061022A0048728C /* View */ = {
@@ -402,6 +427,36 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		C876A463206227EF0048728C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C876A46420622AF50048728C /* CycleImageView.h */,
+				C876A46520622AF50048728C /* CycleImageView.m */,
+				C876A46720622B2B0048728C /* CycleImageViewCell.h */,
+				C876A46820622B2B0048728C /* CycleImageViewCell.m */,
+				C876A46A20622B840048728C /* CycleImageViewPageControl.h */,
+				C876A46B20622B840048728C /* CycleImageViewPageControl.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C876A46D20622CBE0048728C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C876A46E20622CD80048728C /* CycleImageModel.h */,
+				C876A46F20622CD80048728C /* CycleImageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C876A47420623C690048728C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C876A47520623D810048728C /* cycleImage.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		C88EB74D205A8FCB008092BB = {
 			isa = PBXGroup;
 			children = (
@@ -427,8 +482,8 @@
 		C88EB758205A8FCB008092BB /* ToolsApp */ = {
 			isa = PBXGroup;
 			children = (
-				C85ACAA1205E5A2D008ED51A /* 功能合集 */,
 				C88EB7B2205B92A3008092BB /* Utils */,
+				C85ACAA1205E5A2D008ED51A /* 功能合集 */,
 				C88EB797205A9C52008092BB /* ActivityController */,
 				C88EB796205A9C3D008092BB /* MeController */,
 				C88EB795205A9C19008092BB /* FindController */,
@@ -539,6 +594,8 @@
 			children = (
 				C876A4222060AE420048728C /* Networking */,
 				C88EB7B3205B9301008092BB /* Define.h */,
+				C876A471206230830048728C /* NSString+RegexCategory.h */,
+				C876A472206230830048728C /* NSString+RegexCategory.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -662,6 +719,7 @@
 				C876A4382060FFF40048728C /* image2.jpg in Resources */,
 				C876A4402060FFF40048728C /* image3.jpg in Resources */,
 				C876A45E2062029C0048728C /* 3.plist in Resources */,
+				C876A47620623D810048728C /* cycleImage.plist in Resources */,
 				C876A45F2062029C0048728C /* 1.plist in Resources */,
 				C876A45D2062029C0048728C /* 2.plist in Resources */,
 				C876A43E2060FFF40048728C /* image12.gif in Resources */,
@@ -747,6 +805,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C876A473206230830048728C /* NSString+RegexCategory.m in Sources */,
 				C876A4252060B3800048728C /* LaunchAdManager.m in Sources */,
 				C88EB793205A9645008092BB /* NavigationController.m in Sources */,
 				C88EB769205A8FCB008092BB /* main.m in Sources */,
@@ -754,7 +813,9 @@
 				C88EB790205A960F008092BB /* TabBarController.m in Sources */,
 				C88EB7B0205B6769008092BB /* BaseModel.m in Sources */,
 				C876A44C2061034D0048728C /* WaterFallCell.m in Sources */,
+				C876A46C20622B850048728C /* CycleImageViewPageControl.m in Sources */,
 				C85ACABD205FA69A008ED51A /* LaunchAdViewController.m in Sources */,
+				C876A462206227CC0048728C /* CyclePageViewController.m in Sources */,
 				C88EB79D205A9D1E008092BB /* YCGHomeViewController.m in Sources */,
 				C88EB7AD205B6731008092BB /* YCGHomeDataModel.m in Sources */,
 				C88EB7A0205A9D3E008092BB /* YCGFindViewController.m in Sources */,
@@ -765,11 +826,14 @@
 				C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */,
 				C88EB79A205A9CC2008092BB /* BaseViewController.m in Sources */,
 				C88EB7A9205B6391008092BB /* BaseTableViewController.m in Sources */,
+				C876A47020622CD80048728C /* CycleImageModel.m in Sources */,
 				C876A45820610BDC0048728C /* WaterFlowLayout.m in Sources */,
 				C876A42E2060FDFA0048728C /* LayoutListViewController.m in Sources */,
 				C876A446206102250048728C /* WaterFallViewController.m in Sources */,
 				C876A42B2060BC760048728C /* Network.m in Sources */,
+				C876A46620622AF50048728C /* CycleImageView.m in Sources */,
 				C88EB7A3205A9D4D008092BB /* YCGMeViewController.m in Sources */,
+				C876A46920622B2B0048728C /* CycleImageViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
