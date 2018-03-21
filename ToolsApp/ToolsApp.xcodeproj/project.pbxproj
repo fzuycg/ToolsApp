@@ -32,10 +32,10 @@
 		C876A446206102250048728C /* WaterFallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A445206102250048728C /* WaterFallViewController.m */; };
 		C876A44C2061034D0048728C /* WaterFallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A44B2061034D0048728C /* WaterFallCell.m */; };
 		C876A44F206105A70048728C /* WaterFallDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A44E206105A70048728C /* WaterFallDataModel.m */; };
-		C876A45320610B220048728C /* 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = C876A45020610B220048728C /* 2.plist */; };
-		C876A45420610B220048728C /* 3.plist in Resources */ = {isa = PBXBuildFile; fileRef = C876A45120610B220048728C /* 3.plist */; };
-		C876A45520610B220048728C /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = C876A45220610B220048728C /* 1.plist */; };
 		C876A45820610BDC0048728C /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A45720610BDC0048728C /* WaterFlowLayout.m */; };
+		C876A45D2062029C0048728C /* 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = C876A45A2062029C0048728C /* 2.plist */; };
+		C876A45E2062029C0048728C /* 3.plist in Resources */ = {isa = PBXBuildFile; fileRef = C876A45B2062029C0048728C /* 3.plist */; };
+		C876A45F2062029C0048728C /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = C876A45C2062029C0048728C /* 1.plist */; };
 		C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EB75A205A8FCB008092BB /* AppDelegate.m */; };
 		C88EB763205A8FCB008092BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88EB762205A8FCB008092BB /* Assets.xcassets */; };
 		C88EB766205A8FCB008092BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88EB764205A8FCB008092BB /* LaunchScreen.storyboard */; };
@@ -111,11 +111,11 @@
 		C876A44B2061034D0048728C /* WaterFallCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFallCell.m; sourceTree = "<group>"; };
 		C876A44D206105A70048728C /* WaterFallDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFallDataModel.h; sourceTree = "<group>"; };
 		C876A44E206105A70048728C /* WaterFallDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFallDataModel.m; sourceTree = "<group>"; };
-		C876A45020610B220048728C /* 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 2.plist; sourceTree = "<group>"; };
-		C876A45120610B220048728C /* 3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3.plist; sourceTree = "<group>"; };
-		C876A45220610B220048728C /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
 		C876A45620610BDC0048728C /* WaterFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFlowLayout.h; sourceTree = "<group>"; };
 		C876A45720610BDC0048728C /* WaterFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFlowLayout.m; sourceTree = "<group>"; };
+		C876A45A2062029C0048728C /* 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 2.plist; sourceTree = "<group>"; };
+		C876A45B2062029C0048728C /* 3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3.plist; sourceTree = "<group>"; };
+		C876A45C2062029C0048728C /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
 		C88EB756205A8FCB008092BB /* ToolsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88EB759205A8FCB008092BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C88EB75A205A8FCB008092BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -349,8 +349,8 @@
 		C876A4412061018F0048728C /* 瀑布流 */ = {
 			isa = PBXGroup;
 			children = (
+				C876A459206202850048728C /* Source */,
 				C876A449206102730048728C /* Model */,
-				C876A448206102380048728C /* Source */,
 				C876A4472061022A0048728C /* View */,
 				C876A444206102250048728C /* WaterFallViewController.h */,
 				C876A445206102250048728C /* WaterFallViewController.m */,
@@ -381,16 +381,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C876A448206102380048728C /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				C876A45220610B220048728C /* 1.plist */,
-				C876A45020610B220048728C /* 2.plist */,
-				C876A45120610B220048728C /* 3.plist */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
 		C876A449206102730048728C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +390,16 @@
 				C876A45720610BDC0048728C /* WaterFlowLayout.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C876A459206202850048728C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C876A45C2062029C0048728C /* 1.plist */,
+				C876A45A2062029C0048728C /* 2.plist */,
+				C876A45B2062029C0048728C /* 3.plist */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		C88EB74D205A8FCB008092BB = {
@@ -661,9 +661,9 @@
 				C876A43C2060FFF40048728C /* image0.jpg in Resources */,
 				C876A4382060FFF40048728C /* image2.jpg in Resources */,
 				C876A4402060FFF40048728C /* image3.jpg in Resources */,
-				C876A45420610B220048728C /* 3.plist in Resources */,
-				C876A45520610B220048728C /* 1.plist in Resources */,
-				C876A45320610B220048728C /* 2.plist in Resources */,
+				C876A45E2062029C0048728C /* 3.plist in Resources */,
+				C876A45F2062029C0048728C /* 1.plist in Resources */,
+				C876A45D2062029C0048728C /* 2.plist in Resources */,
 				C876A43E2060FFF40048728C /* image12.gif in Resources */,
 				C85ACAB9205FA5DE008ED51A /* home_bgImage.jpg in Resources */,
 				C876A4392060FFF40048728C /* image4.jpg in Resources */,
