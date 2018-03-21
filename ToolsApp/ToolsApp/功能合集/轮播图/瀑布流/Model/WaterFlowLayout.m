@@ -38,25 +38,7 @@ static const UIEdgeInsets   DefaultInsets           = {10, 10, 10, 10};         
 #pragma mark - 设置layout结构和初始化等需要的数据
 //只执行一次
 - (void)prepareLayout {
-    // 初始化最大y值数组
-    [self.maxYs removeAllObjects];
-    int maxColumns = self.maxColumns;
     
-    for (NSUInteger i = 0; i < maxColumns; i++) {
-        [self.maxYs addObject:@(self.insets.top)];
-    }
-    
-    [self.attrsArray removeAllObjects];
-    
-    // 计算所有cell的布局属性
-    NSUInteger count = [self.collectionView numberOfItemsInSection:0];
-    
-    for (NSUInteger i = 0; i < count; i++) {
-        NSIndexPath *indexPath = [NSIndexPath indexPathForItem:i inSection:0];
-        UICollectionViewLayoutAttributes *attrs = [self layoutAttributesForItemAtIndexPath:indexPath];
-        [self.attrsArray addObject:attrs];
-        
-    }
 }
 
 #pragma mark - 开启自动华布局

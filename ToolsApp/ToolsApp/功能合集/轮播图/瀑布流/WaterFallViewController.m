@@ -30,7 +30,7 @@ static NSString *cellId = @"waterFallCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.dataArray addObjectsFromArray:[WaterFallDataModel mj_objectArrayWithFilename:@"2.plist"]];
+    [self.dataArray addObjectsFromArray:[WaterFallDataModel mj_objectArrayWithFilename:@"1.plist"]];
     
     WaterFlowLayout *flowLayout = [[WaterFlowLayout alloc] init];
     flowLayout.delegate = self;
