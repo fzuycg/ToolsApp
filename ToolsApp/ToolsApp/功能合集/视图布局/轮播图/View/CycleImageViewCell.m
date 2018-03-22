@@ -32,7 +32,7 @@
 - (void)setModel:(CycleImageModel *)model {
     _model = model;
     if ([model.imageUrl isValidUrl]) {
-        [_imageView sd_setImageWithURL:[NSURL URLWithString:model.imageUrl] placeholderImage:[UIImage imageNamed:@""]];
+        [_imageView sd_setImageWithURL:[NSURL URLWithString:model.imageUrl] placeholderImage:[UIImage imageNamed:@"image0.jpg"]];
     }else{
         _imageView.image = [UIImage imageNamed:model.imageUrl];
     }

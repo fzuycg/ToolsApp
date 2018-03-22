@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C820B20B206353AF00C80A4C /* i2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B206206353AF00C80A4C /* i2.jpg */; };
+		C820B20C206353AF00C80A4C /* i5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B207206353AF00C80A4C /* i5.jpg */; };
+		C820B20D206353AF00C80A4C /* i4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B208206353AF00C80A4C /* i4.jpg */; };
+		C820B20E206353AF00C80A4C /* i1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B209206353AF00C80A4C /* i1.jpg */; };
+		C820B20F206353AF00C80A4C /* i3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B20A206353AF00C80A4C /* i3.jpg */; };
 		C85ACAAA205F5087008ED51A /* YCGGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C85ACAA9205F5087008ED51A /* YCGGuidePageView.m */; };
 		C85ACAB0205F657A008ED51A /* guide_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85ACAAC205F6579008ED51A /* guide_02.jpg */; };
 		C85ACAB1205F657A008ED51A /* guide_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85ACAAD205F6579008ED51A /* guide_01.jpg */; };
@@ -43,6 +48,10 @@
 		C876A47020622CD80048728C /* CycleImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A46F20622CD80048728C /* CycleImageModel.m */; };
 		C876A473206230830048728C /* NSString+RegexCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A472206230830048728C /* NSString+RegexCategory.m */; };
 		C876A47620623D810048728C /* cycleImage.plist in Resources */ = {isa = PBXBuildFile; fileRef = C876A47520623D810048728C /* cycleImage.plist */; };
+		C876A4792062505D0048728C /* CardLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A4782062505D0048728C /* CardLayoutViewController.m */; };
+		C876A47E206251FE0048728C /* CardFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A47D206251FE0048728C /* CardFlowLayout.m */; };
+		C876A4812062529C0048728C /* CardLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A4802062529C0048728C /* CardLayoutCell.m */; };
+		C876A488206256130048728C /* CardLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A487206256130048728C /* CardLayoutView.m */; };
 		C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EB75A205A8FCB008092BB /* AppDelegate.m */; };
 		C88EB763205A8FCB008092BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88EB762205A8FCB008092BB /* Assets.xcassets */; };
 		C88EB766205A8FCB008092BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88EB764205A8FCB008092BB /* LaunchScreen.storyboard */; };
@@ -83,6 +92,11 @@
 		4B629192B0ECE3A007F659F9 /* libPods-ToolsApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToolsApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F3157088BE96E80FB4545C1 /* Pods-ToolsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToolsApp/Pods-ToolsApp.release.xcconfig"; sourceTree = "<group>"; };
 		ABE226E4533FD9A918EE24B5 /* Pods-ToolsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToolsApp/Pods-ToolsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C820B206206353AF00C80A4C /* i2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i2.jpg; sourceTree = "<group>"; };
+		C820B207206353AF00C80A4C /* i5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i5.jpg; sourceTree = "<group>"; };
+		C820B208206353AF00C80A4C /* i4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i4.jpg; sourceTree = "<group>"; };
+		C820B209206353AF00C80A4C /* i1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i1.jpg; sourceTree = "<group>"; };
+		C820B20A206353AF00C80A4C /* i3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i3.jpg; sourceTree = "<group>"; };
 		C85ACAA8205F5087008ED51A /* YCGGuidePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGGuidePageView.h; sourceTree = "<group>"; };
 		C85ACAA9205F5087008ED51A /* YCGGuidePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGGuidePageView.m; sourceTree = "<group>"; };
 		C85ACAAC205F6579008ED51A /* guide_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guide_02.jpg; sourceTree = "<group>"; };
@@ -136,6 +150,14 @@
 		C876A471206230830048728C /* NSString+RegexCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+RegexCategory.h"; sourceTree = "<group>"; };
 		C876A472206230830048728C /* NSString+RegexCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegexCategory.m"; sourceTree = "<group>"; };
 		C876A47520623D810048728C /* cycleImage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cycleImage.plist; sourceTree = "<group>"; };
+		C876A4772062505D0048728C /* CardLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardLayoutViewController.h; sourceTree = "<group>"; };
+		C876A4782062505D0048728C /* CardLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardLayoutViewController.m; sourceTree = "<group>"; };
+		C876A47C206251FE0048728C /* CardFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardFlowLayout.h; sourceTree = "<group>"; };
+		C876A47D206251FE0048728C /* CardFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardFlowLayout.m; sourceTree = "<group>"; };
+		C876A47F2062529C0048728C /* CardLayoutCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardLayoutCell.h; sourceTree = "<group>"; };
+		C876A4802062529C0048728C /* CardLayoutCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardLayoutCell.m; sourceTree = "<group>"; };
+		C876A486206256130048728C /* CardLayoutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardLayoutView.h; sourceTree = "<group>"; };
+		C876A487206256130048728C /* CardLayoutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardLayoutView.m; sourceTree = "<group>"; };
 		C88EB756205A8FCB008092BB /* ToolsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88EB759205A8FCB008092BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C88EB75A205A8FCB008092BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -214,6 +236,18 @@
 				4B629192B0ECE3A007F659F9 /* libPods-ToolsApp.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C820B2052063539900C80A4C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C820B209206353AF00C80A4C /* i1.jpg */,
+				C820B206206353AF00C80A4C /* i2.jpg */,
+				C820B20A206353AF00C80A4C /* i3.jpg */,
+				C820B208206353AF00C80A4C /* i4.jpg */,
+				C820B207206353AF00C80A4C /* i5.jpg */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		C85ACAA1205E5A2D008ED51A /* 功能合集 */ = {
@@ -369,6 +403,7 @@
 		C876A4412061018F0048728C /* 瀑布流 */ = {
 			isa = PBXGroup;
 			children = (
+				C876A485206253580048728C /* Layout */,
 				C876A459206202850048728C /* Source */,
 				C876A449206102730048728C /* Model */,
 				C876A4472061022A0048728C /* View */,
@@ -381,6 +416,11 @@
 		C876A4422061019B0048728C /* 卡片切换 */ = {
 			isa = PBXGroup;
 			children = (
+				C820B2052063539900C80A4C /* Source */,
+				C876A47B206251AA0048728C /* View */,
+				C876A47A206251A30048728C /* Layout */,
+				C876A4772062505D0048728C /* CardLayoutViewController.h */,
+				C876A4782062505D0048728C /* CardLayoutViewController.m */,
 			);
 			path = "卡片切换";
 			sourceTree = "<group>";
@@ -411,8 +451,6 @@
 			children = (
 				C876A44D206105A70048728C /* WaterFallDataModel.h */,
 				C876A44E206105A70048728C /* WaterFallDataModel.m */,
-				C876A45620610BDC0048728C /* WaterFlowLayout.h */,
-				C876A45720610BDC0048728C /* WaterFlowLayout.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -455,6 +493,35 @@
 				C876A47520623D810048728C /* cycleImage.plist */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		C876A47A206251A30048728C /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				C876A47C206251FE0048728C /* CardFlowLayout.h */,
+				C876A47D206251FE0048728C /* CardFlowLayout.m */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		C876A47B206251AA0048728C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C876A47F2062529C0048728C /* CardLayoutCell.h */,
+				C876A4802062529C0048728C /* CardLayoutCell.m */,
+				C876A486206256130048728C /* CardLayoutView.h */,
+				C876A487206256130048728C /* CardLayoutView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C876A485206253580048728C /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				C876A45620610BDC0048728C /* WaterFlowLayout.h */,
+				C876A45720610BDC0048728C /* WaterFlowLayout.m */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		C88EB74D205A8FCB008092BB = {
@@ -711,6 +778,7 @@
 			files = (
 				C88EB766205A8FCB008092BB /* LaunchScreen.storyboard in Resources */,
 				C876A43D2060FFF40048728C /* video1.mp4 in Resources */,
+				C820B20D206353AF00C80A4C /* i4.jpg in Resources */,
 				C85ACAB3205F657A008ED51A /* guide_03.jpg in Resources */,
 				C85ACAB1205F657A008ED51A /* guide_01.jpg in Resources */,
 				C876A4282060B78C0048728C /* LaunchAdData.json in Resources */,
@@ -721,12 +789,16 @@
 				C876A45E2062029C0048728C /* 3.plist in Resources */,
 				C876A47620623D810048728C /* cycleImage.plist in Resources */,
 				C876A45F2062029C0048728C /* 1.plist in Resources */,
+				C820B20F206353AF00C80A4C /* i3.jpg in Resources */,
 				C876A45D2062029C0048728C /* 2.plist in Resources */,
 				C876A43E2060FFF40048728C /* image12.gif in Resources */,
 				C85ACAB9205FA5DE008ED51A /* home_bgImage.jpg in Resources */,
 				C876A4392060FFF40048728C /* image4.jpg in Resources */,
+				C820B20C206353AF00C80A4C /* i5.jpg in Resources */,
 				C876A43B2060FFF40048728C /* image11.gif in Resources */,
 				C85ACAB0205F657A008ED51A /* guide_02.jpg in Resources */,
+				C820B20E206353AF00C80A4C /* i1.jpg in Resources */,
+				C820B20B206353AF00C80A4C /* i2.jpg in Resources */,
 				C876A43F2060FFF40048728C /* image1.jpg in Resources */,
 				C85ACAB2205F657A008ED51A /* guide_04.jpg in Resources */,
 				C88EB763205A8FCB008092BB /* Assets.xcassets in Resources */,
@@ -808,6 +880,7 @@
 				C876A473206230830048728C /* NSString+RegexCategory.m in Sources */,
 				C876A4252060B3800048728C /* LaunchAdManager.m in Sources */,
 				C88EB793205A9645008092BB /* NavigationController.m in Sources */,
+				C876A4812062529C0048728C /* CardLayoutCell.m in Sources */,
 				C88EB769205A8FCB008092BB /* main.m in Sources */,
 				C88EB7A6205A9D62008092BB /* YCGActivityViewController.m in Sources */,
 				C88EB790205A960F008092BB /* TabBarController.m in Sources */,
@@ -817,6 +890,7 @@
 				C85ACABD205FA69A008ED51A /* LaunchAdViewController.m in Sources */,
 				C876A462206227CC0048728C /* CyclePageViewController.m in Sources */,
 				C88EB79D205A9D1E008092BB /* YCGHomeViewController.m in Sources */,
+				C876A488206256130048728C /* CardLayoutView.m in Sources */,
 				C88EB7AD205B6731008092BB /* YCGHomeDataModel.m in Sources */,
 				C88EB7A0205A9D3E008092BB /* YCGFindViewController.m in Sources */,
 				C85ACAB7205F9DA1008ED51A /* GuidePageViewController.m in Sources */,
@@ -825,8 +899,10 @@
 				C876A44F206105A70048728C /* WaterFallDataModel.m in Sources */,
 				C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */,
 				C88EB79A205A9CC2008092BB /* BaseViewController.m in Sources */,
+				C876A4792062505D0048728C /* CardLayoutViewController.m in Sources */,
 				C88EB7A9205B6391008092BB /* BaseTableViewController.m in Sources */,
 				C876A47020622CD80048728C /* CycleImageModel.m in Sources */,
+				C876A47E206251FE0048728C /* CardFlowLayout.m in Sources */,
 				C876A45820610BDC0048728C /* WaterFlowLayout.m in Sources */,
 				C876A42E2060FDFA0048728C /* LayoutListViewController.m in Sources */,
 				C876A446206102250048728C /* WaterFallViewController.m in Sources */,

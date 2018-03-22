@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
     self.dataSoureArray =@[
-                           @{@"title":@"卡片切换",@"className":@""},
+                           @{@"title":@"卡片切换",@"className":@"CardLayoutViewController"},
                            @{@"title":@"瀑布流",@"className":@"WaterFallViewController"},
                            @{@"title":@"轮播图",@"className":@"CyclePageViewController"},
                            ];
