@@ -86,7 +86,7 @@
 #pragma mark - timer action
 - (void)startTimer
 {
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerCycleImageAction:) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(timerCycleImageAction:) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 - (void)stopTimer

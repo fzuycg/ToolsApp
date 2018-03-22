@@ -27,6 +27,8 @@
 
 - (void)createUI {
     self.contentView.backgroundColor = [UIColor yellowColor];
+    self.contentView.layer.cornerRadius = 15;
+    self.contentView.clipsToBounds = YES;
     
     _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.contentView.frame.size.width, self.contentView.frame.size.height/3*2)];
     [self.contentView addSubview:_imageView];

@@ -55,8 +55,8 @@
     [bar setBarTintColor:[UIColor colorWithRed:0.5 green:0.5 blue:0.8 alpha:1]];
     
     //设置导航栏背景图
-    //    UIImage *image = [UIImage imageNamed:@"Home-Page"];
-    //    [bar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+//    UIImage *image = [UIImage imageNamed:@"Home-Page"];
+//    [bar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
     
 }
 
@@ -68,9 +68,23 @@
         viewController.hidesBottomBarWhenPushed = YES;
         
         //设置返回按钮
-        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(back)];
+//        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(back)];
+        
+        //修改返回文字
+        viewController.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:nil action:nil];
+        //全部修改返回按钮,但是会失去右滑返回的手势
+        if (viewController.navigationItem.leftBarButtonItem ==nil && self.viewControllers.count >=1) {
+            
+            viewController.navigationItem.leftBarButtonItem = [self creatBackButton];
+        }
     }
     [super pushViewController:viewController animated:animated];
+}
+
+-(UIBarButtonItem *)creatBackButton
+{
+    return [[UIBarButtonItem alloc]initWithImage:[[UIImage imageNamed:@"back_item_btn"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]style:UIBarButtonItemStylePlain target:self action:@selector(back)];
+    
 }
 
 

@@ -549,14 +549,13 @@
 		C88EB758205A8FCB008092BB /* ToolsApp */ = {
 			isa = PBXGroup;
 			children = (
-				C88EB7B2205B92A3008092BB /* Utils */,
+				C88EB7B2205B92A3008092BB /* Utils(工具) */,
 				C85ACAA1205E5A2D008ED51A /* 功能合集 */,
-				C88EB797205A9C52008092BB /* ActivityController */,
-				C88EB796205A9C3D008092BB /* MeController */,
-				C88EB795205A9C19008092BB /* FindController */,
-				C88EB794205A9C03008092BB /* HomeController */,
-				C88EB78D205A9516008092BB /* TabBarAndNavigation */,
-				C88EB78C205A9362008092BB /* BaseViewController */,
+				C88EB797205A9C52008092BB /* ActivityController(活动) */,
+				C88EB796205A9C3D008092BB /* MeController(我的) */,
+				C88EB795205A9C19008092BB /* FindController(发现) */,
+				C88EB794205A9C03008092BB /* HomeController(首页) */,
+				C88EB78C205A9362008092BB /* BaseClass(基类) */,
 				C88EB78B205A92A0008092BB /* Supporting Files */,
 			);
 			path = ToolsApp;
@@ -594,9 +593,11 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C88EB78C205A9362008092BB /* BaseViewController */ = {
+		C88EB78C205A9362008092BB /* BaseClass(基类) */ = {
 			isa = PBXGroup;
 			children = (
+				C88EB78D205A9516008092BB /* NavigationController */,
+				C8D00ABD20638D2E00530149 /* TabbarController */,
 				C88EB798205A9CC2008092BB /* BaseViewController.h */,
 				C88EB799205A9CC2008092BB /* BaseViewController.m */,
 				C88EB7A7205B6391008092BB /* BaseTableViewController.h */,
@@ -604,21 +605,19 @@
 				C88EB7AE205B6769008092BB /* BaseModel.h */,
 				C88EB7AF205B6769008092BB /* BaseModel.m */,
 			);
-			path = BaseViewController;
+			path = "BaseClass(基类)";
 			sourceTree = "<group>";
 		};
-		C88EB78D205A9516008092BB /* TabBarAndNavigation */ = {
+		C88EB78D205A9516008092BB /* NavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				C88EB78E205A960F008092BB /* TabBarController.h */,
-				C88EB78F205A960F008092BB /* TabBarController.m */,
 				C88EB791205A9645008092BB /* NavigationController.h */,
 				C88EB792205A9645008092BB /* NavigationController.m */,
 			);
-			path = TabBarAndNavigation;
+			path = NavigationController;
 			sourceTree = "<group>";
 		};
-		C88EB794205A9C03008092BB /* HomeController */ = {
+		C88EB794205A9C03008092BB /* HomeController(首页) */ = {
 			isa = PBXGroup;
 			children = (
 				C88EB7AB205B6731008092BB /* YCGHomeDataModel.h */,
@@ -626,37 +625,37 @@
 				C88EB79B205A9D1E008092BB /* YCGHomeViewController.h */,
 				C88EB79C205A9D1E008092BB /* YCGHomeViewController.m */,
 			);
-			path = HomeController;
+			path = "HomeController(首页)";
 			sourceTree = "<group>";
 		};
-		C88EB795205A9C19008092BB /* FindController */ = {
+		C88EB795205A9C19008092BB /* FindController(发现) */ = {
 			isa = PBXGroup;
 			children = (
 				C88EB79E205A9D3E008092BB /* YCGFindViewController.h */,
 				C88EB79F205A9D3E008092BB /* YCGFindViewController.m */,
 			);
-			path = FindController;
+			path = "FindController(发现)";
 			sourceTree = "<group>";
 		};
-		C88EB796205A9C3D008092BB /* MeController */ = {
+		C88EB796205A9C3D008092BB /* MeController(我的) */ = {
 			isa = PBXGroup;
 			children = (
 				C88EB7A1205A9D4D008092BB /* YCGMeViewController.h */,
 				C88EB7A2205A9D4D008092BB /* YCGMeViewController.m */,
 			);
-			path = MeController;
+			path = "MeController(我的)";
 			sourceTree = "<group>";
 		};
-		C88EB797205A9C52008092BB /* ActivityController */ = {
+		C88EB797205A9C52008092BB /* ActivityController(活动) */ = {
 			isa = PBXGroup;
 			children = (
 				C88EB7A4205A9D62008092BB /* YCGActivityViewController.h */,
 				C88EB7A5205A9D62008092BB /* YCGActivityViewController.m */,
 			);
-			path = ActivityController;
+			path = "ActivityController(活动)";
 			sourceTree = "<group>";
 		};
-		C88EB7B2205B92A3008092BB /* Utils */ = {
+		C88EB7B2205B92A3008092BB /* Utils(工具) */ = {
 			isa = PBXGroup;
 			children = (
 				C876A4222060AE420048728C /* Networking */,
@@ -664,7 +663,16 @@
 				C876A471206230830048728C /* NSString+RegexCategory.h */,
 				C876A472206230830048728C /* NSString+RegexCategory.m */,
 			);
-			path = Utils;
+			path = "Utils(工具)";
+			sourceTree = "<group>";
+		};
+		C8D00ABD20638D2E00530149 /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				C88EB78E205A960F008092BB /* TabBarController.h */,
+				C88EB78F205A960F008092BB /* TabBarController.m */,
+			);
+			path = TabbarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

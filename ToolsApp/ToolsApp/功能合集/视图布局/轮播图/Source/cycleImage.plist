@@ -4,27 +4,27 @@
 <array>
 	<dict>
 		<key>imageUrl</key>
-		<string>http://s13.mogujie.cn/b7/bao/131012/vud8_kqywordekfbgo2dwgfjeg5sckzsew_310x426.jpg_200x999.jpg</string>
+		<string>http://c.hiphotos.baidu.com/zhidao/pic/item/1f178a82b9014a909461e9baa1773912b31bee5e.jpg</string>
 		<key>imageTip</key>
 		<string>123</string>
 	</dict>
 	<dict>
 		<key>imageUrl</key>
-		<string>http://s8.mogujie.cn/b7/bao/131008/9mzmv_kqyumx3ekfbhgzcugfjeg5sckzsew_500x700.jpg_200x999.jpg</string>
+		<string>http://b.hiphotos.baidu.com/zhidao/pic/item/a5c27d1ed21b0ef47a3cc0a7dbc451da80cb3e76.jpg</string>
 		<key>imageTip</key>
 		<string>321</string>
 	</dict>
 	<dict>
 		<key>imageUrl</key>
-		<string>http://s6.mogujie.cn/b7/bao/131011/q84oz_kqyw6tcwkfbguq2ugfjeg5sckzsew_400x542.jpg_200x999.jpg</string>
+		<string>http://d.hiphotos.baidu.com/zhidao/pic/item/279759ee3d6d55fb2166d92165224f4a20a4dd11.jpg</string>
 		<key>imageTip</key>
 		<string>213</string>
 	</dict>
-    <dict>
-        <key>imageUrl</key>
-        <string>http://s8.mogujie.cn/b7/bao/131008/9mzmv_kqyumx3ekfbhgzcugfjeg5sckzsew_500x700.jpg_200x999.jpg</string>
-        <key>imageTip</key>
-        <string>321</string>
-    </dict>
+	<dict>
+		<key>imageUrl</key>
+		<string>http://d.hiphotos.baidu.com/zhidao/pic/item/72f082025aafa40fe871b36bad64034f79f019d4.jpg</string>
+		<key>imageTip</key>
+		<string>231</string>
+	</dict>
 </array>
 </plist>

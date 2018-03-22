@@ -23,7 +23,6 @@
 //可以配置每个 item 的大小等属性,执行一次
 - (void)setupLayout
 {
-    
     CGFloat inset  = self.collectionView.bounds.size.width * (6/64.0f);
     //向下舍入
     inset = floor(inset);
@@ -88,9 +87,6 @@
         
     }
     
-//    diffrence =  self.collectionView.contentOffset.x - previousOffset;
-//    previousOffset = self.collectionView.contentOffset.x;
-    
     for (UICollectionViewLayoutAttributes *attribute in attributes)
     {
         [self applyTransformToLayoutAttributes:attribute];
@@ -122,7 +118,6 @@
 #pragma mark - Logica
 - (CGFloat)baseOffsetForView:(UIView *)view
 {
-    
     UICollectionViewCell *cell = (UICollectionViewCell *)view;
     CGFloat offset =  ([self.collectionView indexPathForCell:cell].section) * self.collectionView.bounds.size.width;
     
@@ -188,7 +183,7 @@
         
         t = CATransform3DRotate(t,angle, -1, 1, 0);
     
-    //      t = CATransform3DTranslate(t, 0, height, 0);
+//          t = CATransform3DTranslate(t, 0, height, 0);`
     
     return t;
 }

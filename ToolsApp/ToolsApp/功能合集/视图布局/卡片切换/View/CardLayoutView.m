@@ -58,17 +58,9 @@
         _collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:flowLayout];
         _collectionView.pagingEnabled = YES;        //开启分页
         _collectionView.showsHorizontalScrollIndicator = NO;
-//        _collectionView.bounces = NO;
+        _collectionView.bounces = NO;
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
-        
-        if (@available(iOS 10.0, *)) {
-            _collectionView.prefetchingEnabled = YES;
-        } else {
-            // Fallback on earlier versions
-        }
-        _collectionView.bouncesZoom = YES;
-        _collectionView.bounces = YES;
         
         [_collectionView registerClass:[CardLayoutCell class] forCellWithReuseIdentifier:kCellIdentifier];
         _collectionView.backgroundColor = [UIColor purpleColor];

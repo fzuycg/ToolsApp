@@ -65,7 +65,7 @@ static const UIEdgeInsets   DefaultInsets           = {10, 10, 10, 10};         
     return YES;
 }
 
-#pragma mark - 返回所有的cell的不就和数组
+#pragma mark - 返回所有的cell的布局和数组
 //返回所有的cell布局属性，多次执行
 -(NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
     //在preareLayout中已经生成
