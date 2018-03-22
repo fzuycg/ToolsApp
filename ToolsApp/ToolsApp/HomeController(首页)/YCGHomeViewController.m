@@ -21,10 +21,10 @@
                            //用于测试的页面
                            @{@"title":@"引导页面",@"className":@"GuidePageViewController"},
                            @{@"title":@"开屏广告",@"className":@"LaunchAdViewController"},
-                           @{@"title":@"基本动画",@"className":@"LaunchAdViewController"},
+                           @{@"title":@"基本动画",@"className":@""},
                            @{@"title":@"视图布局",@"className":@"LayoutListViewController"},
-                           @{@"title":@"启动通知",@"className":@"LaunchAdViewController"},
-                           @{@"title":@"自定义控件",@"className":@"LaunchAdViewController"},
+                           @{@"title":@"启动通知",@"className":@""},
+                           @{@"title":@"自定义控件",@"className":@"CustomViewController"},
                            ];
 }
 
