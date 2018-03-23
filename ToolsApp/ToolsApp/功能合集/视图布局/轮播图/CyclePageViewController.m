@@ -55,7 +55,7 @@
 
 #pragma mark - CycleImageViewDelegate
 - (void)didSelectItemAtIndex:(NSInteger)index {
-    NSLog(@"点击了%ld",(long)index);
+    DeLog(@"点击了%ld",(long)index);
 }
 
 @end

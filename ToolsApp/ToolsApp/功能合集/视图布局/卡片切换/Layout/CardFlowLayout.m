@@ -28,7 +28,7 @@
     inset = floor(inset);
     
     self.itemSize = CGSizeMake(self.collectionView.bounds.size.width - (2 *inset), self.collectionView.bounds.size.height * 3/4);
-    //上线左右的边界
+    //上下左右的边界
     self.sectionInset = UIEdgeInsetsMake(0,inset, 0,inset);
     //设置滑动方向
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;

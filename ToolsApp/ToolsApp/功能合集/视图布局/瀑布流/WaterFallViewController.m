@@ -62,7 +62,7 @@ static NSString *cellId = @"waterFallCell";
 
 #pragma mark - UICollectionDelegate
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"点击了");
+    DeLog(@"点击了");
 }
 
 #pragma mark - WaterFlowLayoutDelegate

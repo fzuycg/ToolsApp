@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
     self.dataSoureArray =@[
-                           @{@"title":@"自定义",@"className":@""},
+                           @{@"title":@"打印机",@"className":@"PrintLabelViewController"},
                            @{@"title":@"跑马灯",@"className":@"MarqueeLabelViewController"},
                            ];
 }
