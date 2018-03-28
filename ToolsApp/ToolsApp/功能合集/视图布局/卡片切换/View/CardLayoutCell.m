@@ -8,7 +8,6 @@
 
 #import "CardLayoutCell.h"
 #import <UIImageView+WebCache.h>
-#import "NSString+RegexCategory.h"
 
 @interface CardLayoutCell()
 @property (nonatomic, retain) UIImageView *imageView;

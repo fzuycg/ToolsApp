@@ -9,9 +9,17 @@
 #ifndef Define_h
 #define Define_h
 
+//-------------------设备尺寸------------------------
+//NavBar高度
+#define StatusBar_HEIGHT   [[UIApplication sharedApplication] statusBarFrame].size.height
+#define NavigationBar_HEIGHT 44
+
+#define Navigation_HEIGHT StatusBar_HEIGHT+NavigationBar_HEIGHT
+
 #define kScreen_height  [[UIScreen mainScreen] bounds].size.height
 #define kScreen_width   [[UIScreen mainScreen] bounds].size.width
 
+//--------------------颜色--------------------------
 //格式0xdae8a6
 #define JDCOLOR_FROM_RGB_OxFF_ALPHA(rgbValue,al)                    \
 [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \

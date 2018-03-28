@@ -25,6 +25,7 @@
                            @{@"title":@"视图布局",@"className":@"LayoutListViewController"},
                            @{@"title":@"启动通知",@"className":@""},
                            @{@"title":@"自定义控件",@"className":@"CustomViewController"},
+                           @{@"title":@"浏览器",@"className":@"WebBrowserViewController"},
                            ];
 }
 

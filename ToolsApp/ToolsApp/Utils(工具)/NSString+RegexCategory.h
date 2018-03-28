@@ -14,4 +14,7 @@
 /** 判断是否是url */
 - (BOOL)isValidUrl;
 
+/** 判断是否安全(不为空) */
+- (BOOL)stringIsSafe;
+
 @end

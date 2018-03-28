@@ -23,7 +23,7 @@
 //可以配置每个 item 的大小等属性,执行一次
 - (void)setupLayout
 {
-    CGFloat inset  = self.collectionView.bounds.size.width * (6/64.0f);
+    CGFloat inset  = self.collectionView.bounds.size.width * (6/64.0f);//边宽
     //向下舍入
     inset = floor(inset);
     
@@ -112,8 +112,33 @@
     }
 }
 
+#pragma mark - Transform Related Calculation
+- (CATransform3D)transformFromView:(UIView *)view
+{
+    CGFloat angle = [self angleForView:view];
+    CGFloat height = [self heightOffsetForView:view];
+    BOOL xAxis = [self xAxisForView:view];
+    return [self transformfromAngle:angle height:height xAxis:xAxis];
+}
 
 
+- (CATransform3D)transformfromAngle:(CGFloat )angle height:(CGFloat) height xAxis:(BOOL)axis
+{
+    CATransform3D t = CATransform3DIdentity;
+    t.m34  = 1.0/-500;
+    
+    if (axis)
+        
+        t = CATransform3DRotate(t,angle, 1, 1, 0);
+    
+    else
+        
+        t = CATransform3DRotate(t,angle, -1, 1, 0);
+    
+//          t = CATransform3DTranslate(t, 0, height, 0);
+    
+    return t;
+}
 
 #pragma mark - Logica
 - (CGFloat)baseOffsetForView:(UIView *)view
@@ -161,44 +186,16 @@
     
 }
 
-#pragma mark - Transform Related Calculation
-- (CATransform3D)transformFromView:(UIView *)view
-{
-    CGFloat angle = [self angleForView:view];
-    CGFloat height = [self heightOffsetForView:view];
-    BOOL xAxis = [self xAxisForView:view];
-    return [self transformfromAngle:angle height:height xAxis:xAxis];
-}
 
-- (CATransform3D)transformfromAngle:(CGFloat )angle height:(CGFloat) height xAxis:(BOOL)axis
-{
-    CATransform3D t = CATransform3DIdentity;
-    t.m34  = 1.0/-500;
-    
-    if (axis)
-        
-        t = CATransform3DRotate(t,angle, 1, 1, 0);
-    
-    else
-        
-        t = CATransform3DRotate(t,angle, -1, 1, 0);
-    
-//          t = CATransform3DTranslate(t, 0, height, 0);`
-    
-    return t;
-}
-
-
-
+/** ⚠️在此处根本没有调用此方法 */
 //返回每个cell的布局属性
 //测试得出shouldInvalidateLayoutForBoundsChange返回 NO 的时候以下方法不执行
-
-- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    UICollectionViewLayoutAttributes *attributes = [super layoutAttributesForItemAtIndexPath:indexPath];
-    [self applyTransformToLayoutAttributes:attributes];
-    return attributes;
-}
+//- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    UICollectionViewLayoutAttributes *attributes = [super layoutAttributesForItemAtIndexPath:indexPath];
+//    [self applyTransformToLayoutAttributes:attributes];
+//    return attributes;
+//}
 
 
 @end

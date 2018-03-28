@@ -22,7 +22,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-//    [[LaunchAdManager shareManager] loadData];
+    [[LaunchAdManager shareManager] loadData];
 }
 
 @end

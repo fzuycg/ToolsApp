@@ -12,6 +12,7 @@
 		C820B20D206353AF00C80A4C /* i4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B208206353AF00C80A4C /* i4.jpg */; };
 		C820B20E206353AF00C80A4C /* i1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B209206353AF00C80A4C /* i1.jpg */; };
 		C820B20F206353AF00C80A4C /* i3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B20A206353AF00C80A4C /* i3.jpg */; };
+		C84193D0206A1552009CA6C6 /* WebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84193CF206A1552009CA6C6 /* WebBrowserViewController.m */; };
 		C85ACAAA205F5087008ED51A /* YCGGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C85ACAA9205F5087008ED51A /* YCGGuidePageView.m */; };
 		C85ACAB0205F657A008ED51A /* guide_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85ACAAC205F6579008ED51A /* guide_02.jpg */; };
 		C85ACAB1205F657A008ED51A /* guide_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85ACAAD205F6579008ED51A /* guide_01.jpg */; };
@@ -105,6 +106,8 @@
 		C820B208206353AF00C80A4C /* i4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i4.jpg; sourceTree = "<group>"; };
 		C820B209206353AF00C80A4C /* i1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i1.jpg; sourceTree = "<group>"; };
 		C820B20A206353AF00C80A4C /* i3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i3.jpg; sourceTree = "<group>"; };
+		C84193CE206A1552009CA6C6 /* WebBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebBrowserViewController.h; sourceTree = "<group>"; };
+		C84193CF206A1552009CA6C6 /* WebBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebBrowserViewController.m; sourceTree = "<group>"; };
 		C85ACAA8205F5087008ED51A /* YCGGuidePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGGuidePageView.h; sourceTree = "<group>"; };
 		C85ACAA9205F5087008ED51A /* YCGGuidePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGGuidePageView.m; sourceTree = "<group>"; };
 		C85ACAAC205F6579008ED51A /* guide_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guide_02.jpg; sourceTree = "<group>"; };
@@ -273,9 +276,19 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		C84193CD206A14F5009CA6C6 /* 浏览器封装 */ = {
+			isa = PBXGroup;
+			children = (
+				C84193CE206A1552009CA6C6 /* WebBrowserViewController.h */,
+				C84193CF206A1552009CA6C6 /* WebBrowserViewController.m */,
+			);
+			path = "浏览器封装";
+			sourceTree = "<group>";
+		};
 		C85ACAA1205E5A2D008ED51A /* 功能合集 */ = {
 			isa = PBXGroup;
 			children = (
+				C84193CD206A14F5009CA6C6 /* 浏览器封装 */,
 				C85ACABE205FB596008ED51A /* 自定义控件 */,
 				C85ACAA7205E64A5008ED51A /* 视图布局 */,
 				C85ACAA6205E6493008ED51A /* 启动通知 */,
@@ -984,6 +997,7 @@
 				C876A462206227CC0048728C /* CyclePageViewController.m in Sources */,
 				C88EB79D205A9D1E008092BB /* YCGHomeViewController.m in Sources */,
 				C876A488206256130048728C /* CardLayoutView.m in Sources */,
+				C84193D0206A1552009CA6C6 /* WebBrowserViewController.m in Sources */,
 				C8C1B0392063D59B007BE1BD /* BaseViewController.m in Sources */,
 				C88EB7AD205B6731008092BB /* YCGHomeDataModel.m in Sources */,
 				C88EB7A0205A9D3E008092BB /* YCGFindViewController.m in Sources */,

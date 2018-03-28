@@ -17,4 +17,8 @@
     return [urlTest evaluateWithObject:self];
 }
 
+- (BOOL)stringIsSafe {
+    return !([self isEqual:[NSNull null]] || (self == nil) || [@"null" isEqual:self] || [@"(null)" isEqual:self] || [@"<null>" isEqual:self] || self.length == 0);
+}
+
 @end

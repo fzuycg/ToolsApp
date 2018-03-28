@@ -43,7 +43,6 @@
                        @{@"imageUrl":@"i2.jpg",@"imageTip":@"BBBBBB"},
                        @{@"imageUrl":@"i3.jpg",@"imageTip":@"CCCCCC"},
                        @{@"imageUrl":@"i4.jpg",@"imageTip":@"DDDDDD"},
-                       @{@"imageUrl":@"i5.jpg",@"imageTip":@"EEEEEE"},
                        ];
     
     [self.dataArray addObjectsFromArray:[CycleImageModel mj_objectArrayWithKeyValuesArray:array]];

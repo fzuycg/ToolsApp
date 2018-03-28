@@ -55,17 +55,16 @@
     if (!_collectionView) {
         CardFlowLayout *flowLayout = [[CardFlowLayout alloc] init];
         
-        _collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:flowLayout];
+        _collectionView = [[UICollectionView alloc] initWithFrame:self.frame collectionViewLayout:flowLayout];
         _collectionView.pagingEnabled = YES;        //开启分页
-        _collectionView.showsHorizontalScrollIndicator = NO;
-        _collectionView.bounces = NO;
+        _collectionView.showsHorizontalScrollIndicator = YES;
+        _collectionView.bounces = YES;
+        _collectionView.bouncesZoom = YES;
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
         
         [_collectionView registerClass:[CardLayoutCell class] forCellWithReuseIdentifier:kCellIdentifier];
         _collectionView.backgroundColor = [UIColor purpleColor];
-        [self addSubview:_collectionView];
-        
         [self addSubview:_collectionView];
     }
     return _collectionView;

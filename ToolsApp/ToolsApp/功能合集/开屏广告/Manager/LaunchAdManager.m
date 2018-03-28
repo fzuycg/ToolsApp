@@ -60,10 +60,6 @@
     }];
 }
 
-- (void)setupLaunchAd {
-    
-}
-
 
 #pragma mark - 图片开屏广告-网络数据-示例
 -(void)exampleImage:(LaunchAdModel *)model

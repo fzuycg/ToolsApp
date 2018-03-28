@@ -8,7 +8,6 @@
 
 #import "CycleImageViewCell.h"
 #import <UIImageView+WebCache.h>
-#import "NSString+RegexCategory.h"
 
 @interface CycleImageViewCell ()
 @property (nonatomic, retain) UIImageView *imageView;
