@@ -16,16 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"功能模块";
     
     self.dataSoureArray =@[
-                           //用于测试的页面
-                           @{@"title":@"引导页面",@"className":@"GuidePageViewController"},
-                           @{@"title":@"开屏广告",@"className":@"LaunchAdViewController"},
-                           @{@"title":@"基本动画",@"className":@""},
-                           @{@"title":@"视图布局",@"className":@"LayoutListViewController"},
-                           @{@"title":@"启动通知",@"className":@""},
-                           @{@"title":@"自定义控件",@"className":@"CustomViewController"},
+                           @{@"title":@"1、启动相关",@"className":@"LaunchViewController"},
+                           @{@"title":@"2、自定义相关",@"className":@"DIYViewController"},
+                           @{@"title":@"3、视图布局",@"className":@"LayoutListViewController"},
+                           @{@"title":@"4、系统功能",@"className":@""},
                            @{@"title":@"浏览器",@"className":@"WebBrowserViewController"},
+                           @{@"title":@"动画相关",@"className":@""},
                            ];
 }
 

@@ -13,6 +13,12 @@
 		C820B20E206353AF00C80A4C /* i1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B209206353AF00C80A4C /* i1.jpg */; };
 		C820B20F206353AF00C80A4C /* i3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B20A206353AF00C80A4C /* i3.jpg */; };
 		C84193D0206A1552009CA6C6 /* WebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84193CF206A1552009CA6C6 /* WebBrowserViewController.m */; };
+		C84193D3206B83A6009CA6C6 /* LaunchNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84193D2206B83A6009CA6C6 /* LaunchNoticeViewController.m */; };
+		C84193D7206B8458009CA6C6 /* LaunchNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C84193D6206B8458009CA6C6 /* LaunchNoticeView.m */; };
+		C84193DB206B86BB009CA6C6 /* DIYPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84193DA206B86BB009CA6C6 /* DIYPopViewController.m */; };
+		C84193DF206B86EC009CA6C6 /* HubMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C84193DE206B86EC009CA6C6 /* HubMessageView.m */; };
+		C84E59FD206C85290011B307 /* DIYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84E59FC206C85290011B307 /* DIYViewController.m */; };
+		C84E5A00206C85E60011B307 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84E59FF206C85E60011B307 /* LaunchViewController.m */; };
 		C85ACAAA205F5087008ED51A /* YCGGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C85ACAA9205F5087008ED51A /* YCGGuidePageView.m */; };
 		C85ACAB0205F657A008ED51A /* guide_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85ACAAC205F6579008ED51A /* guide_02.jpg */; };
 		C85ACAB1205F657A008ED51A /* guide_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85ACAAD205F6579008ED51A /* guide_01.jpg */; };
@@ -108,6 +114,18 @@
 		C820B20A206353AF00C80A4C /* i3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i3.jpg; sourceTree = "<group>"; };
 		C84193CE206A1552009CA6C6 /* WebBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebBrowserViewController.h; sourceTree = "<group>"; };
 		C84193CF206A1552009CA6C6 /* WebBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebBrowserViewController.m; sourceTree = "<group>"; };
+		C84193D1206B83A6009CA6C6 /* LaunchNoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchNoticeViewController.h; sourceTree = "<group>"; };
+		C84193D2206B83A6009CA6C6 /* LaunchNoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchNoticeViewController.m; sourceTree = "<group>"; };
+		C84193D5206B8458009CA6C6 /* LaunchNoticeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchNoticeView.h; sourceTree = "<group>"; };
+		C84193D6206B8458009CA6C6 /* LaunchNoticeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchNoticeView.m; sourceTree = "<group>"; };
+		C84193D9206B86BB009CA6C6 /* DIYPopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYPopViewController.h; sourceTree = "<group>"; };
+		C84193DA206B86BB009CA6C6 /* DIYPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYPopViewController.m; sourceTree = "<group>"; };
+		C84193DD206B86EC009CA6C6 /* HubMessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HubMessageView.h; sourceTree = "<group>"; };
+		C84193DE206B86EC009CA6C6 /* HubMessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HubMessageView.m; sourceTree = "<group>"; };
+		C84E59FB206C85290011B307 /* DIYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYViewController.h; sourceTree = "<group>"; };
+		C84E59FC206C85290011B307 /* DIYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYViewController.m; sourceTree = "<group>"; };
+		C84E59FE206C85E60011B307 /* LaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		C84E59FF206C85E60011B307 /* LaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		C85ACAA8205F5087008ED51A /* YCGGuidePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGGuidePageView.h; sourceTree = "<group>"; };
 		C85ACAA9205F5087008ED51A /* YCGGuidePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGGuidePageView.m; sourceTree = "<group>"; };
 		C85ACAAC205F6579008ED51A /* guide_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guide_02.jpg; sourceTree = "<group>"; };
@@ -285,28 +303,85 @@
 			path = "浏览器封装";
 			sourceTree = "<group>";
 		};
+		C84193D4206B83AF009CA6C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C84193D5206B8458009CA6C6 /* LaunchNoticeView.h */,
+				C84193D6206B8458009CA6C6 /* LaunchNoticeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C84193D8206B867D009CA6C6 /* 2.2、自定义弹出视图 */ = {
+			isa = PBXGroup;
+			children = (
+				C84193DC206B86CC009CA6C6 /* HubMessageView */,
+				C84193D9206B86BB009CA6C6 /* DIYPopViewController.h */,
+				C84193DA206B86BB009CA6C6 /* DIYPopViewController.m */,
+			);
+			path = "2.2、自定义弹出视图";
+			sourceTree = "<group>";
+		};
+		C84193DC206B86CC009CA6C6 /* HubMessageView */ = {
+			isa = PBXGroup;
+			children = (
+				C84193DD206B86EC009CA6C6 /* HubMessageView.h */,
+				C84193DE206B86EC009CA6C6 /* HubMessageView.m */,
+			);
+			path = HubMessageView;
+			sourceTree = "<group>";
+		};
+		C84E59F9206C84500011B307 /* 1、启动相关 */ = {
+			isa = PBXGroup;
+			children = (
+				C85ACAA6205E6493008ED51A /* 1.3、启动通知 */,
+				C85ACAA5205E6481008ED51A /* 1.2、引导页面 */,
+				C85ACAA4205E646B008ED51A /* 1.1、开屏广告 */,
+				C84E59FE206C85E60011B307 /* LaunchViewController.h */,
+				C84E59FF206C85E60011B307 /* LaunchViewController.m */,
+			);
+			path = "1、启动相关";
+			sourceTree = "<group>";
+		};
+		C84E59FA206C84940011B307 /* 2、自定义相关 */ = {
+			isa = PBXGroup;
+			children = (
+				C84193D8206B867D009CA6C6 /* 2.2、自定义弹出视图 */,
+				C85ACABE205FB596008ED51A /* 2.1、自定义控件 */,
+				C84E59FB206C85290011B307 /* DIYViewController.h */,
+				C84E59FC206C85290011B307 /* DIYViewController.m */,
+			);
+			path = "2、自定义相关";
+			sourceTree = "<group>";
+		};
+		C84E5A01206C89090011B307 /* 4、系统功能 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "4、系统功能";
+			sourceTree = "<group>";
+		};
 		C85ACAA1205E5A2D008ED51A /* 功能合集 */ = {
 			isa = PBXGroup;
 			children = (
+				C84E5A01206C89090011B307 /* 4、系统功能 */,
+				C85ACAA7205E64A5008ED51A /* 3、视图布局 */,
+				C84E59FA206C84940011B307 /* 2、自定义相关 */,
+				C84E59F9206C84500011B307 /* 1、启动相关 */,
 				C84193CD206A14F5009CA6C6 /* 浏览器封装 */,
-				C85ACABE205FB596008ED51A /* 自定义控件 */,
-				C85ACAA7205E64A5008ED51A /* 视图布局 */,
-				C85ACAA6205E6493008ED51A /* 启动通知 */,
-				C85ACAA5205E6481008ED51A /* 引导页面 */,
-				C85ACAA4205E646B008ED51A /* 开屏广告 */,
-				C85ACAA3205E5A74008ED51A /* 基本动画 */,
+				C85ACAA3205E5A74008ED51A /* 动画相关 */,
 			);
 			path = "功能合集";
 			sourceTree = "<group>";
 		};
-		C85ACAA3205E5A74008ED51A /* 基本动画 */ = {
+		C85ACAA3205E5A74008ED51A /* 动画相关 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "基本动画";
+			path = "动画相关";
 			sourceTree = "<group>";
 		};
-		C85ACAA4205E646B008ED51A /* 开屏广告 */ = {
+		C85ACAA4205E646B008ED51A /* 1.1、开屏广告 */ = {
 			isa = PBXGroup;
 			children = (
 				C876A4262060B7480048728C /* Source */,
@@ -315,36 +390,39 @@
 				C85ACABB205FA69A008ED51A /* LaunchAdViewController.h */,
 				C85ACABC205FA69A008ED51A /* LaunchAdViewController.m */,
 			);
-			path = "开屏广告";
+			path = "1.1、开屏广告";
 			sourceTree = "<group>";
 		};
-		C85ACAA5205E6481008ED51A /* 引导页面 */ = {
+		C85ACAA5205E6481008ED51A /* 1.2、引导页面 */ = {
 			isa = PBXGroup;
 			children = (
 				C85ACAB4205F9917008ED51A /* GuidePageView */,
 				C85ACAB5205F9DA1008ED51A /* GuidePageViewController.h */,
 				C85ACAB6205F9DA1008ED51A /* GuidePageViewController.m */,
 			);
-			path = "引导页面";
+			path = "1.2、引导页面";
 			sourceTree = "<group>";
 		};
-		C85ACAA6205E6493008ED51A /* 启动通知 */ = {
+		C85ACAA6205E6493008ED51A /* 1.3、启动通知 */ = {
 			isa = PBXGroup;
 			children = (
+				C84193D4206B83AF009CA6C6 /* View */,
+				C84193D1206B83A6009CA6C6 /* LaunchNoticeViewController.h */,
+				C84193D2206B83A6009CA6C6 /* LaunchNoticeViewController.m */,
 			);
-			path = "启动通知";
+			path = "1.3、启动通知";
 			sourceTree = "<group>";
 		};
-		C85ACAA7205E64A5008ED51A /* 视图布局 */ = {
+		C85ACAA7205E64A5008ED51A /* 3、视图布局 */ = {
 			isa = PBXGroup;
 			children = (
-				C876A443206101B30048728C /* 轮播图 */,
-				C876A4422061019B0048728C /* 卡片切换 */,
-				C876A4412061018F0048728C /* 瀑布流 */,
+				C876A443206101B30048728C /* 3.3、轮播图 */,
+				C876A4412061018F0048728C /* 3.2、瀑布流 */,
+				C876A4422061019B0048728C /* 3.1、卡片切换 */,
 				C876A42C2060FDFA0048728C /* LayoutListViewController.h */,
 				C876A42D2060FDFA0048728C /* LayoutListViewController.m */,
 			);
-			path = "视图布局";
+			path = "3、视图布局";
 			sourceTree = "<group>";
 		};
 		C85ACAAB205F64F6008ED51A /* image */ = {
@@ -378,7 +456,7 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		C85ACABE205FB596008ED51A /* 自定义控件 */ = {
+		C85ACABE205FB596008ED51A /* 2.1、自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
 				C85ACAC0205FB5C9008ED51A /* CustomButton */,
@@ -386,7 +464,7 @@
 				C8C1B01E206391D4007BE1BD /* CustomViewController.h */,
 				C8C1B01F206391D4007BE1BD /* CustomViewController.m */,
 			);
-			path = "自定义控件";
+			path = "2.1、自定义控件";
 			sourceTree = "<group>";
 		};
 		C85ACABF205FB5BF008ED51A /* CustomLabel */ = {
@@ -442,7 +520,7 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
-		C876A4412061018F0048728C /* 瀑布流 */ = {
+		C876A4412061018F0048728C /* 3.2、瀑布流 */ = {
 			isa = PBXGroup;
 			children = (
 				C876A485206253580048728C /* Layout */,
@@ -452,10 +530,10 @@
 				C876A444206102250048728C /* WaterFallViewController.h */,
 				C876A445206102250048728C /* WaterFallViewController.m */,
 			);
-			path = "瀑布流";
+			path = "3.2、瀑布流";
 			sourceTree = "<group>";
 		};
-		C876A4422061019B0048728C /* 卡片切换 */ = {
+		C876A4422061019B0048728C /* 3.1、卡片切换 */ = {
 			isa = PBXGroup;
 			children = (
 				C820B2052063539900C80A4C /* Source */,
@@ -464,10 +542,10 @@
 				C876A4772062505D0048728C /* CardLayoutViewController.h */,
 				C876A4782062505D0048728C /* CardLayoutViewController.m */,
 			);
-			path = "卡片切换";
+			path = "3.1、卡片切换";
 			sourceTree = "<group>";
 		};
-		C876A443206101B30048728C /* 轮播图 */ = {
+		C876A443206101B30048728C /* 3.3、轮播图 */ = {
 			isa = PBXGroup;
 			children = (
 				C876A47420623C690048728C /* Source */,
@@ -476,7 +554,7 @@
 				C876A460206227CB0048728C /* CyclePageViewController.h */,
 				C876A461206227CC0048728C /* CyclePageViewController.m */,
 			);
-			path = "轮播图";
+			path = "3.3、轮播图";
 			sourceTree = "<group>";
 		};
 		C876A4472061022A0048728C /* View */ = {
@@ -980,11 +1058,13 @@
 				C8C1B0332063A1A3007BE1BD /* MarqueeLabelViewController.m in Sources */,
 				C876A473206230830048728C /* NSString+RegexCategory.m in Sources */,
 				C876A4252060B3800048728C /* LaunchAdManager.m in Sources */,
+				C84193D3206B83A6009CA6C6 /* LaunchNoticeViewController.m in Sources */,
 				C8C1B02320639222007BE1BD /* MarqueeLabelView.m in Sources */,
 				C8C1B02920639C82007BE1BD /* UIView+Parameter.m in Sources */,
 				C88EB793205A9645008092BB /* NavigationController.m in Sources */,
 				C8C1B020206391D4007BE1BD /* CustomViewController.m in Sources */,
 				C876A4812062529C0048728C /* CardLayoutCell.m in Sources */,
+				C84193DF206B86EC009CA6C6 /* HubMessageView.m in Sources */,
 				C88EB769205A8FCB008092BB /* main.m in Sources */,
 				C88EB7A6205A9D62008092BB /* YCGActivityViewController.m in Sources */,
 				C8C1B03C2063D735007BE1BD /* PrintLabelViewController.m in Sources */,
@@ -1004,6 +1084,7 @@
 				C85ACAB7205F9DA1008ED51A /* GuidePageViewController.m in Sources */,
 				C85ACAAA205F5087008ED51A /* YCGGuidePageView.m in Sources */,
 				C876A4212060AE310048728C /* LaunchAdModel.m in Sources */,
+				C84E59FD206C85290011B307 /* DIYViewController.m in Sources */,
 				C876A44F206105A70048728C /* WaterFallDataModel.m in Sources */,
 				C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */,
 				C876A4792062505D0048728C /* CardLayoutViewController.m in Sources */,
@@ -1015,9 +1096,12 @@
 				C876A446206102250048728C /* WaterFallViewController.m in Sources */,
 				C876A42B2060BC760048728C /* Network.m in Sources */,
 				C8C1B03F2063D775007BE1BD /* PrintLabel.m in Sources */,
+				C84E5A00206C85E60011B307 /* LaunchViewController.m in Sources */,
 				C876A46620622AF50048728C /* CycleImageView.m in Sources */,
 				C88EB7A3205A9D4D008092BB /* YCGMeViewController.m in Sources */,
+				C84193DB206B86BB009CA6C6 /* DIYPopViewController.m in Sources */,
 				C876A46920622B2B0048728C /* CycleImageViewCell.m in Sources */,
+				C84193D7206B8458009CA6C6 /* LaunchNoticeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
