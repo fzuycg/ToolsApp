@@ -37,7 +37,7 @@
     [self addChildViewController:homeVC title:@"首页" imageNamed:@"tabBar_home"];
     //2
     YCGActivityViewController *activityVC = [[YCGActivityViewController alloc] init];
-    [self addChildViewController:activityVC title:@"活动" imageNamed:@"tabBar_activity"];
+    [self addChildViewController:activityVC title:@"消息" imageNamed:@"tabBar_message"];
     //3
     YCGFindViewController *findVC = [[YCGFindViewController alloc] init];
     [self addChildViewController:findVC title:@"发现" imageNamed:@"tabBar_find"];
