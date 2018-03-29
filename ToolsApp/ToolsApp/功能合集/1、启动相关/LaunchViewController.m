@@ -18,8 +18,9 @@
     [super viewDidLoad];
     self.dataSoureArray =@[
                            @{@"title":@"开屏广告",@"className":@"LaunchAdViewController"},
-                           @{@"title":@"引导页面",@"className":@"GuidePageViewController"},
+                           @{@"title":@"引导页(页面展示)",@"className":@"GuidePageViewController"},
                            @{@"title":@"启动通知",@"className":@"LaunchNoticeViewController"},
+                           @{@"title":@"引导页(功能提示)",@"className":@"GuideTestViewController"},
                            ];
 }
 @end

@@ -18,7 +18,7 @@
     [super viewDidLoad];
     self.dataSoureArray =@[
                            @{@"title":@"获取手机信息",@"className":@"IPhoneInfoViewController"},
-                           @{@"title":@"分享功能",@"className":@""},
+                           @{@"title":@"分享功能",@"className":@"ShareViewController"},
                            ];
 }
 
