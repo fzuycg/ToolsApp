@@ -55,6 +55,8 @@
     vc.navigationItem.title = title;
     nav.tabBarItem.title = title;
     nav.tabBarItem.image = [UIImage imageNamed:imageNamed];
+    NSString *selectedImageName = [NSString stringWithFormat:@"%@_selected",imageNamed];
+    nav.tabBarItem.selectedImage = [UIImage imageNamed:selectedImageName];
     
     [self addChildViewController:nav];
 }
@@ -65,10 +67,6 @@
 {
     //设置UITabBarItem主题
     [self setupTabBarItemTheme];
-    
-    //设置UITabar主题
-    [self setupTabBarTheme];
-    
 }
 
 #pragma mark - 设置tabbarItem的主题
@@ -89,14 +87,6 @@
     
     //不可用状态
     [tabBarItem setTitleTextAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:12.0f]} forState:UIControlStateDisabled];
-    
-}
-
-#pragma mark - 设置tabbarItem的主题
-+ (void)setupTabBarTheme
-{
-    //这里可以更换自定义tabbar
-    //[self setValue:[[XMGTabBar alloc] init] forKeyPath:@"tabBar"];}
     
 }
 

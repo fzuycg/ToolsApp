@@ -86,12 +86,12 @@ static NSString *homeUrl = @"https://m.baidu.com";
 }
 
 - (void)createToolbarItem {
-    UIBarButtonItem *item0 = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"web_toolbar_back"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(goBack)];
+    UIBarButtonItem *item0 = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"web_toolbar_back"] style:UIBarButtonItemStylePlain target:self action:@selector(goBack)];
     item0.enabled = NO;
-    UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"web_toolbar_forward"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(goForward)];
+    UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"web_toolbar_forward"]style:UIBarButtonItemStylePlain target:self action:@selector(goForward)];
     item1.enabled = NO;
-    UIBarButtonItem *item2 = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"web_toolbar_refresh_select"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(refresh)];
-    UIBarButtonItem *item3 = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"web_toolbar_safari_select"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(openSafari)];
+    UIBarButtonItem *item2 = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"web_toolbar_refresh_select"] style:UIBarButtonItemStylePlain target:self action:@selector(refresh)];
+    UIBarButtonItem *item3 = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"web_toolbar_safari_select"] style:UIBarButtonItemStylePlain target:self action:@selector(openSafari)];
     UIBarButtonItem *itemInterval = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     
     self.toolbarItems = @[itemInterval,item0,itemInterval,item1,itemInterval,item2,itemInterval,item3,itemInterval];
@@ -158,13 +158,13 @@ static NSString *homeUrl = @"https://m.baidu.com";
     if (object == self.webView && [keyPath isEqualToString:@"canGoBack"]) {
         BOOL canGoBack = [[change objectForKey:NSKeyValueChangeNewKey] boolValue];
         self.item0.enabled = canGoBack;
-        [self.item0 setImage:[[UIImage imageNamed: canGoBack ? @"web_toolbar_back_select" : @"web_toolbar_back"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+        [self.item0 setImage:[UIImage imageNamed: canGoBack ? @"web_toolbar_back_select" : @"web_toolbar_back"]];
     }
     
     if (object == self.webView && [keyPath isEqualToString:@"canGoForward"]) {
         BOOL canGoForward = [[change objectForKey:NSKeyValueChangeNewKey] boolValue];
         self.item1.enabled = canGoForward;
-        [self.item1 setImage:[[UIImage imageNamed: canGoForward ? @"web_toolbar_forward_select" : @"web_toolbar_forward"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+        [self.item1 setImage:[UIImage imageNamed: canGoForward ? @"web_toolbar_forward_select" : @"web_toolbar_forward"]];
     }
     
     if (object == self.webView && [keyPath isEqualToString:@"title"]) {
