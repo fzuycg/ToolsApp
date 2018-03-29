@@ -22,9 +22,9 @@
                            @{@"title":@"1、启动相关",@"className":@"LaunchViewController"},
                            @{@"title":@"2、自定义相关",@"className":@"DIYViewController"},
                            @{@"title":@"3、视图布局",@"className":@"LayoutListViewController"},
-                           @{@"title":@"4、系统功能",@"className":@""},
+                           @{@"title":@"4、系统功能",@"className":@"SystemFunctionViewController"},
+                           @{@"title":@"5、动画相关",@"className":@""},
                            @{@"title":@"浏览器",@"className":@"WebBrowserViewController"},
-                           @{@"title":@"动画相关",@"className":@""},
                            ];
 }
 

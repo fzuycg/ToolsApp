@@ -8,6 +8,7 @@
 
 #import "WebBrowserViewController.h"
 #import <WebKit/WebKit.h>
+#import "HubMessageView.h"
 
 static NSString *homeUrl = @"https://m.baidu.com";
 
@@ -71,6 +72,7 @@ static NSString *homeUrl = @"https://m.baidu.com";
     [webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];//进度
     [webView addObserver:self forKeyPath:@"canGoForward" options:NSKeyValueObservingOptionNew context:nil];//是否可以前进
     [webView addObserver:self forKeyPath:@"canGoBack" options:NSKeyValueObservingOptionNew context:nil];//是否可以回退
+    [webView addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:nil];//标题
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:_urlString ? _urlString : homeUrl]];
     [request setTimeoutInterval:10];
@@ -165,6 +167,10 @@ static NSString *homeUrl = @"https://m.baidu.com";
         [self.item1 setImage:[[UIImage imageNamed: canGoForward ? @"web_toolbar_forward_select" : @"web_toolbar_forward"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     }
     
+    if (object == self.webView && [keyPath isEqualToString:@"title"]) {
+        self.title = [change objectForKey:NSKeyValueChangeNewKey];
+    }
+    
 }
 
 // 取消监听
@@ -172,6 +178,7 @@ static NSString *homeUrl = @"https://m.baidu.com";
     [_webView removeObserver:self forKeyPath:@"estimatedProgress"];
     [_webView removeObserver:self forKeyPath:@"canGoBack"];
     [_webView removeObserver:self forKeyPath:@"canGoForward"];
+    [_webView removeObserver:self forKeyPath:@"title"];
 }
 
 #pragma mark - WKNavigationDelegate 页面加载过程
@@ -224,7 +231,7 @@ static NSString *homeUrl = @"https://m.baidu.com";
             NSURL *url2 =error.userInfo[@"NSErrorFailingURLKey"]; //注意这里返回的是个 NSURL 类型的 千万别以为是 NSString 的
             
             if (url2) [[UIApplication sharedApplication] openURL:url2];
-            else      DeLog(@"无法跳转");//[JDMessageView showMessage:@"无法跳转"];
+            else      [HubMessageView showMessage:@"无法跳转"];
             
         }
         
