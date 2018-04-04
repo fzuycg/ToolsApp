@@ -31,6 +31,7 @@
 		C84E5A25206CC2D50011B307 /* GuideTestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C84E5A24206CC2D50011B307 /* GuideTestManager.m */; };
 		C84E5A29206CD0170011B307 /* guideTest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C84E5A27206CD0170011B307 /* guideTest@3x.png */; };
 		C84E5A2A206CD0170011B307 /* guideTest@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C84E5A28206CD0170011B307 /* guideTest@2x.png */; };
+		C84E5A2E206DCD5E0011B307 /* SelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84E5A2D206DCD5E0011B307 /* SelectorViewController.m */; };
 		C85ACAAA205F5087008ED51A /* YCGGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C85ACAA9205F5087008ED51A /* YCGGuidePageView.m */; };
 		C85ACAB0205F657A008ED51A /* guide_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85ACAAC205F6579008ED51A /* guide_02.jpg */; };
 		C85ACAB1205F657A008ED51A /* guide_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85ACAAD205F6579008ED51A /* guide_01.jpg */; };
@@ -95,6 +96,11 @@
 		C8C1B03C2063D735007BE1BD /* PrintLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B03B2063D735007BE1BD /* PrintLabelViewController.m */; };
 		C8C1B03F2063D775007BE1BD /* PrintLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B03E2063D775007BE1BD /* PrintLabel.m */; };
 		C8C1B0412063D799007BE1BD /* printerVoice.wav in Resources */ = {isa = PBXBuildFile; fileRef = C8C1B0402063D799007BE1BD /* printerVoice.wav */; };
+		C8E60B0D207465F100DD95B5 /* CitySelectorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B0C207465F100DD95B5 /* CitySelectorPickerViewController.m */; };
+		C8E60B122074664300DD95B5 /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = C8E60B112074664300DD95B5 /* city.json */; };
+		C8E60B152074671700DD95B5 /* CitySelectorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B142074671700DD95B5 /* CitySelectorPickerView.m */; };
+		C8E60B18207467D700DD95B5 /* ProvinceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B17207467D700DD95B5 /* ProvinceModel.m */; };
+		C8E60B1B207467EB00DD95B5 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B1A207467EB00DD95B5 /* CityModel.m */; };
 		F80466303773F6D038E3D5BA /* libPods-ToolsApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B629192B0ECE3A007F659F9 /* libPods-ToolsApp.a */; };
 /* End PBXBuildFile section */
 
@@ -159,6 +165,8 @@
 		C84E5A24206CC2D50011B307 /* GuideTestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideTestManager.m; sourceTree = "<group>"; };
 		C84E5A27206CD0170011B307 /* guideTest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guideTest@3x.png"; sourceTree = "<group>"; };
 		C84E5A28206CD0170011B307 /* guideTest@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guideTest@2x.png"; sourceTree = "<group>"; };
+		C84E5A2C206DCD5E0011B307 /* SelectorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectorViewController.h; sourceTree = "<group>"; };
+		C84E5A2D206DCD5E0011B307 /* SelectorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectorViewController.m; sourceTree = "<group>"; };
 		C85ACAA8205F5087008ED51A /* YCGGuidePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGGuidePageView.h; sourceTree = "<group>"; };
 		C85ACAA9205F5087008ED51A /* YCGGuidePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGGuidePageView.m; sourceTree = "<group>"; };
 		C85ACAAC205F6579008ED51A /* guide_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guide_02.jpg; sourceTree = "<group>"; };
@@ -270,6 +278,15 @@
 		C8C1B03D2063D775007BE1BD /* PrintLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintLabel.h; sourceTree = "<group>"; };
 		C8C1B03E2063D775007BE1BD /* PrintLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintLabel.m; sourceTree = "<group>"; };
 		C8C1B0402063D799007BE1BD /* printerVoice.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = printerVoice.wav; sourceTree = "<group>"; };
+		C8E60B0B207465F100DD95B5 /* CitySelectorPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitySelectorPickerViewController.h; sourceTree = "<group>"; };
+		C8E60B0C207465F100DD95B5 /* CitySelectorPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitySelectorPickerViewController.m; sourceTree = "<group>"; };
+		C8E60B112074664300DD95B5 /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
+		C8E60B132074671700DD95B5 /* CitySelectorPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitySelectorPickerView.h; sourceTree = "<group>"; };
+		C8E60B142074671700DD95B5 /* CitySelectorPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitySelectorPickerView.m; sourceTree = "<group>"; };
+		C8E60B16207467D700DD95B5 /* ProvinceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProvinceModel.h; sourceTree = "<group>"; };
+		C8E60B17207467D700DD95B5 /* ProvinceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProvinceModel.m; sourceTree = "<group>"; };
+		C8E60B19207467EB00DD95B5 /* CityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
+		C8E60B1A207467EB00DD95B5 /* CityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,9 +485,40 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		C84E5A2B206DCCE10011B307 /* 6、选择器 */ = {
+			isa = PBXGroup;
+			children = (
+				C84E5A30206DD2250011B307 /* 6.2、城市选择(联动选择) */,
+				C84E5A2F206DD1DA0011B307 /* 6.1、城市选择(仿美团) */,
+				C84E5A2C206DCD5E0011B307 /* SelectorViewController.h */,
+				C84E5A2D206DCD5E0011B307 /* SelectorViewController.m */,
+			);
+			path = "6、选择器";
+			sourceTree = "<group>";
+		};
+		C84E5A2F206DD1DA0011B307 /* 6.1、城市选择(仿美团) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "6.1、城市选择(仿美团)";
+			sourceTree = "<group>";
+		};
+		C84E5A30206DD2250011B307 /* 6.2、城市选择(联动选择) */ = {
+			isa = PBXGroup;
+			children = (
+				C8E60B102074660500DD95B5 /* Source */,
+				C8E60B0F207465FD00DD95B5 /* Model */,
+				C8E60B0E207465F700DD95B5 /* View */,
+				C8E60B0B207465F100DD95B5 /* CitySelectorPickerViewController.h */,
+				C8E60B0C207465F100DD95B5 /* CitySelectorPickerViewController.m */,
+			);
+			path = "6.2、城市选择(联动选择)";
+			sourceTree = "<group>";
+		};
 		C85ACAA1205E5A2D008ED51A /* 功能合集 */ = {
 			isa = PBXGroup;
 			children = (
+				C84E5A2B206DCCE10011B307 /* 6、选择器 */,
 				C85ACAA3205E5A74008ED51A /* 5、动画相关 */,
 				C84E5A01206C89090011B307 /* 4、系统功能 */,
 				C85ACAA7205E64A5008ED51A /* 3、视图布局 */,
@@ -954,6 +1002,34 @@
 			path = "MarqueeLabel(跑马灯)";
 			sourceTree = "<group>";
 		};
+		C8E60B0E207465F700DD95B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8E60B132074671700DD95B5 /* CitySelectorPickerView.h */,
+				C8E60B142074671700DD95B5 /* CitySelectorPickerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8E60B0F207465FD00DD95B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8E60B16207467D700DD95B5 /* ProvinceModel.h */,
+				C8E60B17207467D700DD95B5 /* ProvinceModel.m */,
+				C8E60B19207467EB00DD95B5 /* CityModel.h */,
+				C8E60B1A207467EB00DD95B5 /* CityModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8E60B102074660500DD95B5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C8E60B112074664300DD95B5 /* city.json */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1092,6 +1168,7 @@
 				C876A43F2060FFF40048728C /* image1.jpg in Resources */,
 				C85ACAB2205F657A008ED51A /* guide_04.jpg in Resources */,
 				C84E5A17206CB6470011B307 /* IFMShareImage.bundle in Resources */,
+				C8E60B122074664300DD95B5 /* city.json in Resources */,
 				C88EB763205A8FCB008092BB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1179,6 +1256,7 @@
 				C876A4812062529C0048728C /* CardLayoutCell.m in Sources */,
 				C84E5A0B206C99E20011B307 /* NSString+Addition.m in Sources */,
 				C84193DF206B86EC009CA6C6 /* HubMessageView.m in Sources */,
+				C8E60B1B207467EB00DD95B5 /* CityModel.m in Sources */,
 				C88EB769205A8FCB008092BB /* main.m in Sources */,
 				C88EB7A6205A9D62008092BB /* YCGActivityViewController.m in Sources */,
 				C8C1B03C2063D735007BE1BD /* PrintLabelViewController.m in Sources */,
@@ -1186,7 +1264,10 @@
 				C88EB7B0205B6769008092BB /* BaseModel.m in Sources */,
 				C876A44C2061034D0048728C /* WaterFallCell.m in Sources */,
 				C876A46C20622B850048728C /* CycleImageViewPageControl.m in Sources */,
+				C8E60B0D207465F100DD95B5 /* CitySelectorPickerViewController.m in Sources */,
+				C8E60B152074671700DD95B5 /* CitySelectorPickerView.m in Sources */,
 				C8C1B0262063925E007BE1BD /* CustomLabelViewController.m in Sources */,
+				C8E60B18207467D700DD95B5 /* ProvinceModel.m in Sources */,
 				C85ACABD205FA69A008ED51A /* LaunchAdViewController.m in Sources */,
 				C84E5A05206C8DCC0011B307 /* IPhoneInfoViewController.m in Sources */,
 				C876A462206227CC0048728C /* CyclePageViewController.m in Sources */,
@@ -1199,6 +1280,7 @@
 				C88EB7A0205A9D3E008092BB /* YCGFindViewController.m in Sources */,
 				C85ACAB7205F9DA1008ED51A /* GuidePageViewController.m in Sources */,
 				C85ACAAA205F5087008ED51A /* YCGGuidePageView.m in Sources */,
+				C84E5A2E206DCD5E0011B307 /* SelectorViewController.m in Sources */,
 				C84E5A21206CC25D0011B307 /* GuideTestViewController.m in Sources */,
 				C876A4212060AE310048728C /* LaunchAdModel.m in Sources */,
 				C84E59FD206C85290011B307 /* DIYViewController.m in Sources */,
