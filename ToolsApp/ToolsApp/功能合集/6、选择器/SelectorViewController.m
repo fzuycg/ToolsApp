@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSoureArray =@[
+                           @{@"title":@"城市选择(仿美团)",@"className":@"CitySelectorViewController"},
                            @{@"title":@"城市选择(联动)",@"className":@"CitySelectorPickerViewController"},
                            ];
 }

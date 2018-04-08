@@ -10,11 +10,6 @@
 #import "ProvinceModel.h"
 #import "CityModel.h"
 
-#define kScreenBounds [UIScreen mainScreen].bounds
-#define kScreenWidth self.bounds.size.width
-#define kScreenHeight self.bounds.size.height
-#define kY_iPhoneX ([UIScreen mainScreen].bounds.size.width == 375.f && [UIScreen mainScreen].bounds.size.height == 812.f ? YES : NO)
-
 static CGFloat pickerViewHeight = 214.f;
 static CGFloat titleViewHeight = 45.f;
 static CGFloat titleViewOnButtonWidth = 80.f;
@@ -42,7 +37,7 @@ static CGFloat titleViewOnButtonWidth = 80.f;
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        self.frame = kScreenBounds;
+        self.frame = kScreen_bounds;
     }
     return self;
 }
@@ -57,11 +52,12 @@ static CGFloat titleViewOnButtonWidth = 80.f;
     return self;
 }
 
+#pragma mark - 懒加载
 - (UIView *)basicLevelView{
     if ((!_basicLevelView)) {
-        _basicLevelView = [[UIView alloc]initWithFrame:CGRectMake(0, kScreenHeight, kScreenWidth, pickerViewHeight + titleViewHeight)];
-        if (kY_iPhoneX) {
-            _basicLevelView = [[UIView alloc]initWithFrame:CGRectMake(0, kScreenHeight, kScreenWidth, pickerViewHeight + titleViewHeight + self.bottomViewHeight)];
+        _basicLevelView = [[UIView alloc]initWithFrame:CGRectMake(0, kScreen_height, kScreen_width, pickerViewHeight + titleViewHeight)];
+        if (kIs_iPhoneX) {
+            _basicLevelView = [[UIView alloc]initWithFrame:CGRectMake(0, kScreen_height, kScreen_width, pickerViewHeight + titleViewHeight + self.bottomViewHeight)];
         }
         
     }
@@ -70,7 +66,7 @@ static CGFloat titleViewOnButtonWidth = 80.f;
 
 - (UIView *)bottomView{
     if (!_bottomView) {
-        _bottomView = [[UIView alloc]initWithFrame:CGRectMake(0, self.basicLevelView.bounds.size.height - self.bottomViewHeight, kScreenWidth, self.bottomViewHeight)];
+        _bottomView = [[UIView alloc]initWithFrame:CGRectMake(0, self.basicLevelView.bounds.size.height - self.bottomViewHeight, kScreen_width, self.bottomViewHeight)];
         _bottomView.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1.0];
     }
     return _bottomView;
@@ -78,7 +74,7 @@ static CGFloat titleViewOnButtonWidth = 80.f;
 
 - (UIView *)titleView{
     if ((!_titleView)) {
-        _titleView = [[UIView alloc]initWithFrame:CGRectMake(-10, 0, kScreenWidth+20, titleViewHeight)];
+        _titleView = [[UIView alloc]initWithFrame:CGRectMake(-10, 0, kScreen_width+20, titleViewHeight)];
         _titleView.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1.0];
         _titleView.layer.borderColor = [UIColor colorWithRed:213/255.0 green:213/255.0 blue:213/255.0 alpha:1.0].CGColor;
         _titleView.layer.borderWidth = 0.5;
@@ -88,7 +84,7 @@ static CGFloat titleViewOnButtonWidth = 80.f;
 
 - (UIPickerView *)addressPickerView{
     if (!_addressPickerView) {
-        _addressPickerView = [[UIPickerView alloc]initWithFrame:CGRectMake(0, _titleView.frame.size.height,kScreenWidth, pickerViewHeight)];
+        _addressPickerView = [[UIPickerView alloc]initWithFrame:CGRectMake(0, _titleView.frame.size.height,kScreen_width, pickerViewHeight)];
         _addressPickerView.dataSource = self;
         _addressPickerView.delegate = self;
         _addressPickerView.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1.0];
@@ -144,7 +140,7 @@ static CGFloat titleViewOnButtonWidth = 80.f;
     [self.basicLevelView addSubview:self.addressPickerView];
     [self addSubview:self.basicLevelView];
     
-    if (kY_iPhoneX) {
+    if (kIs_iPhoneX) {
         [self.basicLevelView addSubview:self.bottomView];
     }
 }
@@ -353,7 +349,7 @@ static CGFloat titleViewOnButtonWidth = 80.f;
 - (void)setPickerViewBackGroundColor:(UIColor *)pickerViewBackGroundColor{
     _pickerViewBackGroundColor = pickerViewBackGroundColor;
     self.addressPickerView.backgroundColor = pickerViewBackGroundColor;
-    if (kY_iPhoneX) {
+    if (kIs_iPhoneX) {
         self.bottomView.backgroundColor = pickerViewBackGroundColor;
     }
 }
@@ -384,7 +380,7 @@ static CGFloat titleViewOnButtonWidth = 80.f;
         _isCurrentLocation = NO;
     }
     
-    DeLog(@"   %@     %@     %@",p.province,c.city,c.areaListArray[areaIndex]);
+    DeLog(@"  %@  %@  %@",p.province,c.city,c.areaListArray[areaIndex]);
 }
 
 - (void)show{
@@ -400,16 +396,16 @@ static CGFloat titleViewOnButtonWidth = 80.f;
     self.hidden = NO;
     if (animation) {
         [UIView animateWithDuration:0.5 animations:^{
-            self.basicLevelView.frame = CGRectMake(0, kScreenHeight - pickerViewHeight - titleViewHeight, kScreenWidth, pickerViewHeight + titleViewHeight);
-            if (kY_iPhoneX) {
-                self.basicLevelView.frame = CGRectMake(0, kScreenHeight - pickerViewHeight - titleViewHeight - self.bottomViewHeight, kScreenWidth, pickerViewHeight + titleViewHeight + self.bottomViewHeight);
+            self.basicLevelView.frame = CGRectMake(0, kScreen_height - pickerViewHeight - titleViewHeight, kScreen_width, pickerViewHeight + titleViewHeight);
+            if (kIs_iPhoneX) {
+                self.basicLevelView.frame = CGRectMake(0, kScreen_height - pickerViewHeight - titleViewHeight - self.bottomViewHeight, kScreen_width, pickerViewHeight + titleViewHeight + self.bottomViewHeight);
             }
         }];
     }else{
-        self.basicLevelView.frame = CGRectMake(0, kScreenHeight - pickerViewHeight - titleViewHeight, kScreenWidth, pickerViewHeight + titleViewHeight);
+        self.basicLevelView.frame = CGRectMake(0, kScreen_height - pickerViewHeight - titleViewHeight, kScreen_width, pickerViewHeight + titleViewHeight);
         
-        if (kY_iPhoneX) {
-            self.basicLevelView.frame = CGRectMake(0, kScreenHeight - pickerViewHeight - titleViewHeight - self.bottomViewHeight, kScreenWidth, pickerViewHeight + titleViewHeight + self.bottomViewHeight);
+        if (kIs_iPhoneX) {
+            self.basicLevelView.frame = CGRectMake(0, kScreen_height - pickerViewHeight - titleViewHeight - self.bottomViewHeight, kScreen_width, pickerViewHeight + titleViewHeight + self.bottomViewHeight);
         }
     }
 }
@@ -422,17 +418,17 @@ static CGFloat titleViewOnButtonWidth = 80.f;
     
     if (animation) {
         [UIView animateWithDuration:0.5 animations:^{
-            self.basicLevelView.frame = CGRectMake(0, kScreenHeight, kScreenWidth, pickerViewHeight + titleViewHeight);
-            if (kY_iPhoneX) {
-                self.basicLevelView.frame = CGRectMake(0, kScreenHeight, kScreenWidth, pickerViewHeight + titleViewHeight + self.bottomViewHeight);
+            self.basicLevelView.frame = CGRectMake(0, kScreen_height, kScreen_width, pickerViewHeight + titleViewHeight);
+            if (kIs_iPhoneX) {
+                self.basicLevelView.frame = CGRectMake(0, kScreen_height, kScreen_width, pickerViewHeight + titleViewHeight + self.bottomViewHeight);
             }
         } completion:^(BOOL finished) {
             self.hidden = YES;
         }];
     }else{
-        self.basicLevelView.frame = CGRectMake(0, kScreenHeight, kScreenWidth, pickerViewHeight + titleViewHeight);
-        if (kY_iPhoneX) {
-            self.basicLevelView.frame = CGRectMake(0, kScreenHeight, kScreenWidth, pickerViewHeight + titleViewHeight + self.bottomViewHeight);
+        self.basicLevelView.frame = CGRectMake(0, kScreen_height, kScreen_width, pickerViewHeight + titleViewHeight);
+        if (kIs_iPhoneX) {
+            self.basicLevelView.frame = CGRectMake(0, kScreen_height, kScreen_width, pickerViewHeight + titleViewHeight + self.bottomViewHeight);
         }
         self.hidden = YES;
     }

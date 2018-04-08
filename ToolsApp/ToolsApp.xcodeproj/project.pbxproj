@@ -101,6 +101,17 @@
 		C8E60B152074671700DD95B5 /* CitySelectorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B142074671700DD95B5 /* CitySelectorPickerView.m */; };
 		C8E60B18207467D700DD95B5 /* ProvinceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B17207467D700DD95B5 /* ProvinceModel.m */; };
 		C8E60B1B207467EB00DD95B5 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B1A207467EB00DD95B5 /* CityModel.m */; };
+		C8E60B212074A60600DD95B5 /* YCGLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B202074A60600DD95B5 /* YCGLocationManager.m */; };
+		C8E60B242074A61D00DD95B5 /* YCGAreaDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B232074A61D00DD95B5 /* YCGAreaDataManager.m */; };
+		C8E60B262074A64300DD95B5 /* shop_area.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C8E60B252074A64300DD95B5 /* shop_area.sqlite */; };
+		C8E60B2A2079AD9600DD95B5 /* YCGCityCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B292079AD9600DD95B5 /* YCGCityCollectionViewFlowLayout.m */; };
+		C8E60B2D2079AE5D00DD95B5 /* YCGAreaMuneButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B2C2079AE5D00DD95B5 /* YCGAreaMuneButton.m */; };
+		C8E60B312079AF4000DD95B5 /* YCGCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B302079AF4000DD95B5 /* YCGCityViewController.m */; };
+		C8E60B342079B04600DD95B5 /* YCGCityHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B332079B04600DD95B5 /* YCGCityHeaderView.m */; };
+		C8E60B372079B06B00DD95B5 /* YCGCityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B362079B06B00DD95B5 /* YCGCityTableViewCell.m */; };
+		C8E60B3A2079B09800DD95B5 /* YCGCityCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B392079B09800DD95B5 /* YCGCityCollectionViewCell.m */; };
+		C8E60B3D2079B0CF00DD95B5 /* YCGCitySearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B3C2079B0CF00DD95B5 /* YCGCitySearchView.m */; };
+		C8E60B402079EDF700DD95B5 /* CitySelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B3F2079EDF700DD95B5 /* CitySelectorViewController.m */; };
 		F80466303773F6D038E3D5BA /* libPods-ToolsApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B629192B0ECE3A007F659F9 /* libPods-ToolsApp.a */; };
 /* End PBXBuildFile section */
 
@@ -287,6 +298,27 @@
 		C8E60B17207467D700DD95B5 /* ProvinceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProvinceModel.m; sourceTree = "<group>"; };
 		C8E60B19207467EB00DD95B5 /* CityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
 		C8E60B1A207467EB00DD95B5 /* CityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
+		C8E60B1F2074A60600DD95B5 /* YCGLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGLocationManager.h; sourceTree = "<group>"; };
+		C8E60B202074A60600DD95B5 /* YCGLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGLocationManager.m; sourceTree = "<group>"; };
+		C8E60B222074A61D00DD95B5 /* YCGAreaDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGAreaDataManager.h; sourceTree = "<group>"; };
+		C8E60B232074A61D00DD95B5 /* YCGAreaDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGAreaDataManager.m; sourceTree = "<group>"; };
+		C8E60B252074A64300DD95B5 /* shop_area.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = shop_area.sqlite; sourceTree = "<group>"; };
+		C8E60B282079AD9600DD95B5 /* YCGCityCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGCityCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		C8E60B292079AD9600DD95B5 /* YCGCityCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGCityCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		C8E60B2B2079AE5D00DD95B5 /* YCGAreaMuneButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGAreaMuneButton.h; sourceTree = "<group>"; };
+		C8E60B2C2079AE5D00DD95B5 /* YCGAreaMuneButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGAreaMuneButton.m; sourceTree = "<group>"; };
+		C8E60B2F2079AF4000DD95B5 /* YCGCityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGCityViewController.h; sourceTree = "<group>"; };
+		C8E60B302079AF4000DD95B5 /* YCGCityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGCityViewController.m; sourceTree = "<group>"; };
+		C8E60B322079B04600DD95B5 /* YCGCityHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGCityHeaderView.h; sourceTree = "<group>"; };
+		C8E60B332079B04600DD95B5 /* YCGCityHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGCityHeaderView.m; sourceTree = "<group>"; };
+		C8E60B352079B06B00DD95B5 /* YCGCityTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGCityTableViewCell.h; sourceTree = "<group>"; };
+		C8E60B362079B06B00DD95B5 /* YCGCityTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGCityTableViewCell.m; sourceTree = "<group>"; };
+		C8E60B382079B09800DD95B5 /* YCGCityCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGCityCollectionViewCell.h; sourceTree = "<group>"; };
+		C8E60B392079B09800DD95B5 /* YCGCityCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGCityCollectionViewCell.m; sourceTree = "<group>"; };
+		C8E60B3B2079B0CF00DD95B5 /* YCGCitySearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGCitySearchView.h; sourceTree = "<group>"; };
+		C8E60B3C2079B0CF00DD95B5 /* YCGCitySearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGCitySearchView.m; sourceTree = "<group>"; };
+		C8E60B3E2079EDF700DD95B5 /* CitySelectorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitySelectorViewController.h; sourceTree = "<group>"; };
+		C8E60B3F2079EDF700DD95B5 /* CitySelectorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitySelectorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -499,6 +531,13 @@
 		C84E5A2F206DD1DA0011B307 /* 6.1、城市选择(仿美团) */ = {
 			isa = PBXGroup;
 			children = (
+				C8E60B2E2079AE8D00DD95B5 /* Controller */,
+				C8E60B272079AD3800DD95B5 /* FlowLayout */,
+				C8E60B1E2074A59F00DD95B5 /* Source */,
+				C8E60B1D2074A58200DD95B5 /* Manager */,
+				C8E60B1C2074A57800DD95B5 /* View */,
+				C8E60B3E2079EDF700DD95B5 /* CitySelectorViewController.h */,
+				C8E60B3F2079EDF700DD95B5 /* CitySelectorViewController.m */,
 			);
 			path = "6.1、城市选择(仿美团)";
 			sourceTree = "<group>";
@@ -1030,6 +1069,60 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		C8E60B1C2074A57800DD95B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8E60B3B2079B0CF00DD95B5 /* YCGCitySearchView.h */,
+				C8E60B3C2079B0CF00DD95B5 /* YCGCitySearchView.m */,
+				C8E60B2B2079AE5D00DD95B5 /* YCGAreaMuneButton.h */,
+				C8E60B2C2079AE5D00DD95B5 /* YCGAreaMuneButton.m */,
+				C8E60B322079B04600DD95B5 /* YCGCityHeaderView.h */,
+				C8E60B332079B04600DD95B5 /* YCGCityHeaderView.m */,
+				C8E60B382079B09800DD95B5 /* YCGCityCollectionViewCell.h */,
+				C8E60B392079B09800DD95B5 /* YCGCityCollectionViewCell.m */,
+				C8E60B352079B06B00DD95B5 /* YCGCityTableViewCell.h */,
+				C8E60B362079B06B00DD95B5 /* YCGCityTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8E60B1D2074A58200DD95B5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C8E60B1F2074A60600DD95B5 /* YCGLocationManager.h */,
+				C8E60B202074A60600DD95B5 /* YCGLocationManager.m */,
+				C8E60B222074A61D00DD95B5 /* YCGAreaDataManager.h */,
+				C8E60B232074A61D00DD95B5 /* YCGAreaDataManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		C8E60B1E2074A59F00DD95B5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C8E60B252074A64300DD95B5 /* shop_area.sqlite */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C8E60B272079AD3800DD95B5 /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				C8E60B282079AD9600DD95B5 /* YCGCityCollectionViewFlowLayout.h */,
+				C8E60B292079AD9600DD95B5 /* YCGCityCollectionViewFlowLayout.m */,
+			);
+			path = FlowLayout;
+			sourceTree = "<group>";
+		};
+		C8E60B2E2079AE8D00DD95B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C8E60B2F2079AF4000DD95B5 /* YCGCityViewController.h */,
+				C8E60B302079AF4000DD95B5 /* YCGCityViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1141,6 +1234,7 @@
 			files = (
 				C88EB766205A8FCB008092BB /* LaunchScreen.storyboard in Resources */,
 				C876A43D2060FFF40048728C /* video1.mp4 in Resources */,
+				C8E60B262074A64300DD95B5 /* shop_area.sqlite in Resources */,
 				C820B20D206353AF00C80A4C /* i4.jpg in Resources */,
 				C8C1B0412063D799007BE1BD /* printerVoice.wav in Resources */,
 				C85ACAB3205F657A008ED51A /* guide_03.jpg in Resources */,
@@ -1246,8 +1340,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8C1B0332063A1A3007BE1BD /* MarqueeLabelViewController.m in Sources */,
+				C8E60B3D2079B0CF00DD95B5 /* YCGCitySearchView.m in Sources */,
 				C876A473206230830048728C /* NSString+RegexCategory.m in Sources */,
 				C876A4252060B3800048728C /* LaunchAdManager.m in Sources */,
+				C8E60B342079B04600DD95B5 /* YCGCityHeaderView.m in Sources */,
 				C84193D3206B83A6009CA6C6 /* LaunchNoticeViewController.m in Sources */,
 				C8C1B02320639222007BE1BD /* MarqueeLabelView.m in Sources */,
 				C8C1B02920639C82007BE1BD /* UIView+Parameter.m in Sources */,
@@ -1258,8 +1354,10 @@
 				C84193DF206B86EC009CA6C6 /* HubMessageView.m in Sources */,
 				C8E60B1B207467EB00DD95B5 /* CityModel.m in Sources */,
 				C88EB769205A8FCB008092BB /* main.m in Sources */,
+				C8E60B2D2079AE5D00DD95B5 /* YCGAreaMuneButton.m in Sources */,
 				C88EB7A6205A9D62008092BB /* YCGActivityViewController.m in Sources */,
 				C8C1B03C2063D735007BE1BD /* PrintLabelViewController.m in Sources */,
+				C8E60B2A2079AD9600DD95B5 /* YCGCityCollectionViewFlowLayout.m in Sources */,
 				C88EB790205A960F008092BB /* TabBarController.m in Sources */,
 				C88EB7B0205B6769008092BB /* BaseModel.m in Sources */,
 				C876A44C2061034D0048728C /* WaterFallCell.m in Sources */,
@@ -1271,12 +1369,15 @@
 				C85ACABD205FA69A008ED51A /* LaunchAdViewController.m in Sources */,
 				C84E5A05206C8DCC0011B307 /* IPhoneInfoViewController.m in Sources */,
 				C876A462206227CC0048728C /* CyclePageViewController.m in Sources */,
+				C8E60B402079EDF700DD95B5 /* CitySelectorViewController.m in Sources */,
 				C84E5A18206CB6470011B307 /* IFMShareItemCell.m in Sources */,
 				C88EB79D205A9D1E008092BB /* YCGHomeViewController.m in Sources */,
 				C876A488206256130048728C /* CardLayoutView.m in Sources */,
 				C84193D0206A1552009CA6C6 /* WebBrowserViewController.m in Sources */,
+				C8E60B242074A61D00DD95B5 /* YCGAreaDataManager.m in Sources */,
 				C8C1B0392063D59B007BE1BD /* BaseViewController.m in Sources */,
 				C88EB7AD205B6731008092BB /* YCGHomeDataModel.m in Sources */,
+				C8E60B312079AF4000DD95B5 /* YCGCityViewController.m in Sources */,
 				C88EB7A0205A9D3E008092BB /* YCGFindViewController.m in Sources */,
 				C85ACAB7205F9DA1008ED51A /* GuidePageViewController.m in Sources */,
 				C85ACAAA205F5087008ED51A /* YCGGuidePageView.m in Sources */,
@@ -1287,6 +1388,7 @@
 				C876A44F206105A70048728C /* WaterFallDataModel.m in Sources */,
 				C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */,
 				C876A4792062505D0048728C /* CardLayoutViewController.m in Sources */,
+				C8E60B212074A60600DD95B5 /* YCGLocationManager.m in Sources */,
 				C84E5A16206CB6470011B307 /* IFMShareView.m in Sources */,
 				C88EB7A9205B6391008092BB /* BaseTableViewController.m in Sources */,
 				C876A47020622CD80048728C /* CycleImageModel.m in Sources */,
@@ -1295,6 +1397,7 @@
 				C876A42E2060FDFA0048728C /* LayoutListViewController.m in Sources */,
 				C84E5A15206CB6470011B307 /* IFMShareItem.m in Sources */,
 				C876A446206102250048728C /* WaterFallViewController.m in Sources */,
+				C8E60B372079B06B00DD95B5 /* YCGCityTableViewCell.m in Sources */,
 				C876A42B2060BC760048728C /* Network.m in Sources */,
 				C84E5A25206CC2D50011B307 /* GuideTestManager.m in Sources */,
 				C84E5A08206C8E6C0011B307 /* SystemFunctionViewController.m in Sources */,
@@ -1303,6 +1406,7 @@
 				C876A46620622AF50048728C /* CycleImageView.m in Sources */,
 				C88EB7A3205A9D4D008092BB /* YCGMeViewController.m in Sources */,
 				C84193DB206B86BB009CA6C6 /* DIYPopViewController.m in Sources */,
+				C8E60B3A2079B09800DD95B5 /* YCGCityCollectionViewCell.m in Sources */,
 				C876A46920622B2B0048728C /* CycleImageViewCell.m in Sources */,
 				C84E5A1D206CB74C0011B307 /* ShareViewController.m in Sources */,
 				C84193D7206B8458009CA6C6 /* LaunchNoticeView.m in Sources */,

@@ -16,8 +16,11 @@
 
 #define Navigation_HEIGHT StatusBar_HEIGHT+NavigationBar_HEIGHT
 
+#define kScreen_bounds [UIScreen mainScreen].bounds
 #define kScreen_height  [[UIScreen mainScreen] bounds].size.height
 #define kScreen_width   [[UIScreen mainScreen] bounds].size.width
+
+#define kIs_iPhoneX ([UIScreen mainScreen].bounds.size.width == 375.f && [UIScreen mainScreen].bounds.size.height == 812.f ? YES : NO)
 
 //--------------------颜色--------------------------
 //格式0xdae8a6
@@ -28,6 +31,8 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:al]
 
 //设置随机颜色
 #define YCGRandomColor  [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:0.1];
+
+#define YCGRGBAColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(r)/255.0 blue:(r)/255.0 alpha:a]
 
 //-------------------打印日志-------------------------
 //DEBUG 模式下打印日志,当前行
