@@ -8,6 +8,46 @@
 	<string>功能模块</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIcons</key>
+    <dict>
+        <key>CFBundleAlternateIcons</key>
+        <dict>
+            <key>Appicon_AppStore</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>Appicon_AppStore20x20</string>
+                    <string>Appicon_AppStore29x29</string>
+                    <string>Appicon_AppStore40x40</string>
+                    <string>Appicon_AppStore60x60</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+            <key>Appicon_Safari</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>Appicon_Safari40x40</string>
+                    <string>Appicon_Safari60x60</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+        </dict>
+        <key>UINewsstandIcon</key>
+        <dict>
+            <key>CFBundleIconFiles</key>
+            <array>
+                <string></string>
+                <string></string>
+            </array>
+            <key>UINewsstandBindingEdge</key>
+            <string>UINewsstandBindingEdgeLeft</string>
+            <key>UINewsstandBindingType</key>
+            <string>UINewsstandBindingTypeMagazine</string>
+        </dict>
+    </dict>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>

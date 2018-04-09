@@ -40,6 +40,19 @@
 		C85ACAB7205F9DA1008ED51A /* GuidePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85ACAB6205F9DA1008ED51A /* GuidePageViewController.m */; };
 		C85ACAB9205FA5DE008ED51A /* home_bgImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85ACAB8205FA5DE008ED51A /* home_bgImage.jpg */; };
 		C85ACABD205FA69A008ED51A /* LaunchAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85ACABC205FA69A008ED51A /* LaunchAdViewController.m */; };
+		C86234FC207B1392000850E8 /* ChangeIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86234FB207B1392000850E8 /* ChangeIconViewController.m */; };
+		C862350A207B3D1C000850E8 /* Appicon_AppStore20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C86234FE207B3D1C000850E8 /* Appicon_AppStore20x20@2x.png */; };
+		C862350B207B3D1C000850E8 /* Appicon_AppStore20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C86234FF207B3D1C000850E8 /* Appicon_AppStore20x20@3x.png */; };
+		C862350C207B3D1C000850E8 /* Appicon_AppStore29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8623500207B3D1C000850E8 /* Appicon_AppStore29x29@2x.png */; };
+		C862350D207B3D1C000850E8 /* Appicon_AppStore40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8623501207B3D1C000850E8 /* Appicon_AppStore40x40@3x.png */; };
+		C862350E207B3D1C000850E8 /* Appicon_AppStore60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8623502207B3D1C000850E8 /* Appicon_AppStore60x60@2x.png */; };
+		C862350F207B3D1C000850E8 /* Appicon_AppStore60X60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8623503207B3D1C000850E8 /* Appicon_AppStore60X60@3x.png */; };
+		C8623510207B3D1C000850E8 /* Appicon_AppStore40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8623504207B3D1C000850E8 /* Appicon_AppStore40x40@2x.png */; };
+		C8623511207B3D1C000850E8 /* Appicon_AppStore29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8623505207B3D1C000850E8 /* Appicon_AppStore29x29@3x.png */; };
+		C8623512207B3D1C000850E8 /* Appicon_Safari40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8623506207B3D1C000850E8 /* Appicon_Safari40x40@2x.png */; };
+		C8623513207B3D1C000850E8 /* Appicon_Safari60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8623507207B3D1C000850E8 /* Appicon_Safari60x60@3x.png */; };
+		C8623514207B3D1C000850E8 /* Appicon_Safari60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8623508207B3D1C000850E8 /* Appicon_Safari60x60@2x.png */; };
+		C8623515207B3D1C000850E8 /* Appicon_Safari40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8623509207B3D1C000850E8 /* Appicon_Safari40x40@3x.png */; };
 		C876A4212060AE310048728C /* LaunchAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A4202060AE310048728C /* LaunchAdModel.m */; };
 		C876A4252060B3800048728C /* LaunchAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A4242060B3800048728C /* LaunchAdManager.m */; };
 		C876A4282060B78C0048728C /* LaunchAdData.json in Resources */ = {isa = PBXBuildFile; fileRef = C876A4272060B78C0048728C /* LaunchAdData.json */; };
@@ -189,6 +202,20 @@
 		C85ACAB8205FA5DE008ED51A /* home_bgImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home_bgImage.jpg; sourceTree = "<group>"; };
 		C85ACABB205FA69A008ED51A /* LaunchAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchAdViewController.h; sourceTree = "<group>"; };
 		C85ACABC205FA69A008ED51A /* LaunchAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchAdViewController.m; sourceTree = "<group>"; };
+		C86234FA207B1392000850E8 /* ChangeIconViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeIconViewController.h; sourceTree = "<group>"; };
+		C86234FB207B1392000850E8 /* ChangeIconViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeIconViewController.m; sourceTree = "<group>"; };
+		C86234FE207B3D1C000850E8 /* Appicon_AppStore20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appicon_AppStore20x20@2x.png"; sourceTree = "<group>"; };
+		C86234FF207B3D1C000850E8 /* Appicon_AppStore20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appicon_AppStore20x20@3x.png"; sourceTree = "<group>"; };
+		C8623500207B3D1C000850E8 /* Appicon_AppStore29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appicon_AppStore29x29@2x.png"; sourceTree = "<group>"; };
+		C8623501207B3D1C000850E8 /* Appicon_AppStore40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appicon_AppStore40x40@3x.png"; sourceTree = "<group>"; };
+		C8623502207B3D1C000850E8 /* Appicon_AppStore60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appicon_AppStore60x60@2x.png"; sourceTree = "<group>"; };
+		C8623503207B3D1C000850E8 /* Appicon_AppStore60X60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appicon_AppStore60X60@3x.png"; sourceTree = "<group>"; };
+		C8623504207B3D1C000850E8 /* Appicon_AppStore40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appicon_AppStore40x40@2x.png"; sourceTree = "<group>"; };
+		C8623505207B3D1C000850E8 /* Appicon_AppStore29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appicon_AppStore29x29@3x.png"; sourceTree = "<group>"; };
+		C8623506207B3D1C000850E8 /* Appicon_Safari40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appicon_Safari40x40@2x.png"; sourceTree = "<group>"; };
+		C8623507207B3D1C000850E8 /* Appicon_Safari60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appicon_Safari60x60@3x.png"; sourceTree = "<group>"; };
+		C8623508207B3D1C000850E8 /* Appicon_Safari60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appicon_Safari60x60@2x.png"; sourceTree = "<group>"; };
+		C8623509207B3D1C000850E8 /* Appicon_Safari40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appicon_Safari40x40@3x.png"; sourceTree = "<group>"; };
 		C876A41F2060AE310048728C /* LaunchAdModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchAdModel.h; sourceTree = "<group>"; };
 		C876A4202060AE310048728C /* LaunchAdModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchAdModel.m; sourceTree = "<group>"; };
 		C876A4232060B3800048728C /* LaunchAdManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchAdManager.h; sourceTree = "<group>"; };
@@ -440,6 +467,7 @@
 		C84E5A01206C89090011B307 /* 4、系统功能 */ = {
 			isa = PBXGroup;
 			children = (
+				C86234F9207B12F7000850E8 /* 4.3、10.3更换图标 */,
 				C84E5A1A206CB6A80011B307 /* 4.2、分享功能 */,
 				C84E5A02206C8D7E0011B307 /* 4.1、获取手机信息 */,
 				C84E5A06206C8E6C0011B307 /* SystemFunctionViewController.h */,
@@ -677,6 +705,35 @@
 			children = (
 			);
 			path = CustomButton;
+			sourceTree = "<group>";
+		};
+		C86234F9207B12F7000850E8 /* 4.3、10.3更换图标 */ = {
+			isa = PBXGroup;
+			children = (
+				C86234FD207B3D1C000850E8 /* Appicon */,
+				C86234FA207B1392000850E8 /* ChangeIconViewController.h */,
+				C86234FB207B1392000850E8 /* ChangeIconViewController.m */,
+			);
+			path = "4.3、10.3更换图标";
+			sourceTree = "<group>";
+		};
+		C86234FD207B3D1C000850E8 /* Appicon */ = {
+			isa = PBXGroup;
+			children = (
+				C86234FE207B3D1C000850E8 /* Appicon_AppStore20x20@2x.png */,
+				C86234FF207B3D1C000850E8 /* Appicon_AppStore20x20@3x.png */,
+				C8623500207B3D1C000850E8 /* Appicon_AppStore29x29@2x.png */,
+				C8623501207B3D1C000850E8 /* Appicon_AppStore40x40@3x.png */,
+				C8623502207B3D1C000850E8 /* Appicon_AppStore60x60@2x.png */,
+				C8623503207B3D1C000850E8 /* Appicon_AppStore60X60@3x.png */,
+				C8623504207B3D1C000850E8 /* Appicon_AppStore40x40@2x.png */,
+				C8623505207B3D1C000850E8 /* Appicon_AppStore29x29@3x.png */,
+				C8623506207B3D1C000850E8 /* Appicon_Safari40x40@2x.png */,
+				C8623507207B3D1C000850E8 /* Appicon_Safari60x60@3x.png */,
+				C8623508207B3D1C000850E8 /* Appicon_Safari60x60@2x.png */,
+				C8623509207B3D1C000850E8 /* Appicon_Safari40x40@3x.png */,
+			);
+			path = Appicon;
 			sourceTree = "<group>";
 		};
 		C876A41E2060ADF80048728C /* Model */ = {
@@ -1236,34 +1293,46 @@
 				C876A43D2060FFF40048728C /* video1.mp4 in Resources */,
 				C8E60B262074A64300DD95B5 /* shop_area.sqlite in Resources */,
 				C820B20D206353AF00C80A4C /* i4.jpg in Resources */,
+				C862350E207B3D1C000850E8 /* Appicon_AppStore60x60@2x.png in Resources */,
+				C862350F207B3D1C000850E8 /* Appicon_AppStore60X60@3x.png in Resources */,
 				C8C1B0412063D799007BE1BD /* printerVoice.wav in Resources */,
 				C85ACAB3205F657A008ED51A /* guide_03.jpg in Resources */,
 				C85ACAB1205F657A008ED51A /* guide_01.jpg in Resources */,
 				C876A4282060B78C0048728C /* LaunchAdData.json in Resources */,
 				C876A43A2060FFF40048728C /* video0.mp4 in Resources */,
+				C8623515207B3D1C000850E8 /* Appicon_Safari40x40@3x.png in Resources */,
 				C84E5A29206CD0170011B307 /* guideTest@3x.png in Resources */,
 				C876A43C2060FFF40048728C /* image0.jpg in Resources */,
 				C876A4382060FFF40048728C /* image2.jpg in Resources */,
 				C876A4402060FFF40048728C /* image3.jpg in Resources */,
+				C8623514207B3D1C000850E8 /* Appicon_Safari60x60@2x.png in Resources */,
 				C876A45E2062029C0048728C /* 3.plist in Resources */,
 				C876A47620623D810048728C /* cycleImage.plist in Resources */,
 				C876A45F2062029C0048728C /* 1.plist in Resources */,
 				C84E5A2A206CD0170011B307 /* guideTest@2x.png in Resources */,
 				C820B20F206353AF00C80A4C /* i3.jpg in Resources */,
 				C876A45D2062029C0048728C /* 2.plist in Resources */,
+				C862350C207B3D1C000850E8 /* Appicon_AppStore29x29@2x.png in Resources */,
 				C876A43E2060FFF40048728C /* image12.gif in Resources */,
+				C8623513207B3D1C000850E8 /* Appicon_Safari60x60@3x.png in Resources */,
+				C862350D207B3D1C000850E8 /* Appicon_AppStore40x40@3x.png in Resources */,
 				C85ACAB9205FA5DE008ED51A /* home_bgImage.jpg in Resources */,
 				C876A4392060FFF40048728C /* image4.jpg in Resources */,
+				C862350A207B3D1C000850E8 /* Appicon_AppStore20x20@2x.png in Resources */,
 				C820B20C206353AF00C80A4C /* i5.jpg in Resources */,
 				C876A43B2060FFF40048728C /* image11.gif in Resources */,
 				C85ACAB0205F657A008ED51A /* guide_02.jpg in Resources */,
 				C820B20E206353AF00C80A4C /* i1.jpg in Resources */,
 				C820B20B206353AF00C80A4C /* i2.jpg in Resources */,
 				C876A43F2060FFF40048728C /* image1.jpg in Resources */,
+				C8623512207B3D1C000850E8 /* Appicon_Safari40x40@2x.png in Resources */,
+				C8623510207B3D1C000850E8 /* Appicon_AppStore40x40@2x.png in Resources */,
 				C85ACAB2205F657A008ED51A /* guide_04.jpg in Resources */,
 				C84E5A17206CB6470011B307 /* IFMShareImage.bundle in Resources */,
 				C8E60B122074664300DD95B5 /* city.json in Resources */,
 				C88EB763205A8FCB008092BB /* Assets.xcassets in Resources */,
+				C862350B207B3D1C000850E8 /* Appicon_AppStore20x20@3x.png in Resources */,
+				C8623511207B3D1C000850E8 /* Appicon_AppStore29x29@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1350,6 +1419,7 @@
 				C88EB793205A9645008092BB /* NavigationController.m in Sources */,
 				C8C1B020206391D4007BE1BD /* CustomViewController.m in Sources */,
 				C876A4812062529C0048728C /* CardLayoutCell.m in Sources */,
+				C86234FC207B1392000850E8 /* ChangeIconViewController.m in Sources */,
 				C84E5A0B206C99E20011B307 /* NSString+Addition.m in Sources */,
 				C84193DF206B86EC009CA6C6 /* HubMessageView.m in Sources */,
 				C8E60B1B207467EB00DD95B5 /* CityModel.m in Sources */,
