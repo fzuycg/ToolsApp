@@ -53,6 +53,24 @@
 		C8623513207B3D1C000850E8 /* Appicon_Safari60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8623507207B3D1C000850E8 /* Appicon_Safari60x60@3x.png */; };
 		C8623514207B3D1C000850E8 /* Appicon_Safari60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8623508207B3D1C000850E8 /* Appicon_Safari60x60@2x.png */; };
 		C8623515207B3D1C000850E8 /* Appicon_Safari40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8623509207B3D1C000850E8 /* Appicon_Safari40x40@3x.png */; };
+		C8623519207B5378000850E8 /* BaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8623518207B5378000850E8 /* BaseAnimationViewController.m */; };
+		C874DB5F208484FC00BEF5A1 /* MenuContentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C874DB5E208484FC00BEF5A1 /* MenuContentHeaderView.m */; };
+		C874DB63208490AF00BEF5A1 /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C874DB62208490AF00BEF5A1 /* SideMenuViewController.m */; };
+		C874DB662084912E00BEF5A1 /* MenuContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C874DB652084912E00BEF5A1 /* MenuContentViewController.m */; };
+		C874DB69208491CF00BEF5A1 /* MenuContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C874DB68208491CF00BEF5A1 /* MenuContentCell.m */; };
+		C874DB6D20858BA900BEF5A1 /* PopMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C874DB6C20858BA900BEF5A1 /* PopMenuViewController.m */; };
+		C874DB7320858BE900BEF5A1 /* PopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C874DB7220858BE900BEF5A1 /* PopMenuView.m */; };
+		C874DB7620858BFD00BEF5A1 /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C874DB7520858BFD00BEF5A1 /* PopMenuModel.m */; };
+		C874DB7920858C2800BEF5A1 /* PopMenuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C874DB7820858C2800BEF5A1 /* PopMenuManager.m */; };
+		C874DB7C20858C6D00BEF5A1 /* PopMenuTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C874DB7B20858C6D00BEF5A1 /* PopMenuTableDataSource.m */; };
+		C874DB7F20858C8D00BEF5A1 /* PopMenuTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C874DB7E20858C8D00BEF5A1 /* PopMenuTableDelegate.m */; };
+		C874DB8220858CA800BEF5A1 /* PopMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C874DB8120858CA800BEF5A1 /* PopMenuTableViewCell.m */; };
+		C874DB8A2085925800BEF5A1 /* right_menu_multichat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C874DB842085925800BEF5A1 /* right_menu_multichat@3x.png */; };
+		C874DB8B2085925800BEF5A1 /* right_menu_sendFile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C874DB852085925800BEF5A1 /* right_menu_sendFile@3x.png */; };
+		C874DB8C2085925800BEF5A1 /* right_menu_payMoney@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C874DB862085925800BEF5A1 /* right_menu_payMoney@3x.png */; };
+		C874DB8D2085925800BEF5A1 /* right_menu_addFri@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C874DB872085925800BEF5A1 /* right_menu_addFri@3x.png */; };
+		C874DB8E2085925800BEF5A1 /* right_menu_QR@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C874DB882085925800BEF5A1 /* right_menu_QR@3x.png */; };
+		C874DB8F2085925800BEF5A1 /* right_menu_facetoface@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C874DB892085925800BEF5A1 /* right_menu_facetoface@3x.png */; };
 		C876A4212060AE310048728C /* LaunchAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A4202060AE310048728C /* LaunchAdModel.m */; };
 		C876A4252060B3800048728C /* LaunchAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A4242060B3800048728C /* LaunchAdManager.m */; };
 		C876A4282060B78C0048728C /* LaunchAdData.json in Resources */ = {isa = PBXBuildFile; fileRef = C876A4272060B78C0048728C /* LaunchAdData.json */; };
@@ -85,6 +103,16 @@
 		C876A47E206251FE0048728C /* CardFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A47D206251FE0048728C /* CardFlowLayout.m */; };
 		C876A4812062529C0048728C /* CardLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A4802062529C0048728C /* CardLayoutCell.m */; };
 		C876A488206256130048728C /* CardLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = C876A487206256130048728C /* CardLayoutView.m */; };
+		C87DCCF8207F747400792988 /* OtherFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCCF7207F747400792988 /* OtherFunctionViewController.m */; };
+		C87DCCFD207F758600792988 /* BrushBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCCFC207F758600792988 /* BrushBoardViewController.m */; };
+		C87DCD01207F75B900792988 /* BrushBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD00207F75B900792988 /* BrushBoardView.m */; };
+		C87DCD05207F763F00792988 /* WritingBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD04207F763F00792988 /* WritingBoardViewController.m */; };
+		C87DCD08207F76B800792988 /* PanBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD07207F76B800792988 /* PanBoardViewController.m */; };
+		C87DCD0C207F76DE00792988 /* PanBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD0B207F76DE00792988 /* PanBoardView.m */; };
+		C87DCD1020807F2F00792988 /* MenuFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD0F20807F2F00792988 /* MenuFunctionViewController.m */; };
+		C87DCD16208080A700792988 /* LeftSpringMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD15208080A700792988 /* LeftSpringMenuViewController.m */; };
+		C87DCD19208080C600792988 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD18208080C600792988 /* LeftMenuViewController.m */; };
+		C87DCD1C208080F900792988 /* TopMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD1B208080F900792988 /* TopMenuViewController.m */; };
 		C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EB75A205A8FCB008092BB /* AppDelegate.m */; };
 		C88EB763205A8FCB008092BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88EB762205A8FCB008092BB /* Assets.xcassets */; };
 		C88EB766205A8FCB008092BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88EB764205A8FCB008092BB /* LaunchScreen.storyboard */; };
@@ -109,6 +137,7 @@
 		C8C1B03C2063D735007BE1BD /* PrintLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B03B2063D735007BE1BD /* PrintLabelViewController.m */; };
 		C8C1B03F2063D775007BE1BD /* PrintLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B03E2063D775007BE1BD /* PrintLabel.m */; };
 		C8C1B0412063D799007BE1BD /* printerVoice.wav in Resources */ = {isa = PBXBuildFile; fileRef = C8C1B0402063D799007BE1BD /* printerVoice.wav */; };
+		C8C8E68B207B53EB002DFA7C /* AnimationAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C8E68A207B53EB002DFA7C /* AnimationAboutViewController.m */; };
 		C8E60B0D207465F100DD95B5 /* CitySelectorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B0C207465F100DD95B5 /* CitySelectorPickerViewController.m */; };
 		C8E60B122074664300DD95B5 /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = C8E60B112074664300DD95B5 /* city.json */; };
 		C8E60B152074671700DD95B5 /* CitySelectorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B142074671700DD95B5 /* CitySelectorPickerView.m */; };
@@ -216,6 +245,36 @@
 		C8623507207B3D1C000850E8 /* Appicon_Safari60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appicon_Safari60x60@3x.png"; sourceTree = "<group>"; };
 		C8623508207B3D1C000850E8 /* Appicon_Safari60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appicon_Safari60x60@2x.png"; sourceTree = "<group>"; };
 		C8623509207B3D1C000850E8 /* Appicon_Safari40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appicon_Safari40x40@3x.png"; sourceTree = "<group>"; };
+		C8623517207B5378000850E8 /* BaseAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAnimationViewController.h; sourceTree = "<group>"; };
+		C8623518207B5378000850E8 /* BaseAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseAnimationViewController.m; sourceTree = "<group>"; };
+		C874DB5D208484FC00BEF5A1 /* MenuContentHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuContentHeaderView.h; sourceTree = "<group>"; };
+		C874DB5E208484FC00BEF5A1 /* MenuContentHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuContentHeaderView.m; sourceTree = "<group>"; };
+		C874DB61208490AF00BEF5A1 /* SideMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
+		C874DB62208490AF00BEF5A1 /* SideMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
+		C874DB642084912E00BEF5A1 /* MenuContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuContentViewController.h; sourceTree = "<group>"; };
+		C874DB652084912E00BEF5A1 /* MenuContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuContentViewController.m; sourceTree = "<group>"; };
+		C874DB67208491CF00BEF5A1 /* MenuContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuContentCell.h; sourceTree = "<group>"; };
+		C874DB68208491CF00BEF5A1 /* MenuContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuContentCell.m; sourceTree = "<group>"; };
+		C874DB6B20858BA900BEF5A1 /* PopMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopMenuViewController.h; sourceTree = "<group>"; };
+		C874DB6C20858BA900BEF5A1 /* PopMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopMenuViewController.m; sourceTree = "<group>"; };
+		C874DB7120858BE900BEF5A1 /* PopMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopMenuView.h; sourceTree = "<group>"; };
+		C874DB7220858BE900BEF5A1 /* PopMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopMenuView.m; sourceTree = "<group>"; };
+		C874DB7420858BFD00BEF5A1 /* PopMenuModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopMenuModel.h; sourceTree = "<group>"; };
+		C874DB7520858BFD00BEF5A1 /* PopMenuModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopMenuModel.m; sourceTree = "<group>"; };
+		C874DB7720858C2800BEF5A1 /* PopMenuManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopMenuManager.h; sourceTree = "<group>"; };
+		C874DB7820858C2800BEF5A1 /* PopMenuManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopMenuManager.m; sourceTree = "<group>"; };
+		C874DB7A20858C6D00BEF5A1 /* PopMenuTableDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopMenuTableDataSource.h; sourceTree = "<group>"; };
+		C874DB7B20858C6D00BEF5A1 /* PopMenuTableDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopMenuTableDataSource.m; sourceTree = "<group>"; };
+		C874DB7D20858C8D00BEF5A1 /* PopMenuTableDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopMenuTableDelegate.h; sourceTree = "<group>"; };
+		C874DB7E20858C8D00BEF5A1 /* PopMenuTableDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopMenuTableDelegate.m; sourceTree = "<group>"; };
+		C874DB8020858CA800BEF5A1 /* PopMenuTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopMenuTableViewCell.h; sourceTree = "<group>"; };
+		C874DB8120858CA800BEF5A1 /* PopMenuTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopMenuTableViewCell.m; sourceTree = "<group>"; };
+		C874DB842085925800BEF5A1 /* right_menu_multichat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_menu_multichat@3x.png"; sourceTree = "<group>"; };
+		C874DB852085925800BEF5A1 /* right_menu_sendFile@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_menu_sendFile@3x.png"; sourceTree = "<group>"; };
+		C874DB862085925800BEF5A1 /* right_menu_payMoney@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_menu_payMoney@3x.png"; sourceTree = "<group>"; };
+		C874DB872085925800BEF5A1 /* right_menu_addFri@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_menu_addFri@3x.png"; sourceTree = "<group>"; };
+		C874DB882085925800BEF5A1 /* right_menu_QR@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_menu_QR@3x.png"; sourceTree = "<group>"; };
+		C874DB892085925800BEF5A1 /* right_menu_facetoface@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_menu_facetoface@3x.png"; sourceTree = "<group>"; };
 		C876A41F2060AE310048728C /* LaunchAdModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchAdModel.h; sourceTree = "<group>"; };
 		C876A4202060AE310048728C /* LaunchAdModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchAdModel.m; sourceTree = "<group>"; };
 		C876A4232060B3800048728C /* LaunchAdManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchAdManager.h; sourceTree = "<group>"; };
@@ -266,6 +325,26 @@
 		C876A4802062529C0048728C /* CardLayoutCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardLayoutCell.m; sourceTree = "<group>"; };
 		C876A486206256130048728C /* CardLayoutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardLayoutView.h; sourceTree = "<group>"; };
 		C876A487206256130048728C /* CardLayoutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardLayoutView.m; sourceTree = "<group>"; };
+		C87DCCF6207F747400792988 /* OtherFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherFunctionViewController.h; sourceTree = "<group>"; };
+		C87DCCF7207F747400792988 /* OtherFunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherFunctionViewController.m; sourceTree = "<group>"; };
+		C87DCCFB207F758600792988 /* BrushBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrushBoardViewController.h; sourceTree = "<group>"; };
+		C87DCCFC207F758600792988 /* BrushBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrushBoardViewController.m; sourceTree = "<group>"; };
+		C87DCCFF207F75B900792988 /* BrushBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrushBoardView.h; sourceTree = "<group>"; };
+		C87DCD00207F75B900792988 /* BrushBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrushBoardView.m; sourceTree = "<group>"; };
+		C87DCD03207F763F00792988 /* WritingBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WritingBoardViewController.h; sourceTree = "<group>"; };
+		C87DCD04207F763F00792988 /* WritingBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WritingBoardViewController.m; sourceTree = "<group>"; };
+		C87DCD06207F76B800792988 /* PanBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanBoardViewController.h; sourceTree = "<group>"; };
+		C87DCD07207F76B800792988 /* PanBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanBoardViewController.m; sourceTree = "<group>"; };
+		C87DCD0A207F76DE00792988 /* PanBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanBoardView.h; sourceTree = "<group>"; };
+		C87DCD0B207F76DE00792988 /* PanBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanBoardView.m; sourceTree = "<group>"; };
+		C87DCD0E20807F2F00792988 /* MenuFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuFunctionViewController.h; sourceTree = "<group>"; };
+		C87DCD0F20807F2F00792988 /* MenuFunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuFunctionViewController.m; sourceTree = "<group>"; };
+		C87DCD14208080A700792988 /* LeftSpringMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftSpringMenuViewController.h; sourceTree = "<group>"; };
+		C87DCD15208080A700792988 /* LeftSpringMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftSpringMenuViewController.m; sourceTree = "<group>"; };
+		C87DCD17208080C600792988 /* LeftMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		C87DCD18208080C600792988 /* LeftMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		C87DCD1A208080F900792988 /* TopMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopMenuViewController.h; sourceTree = "<group>"; };
+		C87DCD1B208080F900792988 /* TopMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopMenuViewController.m; sourceTree = "<group>"; };
 		C88EB756205A8FCB008092BB /* ToolsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88EB759205A8FCB008092BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C88EB75A205A8FCB008092BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -316,6 +395,8 @@
 		C8C1B03D2063D775007BE1BD /* PrintLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintLabel.h; sourceTree = "<group>"; };
 		C8C1B03E2063D775007BE1BD /* PrintLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintLabel.m; sourceTree = "<group>"; };
 		C8C1B0402063D799007BE1BD /* printerVoice.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = printerVoice.wav; sourceTree = "<group>"; };
+		C8C8E689207B53EB002DFA7C /* AnimationAboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationAboutViewController.h; sourceTree = "<group>"; };
+		C8C8E68A207B53EB002DFA7C /* AnimationAboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationAboutViewController.m; sourceTree = "<group>"; };
 		C8E60B0B207465F100DD95B5 /* CitySelectorPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitySelectorPickerViewController.h; sourceTree = "<group>"; };
 		C8E60B0C207465F100DD95B5 /* CitySelectorPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitySelectorPickerViewController.m; sourceTree = "<group>"; };
 		C8E60B112074664300DD95B5 /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
@@ -585,6 +666,8 @@
 		C85ACAA1205E5A2D008ED51A /* 功能合集 */ = {
 			isa = PBXGroup;
 			children = (
+				C87DCD0D20807ED600792988 /* 8、菜单 */,
+				C87DCCF5207F743A00792988 /* 7、其他功能 */,
 				C84E5A2B206DCCE10011B307 /* 6、选择器 */,
 				C85ACAA3205E5A74008ED51A /* 5、动画相关 */,
 				C84E5A01206C89090011B307 /* 4、系统功能 */,
@@ -599,6 +682,9 @@
 		C85ACAA3205E5A74008ED51A /* 5、动画相关 */ = {
 			isa = PBXGroup;
 			children = (
+				C8623516207B4361000850E8 /* 5.1、基础动画 */,
+				C8C8E689207B53EB002DFA7C /* AnimationAboutViewController.h */,
+				C8C8E68A207B53EB002DFA7C /* AnimationAboutViewController.m */,
 			);
 			path = "5、动画相关";
 			sourceTree = "<group>";
@@ -734,6 +820,96 @@
 				C8623509207B3D1C000850E8 /* Appicon_Safari40x40@3x.png */,
 			);
 			path = Appicon;
+			sourceTree = "<group>";
+		};
+		C8623516207B4361000850E8 /* 5.1、基础动画 */ = {
+			isa = PBXGroup;
+			children = (
+				C8623517207B5378000850E8 /* BaseAnimationViewController.h */,
+				C8623518207B5378000850E8 /* BaseAnimationViewController.m */,
+			);
+			path = "5.1、基础动画";
+			sourceTree = "<group>";
+		};
+		C874DB5420847AA400BEF5A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C874DB5D208484FC00BEF5A1 /* MenuContentHeaderView.h */,
+				C874DB5E208484FC00BEF5A1 /* MenuContentHeaderView.m */,
+				C874DB67208491CF00BEF5A1 /* MenuContentCell.h */,
+				C874DB68208491CF00BEF5A1 /* MenuContentCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C874DB602084908F00BEF5A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C874DB61208490AF00BEF5A1 /* SideMenuViewController.h */,
+				C874DB62208490AF00BEF5A1 /* SideMenuViewController.m */,
+				C874DB642084912E00BEF5A1 /* MenuContentViewController.h */,
+				C874DB652084912E00BEF5A1 /* MenuContentViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C874DB6A20858B7D00BEF5A1 /* 8.4、弹出 */ = {
+			isa = PBXGroup;
+			children = (
+				C874DB832085922000BEF5A1 /* Source */,
+				C874DB7020858BBF00BEF5A1 /* Manager */,
+				C874DB6F20858BB700BEF5A1 /* Model */,
+				C874DB6E20858BAC00BEF5A1 /* View */,
+				C874DB6B20858BA900BEF5A1 /* PopMenuViewController.h */,
+				C874DB6C20858BA900BEF5A1 /* PopMenuViewController.m */,
+			);
+			path = "8.4、弹出";
+			sourceTree = "<group>";
+		};
+		C874DB6E20858BAC00BEF5A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C874DB7120858BE900BEF5A1 /* PopMenuView.h */,
+				C874DB7220858BE900BEF5A1 /* PopMenuView.m */,
+				C874DB8020858CA800BEF5A1 /* PopMenuTableViewCell.h */,
+				C874DB8120858CA800BEF5A1 /* PopMenuTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C874DB6F20858BB700BEF5A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C874DB7420858BFD00BEF5A1 /* PopMenuModel.h */,
+				C874DB7520858BFD00BEF5A1 /* PopMenuModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C874DB7020858BBF00BEF5A1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C874DB7720858C2800BEF5A1 /* PopMenuManager.h */,
+				C874DB7820858C2800BEF5A1 /* PopMenuManager.m */,
+				C874DB7A20858C6D00BEF5A1 /* PopMenuTableDataSource.h */,
+				C874DB7B20858C6D00BEF5A1 /* PopMenuTableDataSource.m */,
+				C874DB7D20858C8D00BEF5A1 /* PopMenuTableDelegate.h */,
+				C874DB7E20858C8D00BEF5A1 /* PopMenuTableDelegate.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		C874DB832085922000BEF5A1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C874DB872085925800BEF5A1 /* right_menu_addFri@3x.png */,
+				C874DB892085925800BEF5A1 /* right_menu_facetoface@3x.png */,
+				C874DB842085925800BEF5A1 /* right_menu_multichat@3x.png */,
+				C874DB862085925800BEF5A1 /* right_menu_payMoney@3x.png */,
+				C874DB882085925800BEF5A1 /* right_menu_QR@3x.png */,
+				C874DB852085925800BEF5A1 /* right_menu_sendFile@3x.png */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		C876A41E2060ADF80048728C /* Model */ = {
@@ -893,6 +1069,107 @@
 				C876A45720610BDC0048728C /* WaterFlowLayout.m */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		C87DCCF5207F743A00792988 /* 7、其他功能 */ = {
+			isa = PBXGroup;
+			children = (
+				C87DCCF9207F747800792988 /* 7.1、写字板 */,
+				C87DCCF6207F747400792988 /* OtherFunctionViewController.h */,
+				C87DCCF7207F747400792988 /* OtherFunctionViewController.m */,
+			);
+			path = "7、其他功能";
+			sourceTree = "<group>";
+		};
+		C87DCCF9207F747800792988 /* 7.1、写字板 */ = {
+			isa = PBXGroup;
+			children = (
+				C87DCD02207F75E200792988 /* PanBoard(钢笔) */,
+				C87DCCFA207F754300792988 /* BrushBoard(毛笔) */,
+				C87DCD03207F763F00792988 /* WritingBoardViewController.h */,
+				C87DCD04207F763F00792988 /* WritingBoardViewController.m */,
+			);
+			path = "7.1、写字板";
+			sourceTree = "<group>";
+		};
+		C87DCCFA207F754300792988 /* BrushBoard(毛笔) */ = {
+			isa = PBXGroup;
+			children = (
+				C87DCCFE207F759800792988 /* View */,
+				C87DCCFB207F758600792988 /* BrushBoardViewController.h */,
+				C87DCCFC207F758600792988 /* BrushBoardViewController.m */,
+			);
+			path = "BrushBoard(毛笔)";
+			sourceTree = "<group>";
+		};
+		C87DCCFE207F759800792988 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C87DCCFF207F75B900792988 /* BrushBoardView.h */,
+				C87DCD00207F75B900792988 /* BrushBoardView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C87DCD02207F75E200792988 /* PanBoard(钢笔) */ = {
+			isa = PBXGroup;
+			children = (
+				C87DCD09207F76BB00792988 /* View */,
+				C87DCD06207F76B800792988 /* PanBoardViewController.h */,
+				C87DCD07207F76B800792988 /* PanBoardViewController.m */,
+			);
+			path = "PanBoard(钢笔)";
+			sourceTree = "<group>";
+		};
+		C87DCD09207F76BB00792988 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C87DCD0A207F76DE00792988 /* PanBoardView.h */,
+				C87DCD0B207F76DE00792988 /* PanBoardView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C87DCD0D20807ED600792988 /* 8、菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				C874DB6A20858B7D00BEF5A1 /* 8.4、弹出 */,
+				C87DCD1320807FE800792988 /* 8.3、下拉 */,
+				C87DCD1220807FD200792988 /* 8.2、侧滑(正常) */,
+				C87DCD1120807FAA00792988 /* 8.1、侧滑(弹簧) */,
+				C87DCD0E20807F2F00792988 /* MenuFunctionViewController.h */,
+				C87DCD0F20807F2F00792988 /* MenuFunctionViewController.m */,
+			);
+			path = "8、菜单";
+			sourceTree = "<group>";
+		};
+		C87DCD1120807FAA00792988 /* 8.1、侧滑(弹簧) */ = {
+			isa = PBXGroup;
+			children = (
+				C87DCD14208080A700792988 /* LeftSpringMenuViewController.h */,
+				C87DCD15208080A700792988 /* LeftSpringMenuViewController.m */,
+			);
+			path = "8.1、侧滑(弹簧)";
+			sourceTree = "<group>";
+		};
+		C87DCD1220807FD200792988 /* 8.2、侧滑(正常) */ = {
+			isa = PBXGroup;
+			children = (
+				C874DB602084908F00BEF5A1 /* Controller */,
+				C874DB5420847AA400BEF5A1 /* View */,
+				C87DCD17208080C600792988 /* LeftMenuViewController.h */,
+				C87DCD18208080C600792988 /* LeftMenuViewController.m */,
+			);
+			path = "8.2、侧滑(正常)";
+			sourceTree = "<group>";
+		};
+		C87DCD1320807FE800792988 /* 8.3、下拉 */ = {
+			isa = PBXGroup;
+			children = (
+				C87DCD1A208080F900792988 /* TopMenuViewController.h */,
+				C87DCD1B208080F900792988 /* TopMenuViewController.m */,
+			);
+			path = "8.3、下拉";
 			sourceTree = "<group>";
 		};
 		C88EB74D205A8FCB008092BB = {
@@ -1250,6 +1527,7 @@
 				TargetAttributes = {
 					C88EB755205A8FCB008092BB = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					C88EB76D205A8FCB008092BB = {
@@ -1290,8 +1568,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C88EB766205A8FCB008092BB /* LaunchScreen.storyboard in Resources */,
+				C874DB8D2085925800BEF5A1 /* right_menu_addFri@3x.png in Resources */,
 				C876A43D2060FFF40048728C /* video1.mp4 in Resources */,
 				C8E60B262074A64300DD95B5 /* shop_area.sqlite in Resources */,
+				C874DB8E2085925800BEF5A1 /* right_menu_QR@3x.png in Resources */,
+				C874DB8B2085925800BEF5A1 /* right_menu_sendFile@3x.png in Resources */,
+				C874DB8F2085925800BEF5A1 /* right_menu_facetoface@3x.png in Resources */,
 				C820B20D206353AF00C80A4C /* i4.jpg in Resources */,
 				C862350E207B3D1C000850E8 /* Appicon_AppStore60x60@2x.png in Resources */,
 				C862350F207B3D1C000850E8 /* Appicon_AppStore60X60@3x.png in Resources */,
@@ -1326,9 +1608,11 @@
 				C820B20B206353AF00C80A4C /* i2.jpg in Resources */,
 				C876A43F2060FFF40048728C /* image1.jpg in Resources */,
 				C8623512207B3D1C000850E8 /* Appicon_Safari40x40@2x.png in Resources */,
+				C874DB8C2085925800BEF5A1 /* right_menu_payMoney@3x.png in Resources */,
 				C8623510207B3D1C000850E8 /* Appicon_AppStore40x40@2x.png in Resources */,
 				C85ACAB2205F657A008ED51A /* guide_04.jpg in Resources */,
 				C84E5A17206CB6470011B307 /* IFMShareImage.bundle in Resources */,
+				C874DB8A2085925800BEF5A1 /* right_menu_multichat@3x.png in Resources */,
 				C8E60B122074664300DD95B5 /* city.json in Resources */,
 				C88EB763205A8FCB008092BB /* Assets.xcassets in Resources */,
 				C862350B207B3D1C000850E8 /* Appicon_AppStore20x20@3x.png in Resources */,
@@ -1411,26 +1695,34 @@
 				C8C1B0332063A1A3007BE1BD /* MarqueeLabelViewController.m in Sources */,
 				C8E60B3D2079B0CF00DD95B5 /* YCGCitySearchView.m in Sources */,
 				C876A473206230830048728C /* NSString+RegexCategory.m in Sources */,
+				C874DB662084912E00BEF5A1 /* MenuContentViewController.m in Sources */,
 				C876A4252060B3800048728C /* LaunchAdManager.m in Sources */,
 				C8E60B342079B04600DD95B5 /* YCGCityHeaderView.m in Sources */,
+				C87DCD1020807F2F00792988 /* MenuFunctionViewController.m in Sources */,
 				C84193D3206B83A6009CA6C6 /* LaunchNoticeViewController.m in Sources */,
 				C8C1B02320639222007BE1BD /* MarqueeLabelView.m in Sources */,
+				C874DB63208490AF00BEF5A1 /* SideMenuViewController.m in Sources */,
 				C8C1B02920639C82007BE1BD /* UIView+Parameter.m in Sources */,
 				C88EB793205A9645008092BB /* NavigationController.m in Sources */,
 				C8C1B020206391D4007BE1BD /* CustomViewController.m in Sources */,
 				C876A4812062529C0048728C /* CardLayoutCell.m in Sources */,
+				C87DCD0C207F76DE00792988 /* PanBoardView.m in Sources */,
 				C86234FC207B1392000850E8 /* ChangeIconViewController.m in Sources */,
 				C84E5A0B206C99E20011B307 /* NSString+Addition.m in Sources */,
 				C84193DF206B86EC009CA6C6 /* HubMessageView.m in Sources */,
 				C8E60B1B207467EB00DD95B5 /* CityModel.m in Sources */,
 				C88EB769205A8FCB008092BB /* main.m in Sources */,
 				C8E60B2D2079AE5D00DD95B5 /* YCGAreaMuneButton.m in Sources */,
+				C8C8E68B207B53EB002DFA7C /* AnimationAboutViewController.m in Sources */,
 				C88EB7A6205A9D62008092BB /* YCGActivityViewController.m in Sources */,
 				C8C1B03C2063D735007BE1BD /* PrintLabelViewController.m in Sources */,
+				C87DCD19208080C600792988 /* LeftMenuViewController.m in Sources */,
 				C8E60B2A2079AD9600DD95B5 /* YCGCityCollectionViewFlowLayout.m in Sources */,
+				C874DB7920858C2800BEF5A1 /* PopMenuManager.m in Sources */,
 				C88EB790205A960F008092BB /* TabBarController.m in Sources */,
 				C88EB7B0205B6769008092BB /* BaseModel.m in Sources */,
 				C876A44C2061034D0048728C /* WaterFallCell.m in Sources */,
+				C874DB7F20858C8D00BEF5A1 /* PopMenuTableDelegate.m in Sources */,
 				C876A46C20622B850048728C /* CycleImageViewPageControl.m in Sources */,
 				C8E60B0D207465F100DD95B5 /* CitySelectorPickerViewController.m in Sources */,
 				C8E60B152074671700DD95B5 /* CitySelectorPickerView.m in Sources */,
@@ -1439,28 +1731,38 @@
 				C85ACABD205FA69A008ED51A /* LaunchAdViewController.m in Sources */,
 				C84E5A05206C8DCC0011B307 /* IPhoneInfoViewController.m in Sources */,
 				C876A462206227CC0048728C /* CyclePageViewController.m in Sources */,
+				C87DCD01207F75B900792988 /* BrushBoardView.m in Sources */,
+				C874DB5F208484FC00BEF5A1 /* MenuContentHeaderView.m in Sources */,
 				C8E60B402079EDF700DD95B5 /* CitySelectorViewController.m in Sources */,
 				C84E5A18206CB6470011B307 /* IFMShareItemCell.m in Sources */,
 				C88EB79D205A9D1E008092BB /* YCGHomeViewController.m in Sources */,
 				C876A488206256130048728C /* CardLayoutView.m in Sources */,
 				C84193D0206A1552009CA6C6 /* WebBrowserViewController.m in Sources */,
 				C8E60B242074A61D00DD95B5 /* YCGAreaDataManager.m in Sources */,
+				C874DB8220858CA800BEF5A1 /* PopMenuTableViewCell.m in Sources */,
+				C87DCCF8207F747400792988 /* OtherFunctionViewController.m in Sources */,
 				C8C1B0392063D59B007BE1BD /* BaseViewController.m in Sources */,
 				C88EB7AD205B6731008092BB /* YCGHomeDataModel.m in Sources */,
 				C8E60B312079AF4000DD95B5 /* YCGCityViewController.m in Sources */,
 				C88EB7A0205A9D3E008092BB /* YCGFindViewController.m in Sources */,
+				C8623519207B5378000850E8 /* BaseAnimationViewController.m in Sources */,
+				C874DB6D20858BA900BEF5A1 /* PopMenuViewController.m in Sources */,
 				C85ACAB7205F9DA1008ED51A /* GuidePageViewController.m in Sources */,
+				C874DB69208491CF00BEF5A1 /* MenuContentCell.m in Sources */,
 				C85ACAAA205F5087008ED51A /* YCGGuidePageView.m in Sources */,
 				C84E5A2E206DCD5E0011B307 /* SelectorViewController.m in Sources */,
+				C874DB7620858BFD00BEF5A1 /* PopMenuModel.m in Sources */,
 				C84E5A21206CC25D0011B307 /* GuideTestViewController.m in Sources */,
 				C876A4212060AE310048728C /* LaunchAdModel.m in Sources */,
 				C84E59FD206C85290011B307 /* DIYViewController.m in Sources */,
 				C876A44F206105A70048728C /* WaterFallDataModel.m in Sources */,
 				C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */,
+				C87DCD08207F76B800792988 /* PanBoardViewController.m in Sources */,
 				C876A4792062505D0048728C /* CardLayoutViewController.m in Sources */,
 				C8E60B212074A60600DD95B5 /* YCGLocationManager.m in Sources */,
 				C84E5A16206CB6470011B307 /* IFMShareView.m in Sources */,
 				C88EB7A9205B6391008092BB /* BaseTableViewController.m in Sources */,
+				C87DCCFD207F758600792988 /* BrushBoardViewController.m in Sources */,
 				C876A47020622CD80048728C /* CycleImageModel.m in Sources */,
 				C876A47E206251FE0048728C /* CardFlowLayout.m in Sources */,
 				C876A45820610BDC0048728C /* WaterFlowLayout.m in Sources */,
@@ -1471,7 +1773,10 @@
 				C876A42B2060BC760048728C /* Network.m in Sources */,
 				C84E5A25206CC2D50011B307 /* GuideTestManager.m in Sources */,
 				C84E5A08206C8E6C0011B307 /* SystemFunctionViewController.m in Sources */,
+				C87DCD05207F763F00792988 /* WritingBoardViewController.m in Sources */,
+				C87DCD1C208080F900792988 /* TopMenuViewController.m in Sources */,
 				C8C1B03F2063D775007BE1BD /* PrintLabel.m in Sources */,
+				C87DCD16208080A700792988 /* LeftSpringMenuViewController.m in Sources */,
 				C84E5A00206C85E60011B307 /* LaunchViewController.m in Sources */,
 				C876A46620622AF50048728C /* CycleImageView.m in Sources */,
 				C88EB7A3205A9D4D008092BB /* YCGMeViewController.m in Sources */,
@@ -1479,7 +1784,9 @@
 				C8E60B3A2079B09800DD95B5 /* YCGCityCollectionViewCell.m in Sources */,
 				C876A46920622B2B0048728C /* CycleImageViewCell.m in Sources */,
 				C84E5A1D206CB74C0011B307 /* ShareViewController.m in Sources */,
+				C874DB7C20858C6D00BEF5A1 /* PopMenuTableDataSource.m in Sources */,
 				C84193D7206B8458009CA6C6 /* LaunchNoticeView.m in Sources */,
+				C874DB7320858BE900BEF5A1 /* PopMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1635,6 +1942,7 @@
 			baseConfigurationReference = ABE226E4533FD9A918EE24B5 /* Pods-ToolsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5835VE7S9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1644,6 +1952,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangcg.learn.ToolsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ToolsApp/功能合集/8、菜单/8.2、侧滑(正常)/Controller/ToolsApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1653,6 +1964,7 @@
 			baseConfigurationReference = 5F3157088BE96E80FB4545C1 /* Pods-ToolsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5835VE7S9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1662,6 +1974,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangcg.learn.ToolsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ToolsApp/功能合集/8、菜单/8.2、侧滑(正常)/Controller/ToolsApp-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

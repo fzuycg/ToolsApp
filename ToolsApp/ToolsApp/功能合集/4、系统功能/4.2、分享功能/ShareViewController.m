@@ -84,7 +84,7 @@
     IFMShareView *shareView = [[IFMShareView alloc] initWithItems:self.shareArray countEveryRow:4];
     shareView.itemImageSize = CGSizeMake(45, 45);
     shareView = [self addShareContent:shareView];
-    //    shareView.itemSpace = 10;
+//    shareView.itemSpace = 10;
     [shareView showFromControlle:self];
 }
 
