@@ -18,19 +18,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self createUI];
+    self.title = @"点击屏幕弹出菜单";
 }
 
-- (void)createUI {
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(kScreen_width-120-40, 120, 120, 44)];
-    btn.layer.cornerRadius = 8;
-    [btn setTitle:@"打开菜单" forState:UIControlStateNormal];
-    [btn setBackgroundColor:[UIColor blueColor]];
-    [btn addTarget:self action:@selector(PopMenuClik:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
-}
-
-- (void)PopMenuClik:(id)sender {
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSSet *allTouches = [event allTouches];    //返回与当前接收者有关的所有的触摸对象
+    UITouch *touch = [allTouches anyObject];   //视图中的所有对象
+    CGPoint point = [touch locationInView:[touch view]]; //返回触摸点在视图中的当前坐标
+    int x = point.x;
+    int y = point.y;
     
     NSMutableArray *obj = [NSMutableArray array];
     
@@ -42,13 +38,16 @@
         [obj addObject:info];
     }
     
-    [[PopMenuManager sharedInstance] showPopMenuSelecteWithFrame:CGRectMake(kScreen_width-120-60, 120+44, 160, 240)
+    // 这里传的是 顶点坐标 与 菜单宽高
+    struct MenuRect menuRect = {x,y,160,240};
+    
+    [[PopMenuManager sharedInstance] showPopMenuSelecteWithFrame:menuRect
                                                             item:obj
                                                           action:^(NSInteger index)
-    {
-        NSLog(@"index:%ld",(long)index);
-        
-    }];
+     {
+         NSLog(@"index:%ld",(long)index);
+         
+     }];
 }
 
 - (NSArray *) titles {

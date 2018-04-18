@@ -7,7 +7,6 @@
 //
 
 #import "PopMenuManager.h"
-#import "PopMenuView.h"
 
 @interface PopMenuManager()
 @property (nonatomic, strong) PopMenuView * popMenuView;
@@ -25,7 +24,7 @@
     return _sharedInstance;
 }
 
-- (void)showPopMenuSelecteWithFrame:(CGRect)frame
+- (void)showPopMenuSelecteWithFrame:(struct MenuRect)menuRect
                                 item:(NSArray *)item
                               action:(void (^)(NSInteger))action {
     __weak __typeof(&*self)weakSelf = self;
@@ -34,7 +33,7 @@
     }
     UIWindow * window = [[[UIApplication sharedApplication] windows] firstObject];
     self.popMenuView = [[PopMenuView alloc]initWithFrame:window.bounds
-                                                 menuFrame:frame
+                                                 menuRect:menuRect
                                                      items:item
                                                     action:^(NSInteger index) {
                                                         action(index);

@@ -19,11 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MenuContentViewController *leftVC =[[MenuContentViewController alloc]init];
-    UIViewController *mainVC =[[UIViewController alloc]init];
-    SideMenuViewController *slideVC =[SideMenuViewController initWithLeftVC:leftVC mainVC:mainVC];
+//    MenuContentViewController *leftVC =[[MenuContentViewController alloc]init];
+//    UIViewController *mainVC =[[UIViewController alloc]init];
+//    SideMenuViewController *slideVC =[SideMenuViewController initWithLeftVC:leftVC mainVC:mainVC];
     
-//    [self.navigationController pushViewController:slideVC animated:YES];
 }
 
 @end

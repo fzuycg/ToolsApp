@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PopMenuView.h"
 
 @interface PopMenuManager : NSObject
 
@@ -15,11 +16,11 @@
 /**
  创建一个弹出菜单
 
- @param frame 宽度
+ @param menuRect 顶点(x,y)宽高(w,h)
  @param item 内容数据
  @param action 回调点击方法
  */
-- (void) showPopMenuSelecteWithFrame:(CGRect)frame
+- (void) showPopMenuSelecteWithFrame:(struct MenuRect)menuRect
                                 item:(NSArray *)item
                               action:(void(^)(NSInteger index))action;
 
