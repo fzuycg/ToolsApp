@@ -14,7 +14,7 @@
 #define StatusBar_HEIGHT   [[UIApplication sharedApplication] statusBarFrame].size.height
 #define NavigationBar_HEIGHT 44
 
-#define Navigation_HEIGHT StatusBar_HEIGHT+NavigationBar_HEIGHT
+#define Navigation_HEIGHT (StatusBar_HEIGHT+NavigationBar_HEIGHT)
 
 #define kScreen_bounds [UIScreen mainScreen].bounds
 #define kScreen_height  [[UIScreen mainScreen] bounds].size.height

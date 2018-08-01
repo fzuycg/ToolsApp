@@ -21,6 +21,7 @@
                            @{@"title":@"侧滑菜单(正常)",@"className":@"LeftMenuViewController"},
                            @{@"title":@"下拉菜单",@"className":@"TopMenuViewController"},
                            @{@"title":@"弹出菜单",@"className":@"PopMenuViewController"},
+                           @{@"title":@"支付宝菜单",@"className":@"ALiPayHomeViewController"},
                            ];
 }
 

@@ -23,6 +23,10 @@ static NSString *homeCellIdentifier = @"homeCellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    // 给view设置图片
+    UIImage *image = [UIImage imageNamed:@"fengjing_1"];
+    self.view.layer.contents = (__bridge id)image.CGImage;
+    self.view.layer.contentsCenter = CGRectMake(0, 0, 1, 1);
     
     //cell分割线向左移动15像素
     if ([self.tableView respondsToSelector:@selector(setSeparatorInset:)]) {
@@ -60,7 +64,9 @@ static NSString *homeCellIdentifier = @"homeCellIdentifier";
     
     cell.textLabel.text =model.title;
     cell.detailTextLabel.text =model.className;
-    cell.contentView.backgroundColor =YCGRandomColor;
+    cell.backgroundColor = [UIColor clearColor];
+//    cell.contentView.backgroundColor =YCGRandomColor;
+    
     
     return cell;
 }

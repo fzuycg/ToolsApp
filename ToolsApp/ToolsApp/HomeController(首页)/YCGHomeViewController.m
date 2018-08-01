@@ -16,6 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    // navigationbar透明
+//    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    // 去掉下面的线条
+//    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    
     self.navigationItem.title = @"功能模块";
     
     self.dataSoureArray =@[

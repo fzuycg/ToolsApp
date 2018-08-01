@@ -19,6 +19,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"点击屏幕弹出菜单";
+    [self createUI];
+}
+
+- (void)createUI {
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"菜单" style:0 target:self action:@selector(itemBtnClick)];
+}
+
+- (void)itemBtnClick {
+    NSMutableArray *obj = [NSMutableArray array];
+    
+    for (NSInteger i = 0; i < [self titles].count; i++) {
+        
+        PopMenuModel * info = [PopMenuModel new];
+        info.image = [self images][i];
+        info.title = [self titles][i];
+        [obj addObject:info];
+    }
+    
+    // 这里传的是 顶点坐标 与 菜单宽高
+    struct MenuRect menuRect = {kScreen_width-32,Navigation_HEIGHT+2,160,240};
+    
+    [[PopMenuManager sharedInstance] showPopMenuSelecteWithFrame:menuRect
+                                                            item:obj
+                                                          action:^(NSInteger index)
+     {
+         NSLog(@"index:%ld",(long)index);
+         
+     }];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
