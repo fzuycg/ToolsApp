@@ -10,6 +10,7 @@
 #import "BoxViewI700.h"
 #import "BoxFunctionModel.h"
 #import "MoreAppViewController.h"
+#import "UIView+Parameter.h"
 
 @interface ALiPayHomeViewController () <BoxViewI700Delegate>
 @property (nonatomic, strong) BoxViewI700 *appView;
@@ -31,6 +32,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self createUI];
+    [self refreshUI];
 }
 
 - (void)readData {
@@ -49,6 +51,8 @@
 }
 
 - (void)createUI {
+    // 消除在iOS9上面scrollView顶部留有空白的问题
+    self.automaticallyAdjustsScrollViewInsets = NO;
     NSInteger count = self.boxFunctionArray.count+1;
     if (count <= 4) {
         _boxViewH = 80;
@@ -56,13 +60,19 @@
         _boxViewH = 80*2;
     } else {
         _boxViewH = 80*3;
-    }    [self.view addSubview:self.appView];
+    }
+    [self.view addSubview:self.appView];
+    self.appView.sizeHeight = _boxViewH;
+}
+
+- (void)refreshUI {
+    [self.appView.collectionView reloadData];
+    [self.appView refreshUI];
 }
 
 #pragma mark - BoxViewI700Delegate
 - (void)itemClick:(NSInteger)itemId {
     if (itemId == 0) {
-        NSLog(@"点击了更多");
         MoreAppViewController *vc = [[MoreAppViewController alloc] init];
         vc.boxFuntionArray = self.boxFunctionArray;
         [self.navigationController pushViewController:vc animated:YES];

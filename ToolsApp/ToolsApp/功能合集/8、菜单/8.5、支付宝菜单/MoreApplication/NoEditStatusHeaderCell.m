@@ -13,6 +13,8 @@
 
 @end
 
+static CGFloat imageViewWH = 20; //图片的宽高
+
 @implementation NoEditStatusHeaderCell
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -35,7 +37,7 @@
 #pragma mark - Lazy
 - (UIImageView *)imageView {
     if (!_imageView) {
-        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, self.frame.size.width-10, self.frame.size.height-10)];
+        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake((self.frame.size.width-imageViewWH)/2, (self.frame.size.height-imageViewWH)/2, imageViewWH, imageViewWH)];
     }
     return _imageView;
 }

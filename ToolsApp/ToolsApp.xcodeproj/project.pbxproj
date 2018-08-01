@@ -46,6 +46,13 @@
 		C8109E9421108B2A00B9AEBB /* 信用卡还款.png in Resources */ = {isa = PBXBuildFile; fileRef = C8109E7A21108B2A00B9AEBB /* 信用卡还款.png */; };
 		C8109E9621108D6900B9AEBB /* 占位图.png in Resources */ = {isa = PBXBuildFile; fileRef = C8109E9521108D6900B9AEBB /* 占位图.png */; };
 		C8109E9821108ED500B9AEBB /* 等等等.png in Resources */ = {isa = PBXBuildFile; fileRef = C8109E9721108ED500B9AEBB /* 等等等.png */; };
+		C8109EA021114B1200B9AEBB /* 转账.png in Resources */ = {isa = PBXBuildFile; fileRef = C8109E9921114B1100B9AEBB /* 转账.png */; };
+		C8109EA121114B1200B9AEBB /* 商家服务.png in Resources */ = {isa = PBXBuildFile; fileRef = C8109E9A21114B1100B9AEBB /* 商家服务.png */; };
+		C8109EA221114B1200B9AEBB /* AA收款.png in Resources */ = {isa = PBXBuildFile; fileRef = C8109E9B21114B1200B9AEBB /* AA收款.png */; };
+		C8109EA321114B1200B9AEBB /* 话费卡转让.png in Resources */ = {isa = PBXBuildFile; fileRef = C8109E9C21114B1200B9AEBB /* 话费卡转让.png */; };
+		C8109EA421114B1200B9AEBB /* 上银汇款.png in Resources */ = {isa = PBXBuildFile; fileRef = C8109E9D21114B1200B9AEBB /* 上银汇款.png */; };
+		C8109EA521114B1200B9AEBB /* 亲情号.png in Resources */ = {isa = PBXBuildFile; fileRef = C8109E9E21114B1200B9AEBB /* 亲情号.png */; };
+		C8109EA621114B1200B9AEBB /* 红包.png in Resources */ = {isa = PBXBuildFile; fileRef = C8109E9F21114B1200B9AEBB /* 红包.png */; };
 		C820B20B206353AF00C80A4C /* i2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B206206353AF00C80A4C /* i2.jpg */; };
 		C820B20C206353AF00C80A4C /* i5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B207206353AF00C80A4C /* i5.jpg */; };
 		C820B20D206353AF00C80A4C /* i4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B208206353AF00C80A4C /* i4.jpg */; };
@@ -269,6 +276,13 @@
 		C8109E7A21108B2A00B9AEBB /* 信用卡还款.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "信用卡还款.png"; sourceTree = "<group>"; };
 		C8109E9521108D6900B9AEBB /* 占位图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "占位图.png"; sourceTree = "<group>"; };
 		C8109E9721108ED500B9AEBB /* 等等等.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "等等等.png"; sourceTree = "<group>"; };
+		C8109E9921114B1100B9AEBB /* 转账.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "转账.png"; sourceTree = "<group>"; };
+		C8109E9A21114B1100B9AEBB /* 商家服务.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商家服务.png"; sourceTree = "<group>"; };
+		C8109E9B21114B1200B9AEBB /* AA收款.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AA收款.png"; sourceTree = "<group>"; };
+		C8109E9C21114B1200B9AEBB /* 话费卡转让.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "话费卡转让.png"; sourceTree = "<group>"; };
+		C8109E9D21114B1200B9AEBB /* 上银汇款.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "上银汇款.png"; sourceTree = "<group>"; };
+		C8109E9E21114B1200B9AEBB /* 亲情号.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "亲情号.png"; sourceTree = "<group>"; };
+		C8109E9F21114B1200B9AEBB /* 红包.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红包.png"; sourceTree = "<group>"; };
 		C820B206206353AF00C80A4C /* i2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i2.jpg; sourceTree = "<group>"; };
 		C820B207206353AF00C80A4C /* i5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i5.jpg; sourceTree = "<group>"; };
 		C820B208206353AF00C80A4C /* i4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i4.jpg; sourceTree = "<group>"; };
@@ -575,6 +589,13 @@
 		C8109E6021108B2A00B9AEBB /* 支付宝图标 */ = {
 			isa = PBXGroup;
 			children = (
+				C8109E9F21114B1200B9AEBB /* 红包.png */,
+				C8109E9C21114B1200B9AEBB /* 话费卡转让.png */,
+				C8109E9E21114B1200B9AEBB /* 亲情号.png */,
+				C8109E9A21114B1100B9AEBB /* 商家服务.png */,
+				C8109E9D21114B1200B9AEBB /* 上银汇款.png */,
+				C8109E9921114B1100B9AEBB /* 转账.png */,
+				C8109E9B21114B1200B9AEBB /* AA收款.png */,
 				C8109E6121108B2A00B9AEBB /* 充值中心.png */,
 				C8109E6221108B2A00B9AEBB /* 花呗.png */,
 				C8109E6321108B2A00B9AEBB /* 蚂蚁微客.png */,
@@ -1771,6 +1792,7 @@
 				C8E60B262074A64300DD95B5 /* shop_area.sqlite in Resources */,
 				C874DB8E2085925800BEF5A1 /* right_menu_QR@3x.png in Resources */,
 				C874DB8B2085925800BEF5A1 /* right_menu_sendFile@3x.png in Resources */,
+				C8109EA621114B1200B9AEBB /* 红包.png in Resources */,
 				C8109E9421108B2A00B9AEBB /* 信用卡还款.png in Resources */,
 				C874DB8F2085925800BEF5A1 /* right_menu_facetoface@3x.png in Resources */,
 				C820B20D206353AF00C80A4C /* i4.jpg in Resources */,
@@ -1779,12 +1801,14 @@
 				C8109E7D21108B2A00B9AEBB /* 蚂蚁微客.png in Resources */,
 				C8C1B0412063D799007BE1BD /* printerVoice.wav in Resources */,
 				C8109E8F21108B2A00B9AEBB /* 共享单车.png in Resources */,
+				C8109EA421114B1200B9AEBB /* 上银汇款.png in Resources */,
 				C8109E8021108B2A00B9AEBB /* 股票.png in Resources */,
 				C8109E9821108ED500B9AEBB /* 等等等.png in Resources */,
 				C85ACAB3205F657A008ED51A /* guide_03.jpg in Resources */,
 				C85ACAB1205F657A008ED51A /* guide_01.jpg in Resources */,
 				C876A4282060B78C0048728C /* LaunchAdData.json in Resources */,
 				C876A43A2060FFF40048728C /* video0.mp4 in Resources */,
+				C8109EA321114B1200B9AEBB /* 话费卡转让.png in Resources */,
 				C8623515207B3D1C000850E8 /* Appicon_Safari40x40@3x.png in Resources */,
 				C84E5A29206CD0170011B307 /* guideTest@3x.png in Resources */,
 				C8109E8221108B2A00B9AEBB /* 生活号.png in Resources */,
@@ -1805,6 +1829,7 @@
 				C84E5A2A206CD0170011B307 /* guideTest@2x.png in Resources */,
 				C8109E7B21108B2A00B9AEBB /* 充值中心.png in Resources */,
 				C8109E7C21108B2A00B9AEBB /* 花呗.png in Resources */,
+				C8109EA221114B1200B9AEBB /* AA收款.png in Resources */,
 				C820B20F206353AF00C80A4C /* i3.jpg in Resources */,
 				C8109E8521108B2A00B9AEBB /* 城市服务.png in Resources */,
 				C876A45D2062029C0048728C /* 2.plist in Resources */,
@@ -1832,10 +1857,12 @@
 				C820B20B206353AF00C80A4C /* i2.jpg in Resources */,
 				C876A43F2060FFF40048728C /* image1.jpg in Resources */,
 				C8623512207B3D1C000850E8 /* Appicon_Safari40x40@2x.png in Resources */,
+				C8109EA521114B1200B9AEBB /* 亲情号.png in Resources */,
 				C874DB8C2085925800BEF5A1 /* right_menu_payMoney@3x.png in Resources */,
 				C8623510207B3D1C000850E8 /* Appicon_AppStore40x40@2x.png in Resources */,
 				C85ACAB2205F657A008ED51A /* guide_04.jpg in Resources */,
 				C84E5A17206CB6470011B307 /* IFMShareImage.bundle in Resources */,
+				C8109EA121114B1200B9AEBB /* 商家服务.png in Resources */,
 				C8109E7E21108B2A00B9AEBB /* 汇率换算.png in Resources */,
 				C874DB8A2085925800BEF5A1 /* right_menu_multichat@3x.png in Resources */,
 				C8E60B122074664300DD95B5 /* city.json in Resources */,
@@ -1845,6 +1872,7 @@
 				C862350B207B3D1C000850E8 /* Appicon_AppStore20x20@3x.png in Resources */,
 				C8623511207B3D1C000850E8 /* Appicon_AppStore29x29@3x.png in Resources */,
 				C8109E8621108B2A00B9AEBB /* 蚂蚁宝卡.png in Resources */,
+				C8109EA021114B1200B9AEBB /* 转账.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2183,6 +2211,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XP242N85BR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2192,7 +2221,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangcg.learn.ToolsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "10f4756c-fd1e-4dd2-aec8-6204fc9a4871";
+				PROVISIONING_PROFILE = "c0f54730-3ccb-4e91-8d68-2e0cc1638260";
 				PROVISIONING_PROFILE_SPECIFIER = DevProvision;
 				SWIFT_OBJC_BRIDGING_HEADER = "ToolsApp/功能合集/8、菜单/8.2、侧滑(正常)/Controller/ToolsApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2207,8 +2236,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = XP242N85BR;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ToolsApp/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ToolsApp/Supporting Files/Info.plist";
@@ -2216,8 +2246,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangcg.learn.ToolsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "10f4756c-fd1e-4dd2-aec8-6204fc9a4871";
-				PROVISIONING_PROFILE_SPECIFIER = DevProvision;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ToolsApp/功能合集/8、菜单/8.2、侧滑(正常)/Controller/ToolsApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

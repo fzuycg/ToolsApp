@@ -16,6 +16,7 @@
         self.functionId = [dict[@"functionId"] integerValue];
         self.title = dict[@"title"];
         self.imageUrl = dict[@"imageUrl"];
+        self.isSelectStatus = [dict[@"isSelectStatus"] boolValue];
     }
     return  self;
 }
@@ -23,6 +24,9 @@
 - (void)setImageUrl:(NSString *)imageUrl {
     _imageUrl = imageUrl;
     self.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", self.title]];
+    if (!self.image) {
+        self.image = [UIImage imageNamed:@"占位图.png"];
+    }
 }
 
 @end

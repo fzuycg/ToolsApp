@@ -21,5 +21,6 @@
 @interface NoEditStatusHeaderView : UIView
 @property (nonatomic, weak) id<NoEditStatusHeaderViewDelegate> delegate;
 @property (nonatomic, strong) NSMutableArray *boxFunctionArray;
+@property (nonatomic, strong) UICollectionView *collectionView;
 
 @end

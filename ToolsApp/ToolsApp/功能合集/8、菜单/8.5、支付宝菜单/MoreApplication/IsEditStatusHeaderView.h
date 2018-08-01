@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class MoreAppCell;
+
 @protocol IsEditStatusHeaderViewDelegate <NSObject>
 @optional
 
@@ -16,10 +18,18 @@
  */
 - (void)completeButtonIsClick;
 
+/**
+ 点击减号（加号）按钮
+ */
+- (void)deleteButtonIsClick:(MoreAppCell *)cell functionId:(NSInteger)functionId;
+
 @end
 
 @interface IsEditStatusHeaderView : UIView
 @property (nonatomic, weak) id<IsEditStatusHeaderViewDelegate> delegate;
 @property (nonatomic, strong) NSMutableArray *boxFunctionArray;
+@property (nonatomic, strong) UICollectionView *collectionView;
+
+- (void)refreshUI;
 
 @end

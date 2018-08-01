@@ -14,16 +14,18 @@
 #import "CollectionReusableHeaderView.h"
 #import "IsEditStatusHeaderView.h"
 #import "NoEditStatusHeaderView.h"
+#import "UIView+Parameter.h"
 
 static CGFloat headerViewH = 44; //初始的时候头视图的高度（未编辑状态）
 static CGFloat sectionHeaderH = 40; //每个section头部高度
 static CGFloat sectionFooterH = 0.5; //每个section底部的高度
+static CGFloat itemH = 80; //cell的高度
 
 static NSString *const cellId = @"MoreAppCell";
 static NSString *const headerId = @"CollectionReusableFooterView";
 static NSString *const footerId = @"CollectionReusableHeaderView";
 
-@interface MoreAppViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, IsEditStatusHeaderViewDelegate, NoEditStatusHeaderViewDelegate>
+@interface MoreAppViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, IsEditStatusHeaderViewDelegate, NoEditStatusHeaderViewDelegate, MoreAppCellDelegate>
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) IsEditStatusHeaderView *isEditHeaderView;
@@ -68,6 +70,9 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
 }
 
 - (void)createUI {
+    // 消除在iOS9上面scrollView顶部留有空白的问题
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     //计算collection的高度
     NSInteger sectionNum = self.groupFunctionArray.count;
     NSInteger allLineNum = 0;
@@ -80,16 +85,15 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
         }
         allLineNum += lineNum;
     }
-    
-    _collectionViewH = allLineNum * 80 + sectionNum * (sectionHeaderH + sectionFooterH);
+    _collectionViewH = allLineNum * itemH + sectionNum * (sectionHeaderH + sectionFooterH);
     
     //计算编辑状态下头部视图的高度
     if (self.boxFuntionArray.count <= 4) {
-        _showHeaderViewH = 80 + headerViewH;
+        _showHeaderViewH = itemH + headerViewH;
     }else if (self.boxFuntionArray.count <= 8) {
-        _showHeaderViewH = 80*2 + headerViewH;
+        _showHeaderViewH = itemH*2 + headerViewH;
     }else{
-        _showHeaderViewH = 80*3 + headerViewH;
+        _showHeaderViewH = itemH*3 + headerViewH;
     }
     
     //给标题栏添加搜索框
@@ -132,6 +136,25 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
     }
 }
 
+- (void)refreshUI {
+    CGFloat height = 0;
+    if (self.boxFuntionArray.count <= 4) {
+        height = itemH + headerViewH;
+    }else if (self.boxFuntionArray.count <= 8) {
+        height = itemH*2 + headerViewH;
+    }else{
+        height = itemH*3 + headerViewH;
+    }
+    
+    //编辑头部行数发生改变
+    if (_showHeaderViewH != height) {
+        _showHeaderViewH = height;
+        self.isEditHeaderView.sizeHeight = _showHeaderViewH;
+        [self.isEditHeaderView refreshUI];
+        self.collectionView.frame = CGRectMake(0, _showHeaderViewH, kScreen_width, self.scrollView.sizeHeight-_showHeaderViewH);
+    }
+}
+
 - (void)setIsEditStatus:(BOOL)isEditStatus {
     _isEditStatus = isEditStatus;
     
@@ -162,6 +185,7 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
     BoxFunctionModel *model = moreModel.modelArray[indexPath.row];
     cell.model = model;
     cell.isEditStatus = self.isEditStatus;
+    cell.delegate = self;
     return cell;
 }
 
@@ -206,13 +230,116 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
 }
 
 #pragma mark - IsEditStatusHeaderViewDelegate
+/**
+ 完成按钮
+ */
 - (void)completeButtonIsClick {
     self.isEditStatus = NO;
 }
 
+/**
+ 删除按钮
+ */
+- (void)deleteButtonIsClick:(MoreAppCell *)cell functionId:(NSInteger)functionId {
+    if (self.isEditHeaderView.boxFunctionArray.count <= 3) {
+        NSLog(@"首页不能少于3个应用");
+    }else{
+        //1、拿到点击的位置
+        NSIndexPath *indexPath = [self.isEditHeaderView.collectionView indexPathForCell:cell];
+        //2、删除对应的元素（也可以根据对象删除）并更新各个数组数据
+        [self.isEditHeaderView.boxFunctionArray removeObjectAtIndex:indexPath.row];
+        self.boxFuntionArray = self.isEditHeaderView.boxFunctionArray;
+        self.noEditHeaderView.boxFunctionArray = self.boxFuntionArray;
+        //3、拿到相应的model
+        BoxFunctionModel *model = cell.model;
+        //4、刷新头部collectioView
+        [self.isEditHeaderView.collectionView reloadData];
+        [self.noEditHeaderView.collectionView reloadData];
+        //5、找到修改状态的数据在全数组中的位置(--此处性能可能不好，有待优化--)
+        NSInteger section = 0;
+        NSInteger row = 0;
+        for (int i=0; i<self.groupFunctionArray.count; i++) {
+            MoreAppModel *moreModel = self.groupFunctionArray[i];
+            /*
+             //此方式遍历有问题，不在第一个数组的总是不存在
+            if (![moreModel.modelArray containsObject:model]) {
+                continue;
+            }
+            NSInteger j = [moreModel.modelArray indexOfObject:model];
+            BoxFunctionModel *myModel = moreModel.modelArray[j];
+            if (myModel.functionId == functionId) {
+                section = i;
+                row = j;
+                break;
+            }
+             */
+            for (int j=0; j < moreModel.modelArray.count; j++) {
+                BoxFunctionModel *myModel = moreModel.modelArray[j];
+                if (myModel.functionId == functionId) {
+                    section = i;
+                    row = j;
+                    break;
+                }
+            }
+        }
+        
+        //6、修改选中状态
+        model.isSelectStatus = NO;
+        //7、把修改后的替换进全部数组中
+        MoreAppModel *moreModel = self.groupFunctionArray[section];
+        [moreModel.modelArray replaceObjectAtIndex:row withObject:model];
+        [self.groupFunctionArray replaceObjectAtIndex:section withObject:moreModel];
+        
+        //8、刷新全部应用collectionView
+        [self.collectionView reloadData];
+        //9、头部试图高度发生改变的话要进行修改
+        [self refreshUI];
+    }
+}
+
 #pragma mark - NoEditStatusHeaderViewDelegate
+/**
+ 编辑按钮
+ */
 - (void)editButtonIsClick {
     self.isEditStatus = YES;
+}
+
+#pragma mark - MoreAppCellDelegate
+/**
+ 添加按钮
+ 
+在这里只是做添加的功能，目前不考虑在下部分删除功能（可以做删除）
+ */
+- (void)addButtonIsClick:(MoreAppCell *)cell functionId:(NSInteger)functionId {
+    if (cell.isSelectStatus) {//已经选中的状态下
+        return;
+    }
+    if (self.isEditHeaderView.boxFunctionArray.count >= 11) {
+        NSLog(@"首页最多能添加11个应用");
+    }else{
+        //1、拿到点击的位置
+        NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
+        //2、拿到相应的model
+        MoreAppModel *moreModel = self.groupFunctionArray[indexPath.section];
+        BoxFunctionModel *model = moreModel.modelArray[indexPath.row];
+        //3、修改选中状态
+        model.isSelectStatus = YES;
+        //4、添加到选中的数组中，并更新各个数组数据
+        [self.isEditHeaderView.boxFunctionArray addObject:model];
+        self.boxFuntionArray = self.isEditHeaderView.boxFunctionArray;
+        self.noEditHeaderView.boxFunctionArray = self.boxFuntionArray;
+        //5、刷新头部collectioView
+        [self.isEditHeaderView.collectionView reloadData];
+        [self.noEditHeaderView.collectionView reloadData];
+        //6、把修改后的替换进全部数组中
+        [moreModel.modelArray replaceObjectAtIndex:indexPath.row withObject:model];
+        [self.groupFunctionArray replaceObjectAtIndex:indexPath.section withObject:moreModel];
+        //7、刷新全部应用collectionView
+        [self.collectionView reloadData];
+        //8、头部试图高度发生改变的话要进行修改
+        [self refreshUI];
+    }
 }
 
 #pragma mark - Lazy
@@ -233,7 +360,7 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
         layout.minimumInteritemSpacing = 0;
         //最小两行之间的间距
         layout.minimumLineSpacing = 0;
-        layout.itemSize = CGSizeMake(kScreen_width/5, 80);
+        layout.itemSize = CGSizeMake(kScreen_width/5, itemH);
         
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, headerViewH, kScreen_width, _collectionViewH) collectionViewLayout:layout];
         _collectionView.delegate = self;

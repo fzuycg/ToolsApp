@@ -15,6 +15,9 @@
 
 @end
 
+static CGFloat imageViewWH = 28; //图片的宽高
+static CGFloat titleH = 30; //标题文字的高
+
 @implementation BoxFunctionCell
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -43,7 +46,7 @@
 #pragma mark - lazy
 - (UILabel *)label {
     if (!_label) {
-        _label = [[UILabel alloc] initWithFrame:CGRectMake(0, self.contentView.frame.size.height-30, self.contentView.frame.size.width, 30)];
+        _label = [[UILabel alloc] initWithFrame:CGRectMake(0, self.contentView.frame.size.height-titleH, self.contentView.frame.size.width, titleH)];
         _label.textAlignment = NSTextAlignmentCenter;
         _label.font = [UIFont systemFontOfSize:13];
     }
@@ -52,7 +55,7 @@
 
 - (UIImageView *)imageView {
     if (!_imageView) {
-        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 0, self.contentView.frame.size.width-40, self.contentView.frame.size.height-30)];
+        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake((self.frame.size.width-imageViewWH)/2, (self.frame.size.height-imageViewWH-titleH)/2, imageViewWH, imageViewWH)];
     }
     return _imageView;
 }

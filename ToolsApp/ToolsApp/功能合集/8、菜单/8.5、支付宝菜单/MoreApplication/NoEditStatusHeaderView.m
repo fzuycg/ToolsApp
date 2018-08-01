@@ -15,7 +15,7 @@ static NSString *const cellId = @"NoEditStatusHeaderCell";
 @interface NoEditStatusHeaderView() <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UILabel *title;
 @property (nonatomic, strong) UIButton *editButton;
-@property (nonatomic, strong) UICollectionView *collectionView;
+
 @end
 
 @implementation NoEditStatusHeaderView {
@@ -56,19 +56,11 @@ static NSString *const cellId = @"NoEditStatusHeaderCell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     NoEditStatusHeaderCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
-    if (self.boxFunctionArray.count > 7) {
-        if (indexPath.row == 6) {
-            cell.image = [UIImage imageNamed:@"等等等.png"];
-        }else{
-            cell.image = [UIImage imageNamed:@"占位图.png"];
-        }
+    if (self.boxFunctionArray.count > 7 && indexPath.row == 6) {
+        cell.image = [UIImage imageNamed:@"等等等.png"];
     }else{
         BoxFunctionModel *model = self.boxFunctionArray[indexPath.row];
-        if (model.image) {
-            cell.image = model.image;
-        }else{
-           cell.image = [UIImage imageNamed:@"占位图.png"];
-        }
+        cell.image = model.image;
     }
     return cell;
 }

@@ -3,89 +3,107 @@
   "functionArray": [{
                     "imageUrl": "",
                     "title": "充值中心",
-                    "functionId": "1001"
+                    "functionId": "1001",
+                    "isSelectStatus":true
                     }, {
                     "imageUrl": "",
                     "title": "信用卡还款",
-                    "functionId": "1002"
+                    "functionId": "1002",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "生活缴费",
-                    "functionId": "1003"
+                    "functionId": "1003",
+                    "isSelectStatus":true
                     },
                     {
                     "imageUrl": "",
                     "title": "城市服务",
-                    "functionId": "1004"
+                    "functionId": "1004",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "生活号",
-                    "functionId": "1005"
+                    "functionId": "1005",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "我的客服",
-                    "functionId": "1006"
+                    "functionId": "1006",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "我的快递",
-                    "functionId": "1007"
+                    "functionId": "1007",
+                    "isSelectStatus":true
                     }, {
                     "imageUrl": "",
                     "title": "医疗健康",
-                    "functionId": "1008"
+                    "functionId": "1008",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "记账本",
-                    "functionId": "1009"
+                    "functionId": "1009",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "发票管家",
-                    "functionId": "1010"
+                    "functionId": "1010",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "蚂蚁宝卡",
-                    "functionId": "1011"
+                    "functionId": "1011",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "车主服务",
-                    "functionId": "1012"
+                    "functionId": "1012",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "天天有料",
-                    "functionId": "1013"
+                    "functionId": "1013",
+                    "isSelectStatus":false
                     }, {
                     "imageUrl": "",
                     "title": "蚂蚁微客",
-                    "functionId": "1014"
+                    "functionId": "1014",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "共享单车",
-                    "functionId": "1015"
+                    "functionId": "1015",
+                    "isSelectStatus":true
                     },
                     {
                     "imageUrl": "",
                     "title": "体育服务",
-                    "functionId": "1016"
+                    "functionId": "1016",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "安全备忘",
-                    "functionId": "1017"
+                    "functionId": "1017",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "智能设备",
-                    "functionId": "1018"
+                    "functionId": "1018",
+                    "isSelectStatus":false
                     }
                     ]
   }, {
@@ -93,41 +111,93 @@
   "functionArray": [{
                     "imageUrl": "",
                     "title": "余额宝",
-                    "functionId": "2001"
+                    "functionId": "2001",
+                    "isSelectStatus":true
                     }, {
                     "imageUrl": "",
                     "title": "花呗",
-                    "functionId": "2002"
+                    "functionId": "2002",
+                    "isSelectStatus":true
                     },
                     {
                     "imageUrl": "",
                     "title": "芝麻信用",
-                    "functionId": "2003"
+                    "functionId": "2003",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "蚂蚁借呗",
-                    "functionId": "2004"
+                    "functionId": "2004",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "股票",
-                    "functionId": "2005"
+                    "functionId": "2005",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "保险服务",
-                    "functionId": "2006"
+                    "functionId": "2006",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "汇率换算",
-                    "functionId": "2007"
+                    "functionId": "2007",
+                    "isSelectStatus":false
                     },
                     {
                     "imageUrl": "",
                     "title": "理财小工具",
-                    "functionId": "2008"
+                    "functionId": "2008",
+                    "isSelectStatus":false
+                    }
+                    ]
+  }, {
+  "sectionTitle": "资金来往",
+  "functionArray": [{
+                    "imageUrl": "",
+                    "title": "转账",
+                    "functionId": "3001",
+                    "isSelectStatus":true
+                    }, {
+                    "imageUrl": "",
+                    "title": "红包",
+                    "functionId": "3002",
+                    "isSelectStatus":false
+                    },
+                    {
+                    "imageUrl": "",
+                    "title": "AA收款",
+                    "functionId": "3003",
+                    "isSelectStatus":false
+                    },
+                    {
+                    "imageUrl": "",
+                    "title": "亲情号",
+                    "functionId": "3004",
+                    "isSelectStatus":false
+                    },
+                    {
+                    "imageUrl": "",
+                    "title": "上银汇款",
+                    "functionId": "3005",
+                    "isSelectStatus":false
+                    },
+                    {
+                    "imageUrl": "",
+                    "title": "话费卡转让",
+                    "functionId": "3006",
+                    "isSelectStatus":false
+                    },
+                    {
+                    "imageUrl": "",
+                    "title": "商家服务",
+                    "functionId": "3007",
+                    "isSelectStatus":false
                     }
                     ]
   }

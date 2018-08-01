@@ -13,10 +13,9 @@
 static CGFloat titleH = 44;
 static NSString *const cellId = @"MoreAppCell";
 
-@interface IsEditStatusHeaderView() <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface IsEditStatusHeaderView() <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, IsEditStatusHeaderViewDelegate, MoreAppCellDelegate>
 @property (nonatomic, strong) UILabel *title;
 @property (nonatomic, strong) UIButton *completeButton;
-@property (nonatomic, strong) UICollectionView *collectionView;
 
 @end
 
@@ -36,12 +35,16 @@ static NSString *const cellId = @"MoreAppCell";
     [self addSubview:self.collectionView];
 }
 
+- (void)refreshUI {
+    self.collectionView.frame = CGRectMake(0, titleH, self.frame.size.width, self.frame.size.height - titleH);
+    [self.collectionView reloadData];
+}
+
 - (void)completeButtonClick {
     if (self.delegate && [self.delegate respondsToSelector:@selector(completeButtonIsClick)]) {
         [self.delegate completeButtonIsClick];
     }
 }
-
 
 #pragma mark -UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -53,7 +56,8 @@ static NSString *const cellId = @"MoreAppCell";
     BoxFunctionModel *model = self.boxFunctionArray[indexPath.row];
     cell.model = model;
     cell.isEditStatus = YES;
-    cell.isSelectStatus = YES;
+//    cell.isSelectStatus = YES;
+    cell.delegate = self;
     return cell;
 }
 
@@ -67,6 +71,16 @@ static NSString *const cellId = @"MoreAppCell";
 //每一个分组的上左下右间距
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
     return UIEdgeInsetsMake(0, 10, 0, 10);
+}
+
+#pragma mark - MoreAppCellDelegate
+/**
+ 这里只有删除功能
+ */
+- (void)addButtonIsClick:(MoreAppCell *)cell functionId:(NSInteger)functionId {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(deleteButtonIsClick:functionId:)]) {
+        [self.delegate deleteButtonIsClick:cell functionId:functionId];
+    }
 }
 
 #pragma mark - Lazy

@@ -15,6 +15,10 @@
 @property (nonatomic, strong) UIButton *addButton;
 @end
 
+static CGFloat imageViewWH = 28; //图片的宽高
+static CGFloat titleH = 30; //标题文字的高
+static CGFloat buttonWH = 30; //按钮的宽高
+
 @implementation MoreAppCell
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -32,7 +36,9 @@
 }
 
 - (void)addButtonClick {
-    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(addButtonIsClick:functionId:)]) {
+        [self.delegate addButtonIsClick:self functionId:self.model.functionId];
+    }
 }
 
 #pragma mark - setter
@@ -44,6 +50,7 @@
     }else{
         self.imageView.image = [UIImage imageNamed:@"占位图.png"];
     }
+    self.isSelectStatus = model.isSelectStatus;
 }
 
 - (void)setIsEditStatus:(BOOL)isEditStatus {
@@ -54,23 +61,23 @@
 - (void)setIsSelectStatus:(BOOL)isSelectStatus {
     _isSelectStatus = isSelectStatus;
     if (isSelectStatus) {
-        [self.addButton setImage:[UIImage imageNamed:@"减号.png"] forState:UIControlStateNormal];
+        [self.addButton setBackgroundImage:[UIImage imageNamed:@"减号.png"] forState:UIControlStateNormal];
     }else{
-        [self.addButton setImage:[UIImage imageNamed:@"加号.png"] forState:UIControlStateNormal];
+        [self.addButton setBackgroundImage:[UIImage imageNamed:@"加号.png"] forState:UIControlStateNormal];
     }
 }
 
 #pragma mark - Lazy
 - (UIImageView *)imageView {
     if (!_imageView) {
-        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 5, self.frame.size.width-40, self.frame.size.height-30-10)];
+        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake((self.frame.size.width-imageViewWH)/2, (self.frame.size.height-imageViewWH-titleH)/2, imageViewWH, imageViewWH)];
     }
     return _imageView;
 }
 
 - (UILabel *)title {
     if (!_title) {
-        _title = [[UILabel alloc] initWithFrame:CGRectMake(0, self.frame.size.height-30, self.frame.size.width, 30)];
+        _title = [[UILabel alloc] initWithFrame:CGRectMake(0, self.frame.size.height-titleH, self.frame.size.width, titleH)];
         _title.font = [UIFont systemFontOfSize:13];
         _title.textAlignment = NSTextAlignmentCenter;
     }
@@ -79,9 +86,10 @@
 
 - (UIButton *)addButton {
     if (!_addButton) {
-        _addButton = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width-25, 0, 25, 25)];
+        _addButton = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width-buttonWH, 0, buttonWH, buttonWH)];
         [_addButton addTarget:self action:@selector(addButtonClick) forControlEvents:UIControlEventTouchUpInside];
         [_addButton setBackgroundImage:[UIImage imageNamed:@"加号.png"] forState:UIControlStateNormal];
+//        [_addButton setImage:[UIImage imageNamed:@"加号.png"] forState:UIControlStateNormal];
         _addButton.hidden = YES;
     }
     return _addButton;

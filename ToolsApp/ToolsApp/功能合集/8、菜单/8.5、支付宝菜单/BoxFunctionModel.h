@@ -13,6 +13,7 @@
 @property (nonatomic, assign) NSInteger functionId;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *imageUrl;
+@property (nonatomic, assign) BOOL isSelectStatus;
 
 //处理后的
 @property (nonatomic, strong) UIImage *image;

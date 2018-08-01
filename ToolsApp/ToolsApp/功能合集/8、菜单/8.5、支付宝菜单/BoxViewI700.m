@@ -9,6 +9,7 @@
 #import "BoxViewI700.h"
 #import "BoxFunctionCell.h"
 #import "BoxFunctionModel.h"
+#import "UIView+Parameter.h"
 
 @interface BoxViewI700 () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -29,6 +30,10 @@ static NSString *const cellId = @"BoxFunctionCell";
 
 - (void)creatUI {
     [self addSubview:self.collectionView];
+}
+
+- (void)refreshUI {
+    self.collectionView.sizeHeight = self.sizeHeight;
 }
 
 #pragma mark -UICollectionViewDataSource

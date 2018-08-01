@@ -20,4 +20,6 @@
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) NSMutableArray *boxFunctionArray;
 
+- (void)refreshUI;
+
 @end
