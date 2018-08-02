@@ -31,7 +31,6 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
 @property (nonatomic, strong) IsEditStatusHeaderView *isEditHeaderView;
 @property (nonatomic, strong) NoEditStatusHeaderView *noEditHeaderView;
 
-@property (nonatomic, strong) NSMutableArray *groupFunctionArray; //全部功能数组
 @property (nonatomic, assign) BOOL isEditStatus; //是否处于编辑状态
 @end
 
@@ -44,29 +43,12 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self readData];
+    _isEditStatus = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self createUI];
-}
-
-- (void)readData {
-    //JSON文件的路径
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"AllFunction" ofType:@"json"];
-    
-    //加载JSON文件
-    NSData *data = [NSData dataWithContentsOfFile:path];
-    
-    //将JSON数据转为NSArray或NSDictionary
-    NSArray *dictArray = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-    for (NSDictionary *dict in dictArray) {
-        MoreAppModel *model = [[MoreAppModel alloc] initWithDict:dict];
-        [self.groupFunctionArray addObject:model];
-    }
-    
-    _isEditStatus = NO;
 }
 
 - (void)createUI {
@@ -88,9 +70,9 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
     _collectionViewH = allLineNum * itemH + sectionNum * (sectionHeaderH + sectionFooterH);
     
     //计算编辑状态下头部视图的高度
-    if (self.boxFuntionArray.count <= 4) {
+    if (self.boxFunctionArray.count <= 4) {
         _showHeaderViewH = itemH + headerViewH;
-    }else if (self.boxFuntionArray.count <= 8) {
+    }else if (self.boxFunctionArray.count <= 8) {
         _showHeaderViewH = itemH*2 + headerViewH;
     }else{
         _showHeaderViewH = itemH*3 + headerViewH;
@@ -138,9 +120,9 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
 
 - (void)refreshUI {
     CGFloat height = 0;
-    if (self.boxFuntionArray.count <= 4) {
+    if (self.boxFunctionArray.count <= 4) {
         height = itemH + headerViewH;
-    }else if (self.boxFuntionArray.count <= 8) {
+    }else if (self.boxFunctionArray.count <= 8) {
         height = itemH*2 + headerViewH;
     }else{
         height = itemH*3 + headerViewH;
@@ -248,8 +230,8 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
         NSIndexPath *indexPath = [self.isEditHeaderView.collectionView indexPathForCell:cell];
         //2、删除对应的元素（也可以根据对象删除）并更新各个数组数据
         [self.isEditHeaderView.boxFunctionArray removeObjectAtIndex:indexPath.row];
-        self.boxFuntionArray = self.isEditHeaderView.boxFunctionArray;
-        self.noEditHeaderView.boxFunctionArray = self.boxFuntionArray;
+        self.boxFunctionArray = self.isEditHeaderView.boxFunctionArray;
+        self.noEditHeaderView.boxFunctionArray = self.boxFunctionArray;
         //3、拿到相应的model
         BoxFunctionModel *model = cell.model;
         //4、刷新头部collectioView
@@ -297,6 +279,37 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
     }
 }
 
+/**
+ 拖拽结束
+ */
+- (void)setupCollectionItem:(IsEditStatusHeaderView *)headerView oldIndexPath:(NSIndexPath *)oldIndexPath toIndexpath:(NSIndexPath *)toIndexPath {
+    BOOL canChange = self.isEditHeaderView.boxFunctionArray.count > oldIndexPath.item && self.isEditHeaderView.boxFunctionArray.count > toIndexPath.item;
+    if (canChange) {
+        /*
+         此处不使用mutableCopy，由于深拷贝之后，返回上一页，数组内容就没有改变（但是使用内存关联的做法好像也是不太优雅）
+         */
+        NSMutableArray *tempArr = self.isEditHeaderView.boxFunctionArray;//[self.isEditHeaderView.boxFunctionArray mutableCopy];
+        
+        NSInteger activeRange = toIndexPath.item - oldIndexPath.item;
+        BOOL moveForward = activeRange > 0;
+        NSInteger originIndex = 0;
+        NSInteger targetIndex = 0;
+        
+        for (NSInteger i = 1; i <= labs(activeRange); i ++) {
+            
+            NSInteger moveDirection = moveForward?1:-1;
+            originIndex = oldIndexPath.item + i*moveDirection;
+            targetIndex = originIndex  - 1*moveDirection;
+            
+            [tempArr exchangeObjectAtIndex:originIndex withObjectAtIndex:targetIndex];
+        }
+//        self.isEditHeaderView.boxFunctionArray = tempArr;//[tempArr mutableCopy];
+//        self.boxFunctionArray = self.isEditHeaderView.boxFunctionArray;
+//        self.noEditHeaderView.boxFunctionArray = self.boxFunctionArray;
+        [self.noEditHeaderView.collectionView reloadData];
+    }
+}
+
 #pragma mark - NoEditStatusHeaderViewDelegate
 /**
  编辑按钮
@@ -327,8 +340,8 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
         model.isSelectStatus = YES;
         //4、添加到选中的数组中，并更新各个数组数据
         [self.isEditHeaderView.boxFunctionArray addObject:model];
-        self.boxFuntionArray = self.isEditHeaderView.boxFunctionArray;
-        self.noEditHeaderView.boxFunctionArray = self.boxFuntionArray;
+        self.boxFunctionArray = self.isEditHeaderView.boxFunctionArray;
+        self.noEditHeaderView.boxFunctionArray = self.boxFunctionArray;
         //5、刷新头部collectioView
         [self.isEditHeaderView.collectionView reloadData];
         [self.noEditHeaderView.collectionView reloadData];
@@ -374,6 +387,13 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
     return _collectionView;
 }
 
+- (NSMutableArray *)boxFunctionArray {
+    if (!_boxFunctionArray) {
+        _boxFunctionArray = [NSMutableArray array];
+    }
+    return _boxFunctionArray;
+}
+
 - (NSMutableArray *)groupFunctionArray {
     if (!_groupFunctionArray) {
         _groupFunctionArray = [NSMutableArray array];
@@ -385,7 +405,7 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
     if (!_noEditHeaderView) {
         _noEditHeaderView = [[NoEditStatusHeaderView alloc] initWithFrame:CGRectMake(0, 0, kScreen_width, headerViewH)];
         _noEditHeaderView.delegate = self;
-        _noEditHeaderView.boxFunctionArray = self.boxFuntionArray;
+        _noEditHeaderView.boxFunctionArray = self.boxFunctionArray;
     }
     return _noEditHeaderView;
 }
@@ -395,7 +415,7 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
         _isEditHeaderView = [[IsEditStatusHeaderView alloc] initWithFrame:CGRectMake(0, 0, kScreen_width, _showHeaderViewH)];
         _isEditHeaderView.delegate = self;
         _isEditHeaderView.hidden = YES;
-        _isEditHeaderView.boxFunctionArray = self.boxFuntionArray;
+        _isEditHeaderView.boxFunctionArray = self.boxFunctionArray;
     }
     return _isEditHeaderView;
 }

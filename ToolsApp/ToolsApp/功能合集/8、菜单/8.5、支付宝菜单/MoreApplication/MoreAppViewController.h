@@ -10,6 +10,7 @@
 
 @interface MoreAppViewController : UIViewController
 
-@property (nonatomic, strong) NSMutableArray *boxFuntionArray;
+@property (nonatomic, strong) NSMutableArray *boxFunctionArray;
+@property (nonatomic, strong) NSMutableArray *groupFunctionArray; //全部功能数组
 
 @end

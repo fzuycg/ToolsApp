@@ -11,9 +11,11 @@
 #import "BoxFunctionModel.h"
 #import "MoreAppViewController.h"
 #import "UIView+Parameter.h"
+#import "MoreAppModel.h"
 
 @interface ALiPayHomeViewController () <BoxViewI700Delegate>
 @property (nonatomic, strong) BoxViewI700 *appView;
+@property (nonatomic, strong) NSMutableArray *groupFunctionArray; //全部功能数组
 
 @end
 
@@ -38,15 +40,25 @@
 - (void)readData {
     //JSON文件的路径
     NSString *path = [[NSBundle mainBundle] pathForResource:@"BoxFunction" ofType:@"json"];
-    
     //加载JSON文件
     NSData *data = [NSData dataWithContentsOfFile:path];
-    
     //将JSON数据转为NSArray或NSDictionary
     NSArray *dictArray = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
     for (NSDictionary *dict in dictArray) {
         BoxFunctionModel *model = [[BoxFunctionModel alloc] initWithDict:dict];
         [self.boxFunctionArray addObject:model];
+    }
+    
+    //全部应用的数据
+    //JSON文件的路径
+    NSString *path1 = [[NSBundle mainBundle] pathForResource:@"AllFunction" ofType:@"json"];
+    //加载JSON文件
+    NSData *data1 = [NSData dataWithContentsOfFile:path1];
+    //将JSON数据转为NSArray或NSDictionary
+    NSArray *dictArray1 = [NSJSONSerialization JSONObjectWithData:data1 options:NSJSONReadingAllowFragments error:nil];
+    for (NSDictionary *dict in dictArray1) {
+        MoreAppModel *model = [[MoreAppModel alloc] initWithDict:dict];
+        [self.groupFunctionArray addObject:model];
     }
 }
 
@@ -74,7 +86,8 @@
 - (void)itemClick:(NSInteger)itemId {
     if (itemId == 0) {
         MoreAppViewController *vc = [[MoreAppViewController alloc] init];
-        vc.boxFuntionArray = self.boxFunctionArray;
+        vc.boxFunctionArray = self.boxFunctionArray;
+        vc.groupFunctionArray = self.groupFunctionArray;
         [self.navigationController pushViewController:vc animated:YES];
     }else{
         NSLog(@"点击了其他");
@@ -99,5 +112,11 @@
     return _boxFunctionArray;
 }
 
+- (NSMutableArray *)groupFunctionArray {
+    if (!_groupFunctionArray) {
+        _groupFunctionArray = [NSMutableArray array];
+    }
+    return _groupFunctionArray;
+}
 
 @end

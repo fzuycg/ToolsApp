@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class MoreAppCell;
+@class IsEditStatusHeaderView;
 
 @protocol IsEditStatusHeaderViewDelegate <NSObject>
 @optional
@@ -22,6 +23,12 @@
  点击减号（加号）按钮
  */
 - (void)deleteButtonIsClick:(MoreAppCell *)cell functionId:(NSInteger)functionId;
+
+
+/**
+ 移动item结束之后
+ */
+- (void)setupCollectionItem:(IsEditStatusHeaderView *)headerView oldIndexPath:(NSIndexPath *)oldIndexPath toIndexpath:(NSIndexPath *)toIndexPath;
 
 @end
 

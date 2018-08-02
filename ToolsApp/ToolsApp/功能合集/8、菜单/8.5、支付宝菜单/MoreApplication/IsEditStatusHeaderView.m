@@ -13,7 +13,7 @@
 static CGFloat titleH = 44;
 static NSString *const cellId = @"MoreAppCell";
 
-@interface IsEditStatusHeaderView() <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, IsEditStatusHeaderViewDelegate, MoreAppCellDelegate>
+@interface IsEditStatusHeaderView() <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, IsEditStatusHeaderViewDelegate, MoreAppCellDelegate, UIGestureRecognizerDelegate>
 @property (nonatomic, strong) UILabel *title;
 @property (nonatomic, strong) UIButton *completeButton;
 
@@ -83,6 +83,53 @@ static NSString *const cellId = @"MoreAppCell";
     }
 }
 
+#pragma mark - UIGestureRecognizerDelegate(手势)
+- (void)longPressAction:(UILongPressGestureRecognizer *)longPress {
+    //获取此次点击的坐标，根据坐标获取cell对应的indexPath
+    CGPoint point = [longPress locationInView:_collectionView];
+    NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:point];
+    //根据长按手势的状态进行处理。
+    switch (longPress.state) {
+        case UIGestureRecognizerStateBegan:
+            //当没有点击到cell的时候不进行处理
+            if (!indexPath) break;
+            //开始移动
+            [_collectionView beginInteractiveMovementForItemAtIndexPath:indexPath];
+            break;
+        case UIGestureRecognizerStateChanged:
+            //移动过程中更新位置坐标
+            [_collectionView updateInteractiveMovementTargetPosition:point];
+            break;
+        case UIGestureRecognizerStateEnded:
+            //停止移动调用此方法
+            [_collectionView endInteractiveMovement];
+            break;
+        default:
+            //取消移动
+            [_collectionView cancelInteractiveMovement];
+            break;
+    }
+}
+
+// 在开始移动时会调用此代理方法，
+- (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath {
+    //根据indexpath判断单元格是否可以移动，如果都可以移动，直接就返回YES ,不能移动的返回NO
+    return YES;
+}
+
+// 在移动结束的时候调用此代理方法
+- (void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath*)destinationIndexPath {
+    /**
+     *sourceIndexPath 原始数据 indexpath
+     * destinationIndexPath 移动到目标数据的 indexPath
+     */
+    
+    if ([_delegate respondsToSelector:@selector(setupCollectionItem:oldIndexPath:toIndexpath:)]) {
+        [_delegate setupCollectionItem:self oldIndexPath:sourceIndexPath toIndexpath:destinationIndexPath];
+    }
+    
+}
+
 #pragma mark - Lazy
 - (UILabel *)title {
     if (!_title) {
@@ -120,6 +167,12 @@ static NSString *const cellId = @"MoreAppCell";
         _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.backgroundColor = [UIColor whiteColor];
         [_collectionView registerClass:[MoreAppCell class] forCellWithReuseIdentifier:cellId];
+        
+        //添加手势
+        UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressAction:)];
+        longPressGesture.minimumPressDuration = 0.3f;
+        longPressGesture.delegate = self;
+        [_collectionView addGestureRecognizer:longPressGesture];
     }
     return _collectionView;
 }
