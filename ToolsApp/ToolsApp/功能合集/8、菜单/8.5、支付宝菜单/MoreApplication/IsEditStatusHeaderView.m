@@ -91,19 +91,35 @@ static NSString *const cellId = @"MoreAppCell";
     //根据长按手势的状态进行处理。
     switch (longPress.state) {
         case UIGestureRecognizerStateBegan:
+        {
             //当没有点击到cell的时候不进行处理
             if (!indexPath) break;
             //开始移动
             [_collectionView beginInteractiveMovementForItemAtIndexPath:indexPath];
+            //cell.layer添加抖动手势
+//            for (MoreAppCell *cell in [self.collectionView visibleCells]) {
+//                [self starShake:cell];
+//            }
+            MoreAppCell *cell = (MoreAppCell*)[self.collectionView cellForItemAtIndexPath:indexPath];
+            [self starShake:cell];
             break;
+        }
         case UIGestureRecognizerStateChanged:
             //移动过程中更新位置坐标
             [_collectionView updateInteractiveMovementTargetPosition:point];
             break;
         case UIGestureRecognizerStateEnded:
+        {
             //停止移动调用此方法
             [_collectionView endInteractiveMovement];
+            //cell.layer移除抖动手势
+//            for (MoreAppCell *cell in [self.collectionView visibleCells]) {
+//                [self stopShake:cell];
+//            }
+            MoreAppCell *cell = (MoreAppCell*)[self.collectionView cellForItemAtIndexPath:indexPath];
+            [self stopShake:cell];
             break;
+        }
         default:
             //取消移动
             [_collectionView cancelInteractiveMovement];
@@ -128,6 +144,24 @@ static NSString *const cellId = @"MoreAppCell";
         [_delegate setupCollectionItem:self oldIndexPath:sourceIndexPath toIndexpath:destinationIndexPath];
     }
     
+}
+
+// 开始抖动
+- (void)starShake:(MoreAppCell*)cell{
+    
+    CAKeyframeAnimation * keyAnimaion = [CAKeyframeAnimation animation];
+    keyAnimaion.keyPath = @"transform.rotation";
+    keyAnimaion.values = @[@(-3 / 180.0 * M_PI),@(3 /180.0 * M_PI),@(-3/ 180.0 * M_PI)];//度数转弧度
+    keyAnimaion.removedOnCompletion = NO;
+    keyAnimaion.fillMode = kCAFillModeForwards;
+    keyAnimaion.duration = 0.3;
+    keyAnimaion.repeatCount = MAXFLOAT;
+    [cell.layer addAnimation:keyAnimaion forKey:@"cellShake"];
+}
+
+// 停止抖动
+- (void)stopShake:(MoreAppCell*)cell{
+    [cell.layer removeAnimationForKey:@"cellShake"];
 }
 
 #pragma mark - Lazy

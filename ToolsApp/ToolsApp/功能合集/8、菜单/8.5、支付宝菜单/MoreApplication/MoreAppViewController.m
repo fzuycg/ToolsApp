@@ -79,7 +79,7 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
     }
     
     //给标题栏添加搜索框
-    UIView *searchView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreen_width-50, 40)];
+    UIView *searchView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreen_width-50, 32)];
     UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:searchView.bounds];
     searchBar.placeholder = @"搜索";
     [searchView addSubview:searchBar];
@@ -176,15 +176,20 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
         CollectionReusableHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:headerId forIndexPath:indexPath];
         MoreAppModel *model = self.groupFunctionArray[indexPath.section];
         headerView.sectionTitleText = model.sectionTitle;
-        if (indexPath.section == 0) {
-            headerView.isFirstSection = YES;
-        }else{
-            headerView.isFirstSection = NO;
-        }
+        headerView.backgroundColor = [UIColor whiteColor];
+//        if (indexPath.section == 0) {
+//            headerView.isFirstSection = YES;
+//        }else{
+//            headerView.isFirstSection = NO;
+//        }
         return headerView;
     }else{
         CollectionReusableFooterView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:footerId forIndexPath:indexPath];
-        footerView.backgroundColor = [UIColor lightGrayColor];
+        if (indexPath.section == self.groupFunctionArray.count-1) {
+            footerView.backgroundColor = [UIColor lightGrayColor];
+        }else{
+            footerView.backgroundColor = [UIColor whiteColor];
+        }
         return footerView;
     }
 }
@@ -371,6 +376,10 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
         UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc]init];
         //同一行相邻两个cell的最小间距
         layout.minimumInteritemSpacing = 0;
+        //设置sectionHeader滑动悬浮(这是在iOS9之后才出现的)
+        layout.sectionHeadersPinToVisibleBounds = YES;
+        //设置sectionFooter滑动悬浮
+        layout.sectionFootersPinToVisibleBounds = YES;
         //最小两行之间的间距
         layout.minimumLineSpacing = 0;
         layout.itemSize = CGSizeMake(kScreen_width/5, itemH);
