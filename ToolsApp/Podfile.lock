@@ -3,6 +3,7 @@ PODS:
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
+  - Masonry (1.1.0)
   - MJExtension (3.0.13)
   - SDWebImage (4.3.2):
     - SDWebImage/Core (= 4.3.2)
@@ -12,6 +13,7 @@ PODS:
 
 DEPENDENCIES:
   - FMDB
+  - Masonry
   - MJExtension
   - SDWebImage
   - XHLaunchAd
@@ -19,10 +21,11 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
   XHLaunchAd: 0dc50c5af00ee5d9e734b9dce6eece7acaa71122
 
-PODFILE CHECKSUM: 59112dd6acfa1e956d630d1ce1fb7c6bf89ccbf8
+PODFILE CHECKSUM: d1f15f9dccc074c8032b1320c590ab25be72c90f
 
 COCOAPODS: 1.4.0

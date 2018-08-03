@@ -17,7 +17,7 @@
 
 static CGFloat imageViewWH = 28; //图片的宽高
 static CGFloat titleH = 30; //标题文字的高
-static CGFloat buttonWH = 30; //按钮的宽高
+static CGFloat buttonWH = 26; //按钮的宽高
 
 @implementation MoreAppCell
 

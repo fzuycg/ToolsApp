@@ -179,6 +179,7 @@
 		C89BECE52109F3130013DBFA /* BoxFunctionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C89BECE42109F3130013DBFA /* BoxFunctionCell.m */; };
 		C89BECE82109F3F40013DBFA /* BoxFunctionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C89BECE72109F3F40013DBFA /* BoxFunctionModel.m */; };
 		C89BECEB210B16510013DBFA /* BoxFunction.json in Resources */ = {isa = PBXBuildFile; fileRef = C89BECEA210B16510013DBFA /* BoxFunction.json */; };
+		C8ACBC2A2112E9030057D8DC /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC282112E9030057D8DC /* NSDictionary+Log.m */; };
 		C8C1B020206391D4007BE1BD /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B01F206391D4007BE1BD /* CustomViewController.m */; };
 		C8C1B02320639222007BE1BD /* MarqueeLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B02220639222007BE1BD /* MarqueeLabelView.m */; };
 		C8C1B0262063925E007BE1BD /* CustomLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B0252063925E007BE1BD /* CustomLabelViewController.m */; };
@@ -492,6 +493,8 @@
 		C89BECE62109F3F40013DBFA /* BoxFunctionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoxFunctionModel.h; sourceTree = "<group>"; };
 		C89BECE72109F3F40013DBFA /* BoxFunctionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoxFunctionModel.m; sourceTree = "<group>"; };
 		C89BECEA210B16510013DBFA /* BoxFunction.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoxFunction.json; sourceTree = "<group>"; };
+		C8ACBC282112E9030057D8DC /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
+		C8ACBC292112E9030057D8DC /* NSDictionary+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Log.h"; sourceTree = "<group>"; };
 		C8C1B01E206391D4007BE1BD /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 		C8C1B01F206391D4007BE1BD /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		C8C1B02120639222007BE1BD /* MarqueeLabelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarqueeLabelView.h; sourceTree = "<group>"; };
@@ -1478,6 +1481,8 @@
 				C84E5A09206C99E20011B307 /* NSString+Addition.m */,
 				C8C1B02720639C82007BE1BD /* UIView+Parameter.h */,
 				C8C1B02820639C82007BE1BD /* UIView+Parameter.m */,
+				C8ACBC292112E9030057D8DC /* NSDictionary+Log.h */,
+				C8ACBC282112E9030057D8DC /* NSDictionary+Log.m */,
 			);
 			path = "Utils(工具)";
 			sourceTree = "<group>";
@@ -1997,6 +2002,7 @@
 				C84E5A18206CB6470011B307 /* IFMShareItemCell.m in Sources */,
 				C88EB79D205A9D1E008092BB /* YCGHomeViewController.m in Sources */,
 				C876A488206256130048728C /* CardLayoutView.m in Sources */,
+				C8ACBC2A2112E9030057D8DC /* NSDictionary+Log.m in Sources */,
 				C84193D0206A1552009CA6C6 /* WebBrowserViewController.m in Sources */,
 				C8E60B242074A61D00DD95B5 /* YCGAreaDataManager.m in Sources */,
 				C89BECE82109F3F40013DBFA /* BoxFunctionModel.m in Sources */,
@@ -2238,7 +2244,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = XP242N85BR;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ToolsApp/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ToolsApp/Supporting Files/Info.plist";
@@ -2246,8 +2252,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangcg.learn.ToolsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c0f54730-3ccb-4e91-8d68-2e0cc1638260";
-				PROVISIONING_PROFILE_SPECIFIER = DevProvision;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ToolsApp/功能合集/8、菜单/8.2、侧滑(正常)/Controller/ToolsApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

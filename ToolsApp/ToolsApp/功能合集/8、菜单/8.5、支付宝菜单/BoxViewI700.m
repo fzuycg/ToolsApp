@@ -10,6 +10,7 @@
 #import "BoxFunctionCell.h"
 #import "BoxFunctionModel.h"
 #import "UIView+Parameter.h"
+#import "Masonry.h"
 
 @interface BoxViewI700 () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -30,6 +31,20 @@ static NSString *const cellId = @"BoxFunctionCell";
 
 - (void)creatUI {
     [self addSubview:self.collectionView];
+    UIView *lineView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 0.5)];
+    lineView1.backgroundColor = [UIColor lightGrayColor];
+    [self addSubview:lineView1];
+    
+    UIView *lineView2 = [[UIView alloc] init];
+    lineView2.backgroundColor = [UIColor lightGrayColor];
+    [self addSubview:lineView2];
+    
+    [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(0);
+        make.bottom.mas_equalTo(0);
+        make.width.mas_equalTo(self);
+        make.height.mas_equalTo(lineView1);
+    }];
 }
 
 - (void)refreshUI {
@@ -103,7 +118,6 @@ static NSString *const cellId = @"BoxFunctionCell";
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         _collectionView.backgroundColor = [UIColor whiteColor];
-//        _collectionView.alwaysBounceVertical = YES;
         [_collectionView registerClass:[BoxFunctionCell class] forCellWithReuseIdentifier:cellId];
     }
     return _collectionView;

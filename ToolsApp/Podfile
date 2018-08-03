@@ -6,4 +6,5 @@ target 'ToolsApp' do
   pod 'MJExtension'
   pod 'XHLaunchAd' #开屏广告三方库，地址：https://github.com/CoderZhuXH/XHLaunchAd
   pod 'FMDB'
+  pod 'Masonry'
 end
