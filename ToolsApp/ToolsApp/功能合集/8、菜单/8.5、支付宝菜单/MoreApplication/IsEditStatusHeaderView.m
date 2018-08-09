@@ -13,9 +13,9 @@
 static CGFloat titleH = 44;
 static NSString *const cellId = @"MoreAppCell";
 
-@interface IsEditStatusHeaderView() <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, IsEditStatusHeaderViewDelegate, MoreAppCellDelegate, UIGestureRecognizerDelegate>
+@interface IsEditStatusHeaderView() <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, MoreAppCellDelegate, UIGestureRecognizerDelegate>
 @property (nonatomic, strong) UILabel *title;
-@property (nonatomic, strong) UIButton *completeButton;
+//@property (nonatomic, strong) UIButton *completeButton;
 
 @end
 
@@ -31,7 +31,7 @@ static NSString *const cellId = @"MoreAppCell";
 
 - (void)createUI {
     [self addSubview:self.title];
-    [self addSubview:self.completeButton];
+//    [self addSubview:self.completeButton];
     [self addSubview:self.collectionView];
 }
 
@@ -40,11 +40,11 @@ static NSString *const cellId = @"MoreAppCell";
     [self.collectionView reloadData];
 }
 
-- (void)completeButtonClick {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(completeButtonIsClick)]) {
-        [self.delegate completeButtonIsClick];
-    }
-}
+//- (void)completeButtonClick {
+//    if (self.delegate && [self.delegate respondsToSelector:@selector(completeButtonIsClick)]) {
+//        [self.delegate completeButtonIsClick];
+//    }
+//}
 
 #pragma mark -UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -59,11 +59,6 @@ static NSString *const cellId = @"MoreAppCell";
 //    cell.isSelectStatus = YES;
     cell.delegate = self;
     return cell;
-}
-
-#pragma mark - UICollectionViewDelegate
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
 }
 
 
@@ -167,24 +162,36 @@ static NSString *const cellId = @"MoreAppCell";
 #pragma mark - Lazy
 - (UILabel *)title {
     if (!_title) {
-        _title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 60, titleH)];
-        _title.text = @"首页";
-        _title.font = [UIFont systemFontOfSize:16];
-        _title.textAlignment = NSTextAlignmentCenter;
+        _title = [[UILabel alloc] initWithFrame:CGRectMake(12, 0, self.frame.size.width-24, titleH)];
+//        _title.text = @"我的应用（按住拖动调整排序）";
+        _title.textAlignment = NSTextAlignmentLeft;
+        
+        NSMutableAttributedString *titleString = [[NSMutableAttributedString alloc]initWithString:@"我的应用（按住拖动调整排序）"];
+        [titleString beginEditing];
+        
+        //字体大小
+        [titleString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:16.0] range:NSMakeRange(0, 4)];
+        [titleString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:14.0] range:NSMakeRange(4, 10)];
+        
+        //字体颜色
+        [titleString addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor] range:NSMakeRange(0, 4)];
+        [titleString addAttribute:NSForegroundColorAttributeName value:[UIColor lightGrayColor] range:NSMakeRange(4, 10)];
+        
+        _title.attributedText = titleString;
     }
     return _title;
 }
 
-- (UIButton *)completeButton {
-    if (!_completeButton) {
-        _completeButton = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width-60, 0, 60, titleH)];
-        [_completeButton setTitle:@"完成" forState:UIControlStateNormal];
-        [_completeButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-        [_completeButton addTarget:self action:@selector(completeButtonClick) forControlEvents:UIControlEventTouchUpInside];
-        _completeButton.titleLabel.font = [UIFont systemFontOfSize:16];
-    }
-    return _completeButton;
-}
+//- (UIButton *)completeButton {
+//    if (!_completeButton) {
+//        _completeButton = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width-60, 0, 60, titleH)];
+//        [_completeButton setTitle:@"完成" forState:UIControlStateNormal];
+//        [_completeButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+//        [_completeButton addTarget:self action:@selector(completeButtonClick) forControlEvents:UIControlEventTouchUpInside];
+//        _completeButton.titleLabel.font = [UIFont systemFontOfSize:16];
+//    }
+//    return _completeButton;
+//}
 
 - (UICollectionView *)collectionView {
     if (!_collectionView) {

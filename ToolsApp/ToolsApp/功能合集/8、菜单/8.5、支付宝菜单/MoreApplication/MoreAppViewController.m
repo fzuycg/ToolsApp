@@ -15,6 +15,8 @@
 #import "IsEditStatusHeaderView.h"
 #import "NoEditStatusHeaderView.h"
 #import "UIView+Parameter.h"
+#import "IsEditStatusNaviView.h"
+#import "NoEditStatusNaviView.h"
 
 static CGFloat headerViewH = 44; //初始的时候头视图的高度（未编辑状态）
 static CGFloat sectionHeaderH = 40; //每个section头部高度
@@ -25,11 +27,13 @@ static NSString *const cellId = @"MoreAppCell";
 static NSString *const headerId = @"CollectionReusableFooterView";
 static NSString *const footerId = @"CollectionReusableHeaderView";
 
-@interface MoreAppViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, IsEditStatusHeaderViewDelegate, NoEditStatusHeaderViewDelegate, MoreAppCellDelegate>
+@interface MoreAppViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, IsEditStatusHeaderViewDelegate, NoEditStatusHeaderViewDelegate, MoreAppCellDelegate, NoEditStatusNaviViewDelegate, IsEditStatusNaviViewDelegate>
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) IsEditStatusHeaderView *isEditHeaderView;
 @property (nonatomic, strong) NoEditStatusHeaderView *noEditHeaderView;
+@property (nonatomic, strong) IsEditStatusNaviView *isEditNaviView;
+@property (nonatomic, strong) NoEditStatusNaviView *noEditNaviView;
 
 @property (nonatomic, assign) BOOL isEditStatus; //是否处于编辑状态
 @end
@@ -49,6 +53,11 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self createUI];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)createUI {
@@ -78,13 +87,10 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
         _showHeaderViewH = itemH*3 + headerViewH;
     }
     
-    //给标题栏添加搜索框
-    UIView *searchView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreen_width-50, 32)];
-    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:searchView.bounds];
-    searchBar.placeholder = @"搜索";
-    [searchView addSubview:searchBar];
-    self.navigationItem.titleView = searchView;
+    [self.navigationController setNavigationBarHidden:YES];
     
+    [self.view addSubview:self.noEditNaviView];
+    [self.view addSubview:self.isEditNaviView];
     [self.view addSubview:self.scrollView];
     [self.scrollView addSubview:self.collectionView];
     [self.scrollView addSubview:self.noEditHeaderView];
@@ -145,9 +151,13 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
         self.scrollView.scrollEnabled = NO;
         self.collectionView.scrollEnabled = YES;
         self.collectionView.showsVerticalScrollIndicator = NO;
+        self.isEditNaviView.hidden = NO;
+        self.noEditNaviView.hidden = YES;
     }else{
         self.scrollView.scrollEnabled = YES;
         self.collectionView.scrollEnabled = NO;
+        self.isEditNaviView.hidden = YES;
+        self.noEditNaviView.hidden = NO;
     }
     [self setupUI];
 }
@@ -216,13 +226,30 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
     return CGSizeMake(kScreen_width, sectionFooterH);
 }
 
+#pragma mark - NoEditStatusNaviViewDelegate
+// 返回按钮
+- (void)backButtonIsClick {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - IsEditStatusNaviViewDelegate
+// 取消按钮
+- (void)cancelButtonIsClick {
+    self.isEditStatus = NO;
+}
+
+// 完成按钮
+- (void)completeButtonIsClick {
+    self.isEditStatus = NO;
+}
+
 #pragma mark - IsEditStatusHeaderViewDelegate
 /**
  完成按钮
  */
-- (void)completeButtonIsClick {
-    self.isEditStatus = NO;
-}
+//- (void)completeButtonIsClick {
+//    self.isEditStatus = NO;
+//}
 
 /**
  删除按钮
@@ -427,6 +454,23 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
         _isEditHeaderView.boxFunctionArray = self.boxFunctionArray;
     }
     return _isEditHeaderView;
+}
+
+- (NoEditStatusNaviView *)noEditNaviView {
+    if (!_noEditNaviView) {
+        _noEditNaviView = [[NoEditStatusNaviView alloc] initWithFrame:CGRectMake(0, 0, kScreen_width, Navigation_HEIGHT)];
+        _noEditNaviView.delegate = self;
+    }
+    return _noEditNaviView;
+}
+
+- (IsEditStatusNaviView *)isEditNaviView {
+    if (!_isEditNaviView) {
+        _isEditNaviView = [[IsEditStatusNaviView alloc] initWithFrame:CGRectMake(0, 0, kScreen_width, Navigation_HEIGHT)];
+        _isEditNaviView.delegate = self;
+        _isEditNaviView.hidden = YES;
+    }
+    return _isEditNaviView;
 }
 
 @end

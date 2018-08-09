@@ -180,6 +180,8 @@
 		C89BECE82109F3F40013DBFA /* BoxFunctionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C89BECE72109F3F40013DBFA /* BoxFunctionModel.m */; };
 		C89BECEB210B16510013DBFA /* BoxFunction.json in Resources */ = {isa = PBXBuildFile; fileRef = C89BECEA210B16510013DBFA /* BoxFunction.json */; };
 		C8ACBC2A2112E9030057D8DC /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC282112E9030057D8DC /* NSDictionary+Log.m */; };
+		C8ACBC47211BD9620057D8DC /* IsEditStatusNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC46211BD9620057D8DC /* IsEditStatusNaviView.m */; };
+		C8ACBC4A211BD97E0057D8DC /* NoEditStatusNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC49211BD97E0057D8DC /* NoEditStatusNaviView.m */; };
 		C8C1B020206391D4007BE1BD /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B01F206391D4007BE1BD /* CustomViewController.m */; };
 		C8C1B02320639222007BE1BD /* MarqueeLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B02220639222007BE1BD /* MarqueeLabelView.m */; };
 		C8C1B0262063925E007BE1BD /* CustomLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B0252063925E007BE1BD /* CustomLabelViewController.m */; };
@@ -495,6 +497,10 @@
 		C89BECEA210B16510013DBFA /* BoxFunction.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoxFunction.json; sourceTree = "<group>"; };
 		C8ACBC282112E9030057D8DC /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
 		C8ACBC292112E9030057D8DC /* NSDictionary+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Log.h"; sourceTree = "<group>"; };
+		C8ACBC45211BD9620057D8DC /* IsEditStatusNaviView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsEditStatusNaviView.h; sourceTree = "<group>"; };
+		C8ACBC46211BD9620057D8DC /* IsEditStatusNaviView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IsEditStatusNaviView.m; sourceTree = "<group>"; };
+		C8ACBC48211BD97E0057D8DC /* NoEditStatusNaviView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoEditStatusNaviView.h; sourceTree = "<group>"; };
+		C8ACBC49211BD97E0057D8DC /* NoEditStatusNaviView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoEditStatusNaviView.m; sourceTree = "<group>"; };
 		C8C1B01E206391D4007BE1BD /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 		C8C1B01F206391D4007BE1BD /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		C8C1B02120639222007BE1BD /* MarqueeLabelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarqueeLabelView.h; sourceTree = "<group>"; };
@@ -1523,6 +1529,10 @@
 				C8109E5B210F3B4300B9AEBB /* NoEditStatusHeaderView.m */,
 				C8109E5D2110794200B9AEBB /* NoEditStatusHeaderCell.h */,
 				C8109E5E2110794200B9AEBB /* NoEditStatusHeaderCell.m */,
+				C8ACBC45211BD9620057D8DC /* IsEditStatusNaviView.h */,
+				C8ACBC46211BD9620057D8DC /* IsEditStatusNaviView.m */,
+				C8ACBC48211BD97E0057D8DC /* NoEditStatusNaviView.h */,
+				C8ACBC49211BD97E0057D8DC /* NoEditStatusNaviView.m */,
 			);
 			path = MoreApplication;
 			sourceTree = "<group>";
@@ -1966,6 +1976,7 @@
 				C8C1B02320639222007BE1BD /* MarqueeLabelView.m in Sources */,
 				C874DB63208490AF00BEF5A1 /* SideMenuViewController.m in Sources */,
 				C8C1B02920639C82007BE1BD /* UIView+Parameter.m in Sources */,
+				C8ACBC4A211BD97E0057D8DC /* NoEditStatusNaviView.m in Sources */,
 				C88EB793205A9645008092BB /* NavigationController.m in Sources */,
 				C8C1B020206391D4007BE1BD /* CustomViewController.m in Sources */,
 				C876A4812062529C0048728C /* CardLayoutCell.m in Sources */,
@@ -2042,6 +2053,7 @@
 				C876A446206102250048728C /* WaterFallViewController.m in Sources */,
 				C8E60B372079B06B00DD95B5 /* YCGCityTableViewCell.m in Sources */,
 				C876A42B2060BC760048728C /* Network.m in Sources */,
+				C8ACBC47211BD9620057D8DC /* IsEditStatusNaviView.m in Sources */,
 				C84E5A25206CC2D50011B307 /* GuideTestManager.m in Sources */,
 				C84E5A08206C8E6C0011B307 /* SystemFunctionViewController.m in Sources */,
 				C87DCD05207F763F00792988 /* WritingBoardViewController.m in Sources */,

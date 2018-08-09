@@ -12,7 +12,7 @@
 
 static NSString *const cellId = @"NoEditStatusHeaderCell";
 
-@interface NoEditStatusHeaderView() <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface NoEditStatusHeaderView() <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UILabel *title;
 @property (nonatomic, strong) UIButton *editButton;
 
@@ -32,7 +32,7 @@ static NSString *const cellId = @"NoEditStatusHeaderCell";
 
 - (void)createUI {
     //计算collectionView的宽度
-    _collectionViewW = self.frame.size.width - self.title.frame.size.width - self.editButton.frame.size.width;
+    _collectionViewW = self.editButton.frame.origin.x - self.title.frame.size.width-self.title.frame.origin.x;
     
     [self addSubview:self.title];
     [self addSubview:self.editButton];
@@ -65,11 +65,6 @@ static NSString *const cellId = @"NoEditStatusHeaderCell";
     return cell;
 }
 
-#pragma mark - UICollectionViewDelegate
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-}
-
 
 #pragma mark - UICollectionViewFlowLayout
 //每一个分组的上左下右间距
@@ -81,21 +76,25 @@ static NSString *const cellId = @"NoEditStatusHeaderCell";
 #pragma mark - Lazy
 - (UILabel *)title {
     if (!_title) {
-        _title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 60, self.frame.size.height)];
-        _title.text = @"首页";
+        _title = [[UILabel alloc] initWithFrame:CGRectMake(12, 0, 70, self.frame.size.height)];
+        _title.text = @"我的应用";
         _title.font = [UIFont systemFontOfSize:16];
-        _title.textAlignment = NSTextAlignmentCenter;
+        _title.textAlignment = NSTextAlignmentLeft;
     }
     return _title;
 }
 
 - (UIButton *)editButton {
     if (!_editButton) {
-        _editButton = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width-60, 0, 60, self.frame.size.height)];
+        _editButton = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width-62, (self.frame.size.height-32)/2, 50, 32)];
         [_editButton addTarget:self action:@selector(editButtonClick) forControlEvents:UIControlEventTouchUpInside];
         [_editButton setTitle:@"编辑" forState:UIControlStateNormal];
         [_editButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         _editButton.titleLabel.font = [UIFont systemFontOfSize:16];
+        
+        _editButton.layer.cornerRadius = 2.0;//2.0是圆角的弧度，根据需求自己更改
+        _editButton.layer.borderColor = [UIColor blueColor].CGColor;//设置边框颜色
+        _editButton.layer.borderWidth = 0.5f;//设置边框宽度
     }
     return _editButton;
 }
@@ -107,9 +106,9 @@ static NSString *const cellId = @"NoEditStatusHeaderCell";
         layout.minimumInteritemSpacing = 0;
         //最小两行之间的间距
         layout.minimumLineSpacing = 0;
-        layout.itemSize = CGSizeMake(_collectionViewW/7, self.frame.size.height);
+        layout.itemSize = CGSizeMake((_collectionViewW-1)/7, self.frame.size.height);
         
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(self.title.frame.size.width, 0, _collectionViewW, self.frame.size.height) collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(self.title.frame.size.width+self.title.frame.origin.x, 0, _collectionViewW, self.frame.size.height) collectionViewLayout:layout];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         _collectionView.showsVerticalScrollIndicator = NO;

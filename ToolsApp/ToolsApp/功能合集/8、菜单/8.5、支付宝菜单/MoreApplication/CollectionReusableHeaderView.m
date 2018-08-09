@@ -42,7 +42,7 @@
 #pragma mark - Lazy
 - (UILabel *)sectionTitle {
     if (!_sectionTitle) {
-        _sectionTitle = [[UILabel alloc] initWithFrame:CGRectMake(16, 0, self.frame.size.width-12, self.frame.size.height)];
+        _sectionTitle = [[UILabel alloc] initWithFrame:CGRectMake(16, 0, self.frame.size.width-32, self.frame.size.height)];
         _sectionTitle.textAlignment = NSTextAlignmentLeft;
         _sectionTitle.font = [UIFont systemFontOfSize:18];
     }

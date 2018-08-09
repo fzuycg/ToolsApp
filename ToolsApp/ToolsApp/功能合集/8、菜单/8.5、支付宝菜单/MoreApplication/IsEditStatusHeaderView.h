@@ -17,7 +17,7 @@
 /**
  点击完成按钮
  */
-- (void)completeButtonIsClick;
+//- (void)completeButtonIsClick;
 
 /**
  点击减号（加号）按钮
