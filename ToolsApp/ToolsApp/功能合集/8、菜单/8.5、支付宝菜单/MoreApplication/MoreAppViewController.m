@@ -236,11 +236,13 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
 // 取消按钮
 - (void)cancelButtonIsClick {
     self.isEditStatus = NO;
+    //需要在这里取消之前的数据操作
 }
 
 // 完成按钮
 - (void)completeButtonIsClick {
     self.isEditStatus = NO;
+    //这里上传之前的数据操作到服务端
 }
 
 #pragma mark - IsEditStatusHeaderViewDelegate

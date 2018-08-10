@@ -24,10 +24,9 @@
 }
 
 - (void)createUI {
-//    self.backgroundColor = [UIColor yellowColor];
     [self addSubview:self.backButton];
     //添加搜索栏
-    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(70, StatusBar_HEIGHT+(NavigationBar_HEIGHT-40)/2, self.frame.size.width-80, 40)];
+    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(self.backButton.frame.size.width+self.backButton.frame.origin.x+5, StatusBar_HEIGHT+(NavigationBar_HEIGHT-40)/2, self.frame.size.width-self.backButton.frame.size.width-self.backButton.frame.origin.x-10, 40)];
     searchBar.searchBarStyle = UISearchBarStyleMinimal;//不显示背景
     searchBar.placeholder = @"搜索";
     [self addSubview:searchBar];
@@ -35,26 +34,6 @@
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height-0.5, self.frame.size.width, 0.5)];
     lineView.backgroundColor = [UIColor lightGrayColor];
     [self addSubview:lineView];
-}
-
-- (UIImage*)getImageWithColor:(UIColor*)color andHeight:(CGFloat)height{
-    
-    CGRect r= CGRectMake(0.0f, 0.0f, 1.0f, height);
-    
-    UIGraphicsBeginImageContext(r.size);
-    
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    
-    CGContextFillRect(context, r);
-    
-    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
-    
-    UIGraphicsEndImageContext();
-    
-    return img;
-    
 }
 
 - (void)backButtonClick {
@@ -66,7 +45,7 @@
 #pragma mark - Lazy
 - (UIButton *)backButton {
     if (!_backButton) {
-        _backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, StatusBar_HEIGHT, 60, NavigationBar_HEIGHT)];
+        _backButton = [[UIButton alloc] initWithFrame:CGRectMake(12, StatusBar_HEIGHT, 50, NavigationBar_HEIGHT)];
         [_backButton setTitle:@"首页" forState:UIControlStateNormal];
         [_backButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         [_backButton addTarget:self action:@selector(backButtonClick) forControlEvents:UIControlEventTouchUpInside];
