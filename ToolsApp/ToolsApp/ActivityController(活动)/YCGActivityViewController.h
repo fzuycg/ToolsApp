@@ -6,8 +6,8 @@
 //  Copyright © 2018年 com.yangcg.learn. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BaseTableViewController.h"
 
-@interface YCGActivityViewController : BaseViewController
+@interface YCGActivityViewController : BaseTableViewController
 
 @end

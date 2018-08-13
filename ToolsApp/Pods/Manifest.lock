@@ -1,4 +1,5 @@
 PODS:
+  - fishhook (0.2)
   - FLAnimatedImage (1.0.12)
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
@@ -10,22 +11,27 @@ PODS:
   - SDWebImage/Core (4.3.2)
   - XHLaunchAd (3.9.7):
     - FLAnimatedImage (~> 1.0.12)
+  - ZipArchive (1.4.0)
 
 DEPENDENCIES:
+  - fishhook
   - FMDB
   - Masonry
   - MJExtension
   - SDWebImage
   - XHLaunchAd
+  - ZipArchive
 
 SPEC CHECKSUMS:
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
   XHLaunchAd: 0dc50c5af00ee5d9e734b9dce6eece7acaa71122
+  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: d1f15f9dccc074c8032b1320c590ab25be72c90f
+PODFILE CHECKSUM: 160c55cf6703b9bb654699f37382b901aca064fc
 
 COCOAPODS: 1.4.0

@@ -7,4 +7,6 @@ target 'ToolsApp' do
   pod 'XHLaunchAd' #开屏广告三方库，地址：https://github.com/CoderZhuXH/XHLaunchAd
   pod 'FMDB'
   pod 'Masonry'
+  pod 'ZipArchive'
+  pod 'fishhook'
 end

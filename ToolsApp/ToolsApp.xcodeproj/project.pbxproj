@@ -53,6 +53,7 @@
 		C8109EA421114B1200B9AEBB /* 上银汇款.png in Resources */ = {isa = PBXBuildFile; fileRef = C8109E9D21114B1200B9AEBB /* 上银汇款.png */; };
 		C8109EA521114B1200B9AEBB /* 亲情号.png in Resources */ = {isa = PBXBuildFile; fileRef = C8109E9E21114B1200B9AEBB /* 亲情号.png */; };
 		C8109EA621114B1200B9AEBB /* 红包.png in Resources */ = {isa = PBXBuildFile; fileRef = C8109E9F21114B1200B9AEBB /* 红包.png */; };
+		C81806B5211D355F005183E3 /* LogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C81806B4211D355F005183E3 /* LogManager.m */; };
 		C820B20B206353AF00C80A4C /* i2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B206206353AF00C80A4C /* i2.jpg */; };
 		C820B20C206353AF00C80A4C /* i5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B207206353AF00C80A4C /* i5.jpg */; };
 		C820B20D206353AF00C80A4C /* i4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B208206353AF00C80A4C /* i4.jpg */; };
@@ -63,6 +64,8 @@
 		C84193D7206B8458009CA6C6 /* LaunchNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C84193D6206B8458009CA6C6 /* LaunchNoticeView.m */; };
 		C84193DB206B86BB009CA6C6 /* DIYPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84193DA206B86BB009CA6C6 /* DIYPopViewController.m */; };
 		C84193DF206B86EC009CA6C6 /* HubMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C84193DE206B86EC009CA6C6 /* HubMessageView.m */; };
+		C84594CE211D773800D80BC3 /* SaveLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C84594CD211D773800D80BC3 /* SaveLogManager.m */; };
+		C84594D1211D797800D80BC3 /* HookLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C84594D0211D797800D80BC3 /* HookLogManager.m */; };
 		C84E59FD206C85290011B307 /* DIYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84E59FC206C85290011B307 /* DIYViewController.m */; };
 		C84E5A00206C85E60011B307 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84E59FF206C85E60011B307 /* LaunchViewController.m */; };
 		C84E5A05206C8DCC0011B307 /* IPhoneInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84E5A04206C8DCC0011B307 /* IPhoneInfoViewController.m */; };
@@ -182,6 +185,8 @@
 		C8ACBC2A2112E9030057D8DC /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC282112E9030057D8DC /* NSDictionary+Log.m */; };
 		C8ACBC47211BD9620057D8DC /* IsEditStatusNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC46211BD9620057D8DC /* IsEditStatusNaviView.m */; };
 		C8ACBC4A211BD97E0057D8DC /* NoEditStatusNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC49211BD97E0057D8DC /* NoEditStatusNaviView.m */; };
+		C8ACBC5A211D28350057D8DC /* LogSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC59211D28350057D8DC /* LogSaveViewController.m */; };
+		C8ACBC5D211D28510057D8DC /* MarkdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC5C211D28510057D8DC /* MarkdownViewController.m */; };
 		C8C1B020206391D4007BE1BD /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B01F206391D4007BE1BD /* CustomViewController.m */; };
 		C8C1B02320639222007BE1BD /* MarqueeLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B02220639222007BE1BD /* MarqueeLabelView.m */; };
 		C8C1B0262063925E007BE1BD /* CustomLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B0252063925E007BE1BD /* CustomLabelViewController.m */; };
@@ -286,6 +291,8 @@
 		C8109E9D21114B1200B9AEBB /* 上银汇款.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "上银汇款.png"; sourceTree = "<group>"; };
 		C8109E9E21114B1200B9AEBB /* 亲情号.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "亲情号.png"; sourceTree = "<group>"; };
 		C8109E9F21114B1200B9AEBB /* 红包.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红包.png"; sourceTree = "<group>"; };
+		C81806B3211D355F005183E3 /* LogManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogManager.h; sourceTree = "<group>"; };
+		C81806B4211D355F005183E3 /* LogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogManager.m; sourceTree = "<group>"; };
 		C820B206206353AF00C80A4C /* i2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i2.jpg; sourceTree = "<group>"; };
 		C820B207206353AF00C80A4C /* i5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i5.jpg; sourceTree = "<group>"; };
 		C820B208206353AF00C80A4C /* i4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i4.jpg; sourceTree = "<group>"; };
@@ -301,6 +308,10 @@
 		C84193DA206B86BB009CA6C6 /* DIYPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYPopViewController.m; sourceTree = "<group>"; };
 		C84193DD206B86EC009CA6C6 /* HubMessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HubMessageView.h; sourceTree = "<group>"; };
 		C84193DE206B86EC009CA6C6 /* HubMessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HubMessageView.m; sourceTree = "<group>"; };
+		C84594CC211D773800D80BC3 /* SaveLogManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveLogManager.h; sourceTree = "<group>"; };
+		C84594CD211D773800D80BC3 /* SaveLogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveLogManager.m; sourceTree = "<group>"; };
+		C84594CF211D797800D80BC3 /* HookLogManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookLogManager.h; sourceTree = "<group>"; };
+		C84594D0211D797800D80BC3 /* HookLogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookLogManager.m; sourceTree = "<group>"; };
 		C84E59FB206C85290011B307 /* DIYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYViewController.h; sourceTree = "<group>"; };
 		C84E59FC206C85290011B307 /* DIYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYViewController.m; sourceTree = "<group>"; };
 		C84E59FE206C85E60011B307 /* LaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
@@ -501,6 +512,10 @@
 		C8ACBC46211BD9620057D8DC /* IsEditStatusNaviView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IsEditStatusNaviView.m; sourceTree = "<group>"; };
 		C8ACBC48211BD97E0057D8DC /* NoEditStatusNaviView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoEditStatusNaviView.h; sourceTree = "<group>"; };
 		C8ACBC49211BD97E0057D8DC /* NoEditStatusNaviView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoEditStatusNaviView.m; sourceTree = "<group>"; };
+		C8ACBC58211D28350057D8DC /* LogSaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogSaveViewController.h; sourceTree = "<group>"; };
+		C8ACBC59211D28350057D8DC /* LogSaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogSaveViewController.m; sourceTree = "<group>"; };
+		C8ACBC5B211D28510057D8DC /* MarkdownViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkdownViewController.h; sourceTree = "<group>"; };
+		C8ACBC5C211D28510057D8DC /* MarkdownViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkdownViewController.m; sourceTree = "<group>"; };
 		C8C1B01E206391D4007BE1BD /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 		C8C1B01F206391D4007BE1BD /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		C8C1B02120639222007BE1BD /* MarqueeLabelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarqueeLabelView.h; sourceTree = "<group>"; };
@@ -1472,6 +1487,7 @@
 			children = (
 				C88EB7A4205A9D62008092BB /* YCGActivityViewController.h */,
 				C88EB7A5205A9D62008092BB /* YCGActivityViewController.m */,
+				C8ACBC55211D27860057D8DC /* 试验功能 */,
 			);
 			path = "ActivityController(活动)";
 			sourceTree = "<group>";
@@ -1549,6 +1565,39 @@
 				C8109E9721108ED500B9AEBB /* 等等等.png */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		C8ACBC55211D27860057D8DC /* 试验功能 */ = {
+			isa = PBXGroup;
+			children = (
+				C8ACBC57211D27F90057D8DC /* Markdown */,
+				C8ACBC56211D27E40057D8DC /* 日志保存 */,
+			);
+			path = "试验功能";
+			sourceTree = "<group>";
+		};
+		C8ACBC56211D27E40057D8DC /* 日志保存 */ = {
+			isa = PBXGroup;
+			children = (
+				C8ACBC58211D28350057D8DC /* LogSaveViewController.h */,
+				C8ACBC59211D28350057D8DC /* LogSaveViewController.m */,
+				C81806B3211D355F005183E3 /* LogManager.h */,
+				C81806B4211D355F005183E3 /* LogManager.m */,
+				C84594CC211D773800D80BC3 /* SaveLogManager.h */,
+				C84594CD211D773800D80BC3 /* SaveLogManager.m */,
+				C84594CF211D797800D80BC3 /* HookLogManager.h */,
+				C84594D0211D797800D80BC3 /* HookLogManager.m */,
+			);
+			path = "日志保存";
+			sourceTree = "<group>";
+		};
+		C8ACBC57211D27F90057D8DC /* Markdown */ = {
+			isa = PBXGroup;
+			children = (
+				C8ACBC5B211D28510057D8DC /* MarkdownViewController.h */,
+				C8ACBC5C211D28510057D8DC /* MarkdownViewController.m */,
+			);
+			path = Markdown;
 			sourceTree = "<group>";
 		};
 		C8C1B02A20639FC3007BE1BD /* View */ = {
@@ -1980,6 +2029,7 @@
 				C88EB793205A9645008092BB /* NavigationController.m in Sources */,
 				C8C1B020206391D4007BE1BD /* CustomViewController.m in Sources */,
 				C876A4812062529C0048728C /* CardLayoutCell.m in Sources */,
+				C8ACBC5A211D28350057D8DC /* LogSaveViewController.m in Sources */,
 				C87DCD0C207F76DE00792988 /* PanBoardView.m in Sources */,
 				C86234FC207B1392000850E8 /* ChangeIconViewController.m in Sources */,
 				C84E5A0B206C99E20011B307 /* NSString+Addition.m in Sources */,
@@ -1995,6 +2045,7 @@
 				C874DB7920858C2800BEF5A1 /* PopMenuManager.m in Sources */,
 				C88EB790205A960F008092BB /* TabBarController.m in Sources */,
 				C88EB7B0205B6769008092BB /* BaseModel.m in Sources */,
+				C81806B5211D355F005183E3 /* LogManager.m in Sources */,
 				C876A44C2061034D0048728C /* WaterFallCell.m in Sources */,
 				C874DB7F20858C8D00BEF5A1 /* PopMenuTableDelegate.m in Sources */,
 				C876A46C20622B850048728C /* CycleImageViewPageControl.m in Sources */,
@@ -2015,6 +2066,8 @@
 				C876A488206256130048728C /* CardLayoutView.m in Sources */,
 				C8ACBC2A2112E9030057D8DC /* NSDictionary+Log.m in Sources */,
 				C84193D0206A1552009CA6C6 /* WebBrowserViewController.m in Sources */,
+				C8ACBC5D211D28510057D8DC /* MarkdownViewController.m in Sources */,
+				C84594CE211D773800D80BC3 /* SaveLogManager.m in Sources */,
 				C8E60B242074A61D00DD95B5 /* YCGAreaDataManager.m in Sources */,
 				C89BECE82109F3F40013DBFA /* BoxFunctionModel.m in Sources */,
 				C874DB8220858CA800BEF5A1 /* PopMenuTableViewCell.m in Sources */,
@@ -2032,6 +2085,7 @@
 				C85ACAAA205F5087008ED51A /* YCGGuidePageView.m in Sources */,
 				C84E5A2E206DCD5E0011B307 /* SelectorViewController.m in Sources */,
 				C8109E59210F3B2300B9AEBB /* IsEditStatusHeaderView.m in Sources */,
+				C84594D1211D797800D80BC3 /* HookLogManager.m in Sources */,
 				C874DB7620858BFD00BEF5A1 /* PopMenuModel.m in Sources */,
 				C84E5A21206CC25D0011B307 /* GuideTestViewController.m in Sources */,
 				C876A4212060AE310048728C /* LaunchAdModel.m in Sources */,

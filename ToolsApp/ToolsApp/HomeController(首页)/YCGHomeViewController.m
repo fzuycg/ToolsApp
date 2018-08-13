@@ -34,7 +34,6 @@
                            @{@"title":@"6、选择器",@"className":@"SelectorViewController"},
                            @{@"title":@"7、其他功能",@"className":@"OtherFunctionViewController"},
                            @{@"title":@"8、菜单",@"className":@"MenuFunctionViewController"},
-                           @{@"title":@"浏览器",@"className":@"WebBrowserViewController"},
                            ];
 }
 

@@ -10,6 +10,7 @@
 #import "TabBarController.h"
 #import "YCGGuidePageView.h"
 #import "LaunchAdManager.h"
+#import "HookLogManager.h"
 
 @interface AppDelegate ()
 @property (nonatomic, strong) TabBarController *tabBarController;
@@ -41,6 +42,16 @@
     
     //给 launch 添加动画
 //    [self addLaunchAnimation];
+    
+//#if !(TARGET_IPHONE_SIMULATOR)//真机
+//    //连接xcode时可以从监视器中看日志 没连接时Log日志会输出到文件中，
+//    [self redirectNSLogToDocumentFolder];
+//    NSLog(@"真机");
+//#else//模拟器
+//    NSLog(@"模拟器");
+//#endif
+    
+    [[HookLogManager sharedInstance] startHookLog];
     
     return YES;
 }
