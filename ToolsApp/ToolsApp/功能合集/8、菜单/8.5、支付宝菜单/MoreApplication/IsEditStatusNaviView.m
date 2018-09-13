@@ -50,7 +50,7 @@
 #pragma mark - Lazy
 - (UIButton *)cancelButton {
     if (!_cancelButton) {
-        _cancelButton = [[UIButton alloc] initWithFrame:CGRectMake(12, StatusBar_HEIGHT, 50, NavigationBar_HEIGHT)];
+        _cancelButton = [[UIButton alloc] initWithFrame:CGRectMake(12, kStatusBar_HEIGHT, 50, kNavigationBar_HEIGHT)];
         [_cancelButton setTitle:@"取消" forState:UIControlStateNormal];
         [_cancelButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         [_cancelButton addTarget:self action:@selector(cancelButtonClick) forControlEvents:UIControlEventTouchUpInside];
@@ -60,7 +60,7 @@
 
 - (UIButton *)completeButton {
     if (!_completeButton) {
-        _completeButton = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width - 50-12, StatusBar_HEIGHT, 50, NavigationBar_HEIGHT)];
+        _completeButton = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width - 50-12, kStatusBar_HEIGHT, 50, kNavigationBar_HEIGHT)];
         [_completeButton setTitle:@"完成" forState:UIControlStateNormal];
         [_completeButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         [_completeButton addTarget:self action:@selector(completeButtonClick) forControlEvents:UIControlEventTouchUpInside];
@@ -70,7 +70,7 @@
 
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
-        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(62, StatusBar_HEIGHT, (self.frame.size.width-124), NavigationBar_HEIGHT)];
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(62, kStatusBar_HEIGHT, (self.frame.size.width-124), kNavigationBar_HEIGHT)];
         _titleLabel.text = @"我的应用编辑";
         _titleLabel.textAlignment = NSTextAlignmentCenter;
     }

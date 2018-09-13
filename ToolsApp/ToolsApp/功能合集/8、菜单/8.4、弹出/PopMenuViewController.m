@@ -38,7 +38,7 @@
     }
     
     // 这里传的是 顶点坐标 与 菜单宽高
-    struct MenuRect menuRect = {kScreen_width-32,Navigation_HEIGHT+2,160,240};
+    struct MenuRect menuRect = {kScreen_width-32, kNavigation_HEIGHT+2, 160, 240};
     
     [[PopMenuManager sharedInstance] showPopMenuSelecteWithFrame:menuRect
                                                             item:obj

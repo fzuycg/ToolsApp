@@ -31,7 +31,7 @@
 }
 
 - (void)createUI {
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, Navigation_HEIGHT+100, kScreen_width/2, 40)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, kNavigation_HEIGHT+100, kScreen_width/2, 40)];
     label.textAlignment = NSTextAlignmentRight;
     label.text = @"当前城市：";
     [label setFont:[UIFont systemFontOfSize:16.0]];
@@ -39,7 +39,7 @@
     
     [self.view addSubview:self.cityLabel];
     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake((kScreen_width-160)/2, Navigation_HEIGHT+160, 160, 44)];
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake((kScreen_width-160)/2, kNavigation_HEIGHT+160, 160, 44)];
     btn.backgroundColor = [UIColor orangeColor];
     btn.layer.cornerRadius = 7;
     [btn setTitle:@"选择城市" forState:UIControlStateNormal];
@@ -107,7 +107,7 @@
 
 - (UILabel *)cityLabel {
     if (!_cityLabel) {
-        _cityLabel = [[UILabel alloc] initWithFrame:CGRectMake(kScreen_width/2, Navigation_HEIGHT+100, kScreen_width/2, 40)];
+        _cityLabel = [[UILabel alloc] initWithFrame:CGRectMake(kScreen_width/2, kNavigation_HEIGHT+100, kScreen_width/2, 40)];
         _cityLabel.textAlignment = NSTextAlignmentLeft;
         _cityLabel.text = @"请选择城市";
         [_cityLabel setFont:[UIFont systemFontOfSize:16.0]];

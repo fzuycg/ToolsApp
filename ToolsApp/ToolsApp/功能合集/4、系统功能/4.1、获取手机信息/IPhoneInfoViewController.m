@@ -63,10 +63,10 @@
     CGFloat height = 0;
     for (int i = 0; i < self.dataArray.count; i++) {
         NSArray *array = self.dataArray[i];
-        UILabel *nameLabel = [self createLabelWithFrame:CGRectMake(10, Navigation_HEIGHT+20+20*i+height, kScreen_width/2-20, 34) Alignment:2 textColor:[UIColor blackColor] Text:array[0]];
+        UILabel *nameLabel = [self createLabelWithFrame:CGRectMake(10, kNavigation_HEIGHT+20+20*i+height, kScreen_width/2-20, 34) Alignment:2 textColor:[UIColor blackColor] Text:array[0]];
         [self.view addSubview:nameLabel];
         
-        UILabel *infoLabel = [self createLabelWithFrame:CGRectMake(kScreen_width/2+10, Navigation_HEIGHT+20+20*i+height,kScreen_width/2-20, 34) Alignment:0 textColor:[UIColor redColor] Text:array[1]];
+        UILabel *infoLabel = [self createLabelWithFrame:CGRectMake(kScreen_width/2+10, kNavigation_HEIGHT+20+20*i+height,kScreen_width/2-20, 34) Alignment:0 textColor:[UIColor redColor] Text:array[1]];
         [self.view addSubview:infoLabel];
         height += infoLabel.frame.size.height;
     }

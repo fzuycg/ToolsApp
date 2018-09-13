@@ -136,7 +136,7 @@ static NSString *homeUrl = @"https://m.baidu.com";
 
 - (UIProgressView *)progressView {
     if (!_progressView) {
-        _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, Navigation_HEIGHT, kScreen_width, 12)];
+        _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, kNavigation_HEIGHT, kScreen_width, 12)];
         _progressView.trackTintColor = [UIColor clearColor];
         _progressView.tintColor = [UIColor greenColor];
     }

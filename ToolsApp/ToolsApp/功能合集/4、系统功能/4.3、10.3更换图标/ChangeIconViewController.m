@@ -45,21 +45,21 @@
 }
 
 - (void)createBtnUI {
-    UIButton *btn1 = [[UIButton alloc] initWithFrame:CGRectMake((kScreen_width-180)/2, Navigation_HEIGHT+60, 180, 44)];
+    UIButton *btn1 = [[UIButton alloc] initWithFrame:CGRectMake((kScreen_width-180)/2, kNavigation_HEIGHT+60, 180, 44)];
     btn1.layer.cornerRadius = 8;
     [btn1 setTitle:@"换成AppStore图标" forState:UIControlStateNormal];
     [btn1 setBackgroundColor:[UIColor orangeColor]];
     [btn1 addTarget:self action:@selector(btn1Click) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn1];
     
-    UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake((kScreen_width-180)/2, Navigation_HEIGHT+150, 180, 44)];
+    UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake((kScreen_width-180)/2, kNavigation_HEIGHT+150, 180, 44)];
     btn2.layer.cornerRadius = 8;
     [btn2 setTitle:@"换成Safari图标" forState:UIControlStateNormal];
     [btn2 setBackgroundColor:[UIColor orangeColor]];
     [btn2 addTarget:self action:@selector(btn2Click) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn2];
     
-    UIButton *btn3 = [[UIButton alloc] initWithFrame:CGRectMake((kScreen_width-180)/2, Navigation_HEIGHT+240, 180, 44)];
+    UIButton *btn3 = [[UIButton alloc] initWithFrame:CGRectMake((kScreen_width-180)/2, kNavigation_HEIGHT+240, 180, 44)];
     btn3.layer.cornerRadius = 8;
     [btn3 setTitle:@"恢复原来图标" forState:UIControlStateNormal];
     [btn3 setBackgroundColor:[UIColor orangeColor]];

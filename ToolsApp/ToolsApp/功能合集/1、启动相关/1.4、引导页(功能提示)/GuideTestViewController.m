@@ -30,7 +30,7 @@
 }
 
 - (void)createUI {
-    UIImageView *firstImageView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreen_width-80, Navigation_HEIGHT+40, 40, 40)];
+    UIImageView *firstImageView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreen_width-80, kNavigation_HEIGHT+40, 40, 40)];
     firstImageView.image = [UIImage imageNamed:@"smile"];
     [self.view addSubview:firstImageView];
     self.firstImageView = firstImageView;
@@ -41,7 +41,7 @@
     [self.view addSubview:secondButton];
     self.secondButton = secondButton;
     
-    UILabel *thiedLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, Navigation_HEIGHT+100, 100, 34)];
+    UILabel *thiedLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, kNavigation_HEIGHT+100, 100, 34)];
     thiedLabel.text = @"我是文字";
     thiedLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:thiedLabel];

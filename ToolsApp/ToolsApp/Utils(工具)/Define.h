@@ -11,16 +11,18 @@
 
 //-------------------设备尺寸------------------------
 //NavBar高度
-#define StatusBar_HEIGHT   [[UIApplication sharedApplication] statusBarFrame].size.height
-#define NavigationBar_HEIGHT 44
+#define kStatusBar_HEIGHT   [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kNavigationBar_HEIGHT 44
 
-#define Navigation_HEIGHT (StatusBar_HEIGHT+NavigationBar_HEIGHT)
+#define kNavigation_HEIGHT (kStatusBar_HEIGHT+kNavigationBar_HEIGHT)
 
 #define kScreen_bounds [UIScreen mainScreen].bounds
 #define kScreen_height  [[UIScreen mainScreen] bounds].size.height
 #define kScreen_width   [[UIScreen mainScreen] bounds].size.width
 
 #define kIs_iPhoneX ([UIScreen mainScreen].bounds.size.width == 375.f && [UIScreen mainScreen].bounds.size.height == 812.f ? YES : NO)
+
+#define kTabBar_height ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
 
 //--------------------颜色--------------------------
 //格式0xdae8a6

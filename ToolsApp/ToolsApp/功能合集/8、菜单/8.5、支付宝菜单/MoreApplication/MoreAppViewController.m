@@ -266,10 +266,12 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
         [self.isEditHeaderView.boxFunctionArray removeObjectAtIndex:indexPath.row];
         self.boxFunctionArray = self.isEditHeaderView.boxFunctionArray;
         self.noEditHeaderView.boxFunctionArray = self.boxFunctionArray;
+        //使用collectionView的删除方式
+        [self.isEditHeaderView.collectionView deleteItemsAtIndexPaths:@[indexPath]];
         //3、拿到相应的model
         BoxFunctionModel *model = cell.model;
         //4、刷新头部collectioView
-        [self.isEditHeaderView.collectionView reloadData];
+//        [self.isEditHeaderView.collectionView reloadData];
         [self.noEditHeaderView.collectionView reloadData];
         //5、找到修改状态的数据在全数组中的位置(--此处性能可能不好，有待优化--)
         NSInteger section = 0;
@@ -376,15 +378,20 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
         [self.isEditHeaderView.boxFunctionArray addObject:model];
         self.boxFunctionArray = self.isEditHeaderView.boxFunctionArray;
         self.noEditHeaderView.boxFunctionArray = self.boxFunctionArray;
+        //使用collectionView的添加方式
+        NSIndexPath *insertIndexPath = [NSIndexPath indexPathForRow:self.boxFunctionArray.count-1 inSection:0];
+        [self.isEditHeaderView.collectionView performBatchUpdates:^{
+            [self.isEditHeaderView.collectionView insertItemsAtIndexPaths:@[insertIndexPath]];
+        } completion:nil];
         //5、刷新头部collectioView
-        [self.isEditHeaderView.collectionView reloadData];
+//        [self.isEditHeaderView.collectionView reloadData];
         [self.noEditHeaderView.collectionView reloadData];
         //6、把修改后的替换进全部数组中
         [moreModel.modelArray replaceObjectAtIndex:indexPath.row withObject:model];
         [self.groupFunctionArray replaceObjectAtIndex:indexPath.section withObject:moreModel];
         //7、刷新全部应用collectionView
         [self.collectionView reloadData];
-        //8、头部试图高度发生改变的话要进行修改
+        //8、头部视图高度发生改变的话要进行修改
         [self refreshUI];
     }
 }
@@ -392,7 +399,7 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
 #pragma mark - Lazy
 - (UIScrollView *)scrollView {
     if (!_scrollView) {
-        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, Navigation_HEIGHT, kScreen_width, kScreen_height-Navigation_HEIGHT)];
+        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, kNavigation_HEIGHT, kScreen_width, kScreen_height-kNavigation_HEIGHT)];
         _scrollView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, 0);
         _scrollView.backgroundColor = [UIColor whiteColor];
         _scrollView.showsVerticalScrollIndicator = NO;
@@ -460,7 +467,7 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
 
 - (NoEditStatusNaviView *)noEditNaviView {
     if (!_noEditNaviView) {
-        _noEditNaviView = [[NoEditStatusNaviView alloc] initWithFrame:CGRectMake(0, 0, kScreen_width, Navigation_HEIGHT)];
+        _noEditNaviView = [[NoEditStatusNaviView alloc] initWithFrame:CGRectMake(0, 0, kScreen_width, kNavigation_HEIGHT)];
         _noEditNaviView.delegate = self;
     }
     return _noEditNaviView;
@@ -468,7 +475,7 @@ static NSString *const footerId = @"CollectionReusableHeaderView";
 
 - (IsEditStatusNaviView *)isEditNaviView {
     if (!_isEditNaviView) {
-        _isEditNaviView = [[IsEditStatusNaviView alloc] initWithFrame:CGRectMake(0, 0, kScreen_width, Navigation_HEIGHT)];
+        _isEditNaviView = [[IsEditStatusNaviView alloc] initWithFrame:CGRectMake(0, 0, kScreen_width, kNavigation_HEIGHT)];
         _isEditNaviView.delegate = self;
         _isEditNaviView.hidden = YES;
     }

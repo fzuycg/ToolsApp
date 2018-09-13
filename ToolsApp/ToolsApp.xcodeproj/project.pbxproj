@@ -59,6 +59,8 @@
 		C820B20D206353AF00C80A4C /* i4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B208206353AF00C80A4C /* i4.jpg */; };
 		C820B20E206353AF00C80A4C /* i1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B209206353AF00C80A4C /* i1.jpg */; };
 		C820B20F206353AF00C80A4C /* i3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B20A206353AF00C80A4C /* i3.jpg */; };
+		C8316389214A043E00BC35F8 /* SuspensionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C8316388214A043E00BC35F8 /* SuspensionButton.m */; };
+		C831638C214A30B700BC35F8 /* 悬浮按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = C831638B214A30B700BC35F8 /* 悬浮按钮.png */; };
 		C84193D0206A1552009CA6C6 /* WebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84193CF206A1552009CA6C6 /* WebBrowserViewController.m */; };
 		C84193D3206B83A6009CA6C6 /* LaunchNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84193D2206B83A6009CA6C6 /* LaunchNoticeViewController.m */; };
 		C84193D7206B8458009CA6C6 /* LaunchNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C84193D6206B8458009CA6C6 /* LaunchNoticeView.m */; };
@@ -187,6 +189,8 @@
 		C8ACBC4A211BD97E0057D8DC /* NoEditStatusNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC49211BD97E0057D8DC /* NoEditStatusNaviView.m */; };
 		C8ACBC5A211D28350057D8DC /* LogSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC59211D28350057D8DC /* LogSaveViewController.m */; };
 		C8ACBC5D211D28510057D8DC /* MarkdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC5C211D28510057D8DC /* MarkdownViewController.m */; };
+		C8BE9D0C214A023C009A86AF /* CustomButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE9D0B214A023C009A86AF /* CustomButtonViewController.m */; };
+		C8BE9D0F214A02BA009A86AF /* SuspensionButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE9D0E214A02BA009A86AF /* SuspensionButtonViewController.m */; };
 		C8C1B020206391D4007BE1BD /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B01F206391D4007BE1BD /* CustomViewController.m */; };
 		C8C1B02320639222007BE1BD /* MarqueeLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B02220639222007BE1BD /* MarqueeLabelView.m */; };
 		C8C1B0262063925E007BE1BD /* CustomLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B0252063925E007BE1BD /* CustomLabelViewController.m */; };
@@ -298,6 +302,9 @@
 		C820B208206353AF00C80A4C /* i4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i4.jpg; sourceTree = "<group>"; };
 		C820B209206353AF00C80A4C /* i1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i1.jpg; sourceTree = "<group>"; };
 		C820B20A206353AF00C80A4C /* i3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i3.jpg; sourceTree = "<group>"; };
+		C8316387214A043E00BC35F8 /* SuspensionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspensionButton.h; sourceTree = "<group>"; };
+		C8316388214A043E00BC35F8 /* SuspensionButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspensionButton.m; sourceTree = "<group>"; };
+		C831638B214A30B700BC35F8 /* 悬浮按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "悬浮按钮.png"; sourceTree = "<group>"; };
 		C84193CE206A1552009CA6C6 /* WebBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebBrowserViewController.h; sourceTree = "<group>"; };
 		C84193CF206A1552009CA6C6 /* WebBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebBrowserViewController.m; sourceTree = "<group>"; };
 		C84193D1206B83A6009CA6C6 /* LaunchNoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchNoticeViewController.h; sourceTree = "<group>"; };
@@ -516,6 +523,10 @@
 		C8ACBC59211D28350057D8DC /* LogSaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogSaveViewController.m; sourceTree = "<group>"; };
 		C8ACBC5B211D28510057D8DC /* MarkdownViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkdownViewController.h; sourceTree = "<group>"; };
 		C8ACBC5C211D28510057D8DC /* MarkdownViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkdownViewController.m; sourceTree = "<group>"; };
+		C8BE9D0A214A023C009A86AF /* CustomButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomButtonViewController.h; sourceTree = "<group>"; };
+		C8BE9D0B214A023C009A86AF /* CustomButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomButtonViewController.m; sourceTree = "<group>"; };
+		C8BE9D0D214A02BA009A86AF /* SuspensionButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspensionButtonViewController.h; sourceTree = "<group>"; };
+		C8BE9D0E214A02BA009A86AF /* SuspensionButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspensionButtonViewController.m; sourceTree = "<group>"; };
 		C8C1B01E206391D4007BE1BD /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 		C8C1B01F206391D4007BE1BD /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		C8C1B02120639222007BE1BD /* MarqueeLabelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarqueeLabelView.h; sourceTree = "<group>"; };
@@ -665,6 +676,23 @@
 				C820B20A206353AF00C80A4C /* i3.jpg */,
 				C820B208206353AF00C80A4C /* i4.jpg */,
 				C820B207206353AF00C80A4C /* i5.jpg */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C8316386214A040500BC35F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8316387214A043E00BC35F8 /* SuspensionButton.h */,
+				C8316388214A043E00BC35F8 /* SuspensionButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C831638A214A30A500BC35F8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C831638B214A30B700BC35F8 /* 悬浮按钮.png */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -974,6 +1002,9 @@
 		C85ACAC0205FB5C9008ED51A /* CustomButton */ = {
 			isa = PBXGroup;
 			children = (
+				C8BE9D09214A01F5009A86AF /* SuspensionButton(悬浮按钮) */,
+				C8BE9D0A214A023C009A86AF /* CustomButtonViewController.h */,
+				C8BE9D0B214A023C009A86AF /* CustomButtonViewController.m */,
 			);
 			path = CustomButton;
 			sourceTree = "<group>";
@@ -1600,6 +1631,17 @@
 			path = Markdown;
 			sourceTree = "<group>";
 		};
+		C8BE9D09214A01F5009A86AF /* SuspensionButton(悬浮按钮) */ = {
+			isa = PBXGroup;
+			children = (
+				C831638A214A30A500BC35F8 /* Source */,
+				C8316386214A040500BC35F8 /* View */,
+				C8BE9D0D214A02BA009A86AF /* SuspensionButtonViewController.h */,
+				C8BE9D0E214A02BA009A86AF /* SuspensionButtonViewController.m */,
+			);
+			path = "SuspensionButton(悬浮按钮)";
+			sourceTree = "<group>";
+		};
 		C8C1B02A20639FC3007BE1BD /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1856,6 +1898,7 @@
 				C8E60B262074A64300DD95B5 /* shop_area.sqlite in Resources */,
 				C874DB8E2085925800BEF5A1 /* right_menu_QR@3x.png in Resources */,
 				C874DB8B2085925800BEF5A1 /* right_menu_sendFile@3x.png in Resources */,
+				C831638C214A30B700BC35F8 /* 悬浮按钮.png in Resources */,
 				C8109EA621114B1200B9AEBB /* 红包.png in Resources */,
 				C8109E9421108B2A00B9AEBB /* 信用卡还款.png in Resources */,
 				C874DB8F2085925800BEF5A1 /* right_menu_facetoface@3x.png in Resources */,
@@ -2013,6 +2056,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8C1B0332063A1A3007BE1BD /* MarqueeLabelViewController.m in Sources */,
+				C8BE9D0F214A02BA009A86AF /* SuspensionButtonViewController.m in Sources */,
 				C8E60B3D2079B0CF00DD95B5 /* YCGCitySearchView.m in Sources */,
 				C876A473206230830048728C /* NSString+RegexCategory.m in Sources */,
 				C874DB662084912E00BEF5A1 /* MenuContentViewController.m in Sources */,
@@ -2055,6 +2099,7 @@
 				C8C1B0262063925E007BE1BD /* CustomLabelViewController.m in Sources */,
 				C8E60B18207467D700DD95B5 /* ProvinceModel.m in Sources */,
 				C85ACABD205FA69A008ED51A /* LaunchAdViewController.m in Sources */,
+				C8316389214A043E00BC35F8 /* SuspensionButton.m in Sources */,
 				C84E5A05206C8DCC0011B307 /* IPhoneInfoViewController.m in Sources */,
 				C876A462206227CC0048728C /* CyclePageViewController.m in Sources */,
 				C87DCD01207F75B900792988 /* BrushBoardView.m in Sources */,
@@ -2093,6 +2138,7 @@
 				C876A44F206105A70048728C /* WaterFallDataModel.m in Sources */,
 				C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */,
 				C87DCD08207F76B800792988 /* PanBoardViewController.m in Sources */,
+				C8BE9D0C214A023C009A86AF /* CustomButtonViewController.m in Sources */,
 				C876A4792062505D0048728C /* CardLayoutViewController.m in Sources */,
 				C8E60B212074A60600DD95B5 /* YCGLocationManager.m in Sources */,
 				C84E5A16206CB6470011B307 /* IFMShareView.m in Sources */,

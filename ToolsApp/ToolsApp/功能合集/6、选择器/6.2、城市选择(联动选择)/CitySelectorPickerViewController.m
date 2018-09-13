@@ -24,7 +24,7 @@
 }
 
 - (void)createUI {
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, Navigation_HEIGHT+60, kScreen_width, 40)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, kNavigation_HEIGHT+60, kScreen_width, 40)];
     label.font = [UIFont systemFontOfSize:16.f];
     label.textAlignment = NSTextAlignmentCenter;
     label.textColor = [UIColor blueColor];
@@ -32,7 +32,7 @@
     [self.view addSubview:label];
     self.cityLabel = label;
     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake((kScreen_width-120)/2, Navigation_HEIGHT+140, 120, 46)];
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake((kScreen_width-120)/2, kNavigation_HEIGHT+140, 120, 46)];
     btn.layer.cornerRadius = 7;
     btn.backgroundColor = [UIColor blueColor];
     [btn setTitle:@"选择城市" forState:UIControlStateNormal];

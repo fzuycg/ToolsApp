@@ -26,7 +26,7 @@
 - (void)createUI {
     [self addSubview:self.backButton];
     //添加搜索栏
-    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(self.backButton.frame.size.width+self.backButton.frame.origin.x+5, StatusBar_HEIGHT+(NavigationBar_HEIGHT-40)/2, self.frame.size.width-self.backButton.frame.size.width-self.backButton.frame.origin.x-10, 40)];
+    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(self.backButton.frame.size.width+self.backButton.frame.origin.x+5, kStatusBar_HEIGHT+(kNavigationBar_HEIGHT-40)/2, self.frame.size.width-self.backButton.frame.size.width-self.backButton.frame.origin.x-10, 40)];
     searchBar.searchBarStyle = UISearchBarStyleMinimal;//不显示背景
     searchBar.placeholder = @"搜索";
     [self addSubview:searchBar];
@@ -45,7 +45,7 @@
 #pragma mark - Lazy
 - (UIButton *)backButton {
     if (!_backButton) {
-        _backButton = [[UIButton alloc] initWithFrame:CGRectMake(12, StatusBar_HEIGHT, 50, NavigationBar_HEIGHT)];
+        _backButton = [[UIButton alloc] initWithFrame:CGRectMake(12, kStatusBar_HEIGHT, 50, kNavigationBar_HEIGHT)];
         [_backButton setTitle:@"首页" forState:UIControlStateNormal];
         [_backButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         [_backButton addTarget:self action:@selector(backButtonClick) forControlEvents:UIControlEventTouchUpInside];
