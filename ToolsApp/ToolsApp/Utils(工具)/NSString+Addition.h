@@ -12,4 +12,7 @@
 - (CGFloat)heightForContent:(NSString *)content withWidth:(CGFloat)width withFont:(UIFont*)font;
 
 - (CGFloat)widthForContent:(NSString *)content withHeight:(CGFloat)height withFont:(UIFont*)font;
+
+- (NSInteger)linesWithContent:(NSString *)content withWidth:(CGFloat)width withFont:(UIFont *)font;
+
 @end

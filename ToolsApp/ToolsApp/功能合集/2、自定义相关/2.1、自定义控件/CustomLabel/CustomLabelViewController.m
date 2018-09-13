@@ -20,6 +20,7 @@
     self.dataSoureArray =@[
                            @{@"title":@"打印机",@"className":@"PrintLabelViewController"},
                            @{@"title":@"跑马灯",@"className":@"MarqueeLabelViewController"},
+                           @{@"title":@"行间距",@"className":@"LineSpacingViewController"},
                            ];
 }
 

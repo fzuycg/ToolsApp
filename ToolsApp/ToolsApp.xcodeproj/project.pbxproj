@@ -61,6 +61,9 @@
 		C820B20F206353AF00C80A4C /* i3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B20A206353AF00C80A4C /* i3.jpg */; };
 		C8316389214A043E00BC35F8 /* SuspensionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C8316388214A043E00BC35F8 /* SuspensionButton.m */; };
 		C831638C214A30B700BC35F8 /* 悬浮按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = C831638B214A30B700BC35F8 /* 悬浮按钮.png */; };
+		C8316390214A37E000BC35F8 /* StatusBarMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C831638F214A37E000BC35F8 /* StatusBarMessageView.m */; };
+		C8316394214A54C200BC35F8 /* LineSpacingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8316393214A54C200BC35F8 /* LineSpacingViewController.m */; };
+		C8316398214A5E9600BC35F8 /* SpacingCanSetLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8316397214A5E9600BC35F8 /* SpacingCanSetLabel.m */; };
 		C84193D0206A1552009CA6C6 /* WebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84193CF206A1552009CA6C6 /* WebBrowserViewController.m */; };
 		C84193D3206B83A6009CA6C6 /* LaunchNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84193D2206B83A6009CA6C6 /* LaunchNoticeViewController.m */; };
 		C84193D7206B8458009CA6C6 /* LaunchNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C84193D6206B8458009CA6C6 /* LaunchNoticeView.m */; };
@@ -305,6 +308,12 @@
 		C8316387214A043E00BC35F8 /* SuspensionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspensionButton.h; sourceTree = "<group>"; };
 		C8316388214A043E00BC35F8 /* SuspensionButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspensionButton.m; sourceTree = "<group>"; };
 		C831638B214A30B700BC35F8 /* 悬浮按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "悬浮按钮.png"; sourceTree = "<group>"; };
+		C831638E214A37E000BC35F8 /* StatusBarMessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusBarMessageView.h; sourceTree = "<group>"; };
+		C831638F214A37E000BC35F8 /* StatusBarMessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusBarMessageView.m; sourceTree = "<group>"; };
+		C8316392214A54C200BC35F8 /* LineSpacingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineSpacingViewController.h; sourceTree = "<group>"; };
+		C8316393214A54C200BC35F8 /* LineSpacingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineSpacingViewController.m; sourceTree = "<group>"; };
+		C8316396214A5E9600BC35F8 /* SpacingCanSetLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpacingCanSetLabel.h; sourceTree = "<group>"; };
+		C8316397214A5E9600BC35F8 /* SpacingCanSetLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpacingCanSetLabel.m; sourceTree = "<group>"; };
 		C84193CE206A1552009CA6C6 /* WebBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebBrowserViewController.h; sourceTree = "<group>"; };
 		C84193CF206A1552009CA6C6 /* WebBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebBrowserViewController.m; sourceTree = "<group>"; };
 		C84193D1206B83A6009CA6C6 /* LaunchNoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchNoticeViewController.h; sourceTree = "<group>"; };
@@ -697,6 +706,34 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		C831638D214A377900BC35F8 /* StatusBarMessage(状态栏提示) */ = {
+			isa = PBXGroup;
+			children = (
+				C831638E214A37E000BC35F8 /* StatusBarMessageView.h */,
+				C831638F214A37E000BC35F8 /* StatusBarMessageView.m */,
+			);
+			path = "StatusBarMessage(状态栏提示)";
+			sourceTree = "<group>";
+		};
+		C8316391214A543800BC35F8 /* LabelLineSpacing(行间距) */ = {
+			isa = PBXGroup;
+			children = (
+				C8316395214A5E1300BC35F8 /* View */,
+				C8316392214A54C200BC35F8 /* LineSpacingViewController.h */,
+				C8316393214A54C200BC35F8 /* LineSpacingViewController.m */,
+			);
+			path = "LabelLineSpacing(行间距)";
+			sourceTree = "<group>";
+		};
+		C8316395214A5E1300BC35F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8316396214A5E9600BC35F8 /* SpacingCanSetLabel.h */,
+				C8316397214A5E9600BC35F8 /* SpacingCanSetLabel.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C84193CD206A14F5009CA6C6 /* 浏览器封装 */ = {
 			isa = PBXGroup;
 			children = (
@@ -718,20 +755,21 @@
 		C84193D8206B867D009CA6C6 /* 2.2、自定义弹出视图 */ = {
 			isa = PBXGroup;
 			children = (
-				C84193DC206B86CC009CA6C6 /* HubMessageView */,
+				C831638D214A377900BC35F8 /* StatusBarMessage(状态栏提示) */,
+				C84193DC206B86CC009CA6C6 /* HubMessageView(普通提示) */,
 				C84193D9206B86BB009CA6C6 /* DIYPopViewController.h */,
 				C84193DA206B86BB009CA6C6 /* DIYPopViewController.m */,
 			);
 			path = "2.2、自定义弹出视图";
 			sourceTree = "<group>";
 		};
-		C84193DC206B86CC009CA6C6 /* HubMessageView */ = {
+		C84193DC206B86CC009CA6C6 /* HubMessageView(普通提示) */ = {
 			isa = PBXGroup;
 			children = (
 				C84193DD206B86EC009CA6C6 /* HubMessageView.h */,
 				C84193DE206B86EC009CA6C6 /* HubMessageView.m */,
 			);
-			path = HubMessageView;
+			path = "HubMessageView(普通提示)";
 			sourceTree = "<group>";
 		};
 		C84E59F9206C84500011B307 /* 1、启动相关 */ = {
@@ -991,6 +1029,7 @@
 		C85ACABF205FB5BF008ED51A /* CustomLabel */ = {
 			isa = PBXGroup;
 			children = (
+				C8316391214A543800BC35F8 /* LabelLineSpacing(行间距) */,
 				C8C1B0342063D420007BE1BD /* PrintLabel(打印机) */,
 				C8D00ABE2063911800530149 /* MarqueeLabel(跑马灯) */,
 				C8C1B0242063925E007BE1BD /* CustomLabelViewController.h */,
@@ -2072,6 +2111,7 @@
 				C8ACBC4A211BD97E0057D8DC /* NoEditStatusNaviView.m in Sources */,
 				C88EB793205A9645008092BB /* NavigationController.m in Sources */,
 				C8C1B020206391D4007BE1BD /* CustomViewController.m in Sources */,
+				C8316390214A37E000BC35F8 /* StatusBarMessageView.m in Sources */,
 				C876A4812062529C0048728C /* CardLayoutCell.m in Sources */,
 				C8ACBC5A211D28350057D8DC /* LogSaveViewController.m in Sources */,
 				C87DCD0C207F76DE00792988 /* PanBoardView.m in Sources */,
@@ -2145,6 +2185,7 @@
 				C88EB7A9205B6391008092BB /* BaseTableViewController.m in Sources */,
 				C87DCCFD207F758600792988 /* BrushBoardViewController.m in Sources */,
 				C8109E3D210EBD8C00B9AEBB /* MoreAppViewController.m in Sources */,
+				C8316398214A5E9600BC35F8 /* SpacingCanSetLabel.m in Sources */,
 				C876A47020622CD80048728C /* CycleImageModel.m in Sources */,
 				C876A47E206251FE0048728C /* CardFlowLayout.m in Sources */,
 				C876A45820610BDC0048728C /* WaterFlowLayout.m in Sources */,
@@ -2160,6 +2201,7 @@
 				C87DCD1C208080F900792988 /* TopMenuViewController.m in Sources */,
 				C8C1B03F2063D775007BE1BD /* PrintLabel.m in Sources */,
 				C87DCD16208080A700792988 /* LeftSpringMenuViewController.m in Sources */,
+				C8316394214A54C200BC35F8 /* LineSpacingViewController.m in Sources */,
 				C84E5A00206C85E60011B307 /* LaunchViewController.m in Sources */,
 				C876A46620622AF50048728C /* CycleImageView.m in Sources */,
 				C88EB7A3205A9D4D008092BB /* YCGMeViewController.m in Sources */,

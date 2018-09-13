@@ -20,7 +20,7 @@
 #define kScreen_height  [[UIScreen mainScreen] bounds].size.height
 #define kScreen_width   [[UIScreen mainScreen] bounds].size.width
 
-#define kIs_iPhoneX ([UIScreen mainScreen].bounds.size.width == 375.f && [UIScreen mainScreen].bounds.size.height == 812.f ? YES : NO)
+#define kIs_iPhoneX ([UIScreen mainScreen].bounds.size.height == 812.f || [UIScreen mainScreen].bounds.size.height == 896.f ? YES : NO)
 
 #define kTabBar_height ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
 

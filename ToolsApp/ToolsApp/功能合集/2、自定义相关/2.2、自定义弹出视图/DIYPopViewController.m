@@ -8,8 +8,10 @@
 
 #import "DIYPopViewController.h"
 #import "HubMessageView.h"
+#import "StatusBarMessageView.h"
 
 @interface DIYPopViewController ()
+@property (nonatomic, strong) StatusBarMessageView *statusBar;
 
 @end
 
@@ -30,13 +32,20 @@
             [HubMessageView showMessage:@"这是一个普通的提示"];
             break;
         case 1:
-            
+            [self.statusBar showStatusWithMessage:@"网络异常"];
             break;
         default:
             break;
     }
 }
 
+#pragma mark - Lazy
+- (StatusBarMessageView *)statusBar {
+    if (!_statusBar) {
+        _statusBar = [[StatusBarMessageView alloc] init];
+    }
+    return _statusBar;
+}
 
 
 @end
