@@ -9,7 +9,6 @@
 #import "MarkdownViewController.h"
 
 @interface MarkdownViewController ()
-@property (nonatomic, strong) UITextField *textField;
 
 @end
 
@@ -18,13 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self createUI];
 }
-
-- (void)createUI {
-//    UITextField *textF = [[UITextField alloc] initWithFrame:CGRectMake(20, kNavigation_HEIGHT-20, kScreen_width-40, 40)];
-//    textF.textContentType = UITextContentTypeOneTimeCode;
-}
-
 
 @end

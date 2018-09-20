@@ -20,6 +20,7 @@
                            @{@"title":@"获取手机信息",@"className":@"IPhoneInfoViewController"},
                            @{@"title":@"分享功能",@"className":@"ShareViewController"},
                            @{@"title":@"更换图标",@"className":@"ChangeIconViewController"},
+                           @{@"title":@"自动获取短信验证码",@"className":@"AutoCaptchaViewController"},
                            ];
 }
 

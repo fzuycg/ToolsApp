@@ -171,6 +171,7 @@
 		C87DCD16208080A700792988 /* LeftSpringMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD15208080A700792988 /* LeftSpringMenuViewController.m */; };
 		C87DCD19208080C600792988 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD18208080C600792988 /* LeftMenuViewController.m */; };
 		C87DCD1C208080F900792988 /* TopMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD1B208080F900792988 /* TopMenuViewController.m */; };
+		C8896EFC21538A3A001503A5 /* AutoCaptchaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8896EFB21538A3A001503A5 /* AutoCaptchaViewController.m */; };
 		C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EB75A205A8FCB008092BB /* AppDelegate.m */; };
 		C88EB763205A8FCB008092BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88EB762205A8FCB008092BB /* Assets.xcassets */; };
 		C88EB766205A8FCB008092BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88EB764205A8FCB008092BB /* LaunchScreen.storyboard */; };
@@ -491,6 +492,8 @@
 		C87DCD18208080C600792988 /* LeftMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		C87DCD1A208080F900792988 /* TopMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopMenuViewController.h; sourceTree = "<group>"; };
 		C87DCD1B208080F900792988 /* TopMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopMenuViewController.m; sourceTree = "<group>"; };
+		C8896EFA21538A3A001503A5 /* AutoCaptchaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCaptchaViewController.h; sourceTree = "<group>"; };
+		C8896EFB21538A3A001503A5 /* AutoCaptchaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCaptchaViewController.m; sourceTree = "<group>"; };
 		C88EB756205A8FCB008092BB /* ToolsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88EB759205A8FCB008092BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C88EB75A205A8FCB008092BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -840,6 +843,7 @@
 		C84E5A01206C89090011B307 /* 4、系统功能 */ = {
 			isa = PBXGroup;
 			children = (
+				C8896EF921538974001503A5 /* 4.4、iOS12验证码自动获取 */,
 				C86234F9207B12F7000850E8 /* 4.3、10.3更换图标 */,
 				C84E5A1A206CB6A80011B307 /* 4.2、分享功能 */,
 				C84E5A02206C8D7E0011B307 /* 4.1、获取手机信息 */,
@@ -1468,6 +1472,15 @@
 				C87DCD1B208080F900792988 /* TopMenuViewController.m */,
 			);
 			path = "8.3、下拉";
+			sourceTree = "<group>";
+		};
+		C8896EF921538974001503A5 /* 4.4、iOS12验证码自动获取 */ = {
+			isa = PBXGroup;
+			children = (
+				C8896EFA21538A3A001503A5 /* AutoCaptchaViewController.h */,
+				C8896EFB21538A3A001503A5 /* AutoCaptchaViewController.m */,
+			);
+			path = "4.4、iOS12验证码自动获取";
 			sourceTree = "<group>";
 		};
 		C88EB74D205A8FCB008092BB = {
@@ -2144,6 +2157,7 @@
 				C874DB662084912E00BEF5A1 /* MenuContentViewController.m in Sources */,
 				C876A4252060B3800048728C /* LaunchAdManager.m in Sources */,
 				C8E60B342079B04600DD95B5 /* YCGCityHeaderView.m in Sources */,
+				C8896EFC21538A3A001503A5 /* AutoCaptchaViewController.m in Sources */,
 				C87DCD1020807F2F00792988 /* MenuFunctionViewController.m in Sources */,
 				C89BECE52109F3130013DBFA /* BoxFunctionCell.m in Sources */,
 				C84193D3206B83A6009CA6C6 /* LaunchNoticeViewController.m in Sources */,
