@@ -20,6 +20,7 @@
     self.dataSoureArray =@[
                            @{@"title":@"自定义按钮",@"className":@"CustomButtonViewController"},
                            @{@"title":@"自定义标签",@"className":@"CustomLabelViewController"},
+                           @{@"title":@"给控件添加光圈",@"className":@"HaloLayerViewController"},
                            ];
 }
 

@@ -54,11 +54,15 @@
 		C8109EA521114B1200B9AEBB /* 亲情号.png in Resources */ = {isa = PBXBuildFile; fileRef = C8109E9E21114B1200B9AEBB /* 亲情号.png */; };
 		C8109EA621114B1200B9AEBB /* 红包.png in Resources */ = {isa = PBXBuildFile; fileRef = C8109E9F21114B1200B9AEBB /* 红包.png */; };
 		C81806B5211D355F005183E3 /* LogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C81806B4211D355F005183E3 /* LogManager.m */; };
+		C81FA67D21533FF600D75871 /* HaloLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C81FA67C21533FF600D75871 /* HaloLayerViewController.m */; };
 		C820B20B206353AF00C80A4C /* i2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B206206353AF00C80A4C /* i2.jpg */; };
 		C820B20C206353AF00C80A4C /* i5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B207206353AF00C80A4C /* i5.jpg */; };
 		C820B20D206353AF00C80A4C /* i4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B208206353AF00C80A4C /* i4.jpg */; };
 		C820B20E206353AF00C80A4C /* i1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B209206353AF00C80A4C /* i1.jpg */; };
 		C820B20F206353AF00C80A4C /* i3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C820B20A206353AF00C80A4C /* i3.jpg */; };
+		C82B169A21534097008BC175 /* CALayer+Halo.m in Sources */ = {isa = PBXBuildFile; fileRef = C82B169821534097008BC175 /* CALayer+Halo.m */; };
+		C82B169B21534097008BC175 /* HaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C82B169921534097008BC175 /* HaloLayer.m */; };
+		C82B169E2153429F008BC175 /* touxiang.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C82B169D2153429F008BC175 /* touxiang.jpg */; };
 		C8316389214A043E00BC35F8 /* SuspensionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C8316388214A043E00BC35F8 /* SuspensionButton.m */; };
 		C831638C214A30B700BC35F8 /* 悬浮按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = C831638B214A30B700BC35F8 /* 悬浮按钮.png */; };
 		C8316390214A37E000BC35F8 /* StatusBarMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C831638F214A37E000BC35F8 /* StatusBarMessageView.m */; };
@@ -300,11 +304,18 @@
 		C8109E9F21114B1200B9AEBB /* 红包.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红包.png"; sourceTree = "<group>"; };
 		C81806B3211D355F005183E3 /* LogManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogManager.h; sourceTree = "<group>"; };
 		C81806B4211D355F005183E3 /* LogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogManager.m; sourceTree = "<group>"; };
+		C81FA67B21533FF600D75871 /* HaloLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HaloLayerViewController.h; sourceTree = "<group>"; };
+		C81FA67C21533FF600D75871 /* HaloLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaloLayerViewController.m; sourceTree = "<group>"; };
 		C820B206206353AF00C80A4C /* i2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i2.jpg; sourceTree = "<group>"; };
 		C820B207206353AF00C80A4C /* i5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i5.jpg; sourceTree = "<group>"; };
 		C820B208206353AF00C80A4C /* i4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i4.jpg; sourceTree = "<group>"; };
 		C820B209206353AF00C80A4C /* i1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i1.jpg; sourceTree = "<group>"; };
 		C820B20A206353AF00C80A4C /* i3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i3.jpg; sourceTree = "<group>"; };
+		C82B169621534097008BC175 /* CALayer+Halo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Halo.h"; sourceTree = "<group>"; };
+		C82B169721534097008BC175 /* HaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HaloLayer.h; sourceTree = "<group>"; };
+		C82B169821534097008BC175 /* CALayer+Halo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Halo.m"; sourceTree = "<group>"; };
+		C82B169921534097008BC175 /* HaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HaloLayer.m; sourceTree = "<group>"; };
+		C82B169D2153429F008BC175 /* touxiang.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = touxiang.jpg; sourceTree = "<group>"; };
 		C8316387214A043E00BC35F8 /* SuspensionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspensionButton.h; sourceTree = "<group>"; };
 		C8316388214A043E00BC35F8 /* SuspensionButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspensionButton.m; sourceTree = "<group>"; };
 		C831638B214A30B700BC35F8 /* 悬浮按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "悬浮按钮.png"; sourceTree = "<group>"; };
@@ -677,6 +688,17 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		C81FA67A21533FC500D75871 /* HaloLayer(光圈) */ = {
+			isa = PBXGroup;
+			children = (
+				C82B169C21534280008BC175 /* Source */,
+				C82B169521534097008BC175 /* Layer */,
+				C81FA67B21533FF600D75871 /* HaloLayerViewController.h */,
+				C81FA67C21533FF600D75871 /* HaloLayerViewController.m */,
+			);
+			path = "HaloLayer(光圈)";
+			sourceTree = "<group>";
+		};
 		C820B2052063539900C80A4C /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -685,6 +707,25 @@
 				C820B20A206353AF00C80A4C /* i3.jpg */,
 				C820B208206353AF00C80A4C /* i4.jpg */,
 				C820B207206353AF00C80A4C /* i5.jpg */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C82B169521534097008BC175 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				C82B169621534097008BC175 /* CALayer+Halo.h */,
+				C82B169821534097008BC175 /* CALayer+Halo.m */,
+				C82B169721534097008BC175 /* HaloLayer.h */,
+				C82B169921534097008BC175 /* HaloLayer.m */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		C82B169C21534280008BC175 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C82B169D2153429F008BC175 /* touxiang.jpg */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -1018,6 +1059,7 @@
 		C85ACABE205FB596008ED51A /* 2.1、自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
+				C81FA67A21533FC500D75871 /* HaloLayer(光圈) */,
 				C85ACAC0205FB5C9008ED51A /* CustomButton */,
 				C85ACABF205FB5BF008ED51A /* CustomLabel */,
 				C8C1B01E206391D4007BE1BD /* CustomViewController.h */,
@@ -2002,6 +2044,7 @@
 				C8109E8121108B2A00B9AEBB /* 安全备忘.png in Resources */,
 				C820B20B206353AF00C80A4C /* i2.jpg in Resources */,
 				C876A43F2060FFF40048728C /* image1.jpg in Resources */,
+				C82B169E2153429F008BC175 /* touxiang.jpg in Resources */,
 				C8623512207B3D1C000850E8 /* Appicon_Safari40x40@2x.png in Resources */,
 				C8109EA521114B1200B9AEBB /* 亲情号.png in Resources */,
 				C874DB8C2085925800BEF5A1 /* right_menu_payMoney@3x.png in Resources */,
@@ -2142,6 +2185,7 @@
 				C8316389214A043E00BC35F8 /* SuspensionButton.m in Sources */,
 				C84E5A05206C8DCC0011B307 /* IPhoneInfoViewController.m in Sources */,
 				C876A462206227CC0048728C /* CyclePageViewController.m in Sources */,
+				C82B169A21534097008BC175 /* CALayer+Halo.m in Sources */,
 				C87DCD01207F75B900792988 /* BrushBoardView.m in Sources */,
 				C874DB5F208484FC00BEF5A1 /* MenuContentHeaderView.m in Sources */,
 				C8E60B402079EDF700DD95B5 /* CitySelectorViewController.m in Sources */,
@@ -2202,8 +2246,10 @@
 				C8C1B03F2063D775007BE1BD /* PrintLabel.m in Sources */,
 				C87DCD16208080A700792988 /* LeftSpringMenuViewController.m in Sources */,
 				C8316394214A54C200BC35F8 /* LineSpacingViewController.m in Sources */,
+				C82B169B21534097008BC175 /* HaloLayer.m in Sources */,
 				C84E5A00206C85E60011B307 /* LaunchViewController.m in Sources */,
 				C876A46620622AF50048728C /* CycleImageView.m in Sources */,
+				C81FA67D21533FF600D75871 /* HaloLayerViewController.m in Sources */,
 				C88EB7A3205A9D4D008092BB /* YCGMeViewController.m in Sources */,
 				C89BECE22109F1120013DBFA /* BoxViewI700.m in Sources */,
 				C84193DB206B86BB009CA6C6 /* DIYPopViewController.m in Sources */,

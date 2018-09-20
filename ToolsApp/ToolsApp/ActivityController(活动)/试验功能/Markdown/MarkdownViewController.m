@@ -9,6 +9,7 @@
 #import "MarkdownViewController.h"
 
 @interface MarkdownViewController ()
+@property (nonatomic, strong) UITextField *textField;
 
 @end
 
@@ -17,21 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self createUI];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)createUI {
+//    UITextField *textF = [[UITextField alloc] initWithFrame:CGRectMake(20, kNavigation_HEIGHT-20, kScreen_width-40, 40)];
+//    textF.textContentType = UITextContentTypeOneTimeCode;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
