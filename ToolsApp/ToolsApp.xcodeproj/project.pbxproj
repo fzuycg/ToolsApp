@@ -172,6 +172,11 @@
 		C87DCD19208080C600792988 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD18208080C600792988 /* LeftMenuViewController.m */; };
 		C87DCD1C208080F900792988 /* TopMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD1B208080F900792988 /* TopMenuViewController.m */; };
 		C8896EFC21538A3A001503A5 /* AutoCaptchaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8896EFB21538A3A001503A5 /* AutoCaptchaViewController.m */; };
+		C8896F0A215395CB001503A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8896F09215395CB001503A5 /* CoreGraphics.framework */; };
+		C8896F0C215395DF001503A5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8896F0B215395DF001503A5 /* CoreText.framework */; };
+		C8896F0E215395EE001503A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8896F0D215395EE001503A5 /* Foundation.framework */; };
+		C8896F1021539611001503A5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8896F0F21539611001503A5 /* QuartzCore.framework */; };
+		C8896F122153962B001503A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8896F112153962B001503A5 /* UIKit.framework */; };
 		C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EB75A205A8FCB008092BB /* AppDelegate.m */; };
 		C88EB763205A8FCB008092BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88EB762205A8FCB008092BB /* Assets.xcassets */; };
 		C88EB766205A8FCB008092BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88EB764205A8FCB008092BB /* LaunchScreen.storyboard */; };
@@ -197,6 +202,7 @@
 		C8ACBC4A211BD97E0057D8DC /* NoEditStatusNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC49211BD97E0057D8DC /* NoEditStatusNaviView.m */; };
 		C8ACBC5A211D28350057D8DC /* LogSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC59211D28350057D8DC /* LogSaveViewController.m */; };
 		C8ACBC5D211D28510057D8DC /* MarkdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC5C211D28510057D8DC /* MarkdownViewController.m */; };
+		C8B3F1A42159D26C009460E3 /* ScreenshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B3F1A32159D26C009460E3 /* ScreenshotViewController.m */; };
 		C8BE9D0C214A023C009A86AF /* CustomButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE9D0B214A023C009A86AF /* CustomButtonViewController.m */; };
 		C8BE9D0F214A02BA009A86AF /* SuspensionButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE9D0E214A02BA009A86AF /* SuspensionButtonViewController.m */; };
 		C8C1B020206391D4007BE1BD /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B01F206391D4007BE1BD /* CustomViewController.m */; };
@@ -494,6 +500,11 @@
 		C87DCD1B208080F900792988 /* TopMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopMenuViewController.m; sourceTree = "<group>"; };
 		C8896EFA21538A3A001503A5 /* AutoCaptchaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCaptchaViewController.h; sourceTree = "<group>"; };
 		C8896EFB21538A3A001503A5 /* AutoCaptchaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCaptchaViewController.m; sourceTree = "<group>"; };
+		C8896F09215395CB001503A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C8896F0B215395DF001503A5 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		C8896F0D215395EE001503A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C8896F0F21539611001503A5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C8896F112153962B001503A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C88EB756205A8FCB008092BB /* ToolsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88EB759205A8FCB008092BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C88EB75A205A8FCB008092BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -546,6 +557,9 @@
 		C8ACBC59211D28350057D8DC /* LogSaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogSaveViewController.m; sourceTree = "<group>"; };
 		C8ACBC5B211D28510057D8DC /* MarkdownViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkdownViewController.h; sourceTree = "<group>"; };
 		C8ACBC5C211D28510057D8DC /* MarkdownViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkdownViewController.m; sourceTree = "<group>"; };
+		C8B3F1A22159D26C009460E3 /* ScreenshotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenshotViewController.h; sourceTree = "<group>"; };
+		C8B3F1A32159D26C009460E3 /* ScreenshotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenshotViewController.m; sourceTree = "<group>"; };
+		C8B3F1A52159D702009460E3 /* YCGSizeFix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGSizeFix.h; sourceTree = "<group>"; };
 		C8BE9D0A214A023C009A86AF /* CustomButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomButtonViewController.h; sourceTree = "<group>"; };
 		C8BE9D0B214A023C009A86AF /* CustomButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomButtonViewController.m; sourceTree = "<group>"; };
 		C8BE9D0D214A02BA009A86AF /* SuspensionButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspensionButtonViewController.h; sourceTree = "<group>"; };
@@ -606,6 +620,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8896F122153962B001503A5 /* UIKit.framework in Frameworks */,
+				C8896F1021539611001503A5 /* QuartzCore.framework in Frameworks */,
+				C8896F0E215395EE001503A5 /* Foundation.framework in Frameworks */,
+				C8896F0C215395DF001503A5 /* CoreText.framework in Frameworks */,
+				C8896F0A215395CB001503A5 /* CoreGraphics.framework in Frameworks */,
 				F80466303773F6D038E3D5BA /* libPods-ToolsApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -639,6 +658,11 @@
 		72190FBD7ECF6D3BB04ACE76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8896F112153962B001503A5 /* UIKit.framework */,
+				C8896F0F21539611001503A5 /* QuartzCore.framework */,
+				C8896F0D215395EE001503A5 /* Foundation.framework */,
+				C8896F0B215395DF001503A5 /* CoreText.framework */,
+				C8896F09215395CB001503A5 /* CoreGraphics.framework */,
 				4B629192B0ECE3A007F659F9 /* libPods-ToolsApp.a */,
 			);
 			name = Frameworks;
@@ -843,6 +867,7 @@
 		C84E5A01206C89090011B307 /* 4、系统功能 */ = {
 			isa = PBXGroup;
 			children = (
+				C8B3F1A12159D1E9009460E3 /* 4.5、获取截屏 */,
 				C8896EF921538974001503A5 /* 4.4、iOS12验证码自动获取 */,
 				C86234F9207B12F7000850E8 /* 4.3、10.3更换图标 */,
 				C84E5A1A206CB6A80011B307 /* 4.2、分享功能 */,
@@ -970,7 +995,6 @@
 				C85ACAA7205E64A5008ED51A /* 3、视图布局 */,
 				C84E59FA206C84940011B307 /* 2、自定义相关 */,
 				C84E59F9206C84500011B307 /* 1、启动相关 */,
-				C84193CD206A14F5009CA6C6 /* 浏览器封装 */,
 			);
 			path = "功能合集";
 			sourceTree = "<group>";
@@ -1550,6 +1574,7 @@
 				C88EB767205A8FCB008092BB /* Info.plist */,
 				C88EB768205A8FCB008092BB /* main.m */,
 				C88EB7B1205B6B86008092BB /* PrefixHeader.pch */,
+				C8B3F1A52159D702009460E3 /* YCGSizeFix.h */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -1695,6 +1720,7 @@
 		C8ACBC55211D27860057D8DC /* 试验功能 */ = {
 			isa = PBXGroup;
 			children = (
+				C84193CD206A14F5009CA6C6 /* 浏览器封装 */,
 				C8ACBC57211D27F90057D8DC /* Markdown */,
 				C8ACBC56211D27E40057D8DC /* 日志保存 */,
 			);
@@ -1723,6 +1749,15 @@
 				C8ACBC5C211D28510057D8DC /* MarkdownViewController.m */,
 			);
 			path = Markdown;
+			sourceTree = "<group>";
+		};
+		C8B3F1A12159D1E9009460E3 /* 4.5、获取截屏 */ = {
+			isa = PBXGroup;
+			children = (
+				C8B3F1A22159D26C009460E3 /* ScreenshotViewController.h */,
+				C8B3F1A32159D26C009460E3 /* ScreenshotViewController.m */,
+			);
+			path = "4.5、获取截屏";
 			sourceTree = "<group>";
 		};
 		C8BE9D09214A01F5009A86AF /* SuspensionButton(悬浮按钮) */ = {
@@ -2204,6 +2239,7 @@
 				C874DB5F208484FC00BEF5A1 /* MenuContentHeaderView.m in Sources */,
 				C8E60B402079EDF700DD95B5 /* CitySelectorViewController.m in Sources */,
 				C8109E5C210F3B4300B9AEBB /* NoEditStatusHeaderView.m in Sources */,
+				C8B3F1A42159D26C009460E3 /* ScreenshotViewController.m in Sources */,
 				C84E5A18206CB6470011B307 /* IFMShareItemCell.m in Sources */,
 				C88EB79D205A9D1E008092BB /* YCGHomeViewController.m in Sources */,
 				C876A488206256130048728C /* CardLayoutView.m in Sources */,
@@ -2436,6 +2472,19 @@
 				DEVELOPMENT_TEAM = S5835VE7S9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ToolsApp/Supporting Files/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/FLAnimatedImage\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/XHLaunchAd\"",
+					"\"${PODS_ROOT}/Headers/Public/ZipArchive\"",
+					"\"${PODS_ROOT}/Headers/Public/fishhook\"",
+					"\"${PODS_ROOT}/Bypass/Bypass\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/ToolsApp/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2461,6 +2510,19 @@
 				DEVELOPMENT_TEAM = S5835VE7S9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ToolsApp/Supporting Files/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/FLAnimatedImage\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/XHLaunchAd\"",
+					"\"${PODS_ROOT}/Headers/Public/ZipArchive\"",
+					"\"${PODS_ROOT}/Headers/Public/fishhook\"",
+					"\"${PODS_ROOT}/Bypass/Bypass\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/ToolsApp/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

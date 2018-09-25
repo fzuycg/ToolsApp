@@ -21,6 +21,7 @@
                            @{@"title":@"分享功能",@"className":@"ShareViewController"},
                            @{@"title":@"更换图标",@"className":@"ChangeIconViewController"},
                            @{@"title":@"自动获取短信验证码",@"className":@"AutoCaptchaViewController"},
+                           @{@"title":@"获取截屏",@"className":@"ScreenshotViewController"},
                            ];
 }
 
