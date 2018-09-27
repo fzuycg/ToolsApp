@@ -9,7 +9,8 @@
 #import "StatusBarMessageView.h"
 
 @interface StatusBarMessageView ()
-@property (nonatomic, strong)UILabel *label;
+@property (nonatomic, strong) UIView *contentView;
+@property (nonatomic, strong) UILabel *label;
 
 @end
 
@@ -36,23 +37,28 @@
 - (void)createLabel {
     CGRect statusBarFrame = [UIApplication sharedApplication].statusBarFrame;
     _statusBarCenterY = statusBarFrame.size.height/2;
-    _label = [[UILabel alloc] initWithFrame:CGRectMake(0, -statusBarFrame.size.height, statusBarFrame.size.width, statusBarFrame.size.height)];
+    
+    _contentView = [[UIView alloc]initWithFrame:CGRectMake(0, -statusBarFrame.size.height, statusBarFrame.size.width, statusBarFrame.size.height)];
+    _contentView.backgroundColor = [UIColor redColor];
+    [self addSubview:_contentView];
+    
+    _label = [[UILabel alloc] initWithFrame:CGRectMake(0, statusBarFrame.size.height-20, statusBarFrame.size.width, 20)];
     _label.textColor = [UIColor whiteColor];
     _label.textAlignment = NSTextAlignmentCenter;
     _label.font = [UIFont systemFontOfSize:13];
-    _label.backgroundColor = [UIColor redColor];
-    [self addSubview:_label];
+    _label.backgroundColor = [UIColor clearColor];
+    [self.contentView addSubview:_label];
     
 }
 
 - (void)showStatusWithMessage:(NSString *)text {
     _label.text = text;
-    if (self.label.centerY == _statusBarCenterY) {
+    if (self.contentView.centerY == _statusBarCenterY) {
         //当DGCustomStatusBar已经显示出来了,再连续点击显示按钮,取消延时执行,不让window隐藏.
         [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(hideWindow:) object:nil];
     }
     [UIView animateWithDuration:1.0f animations:^{
-        self.label.centerY = _statusBarCenterY;
+        self.contentView.centerY = _statusBarCenterY;
     } completion:^(BOOL finished) {
         [self performSelector:@selector(hideWindow:) withObject:nil afterDelay:1.5f];
     }];
@@ -60,14 +66,14 @@
 
 - (void)hideWindow:(id)object {
     [UIView animateWithDuration:1.0f animations:^{
-        self.label.centerY = -_statusBarCenterY;
+        self.contentView.centerY = -_statusBarCenterY;
     }];
 }
 
 #pragma mark - setter
 - (void)setStatusColor:(UIColor *)statusColor {
     _statusColor  =statusColor;
-    _label.backgroundColor = statusColor;
+    _contentView.backgroundColor = statusColor;
 }
 
 - (void)setTextColor:(UIColor *)textColor {

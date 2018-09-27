@@ -215,6 +215,7 @@
 		C8C1B03F2063D775007BE1BD /* PrintLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B03E2063D775007BE1BD /* PrintLabel.m */; };
 		C8C1B0412063D799007BE1BD /* printerVoice.wav in Resources */ = {isa = PBXBuildFile; fileRef = C8C1B0402063D799007BE1BD /* printerVoice.wav */; };
 		C8C8E68B207B53EB002DFA7C /* AnimationAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C8E68A207B53EB002DFA7C /* AnimationAboutViewController.m */; };
+		C8CA1175215B579900AFF265 /* YCGAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CA1174215B579900AFF265 /* YCGAlertView.m */; };
 		C8E60B0D207465F100DD95B5 /* CitySelectorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B0C207465F100DD95B5 /* CitySelectorPickerViewController.m */; };
 		C8E60B122074664300DD95B5 /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = C8E60B112074664300DD95B5 /* city.json */; };
 		C8E60B152074671700DD95B5 /* CitySelectorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B142074671700DD95B5 /* CitySelectorPickerView.m */; };
@@ -583,6 +584,8 @@
 		C8C1B0402063D799007BE1BD /* printerVoice.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = printerVoice.wav; sourceTree = "<group>"; };
 		C8C8E689207B53EB002DFA7C /* AnimationAboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationAboutViewController.h; sourceTree = "<group>"; };
 		C8C8E68A207B53EB002DFA7C /* AnimationAboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationAboutViewController.m; sourceTree = "<group>"; };
+		C8CA1173215B579900AFF265 /* YCGAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGAlertView.h; sourceTree = "<group>"; };
+		C8CA1174215B579900AFF265 /* YCGAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGAlertView.m; sourceTree = "<group>"; };
 		C8E60B0B207465F100DD95B5 /* CitySelectorPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitySelectorPickerViewController.h; sourceTree = "<group>"; };
 		C8E60B0C207465F100DD95B5 /* CitySelectorPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitySelectorPickerViewController.m; sourceTree = "<group>"; };
 		C8E60B112074664300DD95B5 /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
@@ -823,6 +826,7 @@
 		C84193D8206B867D009CA6C6 /* 2.2、自定义弹出视图 */ = {
 			isa = PBXGroup;
 			children = (
+				C8CA1184215CAC6500AFF265 /* DIYAlertView(弹框) */,
 				C831638D214A377900BC35F8 /* StatusBarMessage(状态栏提示) */,
 				C84193DC206B86CC009CA6C6 /* HubMessageView(普通提示) */,
 				C84193D9206B86BB009CA6C6 /* DIYPopViewController.h */,
@@ -1808,6 +1812,15 @@
 			path = Voice;
 			sourceTree = "<group>";
 		};
+		C8CA1184215CAC6500AFF265 /* DIYAlertView(弹框) */ = {
+			isa = PBXGroup;
+			children = (
+				C8CA1173215B579900AFF265 /* YCGAlertView.h */,
+				C8CA1174215B579900AFF265 /* YCGAlertView.m */,
+			);
+			path = "DIYAlertView(弹框)";
+			sourceTree = "<group>";
+		};
 		C8D00ABD20638D2E00530149 /* TabbarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -2240,6 +2253,7 @@
 				C8E60B402079EDF700DD95B5 /* CitySelectorViewController.m in Sources */,
 				C8109E5C210F3B4300B9AEBB /* NoEditStatusHeaderView.m in Sources */,
 				C8B3F1A42159D26C009460E3 /* ScreenshotViewController.m in Sources */,
+				C8CA1175215B579900AFF265 /* YCGAlertView.m in Sources */,
 				C84E5A18206CB6470011B307 /* IFMShareItemCell.m in Sources */,
 				C88EB79D205A9D1E008092BB /* YCGHomeViewController.m in Sources */,
 				C876A488206256130048728C /* CardLayoutView.m in Sources */,

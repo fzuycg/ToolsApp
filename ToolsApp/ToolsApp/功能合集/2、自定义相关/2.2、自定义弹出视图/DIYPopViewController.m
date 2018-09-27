@@ -9,9 +9,11 @@
 #import "DIYPopViewController.h"
 #import "HubMessageView.h"
 #import "StatusBarMessageView.h"
+#import "YCGAlertView.h"
 
-@interface DIYPopViewController ()
+@interface DIYPopViewController ()<YCGAlertViewDelegate>
 @property (nonatomic, strong) StatusBarMessageView *statusBar;
+@property (nonatomic, strong) YCGAlertView *alertView;
 
 @end
 
@@ -22,6 +24,7 @@
     self.dataSoureArray =@[
                            @{@"title":@"简单屏幕提示",@"className":@""},
                            @{@"title":@"状态栏提示",@"className":@""},
+                           @{@"title":@"自定义Alert",@"className":@""},
                            ];
 }
 
@@ -34,8 +37,22 @@
         case 1:
             [self.statusBar showStatusWithMessage:@"网络异常"];
             break;
+        case 2:
+            
+            [self.alertView show];
+            break;
         default:
             break;
+    }
+}
+
+#pragma mark - YCGAlertViewDelegate
+- (void)alertViewDidClickButtonWithIndex:(NSInteger)index {
+    if (index == 0) {
+        NSLog(@"点击了取消按钮");
+    }
+    if (index == 1) {
+        NSLog(@"点击了确定按钮");
     }
 }
 
@@ -45,6 +62,14 @@
         _statusBar = [[StatusBarMessageView alloc] init];
     }
     return _statusBar;
+}
+
+- (YCGAlertView *)alertView {
+    if (!_alertView) {
+        _alertView = [[YCGAlertView alloc] initWithTitle:@"提示" message:@"你的应用有被入侵的风险！" cancelButtonTitle:@"取消" sureButtonTitle:@"确认"];
+        _alertView.delegate = self;
+    }
+    return _alertView;
 }
 
 
