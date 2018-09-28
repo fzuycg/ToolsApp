@@ -6,6 +6,7 @@ PODS:
   - FMDB/standard (2.7.2)
   - Masonry (1.1.0)
   - MJExtension (3.0.13)
+  - MSWeakTimer (1.1.0)
   - SDWebImage (4.3.2):
     - SDWebImage/Core (= 4.3.2)
   - SDWebImage/Core (4.3.2)
@@ -18,6 +19,7 @@ DEPENDENCIES:
   - FMDB
   - Masonry
   - MJExtension
+  - MSWeakTimer
   - SDWebImage
   - XHLaunchAd
   - ZipArchive
@@ -28,10 +30,11 @@ SPEC CHECKSUMS:
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MSWeakTimer: 9426150f933b80ed3acf3f6d228e4b61f0e303c8
   SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
   XHLaunchAd: 0dc50c5af00ee5d9e734b9dce6eece7acaa71122
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: 160c55cf6703b9bb654699f37382b901aca064fc
+PODFILE CHECKSUM: 5505b5914e3b34503f47d5b38e4b7cdce17af8f1
 
 COCOAPODS: 1.4.0

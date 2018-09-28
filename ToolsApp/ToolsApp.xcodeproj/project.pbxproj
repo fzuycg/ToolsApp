@@ -216,6 +216,8 @@
 		C8C1B0412063D799007BE1BD /* printerVoice.wav in Resources */ = {isa = PBXBuildFile; fileRef = C8C1B0402063D799007BE1BD /* printerVoice.wav */; };
 		C8C8E68B207B53EB002DFA7C /* AnimationAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C8E68A207B53EB002DFA7C /* AnimationAboutViewController.m */; };
 		C8CA1175215B579900AFF265 /* YCGAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CA1174215B579900AFF265 /* YCGAlertView.m */; };
+		C8CA1188215CD40500AFF265 /* CountDownButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CA1187215CD40500AFF265 /* CountDownButtonViewController.m */; };
+		C8CA118C215CD42B00AFF265 /* CountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CA118B215CD42B00AFF265 /* CountDownButton.m */; };
 		C8E60B0D207465F100DD95B5 /* CitySelectorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B0C207465F100DD95B5 /* CitySelectorPickerViewController.m */; };
 		C8E60B122074664300DD95B5 /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = C8E60B112074664300DD95B5 /* city.json */; };
 		C8E60B152074671700DD95B5 /* CitySelectorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B142074671700DD95B5 /* CitySelectorPickerView.m */; };
@@ -586,6 +588,10 @@
 		C8C8E68A207B53EB002DFA7C /* AnimationAboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationAboutViewController.m; sourceTree = "<group>"; };
 		C8CA1173215B579900AFF265 /* YCGAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGAlertView.h; sourceTree = "<group>"; };
 		C8CA1174215B579900AFF265 /* YCGAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGAlertView.m; sourceTree = "<group>"; };
+		C8CA1186215CD40500AFF265 /* CountDownButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountDownButtonViewController.h; sourceTree = "<group>"; };
+		C8CA1187215CD40500AFF265 /* CountDownButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountDownButtonViewController.m; sourceTree = "<group>"; };
+		C8CA118A215CD42B00AFF265 /* CountDownButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountDownButton.h; sourceTree = "<group>"; };
+		C8CA118B215CD42B00AFF265 /* CountDownButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountDownButton.m; sourceTree = "<group>"; };
 		C8E60B0B207465F100DD95B5 /* CitySelectorPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitySelectorPickerViewController.h; sourceTree = "<group>"; };
 		C8E60B0C207465F100DD95B5 /* CitySelectorPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitySelectorPickerViewController.m; sourceTree = "<group>"; };
 		C8E60B112074664300DD95B5 /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
@@ -1115,6 +1121,7 @@
 		C85ACAC0205FB5C9008ED51A /* CustomButton */ = {
 			isa = PBXGroup;
 			children = (
+				C8CA1185215CD3C100AFF265 /* CountDownButton(倒计时按钮) */,
 				C8BE9D09214A01F5009A86AF /* SuspensionButton(悬浮按钮) */,
 				C8BE9D0A214A023C009A86AF /* CustomButtonViewController.h */,
 				C8BE9D0B214A023C009A86AF /* CustomButtonViewController.m */,
@@ -1821,6 +1828,25 @@
 			path = "DIYAlertView(弹框)";
 			sourceTree = "<group>";
 		};
+		C8CA1185215CD3C100AFF265 /* CountDownButton(倒计时按钮) */ = {
+			isa = PBXGroup;
+			children = (
+				C8CA1189215CD41100AFF265 /* View */,
+				C8CA1186215CD40500AFF265 /* CountDownButtonViewController.h */,
+				C8CA1187215CD40500AFF265 /* CountDownButtonViewController.m */,
+			);
+			path = "CountDownButton(倒计时按钮)";
+			sourceTree = "<group>";
+		};
+		C8CA1189215CD41100AFF265 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8CA118A215CD42B00AFF265 /* CountDownButton.h */,
+				C8CA118B215CD42B00AFF265 /* CountDownButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C8D00ABD20638D2E00530149 /* TabbarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -2220,6 +2246,7 @@
 				C876A4812062529C0048728C /* CardLayoutCell.m in Sources */,
 				C8ACBC5A211D28350057D8DC /* LogSaveViewController.m in Sources */,
 				C87DCD0C207F76DE00792988 /* PanBoardView.m in Sources */,
+				C8CA1188215CD40500AFF265 /* CountDownButtonViewController.m in Sources */,
 				C86234FC207B1392000850E8 /* ChangeIconViewController.m in Sources */,
 				C84E5A0B206C99E20011B307 /* NSString+Addition.m in Sources */,
 				C84193DF206B86EC009CA6C6 /* HubMessageView.m in Sources */,
@@ -2265,6 +2292,7 @@
 				C89BECE82109F3F40013DBFA /* BoxFunctionModel.m in Sources */,
 				C874DB8220858CA800BEF5A1 /* PopMenuTableViewCell.m in Sources */,
 				C8109E4C210EFD8C00B9AEBB /* MoreAppModel.m in Sources */,
+				C8CA118C215CD42B00AFF265 /* CountDownButton.m in Sources */,
 				C87DCCF8207F747400792988 /* OtherFunctionViewController.m in Sources */,
 				C8C1B0392063D59B007BE1BD /* BaseViewController.m in Sources */,
 				C88EB7AD205B6731008092BB /* YCGHomeDataModel.m in Sources */,

@@ -9,4 +9,5 @@ target 'ToolsApp' do
   pod 'Masonry'
   pod 'ZipArchive'
   pod 'fishhook'
+  pod 'MSWeakTimer'
 end
