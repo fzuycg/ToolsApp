@@ -171,6 +171,11 @@
 		C87DCD16208080A700792988 /* LeftSpringMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD15208080A700792988 /* LeftSpringMenuViewController.m */; };
 		C87DCD19208080C600792988 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD18208080C600792988 /* LeftMenuViewController.m */; };
 		C87DCD1C208080F900792988 /* TopMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD1B208080F900792988 /* TopMenuViewController.m */; };
+		C8831643216CD6D80044180F /* LoadBigImageUseRunLoopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C8831642216CD6D80044180F /* LoadBigImageUseRunLoopVC.m */; };
+		C8831646216CD6F70044180F /* LoadBigImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C8831645216CD6F70044180F /* LoadBigImageVC.m */; };
+		C883164B216CDC7A0044180F /* big_image_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8831648216CDC7A0044180F /* big_image_3.jpg */; };
+		C883164C216CDC7A0044180F /* big_image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8831649216CDC7A0044180F /* big_image_1.jpg */; };
+		C883164D216CDC7A0044180F /* big_image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C883164A216CDC7A0044180F /* big_image_2.jpg */; };
 		C8896EFC21538A3A001503A5 /* AutoCaptchaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8896EFB21538A3A001503A5 /* AutoCaptchaViewController.m */; };
 		C8896F0A215395CB001503A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8896F09215395CB001503A5 /* CoreGraphics.framework */; };
 		C8896F0C215395DF001503A5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8896F0B215395DF001503A5 /* CoreText.framework */; };
@@ -218,6 +223,7 @@
 		C8CA1175215B579900AFF265 /* YCGAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CA1174215B579900AFF265 /* YCGAlertView.m */; };
 		C8CA1188215CD40500AFF265 /* CountDownButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CA1187215CD40500AFF265 /* CountDownButtonViewController.m */; };
 		C8CA118C215CD42B00AFF265 /* CountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CA118B215CD42B00AFF265 /* CountDownButton.m */; };
+		C8CA1190215DFCF600AFF265 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CA118F215DFCF600AFF265 /* UIColor+Addition.m */; };
 		C8E60B0D207465F100DD95B5 /* CitySelectorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B0C207465F100DD95B5 /* CitySelectorPickerViewController.m */; };
 		C8E60B122074664300DD95B5 /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = C8E60B112074664300DD95B5 /* city.json */; };
 		C8E60B152074671700DD95B5 /* CitySelectorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B142074671700DD95B5 /* CitySelectorPickerView.m */; };
@@ -501,6 +507,13 @@
 		C87DCD18208080C600792988 /* LeftMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		C87DCD1A208080F900792988 /* TopMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopMenuViewController.h; sourceTree = "<group>"; };
 		C87DCD1B208080F900792988 /* TopMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopMenuViewController.m; sourceTree = "<group>"; };
+		C8831641216CD6D80044180F /* LoadBigImageUseRunLoopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadBigImageUseRunLoopVC.h; sourceTree = "<group>"; };
+		C8831642216CD6D80044180F /* LoadBigImageUseRunLoopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadBigImageUseRunLoopVC.m; sourceTree = "<group>"; };
+		C8831644216CD6F70044180F /* LoadBigImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadBigImageVC.h; sourceTree = "<group>"; };
+		C8831645216CD6F70044180F /* LoadBigImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadBigImageVC.m; sourceTree = "<group>"; };
+		C8831648216CDC7A0044180F /* big_image_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = big_image_3.jpg; sourceTree = "<group>"; };
+		C8831649216CDC7A0044180F /* big_image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = big_image_1.jpg; sourceTree = "<group>"; };
+		C883164A216CDC7A0044180F /* big_image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = big_image_2.jpg; sourceTree = "<group>"; };
 		C8896EFA21538A3A001503A5 /* AutoCaptchaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCaptchaViewController.h; sourceTree = "<group>"; };
 		C8896EFB21538A3A001503A5 /* AutoCaptchaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCaptchaViewController.m; sourceTree = "<group>"; };
 		C8896F09215395CB001503A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -592,6 +605,8 @@
 		C8CA1187215CD40500AFF265 /* CountDownButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountDownButtonViewController.m; sourceTree = "<group>"; };
 		C8CA118A215CD42B00AFF265 /* CountDownButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountDownButton.h; sourceTree = "<group>"; };
 		C8CA118B215CD42B00AFF265 /* CountDownButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountDownButton.m; sourceTree = "<group>"; };
+		C8CA118E215DFCF600AFF265 /* UIColor+Addition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
+		C8CA118F215DFCF600AFF265 /* UIColor+Addition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
 		C8E60B0B207465F100DD95B5 /* CitySelectorPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitySelectorPickerViewController.h; sourceTree = "<group>"; };
 		C8E60B0C207465F100DD95B5 /* CitySelectorPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitySelectorPickerViewController.m; sourceTree = "<group>"; };
 		C8E60B112074664300DD95B5 /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
@@ -1509,6 +1524,28 @@
 			path = "8.3、下拉";
 			sourceTree = "<group>";
 		};
+		C8831640216CD3910044180F /* RunLoop加载大图 */ = {
+			isa = PBXGroup;
+			children = (
+				C8831647216CDBD70044180F /* Source */,
+				C8831641216CD6D80044180F /* LoadBigImageUseRunLoopVC.h */,
+				C8831642216CD6D80044180F /* LoadBigImageUseRunLoopVC.m */,
+				C8831644216CD6F70044180F /* LoadBigImageVC.h */,
+				C8831645216CD6F70044180F /* LoadBigImageVC.m */,
+			);
+			path = "RunLoop加载大图";
+			sourceTree = "<group>";
+		};
+		C8831647216CDBD70044180F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C8831649216CDC7A0044180F /* big_image_1.jpg */,
+				C883164A216CDC7A0044180F /* big_image_2.jpg */,
+				C8831648216CDC7A0044180F /* big_image_3.jpg */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		C8896EF921538974001503A5 /* 4.4、iOS12验证码自动获取 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1656,16 +1693,9 @@
 		C88EB7B2205B92A3008092BB /* Utils(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				C8CA118D215DFC6C00AFF265 /* Extension */,
 				C876A4222060AE420048728C /* Networking */,
 				C88EB7B3205B9301008092BB /* Define.h */,
-				C876A471206230830048728C /* NSString+RegexCategory.h */,
-				C876A472206230830048728C /* NSString+RegexCategory.m */,
-				C84E5A0A206C99E20011B307 /* NSString+Addition.h */,
-				C84E5A09206C99E20011B307 /* NSString+Addition.m */,
-				C8C1B02720639C82007BE1BD /* UIView+Parameter.h */,
-				C8C1B02820639C82007BE1BD /* UIView+Parameter.m */,
-				C8ACBC292112E9030057D8DC /* NSDictionary+Log.h */,
-				C8ACBC282112E9030057D8DC /* NSDictionary+Log.m */,
 			);
 			path = "Utils(工具)";
 			sourceTree = "<group>";
@@ -1731,6 +1761,7 @@
 		C8ACBC55211D27860057D8DC /* 试验功能 */ = {
 			isa = PBXGroup;
 			children = (
+				C8831640216CD3910044180F /* RunLoop加载大图 */,
 				C84193CD206A14F5009CA6C6 /* 浏览器封装 */,
 				C8ACBC57211D27F90057D8DC /* Markdown */,
 				C8ACBC56211D27E40057D8DC /* 日志保存 */,
@@ -1845,6 +1876,23 @@
 				C8CA118B215CD42B00AFF265 /* CountDownButton.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C8CA118D215DFC6C00AFF265 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C876A471206230830048728C /* NSString+RegexCategory.h */,
+				C876A472206230830048728C /* NSString+RegexCategory.m */,
+				C84E5A0A206C99E20011B307 /* NSString+Addition.h */,
+				C84E5A09206C99E20011B307 /* NSString+Addition.m */,
+				C8C1B02720639C82007BE1BD /* UIView+Parameter.h */,
+				C8C1B02820639C82007BE1BD /* UIView+Parameter.m */,
+				C8ACBC292112E9030057D8DC /* NSDictionary+Log.h */,
+				C8ACBC282112E9030057D8DC /* NSDictionary+Log.m */,
+				C8CA118E215DFCF600AFF265 /* UIColor+Addition.h */,
+				C8CA118F215DFCF600AFF265 /* UIColor+Addition.m */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		C8D00ABD20638D2E00530149 /* TabbarController */ = {
@@ -2126,14 +2174,17 @@
 				C876A43B2060FFF40048728C /* image11.gif in Resources */,
 				C85ACAB0205F657A008ED51A /* guide_02.jpg in Resources */,
 				C8109E8321108B2A00B9AEBB /* 天天有料.png in Resources */,
+				C883164C216CDC7A0044180F /* big_image_1.jpg in Resources */,
 				C8109E8E21108B2A00B9AEBB /* 医疗健康.png in Resources */,
 				C820B20E206353AF00C80A4C /* i1.jpg in Resources */,
+				C883164D216CDC7A0044180F /* big_image_2.jpg in Resources */,
 				C8109E8121108B2A00B9AEBB /* 安全备忘.png in Resources */,
 				C820B20B206353AF00C80A4C /* i2.jpg in Resources */,
 				C876A43F2060FFF40048728C /* image1.jpg in Resources */,
 				C82B169E2153429F008BC175 /* touxiang.jpg in Resources */,
 				C8623512207B3D1C000850E8 /* Appicon_Safari40x40@2x.png in Resources */,
 				C8109EA521114B1200B9AEBB /* 亲情号.png in Resources */,
+				C883164B216CDC7A0044180F /* big_image_3.jpg in Resources */,
 				C874DB8C2085925800BEF5A1 /* right_menu_payMoney@3x.png in Resources */,
 				C8623510207B3D1C000850E8 /* Appicon_AppStore40x40@2x.png in Resources */,
 				C85ACAB2205F657A008ED51A /* guide_04.jpg in Resources */,
@@ -2313,6 +2364,7 @@
 				C84E59FD206C85290011B307 /* DIYViewController.m in Sources */,
 				C876A44F206105A70048728C /* WaterFallDataModel.m in Sources */,
 				C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */,
+				C8CA1190215DFCF600AFF265 /* UIColor+Addition.m in Sources */,
 				C87DCD08207F76B800792988 /* PanBoardViewController.m in Sources */,
 				C8BE9D0C214A023C009A86AF /* CustomButtonViewController.m in Sources */,
 				C876A4792062505D0048728C /* CardLayoutViewController.m in Sources */,
@@ -2344,12 +2396,14 @@
 				C81FA67D21533FF600D75871 /* HaloLayerViewController.m in Sources */,
 				C88EB7A3205A9D4D008092BB /* YCGMeViewController.m in Sources */,
 				C89BECE22109F1120013DBFA /* BoxViewI700.m in Sources */,
+				C8831646216CD6F70044180F /* LoadBigImageVC.m in Sources */,
 				C84193DB206B86BB009CA6C6 /* DIYPopViewController.m in Sources */,
 				C8E60B3A2079B09800DD95B5 /* YCGCityCollectionViewCell.m in Sources */,
 				C876A46920622B2B0048728C /* CycleImageViewCell.m in Sources */,
 				C84E5A1D206CB74C0011B307 /* ShareViewController.m in Sources */,
 				C874DB7C20858C6D00BEF5A1 /* PopMenuTableDataSource.m in Sources */,
 				C89BECDE2109F0010013DBFA /* ALiPayHomeViewController.m in Sources */,
+				C8831643216CD6D80044180F /* LoadBigImageUseRunLoopVC.m in Sources */,
 				C84193D7206B8458009CA6C6 /* LaunchNoticeView.m in Sources */,
 				C874DB7320858BE900BEF5A1 /* PopMenuView.m in Sources */,
 				C8109E40210EF5E400B9AEBB /* MoreAppCell.m in Sources */,

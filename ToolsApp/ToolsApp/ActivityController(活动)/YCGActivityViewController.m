@@ -23,6 +23,8 @@
                            @{@"title":@"1、浏览器",@"className":@"WebBrowserViewController"},
                            @{@"title":@"2、日志保存",@"className":@"LogSaveViewController"},
                            @{@"title":@"3、Markdown",@"className":@"MarkdownViewController"},
+                           @{@"title":@"4、普通加载大图",@"className":@"LoadBigImageVC"},
+                           @{@"title":@"5、RunLoop加载大图",@"className":@"LoadBigImageUseRunLoopVC"},
                            ];
 }
 
