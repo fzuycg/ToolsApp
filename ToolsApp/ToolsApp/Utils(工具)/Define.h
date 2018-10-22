@@ -17,12 +17,23 @@
 #define kNavigation_HEIGHT (kStatusBar_HEIGHT+kNavigationBar_HEIGHT)
 
 #define kScreen_bounds [UIScreen mainScreen].bounds
-#define kScreen_height  [[UIScreen mainScreen] bounds].size.height
-#define kScreen_width   [[UIScreen mainScreen] bounds].size.width
+#define kScreen_height  ([[UIScreen mainScreen] bounds].size.height)
+#define kScreen_width   ([[UIScreen mainScreen] bounds].size.width)
 
-#define kIs_iPhoneX ([[UIApplication sharedApplication] statusBarFrame].size.height==44 ? YES : NO)
+//这个有隐患，隐藏状态栏的情况下statusBar高度为0
+//#define kIs_iPhoneX ([[UIApplication sharedApplication] statusBarFrame].size.height==44 ? YES : NO)
+#define kIs_iPhoneX ((IS_iPhone && kScreen_height>=812) ? YES : NO)
 
 #define kTabBar_height ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
+
+//额外添加
+#define IS_iPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define SCREEN_SCALE   [UIScreen mainScreen].scale
+#define iPhoneX    (IS_iPhone && kScreen_height>=812)  //iPhoneX系列
+#define iPhone_5_8 (IS_iPhone && kScreen_height==812)  //5.8寸
+#define iPhone_6_1 (IS_iPhone && kScreen_height==896 && SCREEN_SCALE==2.0)  //6.1寸
+#define iPhone_6_5 (IS_iPhone && kScreen_height==896 && SCREEN_SCALE==3.0)  //6.5寸
+
 
 //--------------------颜色--------------------------
 //格式0xdae8a6

@@ -57,6 +57,8 @@
         //当DGCustomStatusBar已经显示出来了,再连续点击显示按钮,取消延时执行,不让window隐藏.
         [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(hideWindow:) object:nil];
     }
+    
+    [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
     [UIView animateWithDuration:1.0f animations:^{
         self.contentView.centerY = _statusBarCenterY;
     } completion:^(BOOL finished) {
@@ -64,9 +66,12 @@
     }];
 }
 
+///???:存在一个问题：收起来之后没有被持有者释放掉，如果在同一个页面再谈起一个AlertView就会出问题
 - (void)hideWindow:(id)object {
     [UIView animateWithDuration:1.0f animations:^{
         self.contentView.centerY = -_statusBarCenterY;
+    } completion:^(BOOL finished) {
+        [[UIApplication sharedApplication] endIgnoringInteractionEvents];
     }];
 }
 

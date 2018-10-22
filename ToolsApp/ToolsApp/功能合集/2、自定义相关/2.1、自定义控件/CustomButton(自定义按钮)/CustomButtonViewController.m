@@ -20,6 +20,7 @@
     self.dataSoureArray =@[
                            @{@"title":@"悬浮按钮",@"className":@"SuspensionButtonViewController"},
                            @{@"title":@"倒计时按钮",@"className":@"CountDownButtonViewController"},
+                           @{@"title":@"防止暴力点击按钮",@"className":@"PreventRepetitionBtnVC"},
                            ];
 }
 

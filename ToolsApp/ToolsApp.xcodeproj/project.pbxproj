@@ -171,6 +171,7 @@
 		C87DCD16208080A700792988 /* LeftSpringMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD15208080A700792988 /* LeftSpringMenuViewController.m */; };
 		C87DCD19208080C600792988 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD18208080C600792988 /* LeftMenuViewController.m */; };
 		C87DCD1C208080F900792988 /* TopMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DCD1B208080F900792988 /* TopMenuViewController.m */; };
+		C87F067321786D0300E084AB /* CustomNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87F067221786D0300E084AB /* CustomNavigationBarViewController.m */; };
 		C8831643216CD6D80044180F /* LoadBigImageUseRunLoopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C8831642216CD6D80044180F /* LoadBigImageUseRunLoopVC.m */; };
 		C8831646216CD6F70044180F /* LoadBigImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C8831645216CD6F70044180F /* LoadBigImageVC.m */; };
 		C883164B216CDC7A0044180F /* big_image_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8831648216CDC7A0044180F /* big_image_3.jpg */; };
@@ -208,6 +209,7 @@
 		C8ACBC5A211D28350057D8DC /* LogSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC59211D28350057D8DC /* LogSaveViewController.m */; };
 		C8ACBC5D211D28510057D8DC /* MarkdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACBC5C211D28510057D8DC /* MarkdownViewController.m */; };
 		C8B3F1A42159D26C009460E3 /* ScreenshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B3F1A32159D26C009460E3 /* ScreenshotViewController.m */; };
+		C8BE579321770FA500C20F6F /* PreventRepetitionBtnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE579221770FA500C20F6F /* PreventRepetitionBtnVC.m */; };
 		C8BE9D0C214A023C009A86AF /* CustomButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE9D0B214A023C009A86AF /* CustomButtonViewController.m */; };
 		C8BE9D0F214A02BA009A86AF /* SuspensionButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE9D0E214A02BA009A86AF /* SuspensionButtonViewController.m */; };
 		C8C1B020206391D4007BE1BD /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1B01F206391D4007BE1BD /* CustomViewController.m */; };
@@ -507,6 +509,8 @@
 		C87DCD18208080C600792988 /* LeftMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		C87DCD1A208080F900792988 /* TopMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopMenuViewController.h; sourceTree = "<group>"; };
 		C87DCD1B208080F900792988 /* TopMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopMenuViewController.m; sourceTree = "<group>"; };
+		C87F067121786D0300E084AB /* CustomNavigationBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBarViewController.h; sourceTree = "<group>"; };
+		C87F067221786D0300E084AB /* CustomNavigationBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBarViewController.m; sourceTree = "<group>"; };
 		C8831641216CD6D80044180F /* LoadBigImageUseRunLoopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadBigImageUseRunLoopVC.h; sourceTree = "<group>"; };
 		C8831642216CD6D80044180F /* LoadBigImageUseRunLoopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadBigImageUseRunLoopVC.m; sourceTree = "<group>"; };
 		C8831644216CD6F70044180F /* LoadBigImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadBigImageVC.h; sourceTree = "<group>"; };
@@ -576,6 +580,8 @@
 		C8B3F1A22159D26C009460E3 /* ScreenshotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenshotViewController.h; sourceTree = "<group>"; };
 		C8B3F1A32159D26C009460E3 /* ScreenshotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenshotViewController.m; sourceTree = "<group>"; };
 		C8B3F1A52159D702009460E3 /* YCGSizeFix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGSizeFix.h; sourceTree = "<group>"; };
+		C8BE579121770FA500C20F6F /* PreventRepetitionBtnVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreventRepetitionBtnVC.h; sourceTree = "<group>"; };
+		C8BE579221770FA500C20F6F /* PreventRepetitionBtnVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreventRepetitionBtnVC.m; sourceTree = "<group>"; };
 		C8BE9D0A214A023C009A86AF /* CustomButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomButtonViewController.h; sourceTree = "<group>"; };
 		C8BE9D0B214A023C009A86AF /* CustomButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomButtonViewController.m; sourceTree = "<group>"; };
 		C8BE9D0D214A02BA009A86AF /* SuspensionButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspensionButtonViewController.h; sourceTree = "<group>"; };
@@ -1112,16 +1118,17 @@
 		C85ACABE205FB596008ED51A /* 2.1、自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
+				C87F067021786C7700E084AB /* CustomNavigationBar(自定义导航栏) */,
 				C81FA67A21533FC500D75871 /* HaloLayer(光圈) */,
-				C85ACAC0205FB5C9008ED51A /* CustomButton */,
-				C85ACABF205FB5BF008ED51A /* CustomLabel */,
+				C85ACAC0205FB5C9008ED51A /* CustomButton(自定义按钮) */,
+				C85ACABF205FB5BF008ED51A /* CustomLabel(自定义标签) */,
 				C8C1B01E206391D4007BE1BD /* CustomViewController.h */,
 				C8C1B01F206391D4007BE1BD /* CustomViewController.m */,
 			);
 			path = "2.1、自定义控件";
 			sourceTree = "<group>";
 		};
-		C85ACABF205FB5BF008ED51A /* CustomLabel */ = {
+		C85ACABF205FB5BF008ED51A /* CustomLabel(自定义标签) */ = {
 			isa = PBXGroup;
 			children = (
 				C8316391214A543800BC35F8 /* LabelLineSpacing(行间距) */,
@@ -1130,18 +1137,19 @@
 				C8C1B0242063925E007BE1BD /* CustomLabelViewController.h */,
 				C8C1B0252063925E007BE1BD /* CustomLabelViewController.m */,
 			);
-			path = CustomLabel;
+			path = "CustomLabel(自定义标签)";
 			sourceTree = "<group>";
 		};
-		C85ACAC0205FB5C9008ED51A /* CustomButton */ = {
+		C85ACAC0205FB5C9008ED51A /* CustomButton(自定义按钮) */ = {
 			isa = PBXGroup;
 			children = (
+				C8BE579021770F2900C20F6F /* PreventRepetitionButton(防止暴力点击按钮) */,
 				C8CA1185215CD3C100AFF265 /* CountDownButton(倒计时按钮) */,
 				C8BE9D09214A01F5009A86AF /* SuspensionButton(悬浮按钮) */,
 				C8BE9D0A214A023C009A86AF /* CustomButtonViewController.h */,
 				C8BE9D0B214A023C009A86AF /* CustomButtonViewController.m */,
 			);
-			path = CustomButton;
+			path = "CustomButton(自定义按钮)";
 			sourceTree = "<group>";
 		};
 		C86234F9207B12F7000850E8 /* 4.3、10.3更换图标 */ = {
@@ -1524,6 +1532,15 @@
 			path = "8.3、下拉";
 			sourceTree = "<group>";
 		};
+		C87F067021786C7700E084AB /* CustomNavigationBar(自定义导航栏) */ = {
+			isa = PBXGroup;
+			children = (
+				C87F067121786D0300E084AB /* CustomNavigationBarViewController.h */,
+				C87F067221786D0300E084AB /* CustomNavigationBarViewController.m */,
+			);
+			path = "CustomNavigationBar(自定义导航栏)";
+			sourceTree = "<group>";
+		};
 		C8831640216CD3910044180F /* RunLoop加载大图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1800,6 +1817,15 @@
 				C8B3F1A32159D26C009460E3 /* ScreenshotViewController.m */,
 			);
 			path = "4.5、获取截屏";
+			sourceTree = "<group>";
+		};
+		C8BE579021770F2900C20F6F /* PreventRepetitionButton(防止暴力点击按钮) */ = {
+			isa = PBXGroup;
+			children = (
+				C8BE579121770FA500C20F6F /* PreventRepetitionBtnVC.h */,
+				C8BE579221770FA500C20F6F /* PreventRepetitionBtnVC.m */,
+			);
+			path = "PreventRepetitionButton(防止暴力点击按钮)";
 			sourceTree = "<group>";
 		};
 		C8BE9D09214A01F5009A86AF /* SuspensionButton(悬浮按钮) */ = {
@@ -2365,6 +2391,7 @@
 				C876A44F206105A70048728C /* WaterFallDataModel.m in Sources */,
 				C88EB75B205A8FCB008092BB /* AppDelegate.m in Sources */,
 				C8CA1190215DFCF600AFF265 /* UIColor+Addition.m in Sources */,
+				C8BE579321770FA500C20F6F /* PreventRepetitionBtnVC.m in Sources */,
 				C87DCD08207F76B800792988 /* PanBoardViewController.m in Sources */,
 				C8BE9D0C214A023C009A86AF /* CustomButtonViewController.m in Sources */,
 				C876A4792062505D0048728C /* CardLayoutViewController.m in Sources */,
@@ -2401,6 +2428,7 @@
 				C8E60B3A2079B09800DD95B5 /* YCGCityCollectionViewCell.m in Sources */,
 				C876A46920622B2B0048728C /* CycleImageViewCell.m in Sources */,
 				C84E5A1D206CB74C0011B307 /* ShareViewController.m in Sources */,
+				C87F067321786D0300E084AB /* CustomNavigationBarViewController.m in Sources */,
 				C874DB7C20858C6D00BEF5A1 /* PopMenuTableDataSource.m in Sources */,
 				C89BECDE2109F0010013DBFA /* ALiPayHomeViewController.m in Sources */,
 				C8831643216CD6D80044180F /* LoadBigImageUseRunLoopVC.m in Sources */,
