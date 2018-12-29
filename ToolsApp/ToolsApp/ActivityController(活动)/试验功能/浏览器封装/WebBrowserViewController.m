@@ -9,6 +9,9 @@
 #import "WebBrowserViewController.h"
 #import <WebKit/WebKit.h>
 #import "HubMessageView.h"
+#import <Photos/Photos.h>
+#import <Photos/PHPhotoLibrary.h>
+#import "TYSnapshotScroll.h"
 
 static NSString *homeUrl = @"https://m.baidu.com";
 
@@ -52,6 +55,34 @@ static NSString *homeUrl = @"https://m.baidu.com";
     [super viewWillAppear:animated];
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
     
+    
+    // 设置左边按钮
+    UIBarButtonItem *rightBtnItem = [[UIBarButtonItem alloc]initWithTitle:@"截图" style:UIBarButtonItemStyleDone target:self action:@selector(rightBarBtnAction)];
+    self.navigationItem.rightBarButtonItem = rightBtnItem;
+}
+
+// 截取长图
+- (void)rightBarBtnAction {
+    
+    [TYSnapshotScroll screenSnapshot:self.webView finishBlock:^(UIImage *snapShotImage) {
+        PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+        if (status == PHAuthorizationStatusRestricted || status == PHAuthorizationStatusDenied)
+        {
+            NSLog(@"无访问相册权限！");
+            return;
+        }
+        
+        // 保存图片到【相机胶卷】
+        [[PHPhotoLibrary sharedPhotoLibrary]performChanges:^{
+            [PHAssetChangeRequest creationRequestForAssetFromImage:snapShotImage];
+        } completionHandler:^(BOOL success, NSError * _Nullable error) {
+            if (error) {
+                NSLog(@"%@",@"保存失败");
+            } else {
+                NSLog(@"%@",@"保存成功");
+            }
+        }];
+    }];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

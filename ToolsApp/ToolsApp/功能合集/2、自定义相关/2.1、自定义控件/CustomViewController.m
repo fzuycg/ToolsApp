@@ -22,6 +22,7 @@
                            @{@"title":@"自定义标签",@"className":@"CustomLabelViewController"},
                            @{@"title":@"给控件添加光圈",@"className":@"HaloLayerViewController"},
                            @{@"title":@"自定义导航栏",@"className":@"CustomNavigationBarViewController"},
+                           @{@"title":@"验证码输入",@"className":@"VerificationCodeInputVC"},
                            ];
 }
 

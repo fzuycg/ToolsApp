@@ -21,6 +21,7 @@
                            @{@"title":@"卡片切换",@"className":@"CardLayoutViewController"},
                            @{@"title":@"瀑布流",@"className":@"WaterFallViewController"},
                            @{@"title":@"轮播图",@"className":@"CyclePageViewController"},
+                           @{@"title":@"圆形进度条",@"className":@"ProgressViewController"},
                            ];
 }
 

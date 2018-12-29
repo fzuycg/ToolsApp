@@ -17,6 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self createUI];
+}
+
+- (void)createUI {
+    UILabel *label_1 = [[UILabel alloc] initWithFrame:CGRectMake(20, kNavigation_HEIGHT+20, kScreen_width-40, 30)];
+    label_1.text = @"工农建中";
+    label_1.backgroundColor = [UIColor yellowColor];
+    label_1.font = [UIFont systemFontOfSize:20];
+    [self.view addSubview:label_1];
 }
 
 - (void)didReceiveMemoryWarning {
