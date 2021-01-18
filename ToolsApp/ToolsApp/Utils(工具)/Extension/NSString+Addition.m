@@ -3,7 +3,7 @@
 //  GeneralApp
 //
 //  Created by 杨春贵 on 2018/3/7.
-//  Copyright © 2018年 CIB. All rights reserved.
+//  Copyright © 2018年 CGY. All rights reserved.
 //
 
 #import "NSString+Addition.h"

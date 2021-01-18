@@ -17,6 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIButton *closeBtn = [[UIButton alloc] initWithFrame:CGRectMake(120, 120, 80, 40)];
+    [closeBtn setTitle:@"close" forState:UIControlStateNormal];
+    closeBtn.backgroundColor = [UIColor blueColor];
+    [closeBtn addTarget:self action:@selector(closeBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:closeBtn];
+}
+
+- (void)closeBtnAction {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

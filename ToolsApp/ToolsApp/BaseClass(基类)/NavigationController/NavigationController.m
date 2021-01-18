@@ -63,20 +63,25 @@
 #pragma  mark - 拦截所有push方法
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    if (self.viewControllers.count > 0) {
-        // 如果navigationController的字控制器个数大于两个就隐藏，底部工具栏
+//    if (self.viewControllers.count > 0) {
+//        // 如果navigationController的字控制器个数大于两个就隐藏，底部工具栏
+//        viewController.hidesBottomBarWhenPushed = YES;
+//
+//        //设置返回按钮
+////        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(back)];
+//
+//        //修改返回文字
+//        viewController.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:nil action:nil];
+//        //全部修改返回按钮,但是会失去右滑返回的手势
+//        if (viewController.navigationItem.leftBarButtonItem ==nil && self.viewControllers.count >=1) {
+//
+//            viewController.navigationItem.leftBarButtonItem = [self creatBackButton];
+//        }
+//    }
+    if (self.viewControllers.count == 1) {
         viewController.hidesBottomBarWhenPushed = YES;
-        
-        //设置返回按钮
-//        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(back)];
-        
-        //修改返回文字
-        viewController.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:nil action:nil];
-        //全部修改返回按钮,但是会失去右滑返回的手势
-        if (viewController.navigationItem.leftBarButtonItem ==nil && self.viewControllers.count >=1) {
-            
-            viewController.navigationItem.leftBarButtonItem = [self creatBackButton];
-        }
+    }else {
+        viewController.hidesBottomBarWhenPushed = NO;
     }
     [super pushViewController:viewController animated:animated];
 }

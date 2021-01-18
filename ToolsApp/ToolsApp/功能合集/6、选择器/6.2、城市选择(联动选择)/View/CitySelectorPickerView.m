@@ -127,7 +127,7 @@ static CGFloat titleViewOnButtonWidth = 80.f;
     
     self.bottomViewHeight = 88;
     self.hidden = YES;
-    self.backgroundColor = [UIColor blackColor];
+//    self.backgroundColor = [UIColor blackColor];
     self.backGroundViewAplha = 0.3;
     self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
     

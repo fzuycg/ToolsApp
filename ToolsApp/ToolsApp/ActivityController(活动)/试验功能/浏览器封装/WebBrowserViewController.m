@@ -13,7 +13,9 @@
 #import <Photos/PHPhotoLibrary.h>
 #import "TYSnapshotScroll.h"
 
-static NSString *homeUrl = @"https://m.baidu.com";
+//static NSString *homeUrl = @"https://m.baidu.com";
+//static NSString *homeUrl = @"https://m.bilibili.com/video/av19390801.html?spm_id_from=333.400.b_766964656f5f33.1";
+static NSString *homeUrl = @"https://m.ctrip.com/webapp/Hotel/?allianceid=880018&sid=1449484&ouid=&sourceid=2055&popup=close&autoawaken=close";
 
 @interface WebBrowserViewController () <WKNavigationDelegate, UIScrollViewDelegate>
 @property (nonatomic, strong) WKWebView *webView;

@@ -11,6 +11,7 @@
 #import "YCGGuidePageView.h"
 #import "LaunchAdManager.h"
 #import "HookLogManager.h"
+#import "ScreenshotViewController.h"
 
 @interface AppDelegate ()
 @property (nonatomic, strong) TabBarController *tabBarController;
@@ -52,6 +53,8 @@
 //#endif
     
     [[HookLogManager sharedInstance] startHookLog];
+    
+    [self initShortcutItems];
     
     return YES;
 }
@@ -107,6 +110,11 @@
     
 }
 
+#pragma mark - 设置屏幕转向
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -134,5 +142,50 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - 3D Touch菜单进入
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    NSLog(@"name:%@\ntype:%@", shortcutItem.localizedTitle, shortcutItem.type);
+    if ([shortcutItem.type isEqualToString:@"com.cgy.fintech.RichScan"]) {
+        ScreenshotViewController *toVC = [[ScreenshotViewController alloc] init];
+        UIViewController *currentVC = [self currentViewController];
+        [currentVC.navigationController pushViewController:toVC animated:YES];
+    }
+}
+
+- (void)initShortcutItems {
+    
+    if ([UIApplication sharedApplication].shortcutItems.count >= 2)
+        return;
+    
+    NSMutableArray *arrShortcutItem = (NSMutableArray *)[UIApplication sharedApplication].shortcutItems;
+    
+    UIApplicationShortcutItem *shoreItem1 = [[UIApplicationShortcutItem alloc] initWithType:@"com.cgy.fintech.propertyQuery" localizedTitle:@"资产查询" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeSearch] userInfo:nil];
+    [arrShortcutItem addObject:shoreItem1];
+    
+    UIApplicationShortcutItem *shoreItem2 = [[UIApplicationShortcutItem alloc] initWithType:@"com.cgy.fintech.RichScan" localizedTitle:@"扫一扫" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"saoyisao"] userInfo:nil];
+    [arrShortcutItem addObject:shoreItem2];
+    
+    [UIApplication sharedApplication].shortcutItems = arrShortcutItem;
+    
+}
+
+//获取手机当前显示的ViewController
+- (UIViewController *)currentViewController {
+    UIViewController* vc = [UIApplication sharedApplication].keyWindow.rootViewController;
+    while (1) {
+        if ([vc isKindOfClass:[UITabBarController class]]) {
+            vc = ((UITabBarController*)vc).selectedViewController;
+        }
+        if ([vc isKindOfClass:[UINavigationController class]]) {
+            vc = ((UINavigationController*)vc).visibleViewController;
+        }
+        if (vc.presentedViewController) {
+            vc = vc.presentedViewController;
+        }else{
+            break;
+        }
+    }
+    return vc;
+}
 
 @end

@@ -69,6 +69,18 @@
 		C82B169A21534097008BC175 /* CALayer+Halo.m in Sources */ = {isa = PBXBuildFile; fileRef = C82B169821534097008BC175 /* CALayer+Halo.m */; };
 		C82B169B21534097008BC175 /* HaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C82B169921534097008BC175 /* HaloLayer.m */; };
 		C82B169E2153429F008BC175 /* touxiang.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C82B169D2153429F008BC175 /* touxiang.jpg */; };
+		C82BD4E321E4760C00FF95F4 /* CGYPlayVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C82BD4E221E4760C00FF95F4 /* CGYPlayVideoViewController.m */; };
+		C82BD4E621E4766000FF95F4 /* CGYVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C82BD4E521E4766000FF95F4 /* CGYVideoView.m */; };
+		C82BD4FE21E4B97B00FF95F4 /* CLSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C82BD4ED21E4B97B00FF95F4 /* CLSlider.m */; };
+		C82BD4FF21E4B97B00FF95F4 /* AILoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = C82BD4F021E4B97B00FF95F4 /* AILoadingView.m */; };
+		C82BD50021E4B97B00FF95F4 /* UITabBarController+CLPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C82BD4F221E4B97B00FF95F4 /* UITabBarController+CLPlayerRotation.m */; };
+		C82BD50121E4B97B00FF95F4 /* CLPlayerMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = C82BD4F321E4B97B00FF95F4 /* CLPlayerMaskView.m */; };
+		C82BD50221E4B97B00FF95F4 /* UINavigationController+CLPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C82BD4F421E4B97B00FF95F4 /* UINavigationController+CLPlayerRotation.m */; };
+		C82BD50321E4B97B00FF95F4 /* CLPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C82BD4F621E4B97B00FF95F4 /* CLPlayerView.m */; };
+		C82BD50421E4B97B00FF95F4 /* CLGCDTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C82BD4F721E4B97B00FF95F4 /* CLGCDTimerManager.m */; };
+		C82BD50521E4B97B00FF95F4 /* UIViewController+CLPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C82BD4F821E4B97B00FF95F4 /* UIViewController+CLPlayerRotation.m */; };
+		C82BD50621E4B97B00FF95F4 /* CLPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C82BD4FD21E4B97B00FF95F4 /* CLPlayer.bundle */; };
+		C82BD71D21E88F6D00FF95F4 /* UIImage+DrawAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = C82BD71C21E88F6D00FF95F4 /* UIImage+DrawAddition.m */; };
 		C8316389214A043E00BC35F8 /* SuspensionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C8316388214A043E00BC35F8 /* SuspensionButton.m */; };
 		C831638C214A30B700BC35F8 /* 悬浮按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = C831638B214A30B700BC35F8 /* 悬浮按钮.png */; };
 		C8316390214A37E000BC35F8 /* StatusBarMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C831638F214A37E000BC35F8 /* StatusBarMessageView.m */; };
@@ -96,7 +108,7 @@
 		C84E5A29206CD0170011B307 /* guideTest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C84E5A27206CD0170011B307 /* guideTest@3x.png */; };
 		C84E5A2A206CD0170011B307 /* guideTest@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C84E5A28206CD0170011B307 /* guideTest@2x.png */; };
 		C84E5A2E206DCD5E0011B307 /* SelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84E5A2D206DCD5E0011B307 /* SelectorViewController.m */; };
-		C855E5E92183062E00EF9CB5 /* CFTUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = C855E5E72183062E00EF9CB5 /* CFTUnicode.m */; };
+		C855E5E92183062E00EF9CB5 /* CGYUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = C855E5E72183062E00EF9CB5 /* CGYUnicode.m */; };
 		C85ACAAA205F5087008ED51A /* YCGGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C85ACAA9205F5087008ED51A /* YCGGuidePageView.m */; };
 		C85ACAB0205F657A008ED51A /* guide_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85ACAAC205F6579008ED51A /* guide_02.jpg */; };
 		C85ACAB1205F657A008ED51A /* guide_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85ACAAD205F6579008ED51A /* guide_01.jpg */; };
@@ -206,6 +218,10 @@
 		C88EB7A9205B6391008092BB /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EB7A8205B6391008092BB /* BaseTableViewController.m */; };
 		C88EB7AD205B6731008092BB /* YCGHomeDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EB7AC205B6731008092BB /* YCGHomeDataModel.m */; };
 		C88EB7B0205B6769008092BB /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EB7AF205B6769008092BB /* BaseModel.m */; };
+		C89BE3D4225C389000D73A0D /* 123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C89BE3D3225C389000D73A0D /* 123.jpg */; };
+		C89BE3D7225C3AC900D73A0D /* 321.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C89BE3D5225C3AC900D73A0D /* 321.jpg */; };
+		C89BE3D8225C3AC900D73A0D /* 213.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C89BE3D6225C3AC900D73A0D /* 213.jpg */; };
+		C89BE3DA225C4D5F00D73A0D /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C89BE3D9225C4D5F00D73A0D /* 1.jpg */; };
 		C89BECDE2109F0010013DBFA /* ALiPayHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89BECDD2109F0010013DBFA /* ALiPayHomeViewController.m */; };
 		C89BECE22109F1120013DBFA /* BoxViewI700.m in Sources */ = {isa = PBXBuildFile; fileRef = C89BECE12109F1120013DBFA /* BoxViewI700.m */; };
 		C89BECE52109F3130013DBFA /* BoxFunctionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C89BECE42109F3130013DBFA /* BoxFunctionCell.m */; };
@@ -363,6 +379,29 @@
 		C82B169821534097008BC175 /* CALayer+Halo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Halo.m"; sourceTree = "<group>"; };
 		C82B169921534097008BC175 /* HaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HaloLayer.m; sourceTree = "<group>"; };
 		C82B169D2153429F008BC175 /* touxiang.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = touxiang.jpg; sourceTree = "<group>"; };
+		C82BD4E121E4760C00FF95F4 /* CGYPlayVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGYPlayVideoViewController.h; sourceTree = "<group>"; };
+		C82BD4E221E4760C00FF95F4 /* CGYPlayVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGYPlayVideoViewController.m; sourceTree = "<group>"; };
+		C82BD4E421E4766000FF95F4 /* CGYVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGYVideoView.h; sourceTree = "<group>"; };
+		C82BD4E521E4766000FF95F4 /* CGYVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGYVideoView.m; sourceTree = "<group>"; };
+		C82BD4EC21E4B97B00FF95F4 /* CLGCDTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLGCDTimerManager.h; sourceTree = "<group>"; };
+		C82BD4ED21E4B97B00FF95F4 /* CLSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSlider.m; sourceTree = "<group>"; };
+		C82BD4EE21E4B97B00FF95F4 /* CLPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPlayerView.h; sourceTree = "<group>"; };
+		C82BD4EF21E4B97B00FF95F4 /* UINavigationController+CLPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CLPlayerRotation.h"; sourceTree = "<group>"; };
+		C82BD4F021E4B97B00FF95F4 /* AILoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AILoadingView.m; sourceTree = "<group>"; };
+		C82BD4F121E4B97B00FF95F4 /* UIViewController+CLPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CLPlayerRotation.h"; sourceTree = "<group>"; };
+		C82BD4F221E4B97B00FF95F4 /* UITabBarController+CLPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+CLPlayerRotation.m"; sourceTree = "<group>"; };
+		C82BD4F321E4B97B00FF95F4 /* CLPlayerMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPlayerMaskView.m; sourceTree = "<group>"; };
+		C82BD4F421E4B97B00FF95F4 /* UINavigationController+CLPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CLPlayerRotation.m"; sourceTree = "<group>"; };
+		C82BD4F521E4B97B00FF95F4 /* CLSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSlider.h; sourceTree = "<group>"; };
+		C82BD4F621E4B97B00FF95F4 /* CLPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPlayerView.m; sourceTree = "<group>"; };
+		C82BD4F721E4B97B00FF95F4 /* CLGCDTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLGCDTimerManager.m; sourceTree = "<group>"; };
+		C82BD4F821E4B97B00FF95F4 /* UIViewController+CLPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CLPlayerRotation.m"; sourceTree = "<group>"; };
+		C82BD4F921E4B97B00FF95F4 /* AILoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AILoadingView.h; sourceTree = "<group>"; };
+		C82BD4FA21E4B97B00FF95F4 /* CLPlayerMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPlayerMaskView.h; sourceTree = "<group>"; };
+		C82BD4FB21E4B97B00FF95F4 /* UITabBarController+CLPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+CLPlayerRotation.h"; sourceTree = "<group>"; };
+		C82BD4FD21E4B97B00FF95F4 /* CLPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CLPlayer.bundle; sourceTree = "<group>"; };
+		C82BD71B21E88F6D00FF95F4 /* UIImage+DrawAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+DrawAddition.h"; sourceTree = "<group>"; };
+		C82BD71C21E88F6D00FF95F4 /* UIImage+DrawAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DrawAddition.m"; sourceTree = "<group>"; };
 		C8316387214A043E00BC35F8 /* SuspensionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuspensionButton.h; sourceTree = "<group>"; };
 		C8316388214A043E00BC35F8 /* SuspensionButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuspensionButton.m; sourceTree = "<group>"; };
 		C831638B214A30B700BC35F8 /* 悬浮按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "悬浮按钮.png"; sourceTree = "<group>"; };
@@ -413,8 +452,8 @@
 		C84E5A28206CD0170011B307 /* guideTest@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guideTest@2x.png"; sourceTree = "<group>"; };
 		C84E5A2C206DCD5E0011B307 /* SelectorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectorViewController.h; sourceTree = "<group>"; };
 		C84E5A2D206DCD5E0011B307 /* SelectorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectorViewController.m; sourceTree = "<group>"; };
-		C855E5E72183062E00EF9CB5 /* CFTUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFTUnicode.m; sourceTree = "<group>"; };
-		C855E5E82183062E00EF9CB5 /* CFTUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFTUnicode.h; sourceTree = "<group>"; };
+		C855E5E72183062E00EF9CB5 /* CGYUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGYUnicode.m; sourceTree = "<group>"; };
+		C855E5E82183062E00EF9CB5 /* CGYUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGYUnicode.h; sourceTree = "<group>"; };
 		C85ACAA8205F5087008ED51A /* YCGGuidePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGGuidePageView.h; sourceTree = "<group>"; };
 		C85ACAA9205F5087008ED51A /* YCGGuidePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGGuidePageView.m; sourceTree = "<group>"; };
 		C85ACAAC205F6579008ED51A /* guide_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guide_02.jpg; sourceTree = "<group>"; };
@@ -591,6 +630,10 @@
 		C88EB7AF205B6769008092BB /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		C88EB7B1205B6B86008092BB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C88EB7B3205B9301008092BB /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		C89BE3D3225C389000D73A0D /* 123.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 123.jpg; sourceTree = "<group>"; };
+		C89BE3D5225C3AC900D73A0D /* 321.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 321.jpg; sourceTree = "<group>"; };
+		C89BE3D6225C3AC900D73A0D /* 213.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 213.jpg; sourceTree = "<group>"; };
+		C89BE3D9225C4D5F00D73A0D /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		C89BECDC2109F0010013DBFA /* ALiPayHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALiPayHomeViewController.h; sourceTree = "<group>"; };
 		C89BECDD2109F0010013DBFA /* ALiPayHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALiPayHomeViewController.m; sourceTree = "<group>"; };
 		C89BECE02109F1120013DBFA /* BoxViewI700.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoxViewI700.h; sourceTree = "<group>"; };
@@ -860,6 +903,50 @@
 				C82B169D2153429F008BC175 /* touxiang.jpg */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		C82BD4E021E475DB00FF95F4 /* 视频播放器 */ = {
+			isa = PBXGroup;
+			children = (
+				C82BD4EB21E4B97B00FF95F4 /* CLPlayer */,
+				C82BD4E121E4760C00FF95F4 /* CGYPlayVideoViewController.h */,
+				C82BD4E221E4760C00FF95F4 /* CGYPlayVideoViewController.m */,
+				C82BD4E421E4766000FF95F4 /* CGYVideoView.h */,
+				C82BD4E521E4766000FF95F4 /* CGYVideoView.m */,
+			);
+			path = "视频播放器";
+			sourceTree = "<group>";
+		};
+		C82BD4EB21E4B97B00FF95F4 /* CLPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C82BD4EC21E4B97B00FF95F4 /* CLGCDTimerManager.h */,
+				C82BD4F721E4B97B00FF95F4 /* CLGCDTimerManager.m */,
+				C82BD4F521E4B97B00FF95F4 /* CLSlider.h */,
+				C82BD4ED21E4B97B00FF95F4 /* CLSlider.m */,
+				C82BD4EE21E4B97B00FF95F4 /* CLPlayerView.h */,
+				C82BD4F621E4B97B00FF95F4 /* CLPlayerView.m */,
+				C82BD4F921E4B97B00FF95F4 /* AILoadingView.h */,
+				C82BD4F021E4B97B00FF95F4 /* AILoadingView.m */,
+				C82BD4FA21E4B97B00FF95F4 /* CLPlayerMaskView.h */,
+				C82BD4F321E4B97B00FF95F4 /* CLPlayerMaskView.m */,
+				C82BD4EF21E4B97B00FF95F4 /* UINavigationController+CLPlayerRotation.h */,
+				C82BD4F421E4B97B00FF95F4 /* UINavigationController+CLPlayerRotation.m */,
+				C82BD4F121E4B97B00FF95F4 /* UIViewController+CLPlayerRotation.h */,
+				C82BD4F821E4B97B00FF95F4 /* UIViewController+CLPlayerRotation.m */,
+				C82BD4FB21E4B97B00FF95F4 /* UITabBarController+CLPlayerRotation.h */,
+				C82BD4F221E4B97B00FF95F4 /* UITabBarController+CLPlayerRotation.m */,
+				C82BD4FC21E4B97B00FF95F4 /* Resource */,
+			);
+			path = CLPlayer;
+			sourceTree = "<group>";
+		};
+		C82BD4FC21E4B97B00FF95F4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C82BD4FD21E4B97B00FF95F4 /* CLPlayer.bundle */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		C8316386214A040500BC35F8 /* View */ = {
@@ -1860,6 +1947,7 @@
 		C8ACBC55211D27860057D8DC /* 试验功能 */ = {
 			isa = PBXGroup;
 			children = (
+				C82BD4E021E475DB00FF95F4 /* 视频播放器 */,
 				C8831640216CD3910044180F /* RunLoop加载大图 */,
 				C84193CD206A14F5009CA6C6 /* 浏览器封装 */,
 				C8ACBC57211D27F90057D8DC /* Markdown */,
@@ -1898,6 +1986,10 @@
 		C8B3F1A12159D1E9009460E3 /* 4.5、获取截屏 */ = {
 			isa = PBXGroup;
 			children = (
+				C89BE3D9225C4D5F00D73A0D /* 1.jpg */,
+				C89BE3D6225C3AC900D73A0D /* 213.jpg */,
+				C89BE3D5225C3AC900D73A0D /* 321.jpg */,
+				C89BE3D3225C389000D73A0D /* 123.jpg */,
 				C8B3F1A22159D26C009460E3 /* ScreenshotViewController.h */,
 				C8B3F1A32159D26C009460E3 /* ScreenshotViewController.m */,
 			);
@@ -2002,8 +2094,10 @@
 				C8ACBC282112E9030057D8DC /* NSDictionary+Log.m */,
 				C8CA118E215DFCF600AFF265 /* UIColor+Addition.h */,
 				C8CA118F215DFCF600AFF265 /* UIColor+Addition.m */,
-				C855E5E82183062E00EF9CB5 /* CFTUnicode.h */,
-				C855E5E72183062E00EF9CB5 /* CFTUnicode.m */,
+				C855E5E82183062E00EF9CB5 /* CGYUnicode.h */,
+				C855E5E72183062E00EF9CB5 /* CGYUnicode.m */,
+				C82BD71B21E88F6D00FF95F4 /* UIImage+DrawAddition.h */,
+				C82BD71C21E88F6D00FF95F4 /* UIImage+DrawAddition.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -2188,7 +2282,6 @@
 				C88EB752205A8FCB008092BB /* Sources */,
 				C88EB753205A8FCB008092BB /* Frameworks */,
 				C88EB754205A8FCB008092BB /* Resources */,
-				18FBF022EC44F80C4E6125FA /* [CP] Embed Pods Frameworks */,
 				EDB1A0D1E64A9C11D6F0F4B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -2248,7 +2341,7 @@
 					C88EB755205A8FCB008092BB = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0930;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					C88EB76D205A8FCB008092BB = {
 						CreatedOnToolsVersion = 9.2;
@@ -2299,6 +2392,7 @@
 				C8109EA621114B1200B9AEBB /* 红包.png in Resources */,
 				C8109E9421108B2A00B9AEBB /* 信用卡还款.png in Resources */,
 				C874DB8F2085925800BEF5A1 /* right_menu_facetoface@3x.png in Resources */,
+				C89BE3D4225C389000D73A0D /* 123.jpg in Resources */,
 				C820B20D206353AF00C80A4C /* i4.jpg in Resources */,
 				C862350E207B3D1C000850E8 /* Appicon_AppStore60x60@2x.png in Resources */,
 				C862350F207B3D1C000850E8 /* Appicon_AppStore60X60@3x.png in Resources */,
@@ -2319,6 +2413,7 @@
 				C8109E9221108B2A00B9AEBB /* 体育服务.png in Resources */,
 				C8109E9121108B2A00B9AEBB /* 智能设备.png in Resources */,
 				C876A43C2060FFF40048728C /* image0.jpg in Resources */,
+				C89BE3DA225C4D5F00D73A0D /* 1.jpg in Resources */,
 				C8109E8D21108B2A00B9AEBB /* 发票管家.png in Resources */,
 				C89BECEB210B16510013DBFA /* BoxFunction.json in Resources */,
 				C876A4382060FFF40048728C /* image2.jpg in Resources */,
@@ -2355,8 +2450,10 @@
 				C876A43B2060FFF40048728C /* image11.gif in Resources */,
 				C85ACAB0205F657A008ED51A /* guide_02.jpg in Resources */,
 				C8109E8321108B2A00B9AEBB /* 天天有料.png in Resources */,
+				C82BD50621E4B97B00FF95F4 /* CLPlayer.bundle in Resources */,
 				C883164C216CDC7A0044180F /* big_image_1.jpg in Resources */,
 				C8109E8E21108B2A00B9AEBB /* 医疗健康.png in Resources */,
+				C89BE3D7225C3AC900D73A0D /* 321.jpg in Resources */,
 				C820B20E206353AF00C80A4C /* i1.jpg in Resources */,
 				C883164D216CDC7A0044180F /* big_image_2.jpg in Resources */,
 				C8109E8121108B2A00B9AEBB /* 安全备忘.png in Resources */,
@@ -2370,6 +2467,7 @@
 				C8623510207B3D1C000850E8 /* Appicon_AppStore40x40@2x.png in Resources */,
 				C85ACAB2205F657A008ED51A /* guide_04.jpg in Resources */,
 				C84E5A17206CB6470011B307 /* IFMShareImage.bundle in Resources */,
+				C89BE3D8225C3AC900D73A0D /* 213.jpg in Resources */,
 				C8109EA121114B1200B9AEBB /* 商家服务.png in Resources */,
 				C8109E7E21108B2A00B9AEBB /* 汇率换算.png in Resources */,
 				C874DB8A2085925800BEF5A1 /* right_menu_multichat@3x.png in Resources */,
@@ -2401,21 +2499,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		18FBF022EC44F80C4E6125FA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToolsApp/Pods-ToolsApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		37B016E6B35F8B865058FD75 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2440,13 +2523,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToolsApp/Pods-ToolsApp-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToolsApp/Pods-ToolsApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToolsApp/Pods-ToolsApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2470,7 +2556,7 @@
 				C8109E5F2110794200B9AEBB /* NoEditStatusHeaderCell.m in Sources */,
 				C8FA25F2218953820025A430 /* OCGumbo.m in Sources */,
 				C8C1B02320639222007BE1BD /* MarqueeLabelView.m in Sources */,
-				C855E5E92183062E00EF9CB5 /* CFTUnicode.m in Sources */,
+				C855E5E92183062E00EF9CB5 /* CGYUnicode.m in Sources */,
 				C874DB63208490AF00BEF5A1 /* SideMenuViewController.m in Sources */,
 				C8C1B02920639C82007BE1BD /* UIView+Parameter.m in Sources */,
 				C8FA25F721897DBF0025A430 /* GDataXMLNode.m in Sources */,
@@ -2495,13 +2581,16 @@
 				C8C1B03C2063D735007BE1BD /* PrintLabelViewController.m in Sources */,
 				C87DCD19208080C600792988 /* LeftMenuViewController.m in Sources */,
 				C8E60B2A2079AD9600DD95B5 /* YCGCityCollectionViewFlowLayout.m in Sources */,
+				C82BD4FE21E4B97B00FF95F4 /* CLSlider.m in Sources */,
 				C874DB7920858C2800BEF5A1 /* PopMenuManager.m in Sources */,
+				C82BD50221E4B97B00FF95F4 /* UINavigationController+CLPlayerRotation.m in Sources */,
 				C88EB790205A960F008092BB /* TabBarController.m in Sources */,
 				C88EB7B0205B6769008092BB /* BaseModel.m in Sources */,
 				C81806B5211D355F005183E3 /* LogManager.m in Sources */,
 				C876A44C2061034D0048728C /* WaterFallCell.m in Sources */,
 				C874DB7F20858C8D00BEF5A1 /* PopMenuTableDelegate.m in Sources */,
 				C876A46C20622B850048728C /* CycleImageViewPageControl.m in Sources */,
+				C82BD50321E4B97B00FF95F4 /* CLPlayerView.m in Sources */,
 				C8E60B0D207465F100DD95B5 /* CitySelectorPickerViewController.m in Sources */,
 				C8E60B152074671700DD95B5 /* CitySelectorPickerView.m in Sources */,
 				C8109E53210F099800B9AEBB /* CollectionReusableHeaderView.m in Sources */,
@@ -2524,6 +2613,7 @@
 				C88EB79D205A9D1E008092BB /* YCGHomeViewController.m in Sources */,
 				C876A488206256130048728C /* CardLayoutView.m in Sources */,
 				C8ACBC2A2112E9030057D8DC /* NSDictionary+Log.m in Sources */,
+				C82BD50121E4B97B00FF95F4 /* CLPlayerMaskView.m in Sources */,
 				C84193D0206A1552009CA6C6 /* WebBrowserViewController.m in Sources */,
 				C8ACBC5D211D28510057D8DC /* MarkdownViewController.m in Sources */,
 				C84594CE211D773800D80BC3 /* SaveLogManager.m in Sources */,
@@ -2540,6 +2630,7 @@
 				C88EB7A0205A9D3E008092BB /* YCGFindViewController.m in Sources */,
 				C8623519207B5378000850E8 /* BaseAnimationViewController.m in Sources */,
 				C8109E56210F09C300B9AEBB /* CollectionReusableFooterView.m in Sources */,
+				C82BD50021E4B97B00FF95F4 /* UITabBarController+CLPlayerRotation.m in Sources */,
 				C874DB6D20858BA900BEF5A1 /* PopMenuViewController.m in Sources */,
 				C85ACAB7205F9DA1008ED51A /* GuidePageViewController.m in Sources */,
 				C874DB69208491CF00BEF5A1 /* MenuContentCell.m in Sources */,
@@ -2562,6 +2653,7 @@
 				C8E60B212074A60600DD95B5 /* YCGLocationManager.m in Sources */,
 				C84E5A16206CB6470011B307 /* IFMShareView.m in Sources */,
 				C88EB7A9205B6391008092BB /* BaseTableViewController.m in Sources */,
+				C82BD4FF21E4B97B00FF95F4 /* AILoadingView.m in Sources */,
 				C87DCCFD207F758600792988 /* BrushBoardViewController.m in Sources */,
 				C8109E3D210EBD8C00B9AEBB /* MoreAppViewController.m in Sources */,
 				C8316398214A5E9600BC35F8 /* SpacingCanSetLabel.m in Sources */,
@@ -2569,6 +2661,7 @@
 				C876A47020622CD80048728C /* CycleImageModel.m in Sources */,
 				C876A47E206251FE0048728C /* CardFlowLayout.m in Sources */,
 				C876A45820610BDC0048728C /* WaterFlowLayout.m in Sources */,
+				C82BD71D21E88F6D00FF95F4 /* UIImage+DrawAddition.m in Sources */,
 				C8FD58A82192C1220059ADE5 /* ProgressViewController.m in Sources */,
 				C876A42E2060FDFA0048728C /* LayoutListViewController.m in Sources */,
 				C84E5A15206CB6470011B307 /* IFMShareItem.m in Sources */,
@@ -2586,7 +2679,10 @@
 				C82B169B21534097008BC175 /* HaloLayer.m in Sources */,
 				C84E5A00206C85E60011B307 /* LaunchViewController.m in Sources */,
 				C876A46620622AF50048728C /* CycleImageView.m in Sources */,
+				C82BD4E321E4760C00FF95F4 /* CGYPlayVideoViewController.m in Sources */,
+				C82BD50521E4B97B00FF95F4 /* UIViewController+CLPlayerRotation.m in Sources */,
 				C81FA67D21533FF600D75871 /* HaloLayerViewController.m in Sources */,
+				C82BD4E621E4766000FF95F4 /* CGYVideoView.m in Sources */,
 				C88EB7A3205A9D4D008092BB /* YCGMeViewController.m in Sources */,
 				C89BECE22109F1120013DBFA /* BoxViewI700.m in Sources */,
 				C81C60F721BE532C0057CB59 /* UIImage+TYSnapshot.m in Sources */,
@@ -2603,6 +2699,7 @@
 				C8831643216CD6D80044180F /* LoadBigImageUseRunLoopVC.m in Sources */,
 				C8F35B61217DB84200D7BA70 /* CodeTextView.m in Sources */,
 				C84193D7206B8458009CA6C6 /* LaunchNoticeView.m in Sources */,
+				C82BD50421E4B97B00FF95F4 /* CLGCDTimerManager.m in Sources */,
 				C874DB7320858BE900BEF5A1 /* PopMenuView.m in Sources */,
 				C8109E40210EF5E400B9AEBB /* MoreAppCell.m in Sources */,
 			);
@@ -2762,8 +2859,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S5835VE7S9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = XP242N85BR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ToolsApp/Supporting Files/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
@@ -2819,7 +2916,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangcg.learn.ToolsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = DevProvision;
 				SWIFT_OBJC_BRIDGING_HEADER = "ToolsApp/功能合集/8、菜单/8.2、侧滑(正常)/Controller/ToolsApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -2834,8 +2931,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S5835VE7S9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ToolsApp/Supporting Files/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (

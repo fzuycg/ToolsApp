@@ -1,3 +1,4 @@
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 #use_frameworks!个别需要用到它，比如reactiveCocoa
 
@@ -10,4 +11,5 @@ target 'ToolsApp' do
   pod 'ZipArchive'
   pod 'fishhook'
   pod 'MSWeakTimer'
+  pod 'MJRefresh'
 end

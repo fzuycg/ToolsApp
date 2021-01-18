@@ -1,9 +1,9 @@
 //
-//  CFTUnicode.h
+//  CGYUnicode.h
 //  GeneralApp
 //
 //  Created by 杨春贵 on 2018/10/26.
-//  Copyright © 2018 CIB. All rights reserved.
+//  Copyright © 2018 CGY. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
